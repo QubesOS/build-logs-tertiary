@@ -1,0 +1,247 @@
+2023-03-18 18:02:51.372055 +0000 > starting log
+2023-03-18 18:02:51.372190 +0000 build-templates-community: > starting build with log
+2023-03-18 18:02:51.372198 +0000 build-templates-community: >> args:
+2023-03-18 18:02:51.372203 +0000 build-templates-community: >>   ()
+2023-03-18 18:02:51.372207 +0000 build-templates-community: >> component:
+2023-03-18 18:02:51.372211 +0000 build-templates-community: >>   template-whonix
+2023-03-18 18:02:51.372215 +0000 build-templates-community: >> distributions:
+2023-03-18 18:02:51.372219 +0000 build-templates-community: >>   []
+2023-03-18 18:03:00.017068 +0000 build-templates-community: copy-in (cmd): /usr/bin/qvm-run-vm disp7043 bash -c 'rm -rf /builder/incoming/fetch /builder/plugins/fetch'
+2023-03-18 18:03:00.158737 +0000 build-templates-community: copy-in (cmd): /usr/lib/qubes/qrexec-client-vm disp7043 qubesbuilder.FileCopyIn /usr/lib/qubes/qfile-agent /home/user/qubes-builderv2/qubesbuilder/plugins/fetch
+2023-03-18 18:03:00.318160 +0000 build-templates-community: copy-in (cmd): /usr/bin/qvm-run-vm disp7043 bash -c 'mkdir -p /builder/plugins && mv /builder/incoming/fetch /builder/plugins'
+2023-03-18 18:03:00.461332 +0000 build-templates-community: Executing '/usr/bin/qvm-run-vm disp7043 env VERBOSE='1' DEBUG='1' BACKEND_VMM='xen' bash -c 'cd /builder && /builder/plugins/fetch/scripts/get-and-verify-source --component template-whonix --git-branch master --git-url https://github.com/Whonix/qubes-template-whonix --keyring-dir-git /builder/keyring --keys-dir /builder/plugins/fetch/keys --maintainer 916B8D99C38EAF5E8ADC7A2A8D66066A2EEACCDA''.
+2023-03-18 18:03:00.639361 +0000 build-templates-community: output: + unset CLEAN
+2023-03-18 18:03:00.639410 +0000 build-templates-community: output: + CLEAN=0
+2023-03-18 18:03:00.639433 +0000 build-templates-community: output: + unset GETOPT_COMPATIBLE fresh_clone GIT_CLONE_FAST GIT_BASEURL GIT_PREFIX GIT_SUFFIX GIT_URL GIT_REMOTE BRANCH COMPONENT CLEAN FETCH_ONLY IGNORE_MISSING REPO KEYS_DIR KEYRING_DIR_GIT INSECURE_SKIP_CHECKING LESS_SECURE_SIGNED_COMMITS_SUFFICIENT FETCH_VERSIONS_ONLY MAINTAINERS
+2023-03-18 18:03:00.639469 +0000 build-templates-community: output: ++ getopt -o '' -l help,git-baseurl:,git-prefix:,git-suffix:,git-url:,git-remote:,git-branch:,component:,clean,fetch-only,ignore-missing,repo:,keys-dir:,keyring-dir-git:,insecure-skip-checking,less-secure-signed-commits-sufficient,fetch-versions-only,maintainer: -n /builder/plugins/fetch/scripts/get-and-verify-source -- --component template-whonix --git-branch master --git-url https://github.com/Whonix/qubes-template-whonix --keyring-dir-git /builder/keyring --keys-dir /builder/plugins/fetch/keys --maintainer 916B8D99C38EAF5E8ADC7A2A8D66066A2EEACCDA
+2023-03-18 18:03:00.640769 +0000 build-templates-community: output: + OPTS=' --component '\''template-whonix'\'' --git-branch '\''master'\'' --git-url '\''https://github.com/Whonix/qubes-template-whonix'\'' --keyring-dir-git '\''/builder/keyring'\'' --keys-dir '\''/builder/plugins/fetch/keys'\'' --maintainer '\''916B8D99C38EAF5E8ADC7A2A8D66066A2EEACCDA'\'' --'
+2023-03-18 18:03:00.640802 +0000 build-templates-community: output: + eval set -- ' --component '\''template-whonix'\'' --git-branch '\''master'\'' --git-url '\''https://github.com/Whonix/qubes-template-whonix'\'' --keyring-dir-git '\''/builder/keyring'\'' --keys-dir '\''/builder/plugins/fetch/keys'\'' --maintainer '\''916B8D99C38EAF5E8ADC7A2A8D66066A2EEACCDA'\'' --'
+2023-03-18 18:03:00.640830 +0000 build-templates-community: output: ++ set -- --component template-whonix --git-branch master --git-url https://github.com/Whonix/qubes-template-whonix --keyring-dir-git /builder/keyring --keys-dir /builder/plugins/fetch/keys --maintainer 916B8D99C38EAF5E8ADC7A2A8D66066A2EEACCDA --
+2023-03-18 18:03:00.640868 +0000 build-templates-community: output: + [[ 13 -gt 0 ]]
+2023-03-18 18:03:00.640897 +0000 build-templates-community: output: + case "$1" in
+2023-03-18 18:03:00.640916 +0000 build-templates-community: output: + COMPONENT=template-whonix
+2023-03-18 18:03:00.640963 +0000 build-templates-community: output: + shift
+2023-03-18 18:03:00.640990 +0000 build-templates-community: output: + shift
+2023-03-18 18:03:00.642030 +0000 build-templates-community: output: + [[ 11 -gt 0 ]]
+2023-03-18 18:03:00.642037 +0000 build-templates-community: output: + case "$1" in
+2023-03-18 18:03:00.642042 +0000 build-templates-community: output: + BRANCH=master
+2023-03-18 18:03:00.642047 +0000 build-templates-community: output: + shift
+2023-03-18 18:03:00.642052 +0000 build-templates-community: output: + shift
+2023-03-18 18:03:00.642056 +0000 build-templates-community: output: + [[ 9 -gt 0 ]]
+2023-03-18 18:03:00.642061 +0000 build-templates-community: output: + case "$1" in
+2023-03-18 18:03:00.642068 +0000 build-templates-community: output: + GIT_URL=https://github.com/Whonix/qubes-template-whonix
+2023-03-18 18:03:00.642073 +0000 build-templates-community: output: + shift
+2023-03-18 18:03:00.642078 +0000 build-templates-community: output: + shift
+2023-03-18 18:03:00.642083 +0000 build-templates-community: output: + [[ 7 -gt 0 ]]
+2023-03-18 18:03:00.642088 +0000 build-templates-community: output: + case "$1" in
+2023-03-18 18:03:00.642093 +0000 build-templates-community: output: + KEYRING_DIR_GIT=/builder/keyring
+2023-03-18 18:03:00.642098 +0000 build-templates-community: output: + shift
+2023-03-18 18:03:00.642102 +0000 build-templates-community: output: + shift
+2023-03-18 18:03:00.642107 +0000 build-templates-community: output: + [[ 5 -gt 0 ]]
+2023-03-18 18:03:00.642112 +0000 build-templates-community: output: + case "$1" in
+2023-03-18 18:03:00.642117 +0000 build-templates-community: output: + KEYS_DIR=/builder/plugins/fetch/keys
+2023-03-18 18:03:00.642122 +0000 build-templates-community: output: + shift
+2023-03-18 18:03:00.642126 +0000 build-templates-community: output: + shift
+2023-03-18 18:03:00.642131 +0000 build-templates-community: output: + [[ 3 -gt 0 ]]
+2023-03-18 18:03:00.642135 +0000 build-templates-community: output: + case "$1" in
+2023-03-18 18:03:00.642140 +0000 build-templates-community: output: + MAINTAINERS+=("$2")
+2023-03-18 18:03:00.642144 +0000 build-templates-community: output: + shift
+2023-03-18 18:03:00.642149 +0000 build-templates-community: output: + shift
+2023-03-18 18:03:00.642154 +0000 build-templates-community: output: + [[ 1 -gt 0 ]]
+2023-03-18 18:03:00.642158 +0000 build-templates-community: output: + case "$1" in
+2023-03-18 18:03:00.642163 +0000 build-templates-community: output: + shift
+2023-03-18 18:03:00.642167 +0000 build-templates-community: output: + [[ 0 -gt 0 ]]
+2023-03-18 18:03:00.642172 +0000 build-templates-community: output: + for maint in "${MAINTAINERS[@]}"
+2023-03-18 18:03:00.642179 +0000 build-templates-community: output: + [[ 916B8D99C38EAF5E8ADC7A2A8D66066A2EEACCDA =~ ^[a-fA-F0-9]{40}$ ]]
+2023-03-18 18:03:00.642185 +0000 build-templates-community: output: + [[ '' =~ ^[A-Za-z0-9
+2023-03-18 18:03:00.642189 +0000 build-templates-community: output: -]*$ ]]
+2023-03-18 18:03:00.642194 +0000 build-templates-community: output: + [[ '' =~ ^[A-Za-z0-9
+2023-03-18 18:03:00.642198 +0000 build-templates-community: output: -]*$ ]]
+2023-03-18 18:03:00.642203 +0000 build-templates-community: output: + [[ -n template-whonix ]]
+2023-03-18 18:03:00.642208 +0000 build-templates-community: output: + '[' -z '' ']'
+2023-03-18 18:03:00.642213 +0000 build-templates-community: output: + REPO=template-whonix
+2023-03-18 18:03:00.642218 +0000 build-templates-community: output: + '[' -z /builder/keyring ']'
+2023-03-18 18:03:00.642223 +0000 build-templates-community: output: + '[' -z '' ']'
+2023-03-18 18:03:00.642228 +0000 build-templates-community: output: + GIT_SUFFIX=.git
+2023-03-18 18:03:00.642233 +0000 build-templates-community: output: + '[' -z master ']'
+2023-03-18 18:03:00.642238 +0000 build-templates-community: output: + '[' -n '' ']'
+2023-03-18 18:03:00.642244 +0000 build-templates-community: output: + '[' -z https://github.com/Whonix/qubes-template-whonix ']'
+2023-03-18 18:03:00.642249 +0000 build-templates-community: output: + '[' -n '' ']'
+2023-03-18 18:03:00.642254 +0000 build-templates-community: output: + case ${IGNORE_MISSING=0} in
+2023-03-18 18:03:00.642265 +0000 build-templates-community: output: + :
+2023-03-18 18:03:00.642271 +0000 build-templates-community: output: + case ${GIT_CLONE_FAST=0} in
+2023-03-18 18:03:00.642275 +0000 build-templates-community: output: + :
+2023-03-18 18:03:00.642285 +0000 build-templates-community: output: + GIT_OPTIONS=()
+2023-03-18 18:03:00.642290 +0000 build-templates-community: output: + [[ 0 = \1 ]]
+2023-03-18 18:03:00.642295 +0000 build-templates-community: output: + GIT_MERGE_OPTS=("--ff-only")
+2023-03-18 18:03:00.642301 +0000 build-templates-community: output: + [[ master =~ ^[A-Za-z][A-Za-z0-9._-]+$ ]]
+2023-03-18 18:03:00.642307 +0000 build-templates-community: output: + [[ template-whonix =~ ^[A-Za-z][A-Za-z0-9-]*$ ]]
+2023-03-18 18:03:00.642428 +0000 build-templates-community: output: + trap exit_clean 0 1 2 3 6 15
+2023-03-18 18:03:00.642434 +0000 build-templates-community: output: + fresh_clone=false
+2023-03-18 18:03:00.642439 +0000 build-templates-community: output: + [[ '' = \1 ]]
+2023-03-18 18:03:00.642444 +0000 build-templates-community: output: + [[ -d template-whonix ]]
+2023-03-18 18:03:00.642449 +0000 build-templates-community: output: + rm -f -- template-whonix
+2023-03-18 18:03:00.642455 +0000 build-templates-community: output: -> Updating sources for template-whonix...
+2023-03-18 18:03:00.642460 +0000 build-templates-community: output: + print_headers
+2023-03-18 18:03:00.642464 +0000 build-templates-community: output: + '[' -z '' ']'
+2023-03-18 18:03:00.642471 +0000 build-templates-community: output: + GIT_INFOS='https://github.com/Whonix/qubes-template-whonix master'
+2023-03-18 18:03:00.642477 +0000 build-templates-community: output: + echo '-> Updating sources for template-whonix...'
+2023-03-18 18:03:00.642533 +0000 build-templates-community: output: + echo '--> Fetching from https://github.com/Whonix/qubes-template-whonix master...'
+2023-03-18 18:03:00.642542 +0000 build-templates-community: output: --> Fetching from https://github.com/Whonix/qubes-template-whonix master...
+2023-03-18 18:03:00.642717 +0000 build-templates-community: output: + git clone -n -q -b master https://github.com/Whonix/qubes-template-whonix template-whonix
+2023-03-18 18:03:18.908725 +0000 build-templates-community: output: + '[' '' == 1 ']'
+2023-03-18 18:03:18.908789 +0000 build-templates-community: output: + VERIFY_REF=HEAD
+2023-03-18 18:03:18.908804 +0000 build-templates-community: output: + fresh_clone=:
+2023-03-18 18:03:18.908815 +0000 build-templates-community: output: + export CHECK=signed-tag
+2023-03-18 18:03:18.908825 +0000 build-templates-community: output: + CHECK=signed-tag
+2023-03-18 18:03:18.908847 +0000 build-templates-community: output: + verify=true
+2023-03-18 18:03:18.908857 +0000 build-templates-community: output: + '[' '' == 1 ']'
+2023-03-18 18:03:18.908866 +0000 build-templates-community: output: + '[' '' == 1 ']'
+2023-03-18 18:03:18.908943 +0000 build-templates-community: output: ++ git -C template-whonix rev-parse -q --verify HEAD
+2023-03-18 18:03:18.909481 +0000 build-templates-community: output: + VERIFY_REF=d4742bdad7cb699c86201099f1a0981e4dbe3e8c
+2023-03-18 18:03:18.909711 +0000 build-templates-community: output: + '[' true = false ']'
+2023-03-18 18:03:18.909761 +0000 build-templates-community: output: + [[ signed-tag == \s\i\g\n\e\d\-\t\a\g\-\o\r\-\c\o\m\m\i\t ]]
+2023-03-18 18:03:18.909832 +0000 build-templates-community: output: --> Verifying tags...
+2023-03-18 18:03:18.909881 +0000 build-templates-community: output: + echo '--> Verifying tags...'
+2023-03-18 18:03:18.910170 +0000 build-templates-community: output: ++ readlink -m /builder/keyring
+2023-03-18 18:03:18.911194 +0000 build-templates-community: output: + GNUPGHOME=/builder/keyring
+2023-03-18 18:03:18.911240 +0000 build-templates-community: output: + export GNUPGHOME
+2023-03-18 18:03:18.911283 +0000 build-templates-community: output: + '[' '!' -d /builder/keyring ']'
+2023-03-18 18:03:18.911337 +0000 build-templates-community: output: + mkdir -p /builder/keyring
+2023-03-18 18:03:18.912295 +0000 build-templates-community: output: + chmod 700 /builder/keyring
+2023-03-18 18:03:18.913382 +0000 build-templates-community: output: + gpg --import /builder/plugins/fetch/keys/qubes-developers-keys.asc
+2023-03-18 18:03:18.919899 +0000 build-templates-community: output: gpg: keybox '/builder/keyring/pubring.kbx' created
+2023-03-18 18:03:18.923197 +0000 build-templates-community: output: gpg: /builder/keyring/trustdb.gpg: trustdb created
+2023-03-18 18:03:18.923238 +0000 build-templates-community: output: gpg: key DDFA1A3E36879494: public key "Qubes Master Signing Key" imported
+2023-03-18 18:03:18.934214 +0000 build-templates-community: output: gpg: key 063938BA42CFA724: public key "Marek Marczykowski-G..recki (Qubes OS signing key) <marmarek@invisiblethingslab.com>" imported
+2023-03-18 18:03:18.935490 +0000 build-templates-community: output: gpg: key DA0434BC706E1FCF: public key "Simon Gaiser (Qubes OS signing key) <simon@invisiblethingslab.com>" imported
+2023-03-18 18:03:18.935773 +0000 build-templates-community: output: gpg: Total number processed: 3
+2023-03-18 18:03:18.935824 +0000 build-templates-community: output: gpg:               imported: 3
+2023-03-18 18:03:18.935852 +0000 build-templates-community: output: gpg: no ultimately trusted keys found
+2023-03-18 18:03:18.936337 +0000 build-templates-community: output: + echo 427F11FD0FAA4B080123F01CDDFA1A3E36879494:6:
+2023-03-18 18:03:18.936566 +0000 build-templates-community: output: + gpg --import-ownertrust
+2023-03-18 18:03:18.938356 +0000 build-templates-community: output: gpg: inserting ownertrust of 6
+2023-03-18 18:03:18.938840 +0000 build-templates-community: output: + '[' /builder/plugins/fetch/keys/qubes-developers-keys.asc -nt /builder/keyring/pubring.gpg ']'
+2023-03-18 18:03:18.938874 +0000 build-templates-community: output: + gpg --import /builder/plugins/fetch/keys/qubes-developers-keys.asc
+2023-03-18 18:03:18.941462 +0000 build-templates-community: output: gpg: key DDFA1A3E36879494: "Qubes Master Signing Key" not changed
+2023-03-18 18:03:18.942472 +0000 build-templates-community: output: gpg: key 063938BA42CFA724: "Marek Marczykowski-G..recki (Qubes OS signing key) <marmarek@invisiblethingslab.com>" not changed
+2023-03-18 18:03:18.943437 +0000 build-templates-community: output: gpg: key DA0434BC706E1FCF: "Simon Gaiser (Qubes OS signing key) <simon@invisiblethingslab.com>" not changed
+2023-03-18 18:03:18.943659 +0000 build-templates-community: output: gpg: Total number processed: 3
+2023-03-18 18:03:18.943674 +0000 build-templates-community: output: gpg:              unchanged: 3
+2023-03-18 18:03:18.944106 +0000 build-templates-community: output: + touch /builder/keyring/pubring.gpg
+2023-03-18 18:03:18.945082 +0000 build-templates-community: output: + for keyid in "${MAINTAINERS[@]}"
+2023-03-18 18:03:18.945100 +0000 build-templates-community: output: + gpg --import /builder/plugins/fetch/keys/916B8D99C38EAF5E8ADC7A2A8D66066A2EEACCDA.asc
+2023-03-18 18:03:18.952372 +0000 build-templates-community: output: gpg: key 8D66066A2EEACCDA: 104 signatures not checked due to missing keys
+2023-03-18 18:03:18.958230 +0000 build-templates-community: output: gpg: key 8D66066A2EEACCDA: public key "Patrick Schleizer <adrelanos@kicksecure.com>" imported
+2023-03-18 18:03:18.959429 +0000 build-templates-community: output: gpg: Total number processed: 1
+2023-03-18 18:03:18.959466 +0000 build-templates-community: output: gpg:               imported: 1
+2023-03-18 18:03:18.959748 +0000 build-templates-community: output: gpg: marginals needed: 3  completes needed: 1  trust model: pgp
+2023-03-18 18:03:18.961111 +0000 build-templates-community: output: gpg: depth: 0  valid:   1  signed:   2  trust: 0-, 0q, 0n, 0m, 0f, 1u
+2023-03-18 18:03:18.961829 +0000 build-templates-community: output: gpg: depth: 1  valid:   2  signed:   0  trust: 2-, 0q, 0n, 0m, 0f, 0u
+2023-03-18 18:03:18.962746 +0000 build-templates-community: output: + echo 916B8D99C38EAF5E8ADC7A2A8D66066A2EEACCDA:6:
+2023-03-18 18:03:18.962958 +0000 build-templates-community: output: + gpg --import-ownertrust
+2023-03-18 18:03:18.965093 +0000 build-templates-community: output: gpg: inserting ownertrust of 6
+2023-03-18 18:03:18.965595 +0000 build-templates-community: output: + gpgconf --kill gpg-agent
+2023-03-18 18:03:18.970922 +0000 build-templates-community: output: + pushd template-whonix
+2023-03-18 18:03:18.970953 +0000 build-templates-community: output: + expected_hash=d4742bdad7cb699c86201099f1a0981e4dbe3e8c
+2023-03-18 18:03:18.970981 +0000 build-templates-community: output: + hash_len=40
+2023-03-18 18:03:18.971071 +0000 build-templates-community: output: + '[' 40 -ne 40 ']'
+2023-03-18 18:03:18.971088 +0000 build-templates-community: output: + [[ d4742bdad7cb699c86201099f1a0981e4dbe3e8c =~ ^[a-f0-9]+$ ]]
+2023-03-18 18:03:18.971354 +0000 build-templates-community: output: + format='%(if:equals=tag)%(objecttype)%(then)%(objectname):%(object):%(end)'
+2023-03-18 18:03:18.972320 +0000 build-templates-community: output: ++ git tag --points-at=d4742bdad7cb699c86201099f1a0981e4dbe3e8c '--format=%(if:equals=tag)%(objecttype)%(then)%(objectname):%(object):%(end)'
+2023-03-18 18:03:18.972372 +0000 build-templates-community: output: ++ head -c 500
+2023-03-18 18:03:18.977047 +0000 build-templates-community: output: + tags=9b1a90c459d132a594596b9da884be43b04355e2:d4742bdad7cb699c86201099f1a0981e4dbe3e8c:
+2023-03-18 18:03:18.977087 +0000 build-templates-community: output: + for tag in $tags
+2023-03-18 18:03:18.977104 +0000 build-templates-community: output: + (( 82 != hash_len * 2 + 2 ))
+2023-03-18 18:03:18.977196 +0000 build-templates-community: output: + [[ :d4742bdad7cb699c86201099f1a0981e4dbe3e8c: == \:\d\4\7\4\2\b\d\a\d\7\c\b\6\9\9\c\8\6\2\0\1\0\9\9\f\1\a\0\9\8\1\e\4\d\b\e\3\e\8\c\: ]]
+2023-03-18 18:03:18.977217 +0000 build-templates-community: output: + tag=9b1a90c459d132a594596b9da884be43b04355e2
+2023-03-18 18:03:18.977295 +0000 build-templates-community: output: + verify_git_obj tag 9b1a90c459d132a594596b9da884be43b04355e2
+2023-03-18 18:03:18.977351 +0000 build-templates-community: output: + local content newsig_number
+2023-03-18 18:03:18.977410 +0000 build-templates-community: output: ++ git -c gpg.program=gpg -c gpg.minTrustLevel=fully verify-tag --raw -- 9b1a90c459d132a594596b9da884be43b04355e2
+2023-03-18 18:03:18.985663 +0000 build-templates-community: output: + content='[GNUPG:] NEWSIG adrelanos@whonix.org
+2023-03-18 18:03:18.985705 +0000 build-templates-community: output: [GNUPG:] KEY_CONSIDERED 916B8D99C38EAF5E8ADC7A2A8D66066A2EEACCDA 0
+2023-03-18 18:03:18.985748 +0000 build-templates-community: output: [GNUPG:] SIG_ID fXDeqzc5ZRIvS+sUbcol3YlQcGo 2022-12-21 1671632690
+2023-03-18 18:03:18.985827 +0000 build-templates-community: output: [GNUPG:] KEY_CONSIDERED 916B8D99C38EAF5E8ADC7A2A8D66066A2EEACCDA 0
+2023-03-18 18:03:18.985880 +0000 build-templates-community: output: [GNUPG:] KEY_CONSIDERED 916B8D99C38EAF5E8ADC7A2A8D66066A2EEACCDA 0
+2023-03-18 18:03:18.985945 +0000 build-templates-community: output: [GNUPG:] KEY_CONSIDERED 427F11FD0FAA4B080123F01CDDFA1A3E36879494 0
+2023-03-18 18:03:18.986000 +0000 build-templates-community: output: [GNUPG:] KEY_CONSIDERED 427F11FD0FAA4B080123F01CDDFA1A3E36879494 0
+2023-03-18 18:03:18.986065 +0000 build-templates-community: output: [GNUPG:] KEY_CONSIDERED 427F11FD0FAA4B080123F01CDDFA1A3E36879494 0
+2023-03-18 18:03:18.986135 +0000 build-templates-community: output: [GNUPG:] GOODSIG CB8D50BB77BB3C48 Patrick Schleizer <adrelanos@kicksecure.com>
+2023-03-18 18:03:18.986188 +0000 build-templates-community: output: [GNUPG:] NOTATION_NAME issuer-fpr@notations.openpgp.fifthhorseman.net
+2023-03-18 18:03:18.986238 +0000 build-templates-community: output: [GNUPG:] NOTATION_FLAGS 0 1
+2023-03-18 18:03:18.986293 +0000 build-templates-community: output: [GNUPG:] NOTATION_DATA 6E979B28A6F37C43BE30AFA1CB8D50BB77BB3C48
+2023-03-18 18:03:18.986374 +0000 build-templates-community: output: [GNUPG:] VALIDSIG 6E979B28A6F37C43BE30AFA1CB8D50BB77BB3C48 2022-12-21 1671632690 0 4 0 1 10 00 916B8D99C38EAF5E8ADC7A2A8D66066A2EEACCDA
+2023-03-18 18:03:18.986412 +0000 build-templates-community: output: [GNUPG:] KEY_CONSIDERED 916B8D99C38EAF5E8ADC7A2A8D66066A2EEACCDA 0
+2023-03-18 18:03:18.986478 +0000 build-templates-community: output: [GNUPG:] TRUST_ULTIMATE 0 pgp adrelanos@whonix.org'
+2023-03-18 18:03:18.986728 +0000 build-templates-community: output: ++ printf '%s\n' '[GNUPG:] NEWSIG adrelanos@whonix.org
+2023-03-18 18:03:18.986835 +0000 build-templates-community: output: [GNUPG:] KEY_CONSIDERED 916B8D99C38EAF5E8ADC7A2A8D66066A2EEACCDA 0
+2023-03-18 18:03:18.986890 +0000 build-templates-community: output: [GNUPG:] SIG_ID fXDeqzc5ZRIvS+sUbcol3YlQcGo 2022-12-21 1671632690
+2023-03-18 18:03:18.986942 +0000 build-templates-community: output: [GNUPG:] KEY_CONSIDERED 916B8D99C38EAF5E8ADC7A2A8D66066A2EEACCDA 0
+2023-03-18 18:03:18.986994 +0000 build-templates-community: output: [GNUPG:] KEY_CONSIDERED 916B8D99C38EAF5E8ADC7A2A8D66066A2EEACCDA 0
+2023-03-18 18:03:18.987083 +0000 build-templates-community: output: [GNUPG:] KEY_CONSIDERED 427F11FD0FAA4B080123F01CDDFA1A3E36879494 0
+2023-03-18 18:03:18.987133 +0000 build-templates-community: output: [GNUPG:] KEY_CONSIDERED 427F11FD0FAA4B080123F01CDDFA1A3E36879494 0
+2023-03-18 18:03:18.987194 +0000 build-templates-community: output: [GNUPG:] KEY_CONSIDERED 427F11FD0FAA4B080123F01CDDFA1A3E36879494 0
+2023-03-18 18:03:18.987244 +0000 build-templates-community: output: [GNUPG:] GOODSIG CB8D50BB77BB3C48 Patrick Schleizer <adrelanos@kicksecure.com>
+2023-03-18 18:03:18.987299 +0000 build-templates-community: output: [GNUPG:] NOTATION_NAME issuer-fpr@notations.openpgp.fifthhorseman.net
+2023-03-18 18:03:18.987344 +0000 build-templates-community: output: [GNUPG:] NOTATION_FLAGS 0 1
+2023-03-18 18:03:18.987401 +0000 build-templates-community: output: [GNUPG:] NOTATION_DATA 6E979B28A6F37C43BE30AFA1CB8D50BB77BB3C48
+2023-03-18 18:03:18.987459 +0000 build-templates-community: output: [GNUPG:] VALIDSIG 6E979B28A6F37C43BE30AFA1CB8D50BB77BB3C48 2022-12-21 1671632690 0 4 0 1 10 00 916B8D99C38EAF5E8ADC7A2A8D66066A2EEACCDA
+2023-03-18 18:03:18.987528 +0000 build-templates-community: output: [GNUPG:] KEY_CONSIDERED 916B8D99C38EAF5E8ADC7A2A8D66066A2EEACCDA 0
+2023-03-18 18:03:18.987584 +0000 build-templates-community: output: [GNUPG:] TRUST_ULTIMATE 0 pgp adrelanos@whonix.org'
+2023-03-18 18:03:18.987638 +0000 build-templates-community: output: ++ grep -c '^\[GNUPG:] NEWSIG'
+2023-03-18 18:03:18.988098 +0000 build-templates-community: output: + newsig_number=1
+2023-03-18 18:03:18.988147 +0000 build-templates-community: output: + '[' 1 = 1 ']'
+2023-03-18 18:03:18.988518 +0000 build-templates-community: output: + printf '%s\n' '[GNUPG:] NEWSIG adrelanos@whonix.org
+2023-03-18 18:03:18.988655 +0000 build-templates-community: output: [GNUPG:] KEY_CONSIDERED 916B8D99C38EAF5E8ADC7A2A8D66066A2EEACCDA 0
+2023-03-18 18:03:18.988677 +0000 build-templates-community: output: [GNUPG:] SIG_ID fXDeqzc5ZRIvS+sUbcol3YlQcGo 2022-12-21 1671632690
+2023-03-18 18:03:18.988779 +0000 build-templates-community: output: [GNUPG:] KEY_CONSIDERED 916B8D99C38EAF5E8ADC7A2A8D66066A2EEACCDA 0
+2023-03-18 18:03:18.988793 +0000 build-templates-community: output: [GNUPG:] KEY_CONSIDERED 916B8D99C38EAF5E8ADC7A2A8D66066A2EEACCDA 0
+2023-03-18 18:03:18.988864 +0000 build-templates-community: output: [GNUPG:] KEY_CONSIDERED 427F11FD0FAA4B080123F01CDDFA1A3E36879494 0
+2023-03-18 18:03:18.988916 +0000 build-templates-community: output: [GNUPG:] KEY_CONSIDERED 427F11FD0FAA4B080123F01CDDFA1A3E36879494 0
+2023-03-18 18:03:18.988970 +0000 build-templates-community: output: [GNUPG:] KEY_CONSIDERED 427F11FD0FAA4B080123F01CDDFA1A3E36879494 0
+2023-03-18 18:03:18.989029 +0000 build-templates-community: output: [GNUPG:] GOODSIG CB8D50BB77BB3C48 Patrick Schleizer <adrelanos@kicksecure.com>
+2023-03-18 18:03:18.989101 +0000 build-templates-community: output: [GNUPG:] NOTATION_NAME issuer-fpr@notations.openpgp.fifthhorseman.net
+2023-03-18 18:03:18.989131 +0000 build-templates-community: output: [GNUPG:] NOTATION_FLAGS 0 1
+2023-03-18 18:03:18.989278 +0000 build-templates-community: output: [GNUPG:] NOTATION_DATA 6E979B28A6F37C43BE30AFA1CB8D50BB77BB3C48
+2023-03-18 18:03:18.989316 +0000 build-templates-community: output: [GNUPG:] VALIDSIG 6E979B28A6F37C43BE30AFA1CB8D50BB77BB3C48 2022-12-21 1671632690 0 4 0 1 10 00 916B8D99C38EAF5E8ADC7A2A8D66066A2EEACCDA
+2023-03-18 18:03:18.989339 +0000 build-templates-community: output: [GNUPG:] KEY_CONSIDERED 916B8D99C38EAF5E8ADC7A2A8D66066A2EEACCDA 0
+2023-03-18 18:03:18.989356 +0000 build-templates-community: output: [GNUPG:] TRUST_ULTIMATE 0 pgp adrelanos@whonix.org'
+2023-03-18 18:03:18.989410 +0000 build-templates-community: output: + grep '^\[GNUPG:] TRUST_\(FULLY\|ULTIMATE\) 0 pgp\>'
+2023-03-18 18:03:18.990559 +0000 build-templates-community: output: + echo '---> Good tag 9b1a90c459d132a594596b9da884be43b04355e2'
+2023-03-18 18:03:18.990599 +0000 build-templates-community: output: ---> Good tag 9b1a90c459d132a594596b9da884be43b04355e2
+2023-03-18 18:03:18.990847 +0000 build-templates-community: output: + '[' -z x ']'
+2023-03-18 18:03:18.990899 +0000 build-templates-community: output: + popd
+2023-03-18 18:03:18.990927 +0000 build-templates-community: output: + '[' '' == 1 ']'
+2023-03-18 18:03:18.990986 +0000 build-templates-community: output: + pushd template-whonix
+2023-03-18 18:03:18.991176 +0000 build-templates-community: output: ++ exec git rev-parse --abbrev-ref HEAD
+2023-03-18 18:03:18.991989 +0000 build-templates-community: output: + CURRENT_BRANCH=master
+2023-03-18 18:03:18.992005 +0000 build-templates-community: output: + '[' master '!=' master ']'
+2023-03-18 18:03:18.992073 +0000 build-templates-community: output: + :
+2023-03-18 18:03:18.992119 +0000 build-templates-community: output: + '[' -z '' ']'
+2023-03-18 18:03:18.992187 +0000 build-templates-community: output: + red='.[1;31m'
+2023-03-18 18:03:18.992225 +0000 build-templates-community: output: + green='.[1;32m'
+2023-03-18 18:03:18.992263 +0000 build-templates-community: output: + normal='.[0;0m'
+2023-03-18 18:03:18.992312 +0000 build-templates-community: output: ++ git name-rev --name-only master
+2023-03-18 18:03:18.993669 +0000 build-templates-community: output: + '[' -n 'tags/adrelanos_d4742bdad7cb699c86201099f1a0981e4dbe3e8c^0' ']'
+2023-03-18 18:03:18.993708 +0000 build-templates-community: output: + echo '--> Switching branch from master branch to .[1;32mmaster.[0;0m'
+2023-03-18 18:03:18.993777 +0000 build-templates-community: output: --> Switching branch from master branch to .[1;32mmaster.[0;0m
+2023-03-18 18:03:18.993815 +0000 build-templates-community: output: + :
+2023-03-18 18:03:18.993886 +0000 build-templates-community: output: + git checkout -B master d4742bdad7cb699c86201099f1a0981e4dbe3e8c
+2023-03-18 18:03:18.995598 +0000 build-templates-community: output: Reset branch 'master'
+2023-03-18 18:03:18.995640 +0000 build-templates-community: output: Your branch is up to date with 'origin/master'.
+2023-03-18 18:03:18.996323 +0000 build-templates-community: output: + :
+2023-03-18 18:03:18.998096 +0000 build-templates-community: output: + '[' -e .gitmodules ']'
+2023-03-18 18:03:18.998112 +0000 build-templates-community: output: + popd
+2023-03-18 18:03:18.998118 +0000 build-templates-community: output: + exit_clean
+2023-03-18 18:03:18.998124 +0000 build-templates-community: output: + local exit_code=0
+2023-03-18 18:03:18.998129 +0000 build-templates-community: output: + '[' 0 -gt 0 ']'
+2023-03-18 18:03:18.998133 +0000 build-templates-community: output: + exit 0
+2023-03-18 18:03:19.001389 +0000 build-templates-community: copy-out (cmd): /usr/lib/qubes/qrexec-client-vm disp7043 qubesbuilder.FileCopyOut+__builder__template-whonix /usr/lib/qubes/qfile-unpacker 1000 /home/user/builder-templates-community-r4.2/sources
+2023-03-18 18:03:29.586989 +0000 build-templates-community: copy-in (cmd): /usr/bin/qvm-run-vm disp4433 bash -c 'rm -rf /builder/incoming/template-whonix /builder/template-whonix'
+2023-03-18 18:03:29.710267 +0000 build-templates-community: copy-in (cmd): /usr/lib/qubes/qrexec-client-vm disp4433 qubesbuilder.FileCopyIn /usr/lib/qubes/qfile-agent /home/user/builder-templates-community-r4.2/sources/template-whonix
+2023-03-18 18:03:29.919379 +0000 build-templates-community: copy-in (cmd): /usr/bin/qvm-run-vm disp4433 bash -c 'mkdir -p /builder && mv /builder/incoming/template-whonix /builder'
+2023-03-18 18:03:30.058634 +0000 build-templates-community: Executing '/usr/bin/qvm-run-vm disp4433 env VERBOSE='1' DEBUG='1' BACKEND_VMM='xen' bash -c 'rm -f /builder/template-whonix/hash /builder/template-whonix/vtags && cd /builder && git -C /builder/template-whonix rev-parse '\''HEAD^{}'\'' >> /builder/template-whonix/hash && git -C /builder/template-whonix tag --points-at HEAD --list '\''v*'\'' >> /builder/template-whonix/vtags''.
+2023-03-18 18:03:30.199560 +0000 build-templates-community: copy-out (cmd): /usr/lib/qubes/qrexec-client-vm disp4433 qubesbuilder.FileCopyOut+__builder__template-whonix__hash /usr/lib/qubes/qfile-unpacker 1000 /home/user/builder-templates-community-r4.2/tmp/tmpg0wwvclq
+2023-03-18 18:03:30.317525 +0000 build-templates-community: copy-out (cmd): /usr/lib/qubes/qrexec-client-vm disp4433 qubesbuilder.FileCopyOut+__builder__template-whonix__vtags /usr/lib/qubes/qfile-unpacker 1000 /home/user/builder-templates-community-r4.2/tmp/tmpg0wwvclq
+2023-03-18 18:03:31.780847 +0000 build-templates-community: > done
+2023-03-18 18:03:31.780902 +0000 > closing log
