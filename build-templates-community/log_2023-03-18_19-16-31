@@ -1,0 +1,49 @@
+2023-03-18 19:16:31.213805 +0000 > starting log
+2023-03-18 19:16:31.213939 +0000 build-templates-community: > starting build with log
+2023-03-18 19:16:31.213957 +0000 build-templates-community: Executing 'bash -c mkdir -p /home/user/builder-templates-community-r4.2/templates/rpmdb&&qubes-gpg-client-wrapper --armor --export 8F24D388C9DA21A55D7DBC8F08D08ABE6D5C71B3 > /tmp/tmpypc8y710/8F24D388C9DA21A55D7DBC8F08D08ABE6D5C71B3.asc&&rpmkeys --dbpath=/home/user/builder-templates-community-r4.2/templates/rpmdb --import /tmp/tmpypc8y710/8F24D388C9DA21A55D7DBC8F08D08ABE6D5C71B3.asc'.
+2023-03-18 19:16:31.281301 +0000 build-templates-community: whonix-gw-16: Signing 'qubes-template-whonix-gw-16-4.1.0-202303181802.noarch.rpm'.
+2023-03-18 19:16:31.291473 +0000 build-templates-community: Executing 'bash -c /home/user/qubes-builderv2/qubesbuilder/plugins/sign_rpm/scripts/sign-rpm --sign-key 8F24D388C9DA21A55D7DBC8F08D08ABE6D5C71B3 --db-path /home/user/builder-templates-community-r4.2/templates/rpmdb --rpm /home/user/builder-templates-community-r4.2/templates/rpm/qubes-template-whonix-gw-16-4.1.0-202303181802.noarch.rpm'.
+2023-03-18 19:16:33.128476 +0000 build-templates-community: output: warning: Could not set GPG_TTY to stdin: Inappropriate ioctl for device
+2023-03-18 19:16:33.226579 +0000 build-templates-community: output: warning: Could not set GPG_TTY to stdin: Inappropriate ioctl for device
+2023-03-18 19:16:33.955095 +0000 build-templates-community: output: /home/user/builder-templates-community-r4.2/templates/rpm/qubes-template-whonix-gw-16-4.1.0-202303181802.noarch.rpm:
+2023-03-18 19:16:33.969285 +0000 build-templates-community: Executing 'bash -c /home/user/qubes-builderv2/qubesbuilder/plugins/publish_rpm//scripts/create-skeleton r4.2 vm bullseye /home/user/builder-templates-community-r4.2/repository-publish/rpm /home/user/qubes-builderv2/qubesbuilder/plugins/publish_rpm/comps/comps-vm.xml'.
+2023-03-18 19:16:33.980464 +0000 build-templates-community: whonix-gw-16: Verifying signatures.
+2023-03-18 19:16:33.988923 +0000 build-templates-community: Executing 'bash -c /home/user/qubes-builderv2/qubesbuilder/plugins/sign_rpm/scripts/sign-rpm --sign-key 8F24D388C9DA21A55D7DBC8F08D08ABE6D5C71B3 --db-path /home/user/builder-templates-community-r4.2/templates/rpmdb --rpm /home/user/builder-templates-community-r4.2/templates/rpm/qubes-template-whonix-gw-16-4.1.0-202303181802.noarch.rpm --check-only'.
+2023-03-18 19:16:35.117704 +0000 build-templates-community: whonix-gw-16: Publishing template.
+2023-03-18 19:16:35.117764 +0000 build-templates-community: whonix-gw-16: Updating metadata.
+2023-03-18 19:16:35.124088 +0000 build-templates-community: Executing 'bash -c cd /home/user/builder-templates-community-r4.2/repository-publish/rpm/r4.2/templates-community-testing&&createrepo_c .'.
+2023-03-18 19:16:35.454973 +0000 build-templates-community: output: Directory walk started
+2023-03-18 19:16:35.455008 +0000 build-templates-community: output: Directory walk done - 1 packages
+2023-03-18 19:16:35.455023 +0000 build-templates-community: output: Temporary output repo path: ./.repodata/
+2023-03-18 19:16:35.455034 +0000 build-templates-community: output: Preparing sqlite DBs
+2023-03-18 19:16:35.455044 +0000 build-templates-community: output: Pool started (with 5 workers)
+2023-03-18 19:16:35.455054 +0000 build-templates-community: output: Pool finished
+2023-03-18 19:16:35.468174 +0000 build-templates-community: whonix-gw-16: Signing metadata.
+2023-03-18 19:16:35.479713 +0000 build-templates-community: Executing 'bash -c qubes-gpg-client-wrapper --batch --no-tty --yes --detach-sign --armor -u 8F24D388C9DA21A55D7DBC8F08D08ABE6D5C71B3 /home/user/builder-templates-community-r4.2/repository-publish/rpm/r4.2/templates-community-testing/repodata/repomd.xml > /home/user/builder-templates-community-r4.2/repository-publish/rpm/r4.2/templates-community-testing/repodata/repomd.xml.asc'.
+2023-03-18 19:16:35.587079 +0000 build-templates-community: Creating metalink for /home/user/builder-templates-community-r4.2/repository-publish/rpm/r4.2/templates-community-testing/repodata/repomd.xml.
+2023-03-18 19:16:35.597879 +0000 build-templates-community: Executing 'bash -c mkmetalink -b /home/user/builder-templates-community-r4.2/repository-publish/rpm -- /home/user/qubes-builderv2/qubesbuilder/plugins/publish_rpm/mirrors.list /home/user/builder-templates-community-r4.2/repository-publish/rpm/r4.2/templates-community-testing/repodata/repomd.xml > /home/user/builder-templates-community-r4.2/repository-publish/rpm/r4.2/templates-community-testing/repodata/repomd.xml.metalink'.
+2023-03-18 19:16:35.709063 +0000 build-templates-community: Executing 'bash -c rsync --partial --progress --hard-links -air --mkpath -- /home/user/builder-templates-community-r4.2/repository-publish/rpm/r4.2/templates-community-testing/ yum.qubes-os.org:/pub/qubes/repo/yum/r4.2/templates-community-testing/'.
+2023-03-18 19:16:38.914698 +0000 build-templates-community: output: sending incremental file list
+2023-03-18 19:16:39.447774 +0000 build-templates-community: output: .d..t...... ./
+2023-03-18 19:16:39.448301 +0000 build-templates-community: output: .d..t...... repodata/
+2023-03-18 19:16:39.448407 +0000 build-templates-community: output: <f+++++++++ repodata/74344e8a89e6100161f17fce654b8d8e261b40bfaec92f9fb3e02c5bcdda91e7-filelists.xml.gz
+2023-03-18 19:16:39.448696 +0000 build-templates-community: output: .            407 100%    0.00kB/s    0:00:00  .            407 100%    0.00kB/s    0:00:00 (xfr#1, to-chk=9/13)
+2023-03-18 19:16:39.448800 +0000 build-templates-community: output: <f+++++++++ repodata/79105b6ffb4907aa4c14103e940eb39a0db0743b55458550325685eb6b02e142-other.xml.gz
+2023-03-18 19:16:39.448976 +0000 build-templates-community: output: .            253 100%  247.07kB/s    0:00:00  .            253 100%  247.07kB/s    0:00:00 (xfr#2, to-chk=8/13)
+2023-03-18 19:16:39.449177 +0000 build-templates-community: output: <f+++++++++ repodata/9107367e964bb36bf026b5a2b7a366ed7ac338444807fc61395b2e6781bbdfda-primary.xml.gz
+2023-03-18 19:16:39.449355 +0000 build-templates-community: output: .            694 100%  677.73kB/s    0:00:00  .            694 100%  677.73kB/s    0:00:00 (xfr#3, to-chk=7/13)
+2023-03-18 19:16:39.449528 +0000 build-templates-community: output: <f+++++++++ repodata/ca4bc34a78083cc4c8b08b505f5136815e960396c1fbd40d420b68a9df115b41-other.sqlite.bz2
+2023-03-18 19:16:39.449696 +0000 build-templates-community: output: .            658 100%  642.58kB/s    0:00:00  .            658 100%  642.58kB/s    0:00:00 (xfr#4, to-chk=6/13)
+2023-03-18 19:16:39.449861 +0000 build-templates-community: output: <f+++++++++ repodata/d4f61d7b215d50f80c39c65fd19329acbb69c57fc05e5cc580a0a94c7d048ff6-primary.sqlite.bz2
+2023-03-18 19:16:39.450040 +0000 build-templates-community: output: .          1,990 100%    1.90MB/s    0:00:00  .          1,990 100%    1.90MB/s    0:00:00 (xfr#5, to-chk=5/13)
+2023-03-18 19:16:39.450212 +0000 build-templates-community: output: <f+++++++++ repodata/d58511fd2997e4e253437e68665c997d69a1813691a3ab4862c39315294642af-filelists.sqlite.bz2
+2023-03-18 19:16:39.450364 +0000 build-templates-community: output: .            914 100%  892.58kB/s    0:00:00  .            914 100%  892.58kB/s    0:00:00 (xfr#6, to-chk=4/13)
+2023-03-18 19:16:39.450558 +0000 build-templates-community: output: <f.st...... repodata/repomd.xml
+2023-03-18 19:16:39.450714 +0000 build-templates-community: output: .          3,070 100%    2.93MB/s    0:00:00  .          3,070 100%    2.93MB/s    0:00:00 (xfr#7, to-chk=3/13)
+2023-03-18 19:16:39.450866 +0000 build-templates-community: output: <f.st...... repodata/repomd.xml.asc
+2023-03-18 19:16:39.451042 +0000 build-templates-community: output: .            228 100%  222.66kB/s    0:00:00  .            228 100%  222.66kB/s    0:00:00 (xfr#8, to-chk=2/13)
+2023-03-18 19:16:39.451209 +0000 build-templates-community: output: <f..t...... repodata/repomd.xml.metalink
+2023-03-18 19:16:39.451371 +0000 build-templates-community: output: .          2,100  70%    2.00MB/s    0:00:00  .          2,959 100%    2.82MB/s    0:00:00 (xfr#9, to-chk=1/13)
+2023-03-18 19:16:39.451548 +0000 build-templates-community: output: .d..t...... rpm/
+2023-03-18 19:16:39.451570 +0000 build-templates-community: output: <f+++++++++ rpm/qubes-template-whonix-gw-16-4.1.0-202303181802.noarch.rpm
+2023-03-18 19:34:29.118292 +0000 > closing log
