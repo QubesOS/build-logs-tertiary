@@ -1,0 +1,12 @@
+2023-04-25 15:53:27.919693 +0000 > starting log
+2023-04-25 15:53:27.919819 +0000 build-templates-community: > starting build with log
+2023-04-25 15:53:27.919827 +0000 build-templates-community: >> args:
+2023-04-25 15:53:27.919832 +0000 build-templates-community: >>   ()
+2023-04-25 15:53:27.919836 +0000 build-templates-community: >> component:
+2023-04-25 15:53:27.919841 +0000 build-templates-community: >>   release-configs
+2023-04-25 15:53:27.919846 +0000 build-templates-community: >>     commit-hash: e377f95b6b60a01a49e4c2bce97572b78856962f
+2023-04-25 15:53:27.919854 +0000 build-templates-community: >>     source-hash: 8b7efa99d2bed7f3114ba06e289f58c4a82247ab9152c9cbf37c609f23d3809192976a60054839d7d96fa264cbdd0cb0e858510994dbf6512c19cbd84a2d896c
+2023-04-25 15:53:27.919861 +0000 build-templates-community: >> distributions:
+2023-04-25 15:53:27.919866 +0000 build-templates-community: >>   []
+2023-04-25 15:53:27.919871 +0000 build-templates-community: release-configs: source already fetched. Updating.
+2023-04-25 15:53:27.919875 +0000 > closing log
