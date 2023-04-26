@@ -1,0 +1,12 @@
+2023-04-26 03:27:53.260005 +0000 > starting log
+2023-04-26 03:27:53.260129 +0000 build-templates-community: > starting build with log
+2023-04-26 03:27:53.260137 +0000 build-templates-community: >> args:
+2023-04-26 03:27:53.260142 +0000 build-templates-community: >>   ()
+2023-04-26 03:27:53.260146 +0000 build-templates-community: >> component:
+2023-04-26 03:27:53.260150 +0000 build-templates-community: >>   builder-debian
+2023-04-26 03:27:53.260155 +0000 build-templates-community: >>     commit-hash: aee006acfa301ff64ea36aea3af462613b60b4b6
+2023-04-26 03:27:53.260163 +0000 build-templates-community: >>     source-hash: aefbeec59757df338efc67cfadf2f9f034ca85d05b5ec4ca41b80afa381063d7177e4487f7968bb4bea18cced9d27246a4c1a281d76e1e4bb4c4e8ac66146029
+2023-04-26 03:27:53.260171 +0000 build-templates-community: >> distributions:
+2023-04-26 03:27:53.260175 +0000 build-templates-community: >>   []
+2023-04-26 03:27:53.260180 +0000 build-templates-community: builder-debian: source already fetched. Updating.
+2023-04-26 03:27:53.260184 +0000 > closing log
