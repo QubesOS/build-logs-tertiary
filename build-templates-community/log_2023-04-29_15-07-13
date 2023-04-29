@@ -1,0 +1,9 @@
+2023-04-29 15:07:13.924192 +0000 > starting log
+2023-04-29 15:07:13.924330 +0000 build-templates-community: > starting build with log
+2023-04-29 15:07:13.924338 +0000 build-templates-community: >> args:
+2023-04-29 15:07:13.924343 +0000 build-templates-community: >>   ()
+2023-04-29 15:07:13.924347 +0000 build-templates-community: >> component:
+2023-04-29 15:07:13.924351 +0000 build-templates-community: >>   builder-rpm
+2023-04-29 15:07:13.924355 +0000 build-templates-community: >> distributions:
+2023-04-29 15:07:13.924359 +0000 build-templates-community: >>   []
+2023-04-29 15:07:13.924366 +0000 > closing log
