@@ -1,0 +1,219 @@
+2023-06-28 13:22:47.078083 +0000 > starting log
+2023-06-28 13:22:47.078219 +0000 build-templates-community: > starting build with log
+2023-06-28 13:22:47.078228 +0000 build-templates-community: >> args:
+2023-06-28 13:22:47.078233 +0000 build-templates-community: >>   ()
+2023-06-28 13:22:47.078237 +0000 build-templates-community: >> component:
+2023-06-28 13:22:47.078242 +0000 build-templates-community: >>   release-configs
+2023-06-28 13:22:47.078247 +0000 build-templates-community: >>     commit-hash: bda442b6e2aade31943e228bd82fedeb3619acd2
+2023-06-28 13:22:47.078255 +0000 build-templates-community: >>     source-hash: 9c11ebdf7b4f26fe1aa7cd0c8e35f42a973de8e30b7abf67d4b84a98eec02a31ba861cf2191f21aa80bf6cc35cbeb8d72abc2ed12ef2fba08034fb45462711d9
+2023-06-28 13:22:47.078263 +0000 build-templates-community: >> distributions:
+2023-06-28 13:22:47.078267 +0000 build-templates-community: >>   []
+2023-06-28 13:22:47.078273 +0000 build-templates-community: release-configs: source already fetched. Updating.
+2023-06-28 13:22:58.538753 +0000 build-templates-community: copy-in (cmd): /usr/bin/qvm-run-vm disp8028 bash -c 'rm -rf /builder/incoming/fetch /builder/plugins/fetch'
+2023-06-28 13:22:58.703065 +0000 build-templates-community: copy-in (cmd): /usr/lib/qubes/qrexec-client-vm disp8028 qubesbuilder.FileCopyIn /usr/lib/qubes/qfile-agent /home/user/qubes-builderv2/qubesbuilder/plugins/fetch
+2023-06-28 13:22:58.846829 +0000 build-templates-community: copy-in (cmd): /usr/bin/qvm-run-vm disp8028 bash -c 'mkdir -p /builder/plugins && mv /builder/incoming/fetch /builder/plugins'
+2023-06-28 13:22:59.021816 +0000 build-templates-community: copy-in (cmd): /usr/bin/qvm-run-vm disp8028 bash -c 'rm -rf /builder/incoming/release-configs /builder/release-configs'
+2023-06-28 13:22:59.150174 +0000 build-templates-community: copy-in (cmd): /usr/lib/qubes/qrexec-client-vm disp8028 qubesbuilder.FileCopyIn /usr/lib/qubes/qfile-agent /home/user/builder-templates-community-r4.2/sources/release-configs
+2023-06-28 13:22:59.337254 +0000 build-templates-community: copy-in (cmd): /usr/bin/qvm-run-vm disp8028 bash -c 'mkdir -p /builder && mv /builder/incoming/release-configs /builder'
+2023-06-28 13:22:59.458247 +0000 build-templates-community: Executing '/usr/bin/qvm-run-vm disp8028 env VERBOSE='1' DEBUG='1' BACKEND_VMM='xen' bash -c 'cd /builder && /builder/plugins/fetch/scripts/get-and-verify-source --component release-configs --git-branch main --git-url https://github.com/QubesOS/qubes-release-configs.git --keyring-dir-git /builder/keyring --keys-dir /builder/plugins/fetch/keys''.
+2023-06-28 13:22:59.580176 +0000 build-templates-community: output: + unset CLEAN
+2023-06-28 13:22:59.580223 +0000 build-templates-community: output: + CLEAN=0
+2023-06-28 13:22:59.580243 +0000 build-templates-community: output: + unset GETOPT_COMPATIBLE fresh_clone GIT_CLONE_FAST GIT_BASEURL GIT_PREFIX GIT_SUFFIX GIT_URL GIT_REMOTE BRANCH COMPONENT CLEAN FETCH_ONLY IGNORE_MISSING REPO KEYS_DIR KEYRING_DIR_GIT INSECURE_SKIP_CHECKING LESS_SECURE_SIGNED_COMMITS_SUFFICIENT FETCH_VERSIONS_ONLY MAINTAINERS
+2023-06-28 13:22:59.580537 +0000 build-templates-community: output: ++ getopt -o '' -l help,git-baseurl:,git-prefix:,git-suffix:,git-url:,git-remote:,git-branch:,component:,clean,fetch-only,ignore-missing,repo:,keys-dir:,keyring-dir-git:,insecure-skip-checking,less-secure-signed-commits-sufficient,fetch-versions-only,maintainer: -n /builder/plugins/fetch/scripts/get-and-verify-source -- --component release-configs --git-branch main --git-url https://github.com/QubesOS/qubes-release-configs.git --keyring-dir-git /builder/keyring --keys-dir /builder/plugins/fetch/keys
+2023-06-28 13:22:59.582473 +0000 build-templates-community: output: + OPTS=' --component '\''release-configs'\'' --git-branch '\''main'\'' --git-url '\''https://github.com/QubesOS/qubes-release-configs.git'\'' --keyring-dir-git '\''/builder/keyring'\'' --keys-dir '\''/builder/plugins/fetch/keys'\'' --'
+2023-06-28 13:22:59.582504 +0000 build-templates-community: output: + eval set -- ' --component '\''release-configs'\'' --git-branch '\''main'\'' --git-url '\''https://github.com/QubesOS/qubes-release-configs.git'\'' --keyring-dir-git '\''/builder/keyring'\'' --keys-dir '\''/builder/plugins/fetch/keys'\'' --'
+2023-06-28 13:22:59.582545 +0000 build-templates-community: output: ++ set -- --component release-configs --git-branch main --git-url https://github.com/QubesOS/qubes-release-configs.git --keyring-dir-git /builder/keyring --keys-dir /builder/plugins/fetch/keys --
+2023-06-28 13:22:59.582561 +0000 build-templates-community: output: + [[ 11 -gt 0 ]]
+2023-06-28 13:22:59.582596 +0000 build-templates-community: output: + case "$1" in
+2023-06-28 13:22:59.582604 +0000 build-templates-community: output: + COMPONENT=release-configs
+2023-06-28 13:22:59.582656 +0000 build-templates-community: output: + shift
+2023-06-28 13:22:59.582664 +0000 build-templates-community: output: + shift
+2023-06-28 13:22:59.582718 +0000 build-templates-community: output: + [[ 9 -gt 0 ]]
+2023-06-28 13:22:59.582726 +0000 build-templates-community: output: + case "$1" in
+2023-06-28 13:22:59.582768 +0000 build-templates-community: output: + BRANCH=main
+2023-06-28 13:22:59.582777 +0000 build-templates-community: output: + shift
+2023-06-28 13:22:59.582833 +0000 build-templates-community: output: + shift
+2023-06-28 13:22:59.582864 +0000 build-templates-community: output: + [[ 7 -gt 0 ]]
+2023-06-28 13:22:59.582895 +0000 build-templates-community: output: + case "$1" in
+2023-06-28 13:22:59.582923 +0000 build-templates-community: output: + GIT_URL=https://github.com/QubesOS/qubes-release-configs.git
+2023-06-28 13:22:59.582931 +0000 build-templates-community: output: + shift
+2023-06-28 13:22:59.582980 +0000 build-templates-community: output: + shift
+2023-06-28 13:22:59.582987 +0000 build-templates-community: output: + [[ 5 -gt 0 ]]
+2023-06-28 13:22:59.583038 +0000 build-templates-community: output: + case "$1" in
+2023-06-28 13:22:59.583046 +0000 build-templates-community: output: + KEYRING_DIR_GIT=/builder/keyring
+2023-06-28 13:22:59.583094 +0000 build-templates-community: output: + shift
+2023-06-28 13:22:59.583100 +0000 build-templates-community: output: + shift
+2023-06-28 13:22:59.583157 +0000 build-templates-community: output: + [[ 3 -gt 0 ]]
+2023-06-28 13:22:59.583164 +0000 build-templates-community: output: + case "$1" in
+2023-06-28 13:22:59.583212 +0000 build-templates-community: output: + KEYS_DIR=/builder/plugins/fetch/keys
+2023-06-28 13:22:59.583218 +0000 build-templates-community: output: + shift
+2023-06-28 13:22:59.583271 +0000 build-templates-community: output: + shift
+2023-06-28 13:22:59.583278 +0000 build-templates-community: output: + [[ 1 -gt 0 ]]
+2023-06-28 13:22:59.583324 +0000 build-templates-community: output: + case "$1" in
+2023-06-28 13:22:59.583347 +0000 build-templates-community: output: + shift
+2023-06-28 13:22:59.583396 +0000 build-templates-community: output: + [[ 0 -gt 0 ]]
+2023-06-28 13:22:59.583425 +0000 build-templates-community: output: + [[ '' =~ ^[A-Za-z0-9
+2023-06-28 13:22:59.583434 +0000 build-templates-community: output: -]*$ ]]
+2023-06-28 13:22:59.583495 +0000 build-templates-community: output: + [[ '' =~ ^[A-Za-z0-9
+2023-06-28 13:22:59.583502 +0000 build-templates-community: output: -]*$ ]]
+2023-06-28 13:22:59.583549 +0000 build-templates-community: output: + [[ -n release-configs ]]
+2023-06-28 13:22:59.583555 +0000 build-templates-community: output: + '[' -z '' ']'
+2023-06-28 13:22:59.583605 +0000 build-templates-community: output: + REPO=release-configs
+2023-06-28 13:22:59.583612 +0000 build-templates-community: output: + '[' -z /builder/keyring ']'
+2023-06-28 13:22:59.583665 +0000 build-templates-community: output: + '[' -z '' ']'
+2023-06-28 13:22:59.583672 +0000 build-templates-community: output: + GIT_SUFFIX=.git
+2023-06-28 13:22:59.583738 +0000 build-templates-community: output: + '[' -z main ']'
+2023-06-28 13:22:59.583746 +0000 build-templates-community: output: + '[' -n '' ']'
+2023-06-28 13:22:59.583794 +0000 build-templates-community: output: + '[' -z https://github.com/QubesOS/qubes-release-configs.git ']'
+2023-06-28 13:22:59.583812 +0000 build-templates-community: output: + '[' -n '' ']'
+2023-06-28 13:22:59.583854 +0000 build-templates-community: output: + case ${IGNORE_MISSING=0} in
+2023-06-28 13:22:59.583860 +0000 build-templates-community: output: + :
+2023-06-28 13:22:59.583917 +0000 build-templates-community: output: + case ${GIT_CLONE_FAST=0} in
+2023-06-28 13:22:59.583924 +0000 build-templates-community: output: + :
+2023-06-28 13:22:59.583968 +0000 build-templates-community: output: + GIT_OPTIONS=()
+2023-06-28 13:22:59.584002 +0000 build-templates-community: output: + [[ 0 = \1 ]]
+2023-06-28 13:22:59.584031 +0000 build-templates-community: output: + GIT_MERGE_OPTS=("--ff-only")
+2023-06-28 13:22:59.584062 +0000 build-templates-community: output: + [[ main =~ ^[A-Za-z][A-Za-z0-9._-]+$ ]]
+2023-06-28 13:22:59.584092 +0000 build-templates-community: output: + [[ release-configs =~ ^[A-Za-z][A-Za-z0-9-]*$ ]]
+2023-06-28 13:22:59.584120 +0000 build-templates-community: output: + trap exit_clean 0 1 2 3 6 15
+2023-06-28 13:22:59.584144 +0000 build-templates-community: output: + fresh_clone=false
+2023-06-28 13:22:59.584153 +0000 build-templates-community: output: + [[ '' = \1 ]]
+2023-06-28 13:22:59.584209 +0000 build-templates-community: output: + [[ -d release-configs ]]
+2023-06-28 13:22:59.584216 +0000 build-templates-community: output: + cd release-configs
+2023-06-28 13:22:59.586583 +0000 build-templates-community: output: ++ git rev-parse --is-shallow-repository
+2023-06-28 13:22:59.600490 +0000 build-templates-community: output: + is_shallow=false
+2023-06-28 13:22:59.600519 +0000 build-templates-community: output: + [[ 0 -ne 1 ]]
+2023-06-28 13:22:59.600548 +0000 build-templates-community: output: + [[ false = \t\r\u\e ]]
+2023-06-28 13:22:59.600622 +0000 build-templates-community: output: + print_headers
+2023-06-28 13:22:59.600631 +0000 build-templates-community: output: + '[' -z '' ']'
+2023-06-28 13:22:59.600711 +0000 build-templates-community: output: + GIT_INFOS='https://github.com/QubesOS/qubes-release-configs.git main'
+2023-06-28 13:22:59.600722 +0000 build-templates-community: output: + echo '-> Updating sources for release-configs...'
+2023-06-28 13:22:59.600735 +0000 build-templates-community: output: + echo '--> Fetching from https://github.com/QubesOS/qubes-release-configs.git main...'
+2023-06-28 13:22:59.600775 +0000 build-templates-community: output: -> Updating sources for release-configs...
+2023-06-28 13:22:59.600844 +0000 build-templates-community: output: --> Fetching from https://github.com/QubesOS/qubes-release-configs.git main...
+2023-06-28 13:22:59.600858 +0000 build-templates-community: output: + git fetch -q --tags -- https://github.com/QubesOS/qubes-release-configs.git main
+2023-06-28 13:23:00.858708 +0000 build-templates-community: output: ++ git rev-parse -q --verify 'FETCH_HEAD^{commit}'
+2023-06-28 13:23:00.859532 +0000 build-templates-community: output: + rev=8102788c0909a830449ae234bb498a05c751da04
+2023-06-28 13:23:00.859578 +0000 build-templates-community: output: + '[' '' == 1 ']'
+2023-06-28 13:23:00.859657 +0000 build-templates-community: output: + VERIFY_REF=8102788c0909a830449ae234bb498a05c751da04
+2023-06-28 13:23:00.859708 +0000 build-templates-community: output: + fresh_clone=false
+2023-06-28 13:23:00.859762 +0000 build-templates-community: output: + cd -
+2023-06-28 13:23:00.859828 +0000 build-templates-community: output: + export CHECK=signed-tag
+2023-06-28 13:23:00.859898 +0000 build-templates-community: output: + CHECK=signed-tag
+2023-06-28 13:23:00.859953 +0000 build-templates-community: output: + verify=true
+2023-06-28 13:23:00.860012 +0000 build-templates-community: output: + '[' '' == 1 ']'
+2023-06-28 13:23:00.860069 +0000 build-templates-community: output: + '[' '' == 1 ']'
+2023-06-28 13:23:00.860143 +0000 build-templates-community: output: ++ git -C release-configs rev-parse -q --verify 8102788c0909a830449ae234bb498a05c751da04
+2023-06-28 13:23:00.861019 +0000 build-templates-community: output: + VERIFY_REF=8102788c0909a830449ae234bb498a05c751da04
+2023-06-28 13:23:00.861377 +0000 build-templates-community: output: + '[' true = false ']'
+2023-06-28 13:23:00.861387 +0000 build-templates-community: output: + [[ signed-tag == \s\i\g\n\e\d\-\t\a\g\-\o\r\-\c\o\m\m\i\t ]]
+2023-06-28 13:23:00.861442 +0000 build-templates-community: output: + echo '--> Verifying tags...'
+2023-06-28 13:23:00.861491 +0000 build-templates-community: output: --> Verifying tags...
+2023-06-28 13:23:00.861535 +0000 build-templates-community: output: ++ readlink -m /builder/keyring
+2023-06-28 13:23:00.862236 +0000 build-templates-community: output: + GNUPGHOME=/builder/keyring
+2023-06-28 13:23:00.862282 +0000 build-templates-community: output: + export GNUPGHOME
+2023-06-28 13:23:00.862360 +0000 build-templates-community: output: + '[' '!' -d /builder/keyring ']'
+2023-06-28 13:23:00.862442 +0000 build-templates-community: output: + mkdir -p /builder/keyring
+2023-06-28 13:23:00.863338 +0000 build-templates-community: output: + chmod 700 /builder/keyring
+2023-06-28 13:23:00.864196 +0000 build-templates-community: output: + gpg --import /builder/plugins/fetch/keys/qubes-developers-keys.asc
+2023-06-28 13:23:00.870669 +0000 build-templates-community: output: gpg: keybox '/builder/keyring/pubring.kbx' created
+2023-06-28 13:23:00.872695 +0000 build-templates-community: output: gpg: /builder/keyring/trustdb.gpg: trustdb created
+2023-06-28 13:23:00.872790 +0000 build-templates-community: output: gpg: key DDFA1A3E36879494: public key "Qubes Master Signing Key" imported
+2023-06-28 13:23:00.882410 +0000 build-templates-community: output: gpg: key 063938BA42CFA724: public key "Marek Marczykowski-G..recki (Qubes OS signing key) <marmarek@invisiblethingslab.com>" imported
+2023-06-28 13:23:00.883035 +0000 build-templates-community: output: gpg: key DA0434BC706E1FCF: public key "Simon Gaiser (Qubes OS signing key) <simon@invisiblethingslab.com>" imported
+2023-06-28 13:23:00.883072 +0000 build-templates-community: output: gpg: Total number processed: 3
+2023-06-28 13:23:00.883089 +0000 build-templates-community: output: gpg:               imported: 3
+2023-06-28 13:23:00.883177 +0000 build-templates-community: output: gpg: no ultimately trusted keys found
+2023-06-28 13:23:00.883611 +0000 build-templates-community: output: + echo 427F11FD0FAA4B080123F01CDDFA1A3E36879494:6:
+2023-06-28 13:23:00.883634 +0000 build-templates-community: output: + gpg --import-ownertrust
+2023-06-28 13:23:00.885021 +0000 build-templates-community: output: gpg: inserting ownertrust of 6
+2023-06-28 13:23:00.885347 +0000 build-templates-community: output: + '[' /builder/plugins/fetch/keys/qubes-developers-keys.asc -nt /builder/keyring/pubring.gpg ']'
+2023-06-28 13:23:00.885368 +0000 build-templates-community: output: + gpg --import /builder/plugins/fetch/keys/qubes-developers-keys.asc
+2023-06-28 13:23:00.887295 +0000 build-templates-community: output: gpg: key DDFA1A3E36879494: "Qubes Master Signing Key" not changed
+2023-06-28 13:23:00.887940 +0000 build-templates-community: output: gpg: key 063938BA42CFA724: "Marek Marczykowski-G..recki (Qubes OS signing key) <marmarek@invisiblethingslab.com>" not changed
+2023-06-28 13:23:00.888586 +0000 build-templates-community: output: gpg: key DA0434BC706E1FCF: "Simon Gaiser (Qubes OS signing key) <simon@invisiblethingslab.com>" not changed
+2023-06-28 13:23:00.888603 +0000 build-templates-community: output: gpg: Total number processed: 3
+2023-06-28 13:23:00.888680 +0000 build-templates-community: output: gpg:              unchanged: 3
+2023-06-28 13:23:00.888789 +0000 build-templates-community: output: + touch /builder/keyring/pubring.gpg
+2023-06-28 13:23:00.889911 +0000 build-templates-community: output: + gpgconf --kill gpg-agent
+2023-06-28 13:23:00.894159 +0000 build-templates-community: output: + pushd release-configs
+2023-06-28 13:23:00.894209 +0000 build-templates-community: output: + expected_hash=8102788c0909a830449ae234bb498a05c751da04
+2023-06-28 13:23:00.894227 +0000 build-templates-community: output: + hash_len=40
+2023-06-28 13:23:00.894396 +0000 build-templates-community: output: + '[' 40 -ne 40 ']'
+2023-06-28 13:23:00.894458 +0000 build-templates-community: output: + [[ 8102788c0909a830449ae234bb498a05c751da04 =~ ^[a-f0-9]+$ ]]
+2023-06-28 13:23:00.894510 +0000 build-templates-community: output: + format='%(if:equals=tag)%(objecttype)%(then)%(objectname):%(object):%(end)'
+2023-06-28 13:23:00.894852 +0000 build-templates-community: output: ++ git tag --points-at=8102788c0909a830449ae234bb498a05c751da04 '--format=%(if:equals=tag)%(objecttype)%(then)%(objectname):%(object):%(end)'
+2023-06-28 13:23:00.895039 +0000 build-templates-community: output: ++ head -c 500
+2023-06-28 13:23:00.898173 +0000 build-templates-community: output: + tags=1e1fb30cb5e710b63685b515fae15f9eb7db0dc0:8102788c0909a830449ae234bb498a05c751da04:
+2023-06-28 13:23:00.898195 +0000 build-templates-community: output: + for tag in $tags
+2023-06-28 13:23:00.898276 +0000 build-templates-community: output: + (( 82 != hash_len * 2 + 2 ))
+2023-06-28 13:23:00.898311 +0000 build-templates-community: output: + [[ :8102788c0909a830449ae234bb498a05c751da04: == \:\8\1\0\2\7\8\8\c\0\9\0\9\a\8\3\0\4\4\9\a\e\2\3\4\b\b\4\9\8\a\0\5\c\7\5\1\d\a\0\4\: ]]
+2023-06-28 13:23:00.898374 +0000 build-templates-community: output: + tag=1e1fb30cb5e710b63685b515fae15f9eb7db0dc0
+2023-06-28 13:23:00.898435 +0000 build-templates-community: output: + verify_git_obj tag 1e1fb30cb5e710b63685b515fae15f9eb7db0dc0
+2023-06-28 13:23:00.898485 +0000 build-templates-community: output: + local content newsig_number
+2023-06-28 13:23:00.898527 +0000 build-templates-community: output: ++ git -c gpg.program=gpg -c gpg.minTrustLevel=fully verify-tag --raw -- 1e1fb30cb5e710b63685b515fae15f9eb7db0dc0
+2023-06-28 13:23:00.903931 +0000 build-templates-community: output: + content='[GNUPG:] NEWSIG
+2023-06-28 13:23:00.903959 +0000 build-templates-community: output: [GNUPG:] KEY_CONSIDERED 0064428F455451B3EBE78A7F063938BA42CFA724 0
+2023-06-28 13:23:00.903988 +0000 build-templates-community: output: [GNUPG:] SIG_ID 0YZyv4Y7syFMOgvQvRJiVAUuzuE 2023-06-28 1687958560
+2023-06-28 13:23:00.904019 +0000 build-templates-community: output: [GNUPG:] KEY_CONSIDERED 0064428F455451B3EBE78A7F063938BA42CFA724 0
+2023-06-28 13:23:00.904093 +0000 build-templates-community: output: [GNUPG:] KEY_CONSIDERED 427F11FD0FAA4B080123F01CDDFA1A3E36879494 0
+2023-06-28 13:23:00.904119 +0000 build-templates-community: output: [GNUPG:] KEY_CONSIDERED 427F11FD0FAA4B080123F01CDDFA1A3E36879494 0
+2023-06-28 13:23:00.904181 +0000 build-templates-community: output: [GNUPG:] KEY_CONSIDERED 427F11FD0FAA4B080123F01CDDFA1A3E36879494 0
+2023-06-28 13:23:00.904215 +0000 build-templates-community: output: [GNUPG:] GOODSIG 063938BA42CFA724 Marek Marczykowski-G..recki (Qubes OS signing key) <marmarek@invisiblethingslab.com>
+2023-06-28 13:23:00.904323 +0000 build-templates-community: output: [GNUPG:] VALIDSIG 0064428F455451B3EBE78A7F063938BA42CFA724 2023-06-28 1687958560 0 4 0 1 8 00 0064428F455451B3EBE78A7F063938BA42CFA724
+2023-06-28 13:23:00.904342 +0000 build-templates-community: output: [GNUPG:] TRUST_FULLY 0 pgp'
+2023-06-28 13:23:00.904525 +0000 build-templates-community: output: ++ printf '%s\n' '[GNUPG:] NEWSIG
+2023-06-28 13:23:00.904544 +0000 build-templates-community: output: [GNUPG:] KEY_CONSIDERED 0064428F455451B3EBE78A7F063938BA42CFA724 0
+2023-06-28 13:23:00.904614 +0000 build-templates-community: output: [GNUPG:] SIG_ID 0YZyv4Y7syFMOgvQvRJiVAUuzuE 2023-06-28 1687958560
+2023-06-28 13:23:00.904632 +0000 build-templates-community: output: [GNUPG:] KEY_CONSIDERED 0064428F455451B3EBE78A7F063938BA42CFA724 0
+2023-06-28 13:23:00.904704 +0000 build-templates-community: output: [GNUPG:] KEY_CONSIDERED 427F11FD0FAA4B080123F01CDDFA1A3E36879494 0
+2023-06-28 13:23:00.904722 +0000 build-templates-community: output: [GNUPG:] KEY_CONSIDERED 427F11FD0FAA4B080123F01CDDFA1A3E36879494 0
+2023-06-28 13:23:00.904799 +0000 build-templates-community: output: [GNUPG:] KEY_CONSIDERED 427F11FD0FAA4B080123F01CDDFA1A3E36879494 0
+2023-06-28 13:23:00.904829 +0000 build-templates-community: output: [GNUPG:] GOODSIG 063938BA42CFA724 Marek Marczykowski-G..recki (Qubes OS signing key) <marmarek@invisiblethingslab.com>
+2023-06-28 13:23:00.904902 +0000 build-templates-community: output: [GNUPG:] VALIDSIG 0064428F455451B3EBE78A7F063938BA42CFA724 2023-06-28 1687958560 0 4 0 1 8 00 0064428F455451B3EBE78A7F063938BA42CFA724
+2023-06-28 13:23:00.904919 +0000 build-templates-community: output: ++ grep -c '^\[GNUPG:] NEWSIG'
+2023-06-28 13:23:00.904979 +0000 build-templates-community: output: [GNUPG:] TRUST_FULLY 0 pgp'
+2023-06-28 13:23:00.905652 +0000 build-templates-community: output: + newsig_number=1
+2023-06-28 13:23:00.905664 +0000 build-templates-community: output: + '[' 1 = 1 ']'
+2023-06-28 13:23:00.906150 +0000 build-templates-community: output: + printf '%s\n' '[GNUPG:] NEWSIG
+2023-06-28 13:23:00.906175 +0000 build-templates-community: output: [GNUPG:] KEY_CONSIDERED 0064428F455451B3EBE78A7F063938BA42CFA724 0
+2023-06-28 13:23:00.906204 +0000 build-templates-community: output: [GNUPG:] SIG_ID 0YZyv4Y7syFMOgvQvRJiVAUuzuE 2023-06-28 1687958560
+2023-06-28 13:23:00.906262 +0000 build-templates-community: output: [GNUPG:] KEY_CONSIDERED 0064428F455451B3EBE78A7F063938BA42CFA724 0
+2023-06-28 13:23:00.906305 +0000 build-templates-community: output: [GNUPG:] KEY_CONSIDERED 427F11FD0FAA4B080123F01CDDFA1A3E36879494 0
+2023-06-28 13:23:00.906319 +0000 build-templates-community: output: [GNUPG:] KEY_CONSIDERED 427F11FD0FAA4B080123F01CDDFA1A3E36879494 0
+2023-06-28 13:23:00.906399 +0000 build-templates-community: output: [GNUPG:] KEY_CONSIDERED 427F11FD0FAA4B080123F01CDDFA1A3E36879494 0
+2023-06-28 13:23:00.906461 +0000 build-templates-community: output: [GNUPG:] GOODSIG 063938BA42CFA724 Marek Marczykowski-G..recki (Qubes OS signing key) <marmarek@invisiblethingslab.com>
+2023-06-28 13:23:00.906501 +0000 build-templates-community: output: [GNUPG:] VALIDSIG 0064428F455451B3EBE78A7F063938BA42CFA724 2023-06-28 1687958560 0 4 0 1 8 00 0064428F455451B3EBE78A7F063938BA42CFA724
+2023-06-28 13:23:00.906560 +0000 build-templates-community: output: [GNUPG:] TRUST_FULLY 0 pgp'
+2023-06-28 13:23:00.906600 +0000 build-templates-community: output: + grep '^\[GNUPG:] TRUST_\(FULLY\|ULTIMATE\) 0 pgp\>'
+2023-06-28 13:23:00.907580 +0000 build-templates-community: output: + echo '---> Good tag 1e1fb30cb5e710b63685b515fae15f9eb7db0dc0'
+2023-06-28 13:23:00.907597 +0000 build-templates-community: output: + '[' -z x ']'
+2023-06-28 13:23:00.907684 +0000 build-templates-community: output: + popd
+2023-06-28 13:23:00.907696 +0000 build-templates-community: output: + '[' '' == 1 ']'
+2023-06-28 13:23:00.907802 +0000 build-templates-community: output: + pushd release-configs
+2023-06-28 13:23:00.907817 +0000 build-templates-community: output: ---> Good tag 1e1fb30cb5e710b63685b515fae15f9eb7db0dc0
+2023-06-28 13:23:00.907920 +0000 build-templates-community: output: ++ exec git rev-parse --abbrev-ref HEAD
+2023-06-28 13:23:00.908773 +0000 build-templates-community: output: + CURRENT_BRANCH=main
+2023-06-28 13:23:00.908798 +0000 build-templates-community: output: + '[' main '!=' main ']'
+2023-06-28 13:23:00.908900 +0000 build-templates-community: output: + false
+2023-06-28 13:23:00.908961 +0000 build-templates-community: output: --> Merging...
+2023-06-28 13:23:00.909013 +0000 build-templates-community: output: + false
+2023-06-28 13:23:00.909071 +0000 build-templates-community: output: + echo '--> Merging...'
+2023-06-28 13:23:00.909117 +0000 build-templates-community: output: + git -c merge.verifySignatures=no merge --ff-only --commit -q 8102788c0909a830449ae234bb498a05c751da04
+2023-06-28 13:23:00.914311 +0000 build-templates-community: output: + tracking_branch=refs/remotes//main
+2023-06-28 13:23:00.914345 +0000 build-templates-community: output: + '[' -f .git/refs/remotes//main ']'
+2023-06-28 13:23:00.915872 +0000 build-templates-community: output: + '[' -e .gitmodules ']'
+2023-06-28 13:23:00.916145 +0000 build-templates-community: output: + popd
+2023-06-28 13:23:00.916178 +0000 build-templates-community: output: + exit_clean
+2023-06-28 13:23:00.916190 +0000 build-templates-community: output: + local exit_code=0
+2023-06-28 13:23:00.916199 +0000 build-templates-community: output: + '[' 0 -gt 0 ']'
+2023-06-28 13:23:00.916208 +0000 build-templates-community: output: + exit 0
+2023-06-28 13:23:00.926659 +0000 build-templates-community: copy-out (cmd): /usr/lib/qubes/qrexec-client-vm disp8028 qubesbuilder.FileCopyOut+__builder__release-configs /usr/lib/qubes/qfile-unpacker 1000 /home/user/builder-templates-community-r4.2/sources
+2023-06-28 13:23:14.177593 +0000 build-templates-community: copy-in (cmd): /usr/bin/qvm-run-vm disp6903 bash -c 'rm -rf /builder/incoming/release-configs /builder/release-configs'
+2023-06-28 13:23:14.358650 +0000 build-templates-community: copy-in (cmd): /usr/lib/qubes/qrexec-client-vm disp6903 qubesbuilder.FileCopyIn /usr/lib/qubes/qfile-agent /home/user/builder-templates-community-r4.2/sources/release-configs
+2023-06-28 13:23:14.524331 +0000 build-templates-community: copy-in (cmd): /usr/bin/qvm-run-vm disp6903 bash -c 'mkdir -p /builder && mv /builder/incoming/release-configs /builder'
+2023-06-28 13:23:14.688838 +0000 build-templates-community: Executing '/usr/bin/qvm-run-vm disp6903 env VERBOSE='1' DEBUG='1' BACKEND_VMM='xen' bash -c 'rm -f /builder/release-configs/hash /builder/release-configs/vtags && cd /builder && git -C /builder/release-configs rev-parse '\''HEAD^{}'\'' >> /builder/release-configs/hash && git -C /builder/release-configs tag --points-at HEAD --list '\''v*'\'' >> /builder/release-configs/vtags''.
+2023-06-28 13:23:14.864796 +0000 build-templates-community: copy-out (cmd): /usr/lib/qubes/qrexec-client-vm disp6903 qubesbuilder.FileCopyOut+__builder__release-configs__hash /usr/lib/qubes/qfile-unpacker 1000 /home/user/builder-templates-community-r4.2/tmp/tmp_3_8dyuz
+2023-06-28 13:23:14.987890 +0000 build-templates-community: copy-out (cmd): /usr/lib/qubes/qrexec-client-vm disp6903 qubesbuilder.FileCopyOut+__builder__release-configs__vtags /usr/lib/qubes/qfile-unpacker 1000 /home/user/builder-templates-community-r4.2/tmp/tmp_3_8dyuz
+2023-06-28 13:23:16.785959 +0000 build-templates-community: > done
+2023-06-28 13:23:16.786006 +0000 > closing log
