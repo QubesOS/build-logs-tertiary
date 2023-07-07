@@ -1,0 +1,20 @@
+2023-07-07 12:01:09.481624 +0000 > starting log
+2023-07-07 12:01:09.481759 +0000 build-templates-community: > starting build with log
+2023-07-07 12:01:09.481767 +0000 build-templates-community: >> args:
+2023-07-07 12:01:09.481772 +0000 build-templates-community: >>   ()
+2023-07-07 12:01:09.481776 +0000 build-templates-community: >> component:
+2023-07-07 12:01:09.481780 +0000 build-templates-community: >>   release-configs
+2023-07-07 12:01:09.481786 +0000 build-templates-community: >>     commit-hash: 8102788c0909a830449ae234bb498a05c751da04
+2023-07-07 12:01:09.481794 +0000 build-templates-community: >>     source-hash: dc337b0f064fb01f08f69239178d0372bd30d2469fb42a4bec0bb0ae7175df829f58cd79e58d5b0d5f5118ac508b086d5179c32382fe4319d9686820685b9367
+2023-07-07 12:01:09.481801 +0000 build-templates-community: >> distributions:
+2023-07-07 12:01:09.481806 +0000 build-templates-community: >>   []
+2023-07-07 12:01:09.481811 +0000 build-templates-community: release-configs: source already fetched. Updating.
+2023-07-07 12:01:21.280878 +0000 build-templates-community: copy-in (cmd): /usr/bin/qvm-run-vm disp5664 bash -c 'rm -rf /builder/incoming/fetch /builder/plugins/fetch'
+2023-07-07 12:01:21.518881 +0000 build-templates-community: copy-in (cmd): /usr/lib/qubes/qrexec-client-vm disp5664 qubesbuilder.FileCopyIn /usr/lib/qubes/qfile-agent /home/user/qubes-builderv2/qubesbuilder/plugins/fetch
+2023-07-07 12:01:21.932572 +0000 build-templates-community: copy-in (cmd): /usr/bin/qvm-run-vm disp5664 bash -c 'mkdir -p /builder/plugins && mv /builder/incoming/fetch /builder/plugins'
+2023-07-07 12:01:22.101455 +0000 build-templates-community: copy-in (cmd): /usr/bin/qvm-run-vm disp5664 bash -c 'rm -rf /builder/incoming/release-configs /builder/release-configs'
+2023-07-07 12:01:22.232215 +0000 build-templates-community: copy-in (cmd): /usr/lib/qubes/qrexec-client-vm disp5664 qubesbuilder.FileCopyIn /usr/lib/qubes/qfile-agent /home/user/builder-templates-community-r4.2/sources/release-configs
+2023-07-07 12:01:22.405231 +0000 build-templates-community: copy-in (cmd): /usr/bin/qvm-run-vm disp5664 bash -c 'mkdir -p /builder && mv /builder/incoming/release-configs /builder'
+2023-07-07 12:01:22.521524 +0000 build-templates-community: Executing '/usr/bin/qvm-run-vm disp5664 env VERBOSE='1' DEBUG='1' BACKEND_VMM='xen' bash -c 'cd /builder && /builder/plugins/fetch/scripts/get-and-verify-source.py https://github.com/QubesOS/qubes-release-configs.git /builder/release-configs /builder/keyring /builder/plugins/fetch/keys --git-branch main --minimum-distinct-maintainers 1''.
+2023-07-07 12:01:22.665645 +0000 build-templates-community: output: 'NoneType' object is not iterable
+2023-07-07 12:01:24.931280 +0000 > closing log
