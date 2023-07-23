@@ -1,0 +1,13 @@
+2023-07-23 19:57:09.492605 +0000 > starting log
+2023-07-23 19:57:09.492752 +0000 build-templates-community: > starting build with log
+2023-07-23 19:57:09.492761 +0000 build-templates-community: >> args:
+2023-07-23 19:57:09.492766 +0000 build-templates-community: >>   ()
+2023-07-23 19:57:09.492770 +0000 build-templates-community: >> component:
+2023-07-23 19:57:09.492775 +0000 build-templates-community: >>   builder-debian
+2023-07-23 19:57:09.492780 +0000 build-templates-community: >>     commit-hash: 4b6d5c7cbcbf30774b00758952acac8f73e370c8
+2023-07-23 19:57:09.492789 +0000 build-templates-community: >>     source-hash: d64d952023103be1d22bb4e374c9e101277e86b2f5518bf7b2415c34df017656fda3913165ec7de71b728393e68995611242d27c166cd56d40974c2192627bbf
+2023-07-23 19:57:09.492796 +0000 build-templates-community: >> distributions:
+2023-07-23 19:57:09.492801 +0000 build-templates-community: >>   []
+2023-07-23 19:57:09.492807 +0000 build-templates-community: builder-debian: source already fetched. Updating.
+2023-07-23 19:57:11.170852 +0000 build-templates-community: copy-in (cmd): /usr/bin/qvm-run-vm disp4633 bash -c 'rm -rf /builder/incoming/fetch /builder/plugins/fetch'
+2023-07-23 19:57:11.249301 +0000 > closing log
