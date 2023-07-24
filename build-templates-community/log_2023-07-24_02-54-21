@@ -1,0 +1,31 @@
+2023-07-24 02:54:21.619679 +0000 > starting log
+2023-07-24 02:54:21.619893 +0000 build-templates-community: > starting build with log
+2023-07-24 02:54:21.619903 +0000 build-templates-community: >> args:
+2023-07-24 02:54:21.619909 +0000 build-templates-community: >>   ()
+2023-07-24 02:54:21.619914 +0000 build-templates-community: >> component:
+2023-07-24 02:54:21.619920 +0000 build-templates-community: >>   builder-debian
+2023-07-24 02:54:21.619926 +0000 build-templates-community: >>     commit-hash: 4b6d5c7cbcbf30774b00758952acac8f73e370c8
+2023-07-24 02:54:21.619937 +0000 build-templates-community: >>     source-hash: d64d952023103be1d22bb4e374c9e101277e86b2f5518bf7b2415c34df017656fda3913165ec7de71b728393e68995611242d27c166cd56d40974c2192627bbf
+2023-07-24 02:54:21.619946 +0000 build-templates-community: >> distributions:
+2023-07-24 02:54:21.619952 +0000 build-templates-community: >>   []
+2023-07-24 02:54:21.619959 +0000 build-templates-community: builder-debian: source already fetched. Updating.
+2023-07-24 02:54:34.231672 +0000 build-templates-community: copy-in (cmd): /usr/bin/qvm-run-vm disp3258 bash -c 'rm -rf /builder/incoming/fetch /builder/plugins/fetch'
+2023-07-24 02:54:34.526302 +0000 build-templates-community: copy-in (cmd): /usr/lib/qubes/qrexec-client-vm disp3258 qubesbuilder.FileCopyIn /usr/lib/qubes/qfile-agent /home/user/qubes-builderv2/qubesbuilder/plugins/fetch
+2023-07-24 02:54:34.928141 +0000 build-templates-community: copy-in (cmd): /usr/bin/qvm-run-vm disp3258 bash -c 'mkdir -p /builder/plugins && mv /builder/incoming/fetch /builder/plugins'
+2023-07-24 02:54:35.249699 +0000 build-templates-community: copy-in (cmd): /usr/bin/qvm-run-vm disp3258 bash -c 'rm -rf /builder/incoming/builder-debian /builder/builder-debian'
+2023-07-24 02:54:35.665808 +0000 build-templates-community: copy-in (cmd): /usr/lib/qubes/qrexec-client-vm disp3258 qubesbuilder.FileCopyIn /usr/lib/qubes/qfile-agent /home/user/builder-templates-community-r4.2/sources/builder-debian
+2023-07-24 02:54:35.860788 +0000 build-templates-community: copy-in (cmd): /usr/bin/qvm-run-vm disp3258 bash -c 'mkdir -p /builder && mv /builder/incoming/builder-debian /builder'
+2023-07-24 02:54:36.042484 +0000 build-templates-community: Executing '/usr/bin/qvm-run-vm disp3258 env VERBOSE='1' DEBUG='1' BACKEND_VMM='xen' bash -c 'cd /builder && /builder/plugins/fetch/scripts/get-and-verify-source.py https://github.com/QubesOS/qubes-builder-debian.git /builder/builder-debian /builder/keyring /builder/plugins/fetch/keys --git-branch main --minimum-distinct-maintainers 1 --maintainer 0064428F455451B3EBE78A7F063938BA42CFA724 --maintainer 274E12AB03F2FE293765FC06DA0434BC706E1FCF''.
+2023-07-24 02:54:39.714758 +0000 build-templates-community: output: --> Verifying tags...
+2023-07-24 02:54:39.714860 +0000 build-templates-community: output: ---> Good tag 195cf04ab56b5ef35a0e50733e6a1514a228b543.
+2023-07-24 02:54:39.714889 +0000 build-templates-community: output: Enough distinct tag signatures. Found 1, mandatory minimum is 1.
+2023-07-24 02:54:39.714902 +0000 build-templates-community: output: --> Merging...
+2023-07-24 02:54:39.746713 +0000 build-templates-community: copy-out (cmd): /usr/lib/qubes/qrexec-client-vm disp3258 qubesbuilder.FileCopyOut+__builder__builder-debian /usr/lib/qubes/qfile-unpacker 1000 /home/user/builder-templates-community-r4.2/sources
+2023-07-24 02:54:55.162727 +0000 build-templates-community: copy-in (cmd): /usr/bin/qvm-run-vm disp5796 bash -c 'rm -rf /builder/incoming/builder-debian /builder/builder-debian'
+2023-07-24 02:54:55.427833 +0000 build-templates-community: copy-in (cmd): /usr/lib/qubes/qrexec-client-vm disp5796 qubesbuilder.FileCopyIn /usr/lib/qubes/qfile-agent /home/user/builder-templates-community-r4.2/sources/builder-debian
+2023-07-24 02:54:55.840033 +0000 build-templates-community: copy-in (cmd): /usr/bin/qvm-run-vm disp5796 bash -c 'mkdir -p /builder && mv /builder/incoming/builder-debian /builder'
+2023-07-24 02:54:56.135271 +0000 build-templates-community: Executing '/usr/bin/qvm-run-vm disp5796 env VERBOSE='1' DEBUG='1' BACKEND_VMM='xen' bash -c 'rm -f /builder/builder-debian/hash /builder/builder-debian/vtags && cd /builder && git -C /builder/builder-debian rev-parse '\''HEAD^{}'\'' >> /builder/builder-debian/hash && git -C /builder/builder-debian tag --points-at HEAD --list '\''v*'\'' >> /builder/builder-debian/vtags''.
+2023-07-24 02:54:56.273849 +0000 build-templates-community: copy-out (cmd): /usr/lib/qubes/qrexec-client-vm disp5796 qubesbuilder.FileCopyOut+__builder__builder-debian__hash /usr/lib/qubes/qfile-unpacker 1000 /home/user/builder-templates-community-r4.2/tmp/tmpu01yernr
+2023-07-24 02:54:56.469217 +0000 build-templates-community: copy-out (cmd): /usr/lib/qubes/qrexec-client-vm disp5796 qubesbuilder.FileCopyOut+__builder__builder-debian__vtags /usr/lib/qubes/qfile-unpacker 1000 /home/user/builder-templates-community-r4.2/tmp/tmpu01yernr
+2023-07-24 02:54:58.798590 +0000 build-templates-community: > done
+2023-07-24 02:54:58.798647 +0000 > closing log
