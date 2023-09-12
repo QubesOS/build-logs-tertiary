@@ -1,0 +1,25 @@
+2023-09-12 10:03:56.620148 +0000 > starting log
+2023-09-12 10:03:56.620285 +0000 build-templates-community: > starting build with log
+2023-09-12 10:03:56.620293 +0000 build-templates-community: >> args:
+2023-09-12 10:03:56.620299 +0000 build-templates-community: >>   ()
+2023-09-12 10:03:56.620322 +0000 build-templates-community: >> component:
+2023-09-12 10:03:56.620327 +0000 build-templates-community: >>   builder-archlinux
+2023-09-12 10:03:56.620332 +0000 build-templates-community: >> distributions:
+2023-09-12 10:03:56.620336 +0000 build-templates-community: >>   []
+2023-09-12 10:04:05.947523 +0000 build-templates-community: copy-in (cmd): /usr/bin/qvm-run-vm disp4816 bash -c 'rm -rf /builder/incoming/fetch /builder/plugins/fetch'
+2023-09-12 10:04:06.211364 +0000 build-templates-community: copy-in (cmd): /usr/lib/qubes/qrexec-client-vm disp4816 qubesbuilder.FileCopyIn /usr/lib/qubes/qfile-agent /home/user/qubes-builderv2/qubesbuilder/plugins/fetch
+2023-09-12 10:04:06.552991 +0000 build-templates-community: copy-in (cmd): /usr/bin/qvm-run-vm disp4816 bash -c 'mkdir -p /builder/plugins && mv /builder/incoming/fetch /builder/plugins'
+2023-09-12 10:04:06.833218 +0000 build-templates-community: Executing '/usr/bin/qvm-run-vm disp4816 env VERBOSE='1' DEBUG='1' BACKEND_VMM='xen' bash -c 'cd /builder && /builder/plugins/fetch/scripts/get-and-verify-source.py https://github.com/QubesOS/qubes-builder-archlinux.git /builder/builder-archlinux /builder/keyring /builder/plugins/fetch/keys --git-branch main --minimum-distinct-maintainers 1 --maintainer 0064428F455451B3EBE78A7F063938BA42CFA724 --maintainer 274E12AB03F2FE293765FC06DA0434BC706E1FCF''.
+2023-09-12 10:04:11.328478 +0000 build-templates-community: output: --> Verifying tags...
+2023-09-12 10:04:11.328541 +0000 build-templates-community: output: ---> Good tag b392f9168c3144157229e914c52ebd4ed2789919.
+2023-09-12 10:04:11.328558 +0000 build-templates-community: output: Enough distinct tag signatures. Found 1, mandatory minimum is 1.
+2023-09-12 10:04:11.328580 +0000 build-templates-community: output: --> Switching branch from main branch to main
+2023-09-12 10:04:11.341864 +0000 build-templates-community: copy-out (cmd): /usr/lib/qubes/qrexec-client-vm disp4816 qubesbuilder.FileCopyOut+__builder__builder-archlinux /usr/lib/qubes/qfile-unpacker 1000 /home/user/builder-templates-community-r4.2/sources
+2023-09-12 10:04:23.041804 +0000 build-templates-community: copy-in (cmd): /usr/bin/qvm-run-vm disp1421 bash -c 'rm -rf /builder/incoming/builder-archlinux /builder/builder-archlinux'
+2023-09-12 10:04:23.234389 +0000 build-templates-community: copy-in (cmd): /usr/lib/qubes/qrexec-client-vm disp1421 qubesbuilder.FileCopyIn /usr/lib/qubes/qfile-agent /home/user/builder-templates-community-r4.2/sources/builder-archlinux
+2023-09-12 10:04:23.420025 +0000 build-templates-community: copy-in (cmd): /usr/bin/qvm-run-vm disp1421 bash -c 'mkdir -p /builder && mv /builder/incoming/builder-archlinux /builder'
+2023-09-12 10:04:23.715145 +0000 build-templates-community: Executing '/usr/bin/qvm-run-vm disp1421 env VERBOSE='1' DEBUG='1' BACKEND_VMM='xen' bash -c 'rm -f /builder/builder-archlinux/hash /builder/builder-archlinux/vtags && cd /builder && git -C /builder/builder-archlinux rev-parse '\''HEAD^{}'\'' >> /builder/builder-archlinux/hash && git -C /builder/builder-archlinux tag --points-at HEAD --list '\''v*'\'' >> /builder/builder-archlinux/vtags''.
+2023-09-12 10:04:23.903858 +0000 build-templates-community: copy-out (cmd): /usr/lib/qubes/qrexec-client-vm disp1421 qubesbuilder.FileCopyOut+__builder__builder-archlinux__hash /usr/lib/qubes/qfile-unpacker 1000 /home/user/builder-templates-community-r4.2/tmp/tmp8bu1zcyx
+2023-09-12 10:04:24.076763 +0000 build-templates-community: copy-out (cmd): /usr/lib/qubes/qrexec-client-vm disp1421 qubesbuilder.FileCopyOut+__builder__builder-archlinux__vtags /usr/lib/qubes/qfile-unpacker 1000 /home/user/builder-templates-community-r4.2/tmp/tmp8bu1zcyx
+2023-09-12 10:04:25.932450 +0000 build-templates-community: > done
+2023-09-12 10:04:25.932518 +0000 > closing log
