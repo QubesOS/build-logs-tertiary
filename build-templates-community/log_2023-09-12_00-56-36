@@ -1,0 +1,15 @@
+2023-09-12 00:56:36.636482 +0000 > starting log
+2023-09-12 00:56:36.636819 +0000 build-templates-community: > starting build with log
+2023-09-12 00:56:46.401855 +0000 build-templates-community: copy-in (cmd): /usr/bin/qvm-run-vm disp3761 bash -c 'rm -rf /builder/incoming/template /builder/plugins/template'
+2023-09-12 00:56:46.687798 +0000 build-templates-community: copy-in (cmd): /usr/lib/qubes/qrexec-client-vm disp3761 qubesbuilder.FileCopyIn /usr/lib/qubes/qfile-agent /home/user/qubes-builderv2/qubesbuilder/plugins/template
+2023-09-12 00:56:46.870556 +0000 build-templates-community: copy-in (cmd): /usr/bin/qvm-run-vm disp3761 bash -c 'mkdir -p /builder/plugins && mv /builder/incoming/template /builder/plugins'
+2023-09-12 00:56:47.236302 +0000 build-templates-community: copy-in (cmd): /usr/bin/qvm-run-vm disp3761 bash -c 'rm -rf /builder/incoming/vm-archlinux /builder/repository/vm-archlinux'
+2023-09-12 00:56:47.410600 +0000 build-templates-community: copy-in (cmd): /usr/lib/qubes/qrexec-client-vm disp3761 qubesbuilder.FileCopyIn /usr/lib/qubes/qfile-agent /home/user/builder-templates-community-r4.2/repository/vm-archlinux
+2023-09-12 00:56:47.592348 +0000 build-templates-community: copy-in (cmd): /usr/bin/qvm-run-vm disp3761 bash -c 'mkdir -p /builder/repository && mv /builder/incoming/vm-archlinux /builder/repository'
+2023-09-12 00:56:47.771300 +0000 build-templates-community: copy-in (cmd): /usr/bin/qvm-run-vm disp3761 bash -c 'rm -rf /builder/incoming/chroot_archlinux /builder/plugins/chroot_archlinux'
+2023-09-12 00:56:47.921431 +0000 build-templates-community: copy-in (cmd): /usr/lib/qubes/qrexec-client-vm disp3761 qubesbuilder.FileCopyIn /usr/lib/qubes/qfile-agent /home/user/qubes-builderv2/qubesbuilder/plugins/chroot_archlinux
+2023-09-12 00:56:48.068028 +0000 build-templates-community: copy-in (cmd): /usr/bin/qvm-run-vm disp3761 bash -c 'mkdir -p /builder/plugins && mv /builder/incoming/chroot_archlinux /builder/plugins'
+2023-09-12 00:56:48.187888 +0000 build-templates-community: copy-in (cmd): /usr/bin/qvm-run-vm disp3761 bash -c 'rm -rf /builder/incoming/builder-archlinux /builder/sources/builder-archlinux'
+2023-09-12 00:56:48.309720 +0000 build-templates-community: copy-in (cmd): /usr/lib/qubes/qrexec-client-vm disp3761 qubesbuilder.FileCopyIn /usr/lib/qubes/qfile-agent /home/user/builder-templates-community-r4.2/sources/builder-archlinux
+2023-09-12 00:56:48.441625 +0000 build-templates-community: copy-in (cmd): /usr/bin/qvm-run-vm disp3761 bash -c 'mkdir -p /builder/sources && mv /builder/incoming/builder-archlinux /builder/sources'
+2023-09-12 00:56:50.519320 +0000 > closing log
