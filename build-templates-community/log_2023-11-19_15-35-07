@@ -1,0 +1,22 @@
+2023-11-19 15:35:07.245348 +0000 > starting log
+2023-11-19 15:35:07.245746 +0000 build-templates-community: > starting build with log
+2023-11-19 15:35:07.245757 +0000 build-templates-community: >> args:
+2023-11-19 15:35:07.245764 +0000 build-templates-community: >>   ()
+2023-11-19 15:35:07.245771 +0000 build-templates-community: >> component:
+2023-11-19 15:35:07.245775 +0000 build-templates-community: >>   builder-rpm
+2023-11-19 15:35:07.245784 +0000 build-templates-community: >>     commit-hash: bccaea8ace4c6c035ee0108d62a27c4187ba57f2
+2023-11-19 15:35:07.245795 +0000 build-templates-community: >>     source-hash: 360dd939b3e6321387481b3f108846b46ae4b28fa12abf531082868536dd118c57f2d0ccc4c8712477f945fa3d3182fe4d548f90fa02a247971f7daf0da8337a
+2023-11-19 15:35:07.245805 +0000 build-templates-community: >> distributions:
+2023-11-19 15:35:07.245812 +0000 build-templates-community: >>   []
+2023-11-19 15:35:07.245820 +0000 build-templates-community: builder-rpm: source already fetched. Updating.
+2023-11-19 15:35:22.335570 +0000 build-templates-community: copy-in (cmd): /usr/bin/qvm-run-vm disp4456 bash -c 'rm -rf /builder/incoming/fetch /builder/plugins/fetch'
+2023-11-19 15:35:34.389818 +0000 build-templates-community: copy-in (cmd): /usr/lib/qubes/qrexec-client-vm disp4456 qubesbuilder.FileCopyIn /usr/lib/qubes/qfile-agent /home/user/qubes-builderv2/qubesbuilder/plugins/fetch
+2023-11-19 15:35:34.755459 +0000 build-templates-community: copy-in (cmd): /usr/bin/qvm-run-vm disp4456 bash -c 'mkdir -p /builder/plugins && mv /builder/incoming/fetch /builder/plugins'
+2023-11-19 15:35:34.978216 +0000 build-templates-community: copy-in (cmd): /usr/bin/qvm-run-vm disp4456 bash -c 'rm -rf /builder/incoming/builder-rpm /builder/builder-rpm'
+2023-11-19 15:35:35.181755 +0000 build-templates-community: copy-in (cmd): /usr/lib/qubes/qrexec-client-vm disp4456 qubesbuilder.FileCopyIn /usr/lib/qubes/qfile-agent /home/user/builder-templates-community-r4.2/sources/builder-rpm
+2023-11-19 15:35:35.497246 +0000 build-templates-community: copy-in (cmd): /usr/bin/qvm-run-vm disp4456 bash -c 'mkdir -p /builder && mv /builder/incoming/builder-rpm /builder'
+2023-11-19 15:35:35.704650 +0000 build-templates-community: Executing '/usr/bin/qvm-run-vm disp4456 env VERBOSE='1' DEBUG='1' BACKEND_VMM='xen' bash -c 'cd /builder && /builder/plugins/fetch/scripts/get-and-verify-source.py https://github.com/QubesOS/qubes-builder-rpm.git /builder/builder-rpm /builder/keyring /builder/plugins/fetch/keys --git-branch release4.2 --minimum-distinct-maintainers 1 --maintainer 0064428F455451B3EBE78A7F063938BA42CFA724 --maintainer 274E12AB03F2FE293765FC06DA0434BC706E1FCF''.
+2023-11-19 15:35:38.162798 +0000 build-templates-community: output: args: (128, ['git', 'fetch', '-q', '--tags', '--', 'https://github.com/QubesOS/qubes-builder-rpm.git', 'release4.2'])
+2023-11-19 15:35:38.162865 +0000 build-templates-community: output: stdout: b''
+2023-11-19 15:35:38.162876 +0000 build-templates-community: output: stderr: b"fatal: couldn't find remote ref release4.2\n"
+2023-11-19 15:35:41.890629 +0000 > closing log
