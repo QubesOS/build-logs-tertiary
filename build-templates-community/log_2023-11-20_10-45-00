@@ -1,0 +1,11 @@
+2023-11-20 10:45:00.744519 +0000 > starting log
+2023-11-20 10:45:00.744816 +0000 build-templates-community: > starting build with log
+2023-11-20 10:45:10.959047 +0000 build-templates-community: copy-in (cmd): /usr/bin/qvm-run-vm disp3056 bash -c 'rm -rf /builder/incoming/template /builder/plugins/template'
+2023-11-20 10:45:11.159062 +0000 build-templates-community: copy-in (cmd): /usr/lib/qubes/qrexec-client-vm disp3056 qubesbuilder.FileCopyIn /usr/lib/qubes/qfile-agent /home/user/qubes-builderv2/qubesbuilder/plugins/template
+2023-11-20 10:45:11.405934 +0000 build-templates-community: copy-in (cmd): /usr/bin/qvm-run-vm disp3056 bash -c 'mkdir -p /builder/plugins && mv /builder/incoming/template /builder/plugins'
+2023-11-20 10:45:11.604377 +0000 build-templates-community: copy-in (cmd): /usr/bin/qvm-run-vm disp3056 bash -c 'rm -rf /builder/incoming/vm-gentoo /builder/repository/vm-gentoo'
+2023-11-20 10:45:11.799426 +0000 build-templates-community: copy-in (cmd): /usr/lib/qubes/qrexec-client-vm disp3056 qubesbuilder.FileCopyIn /usr/lib/qubes/qfile-agent /home/user/builder-templates-community-r4.2/repository/vm-gentoo
+2023-11-20 10:45:12.050290 +0000 build-templates-community: copy-in (cmd): /usr/bin/qvm-run-vm disp3056 bash -c 'mkdir -p /builder/repository && mv /builder/incoming/vm-gentoo /builder/repository'
+2023-11-20 10:45:12.455300 +0000 build-templates-community: copy-in (cmd): /usr/bin/qvm-run-vm disp3056 bash -c 'rm -rf /builder/incoming/builder-gentoo /builder/sources/builder-gentoo'
+2023-11-20 10:45:12.595439 +0000 build-templates-community: copy-in (cmd): /usr/lib/qubes/qrexec-client-vm disp3056 qubesbuilder.FileCopyIn /usr/lib/qubes/qfile-agent /home/user/builder-templates-community-r4.2/sources/builder-gentoo
+2023-11-20 10:45:15.111522 +0000 > closing log
