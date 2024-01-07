@@ -1,0 +1,25 @@
+2024-01-07 13:08:20.294964 +0000 > starting log
+2024-01-07 13:08:20.295284 +0000 build-templates-community: > starting build with log
+2024-01-07 13:08:20.295301 +0000 build-templates-community: >> args:
+2024-01-07 13:08:20.295312 +0000 build-templates-community: >>   ()
+2024-01-07 13:08:20.295322 +0000 build-templates-community: >> component:
+2024-01-07 13:08:20.295331 +0000 build-templates-community: >>   release-configs
+2024-01-07 13:08:20.295342 +0000 build-templates-community: >>     commit-hash: f75859fba25c4ad4c34131e87825b5752a5eb1b4
+2024-01-07 13:08:20.295361 +0000 build-templates-community: >>     source-hash: 1c92d522d1cc8d2329a62a8f5935b38d78c3c7e7227efc6abdc85cd6f73b5fb131fe3efdd738c6c9b9466534e18a8d4c18952d564cca90966635a90b70049ff2
+2024-01-07 13:08:20.295377 +0000 build-templates-community: >> distributions:
+2024-01-07 13:08:20.295387 +0000 build-templates-community: >>   []
+2024-01-07 13:08:20.295398 +0000 build-templates-community: release-configs: source already fetched. Updating.
+2024-01-07 13:08:31.114325 +0000 build-templates-community: copy-in (cmd): /usr/bin/qvm-run-vm -- disp107 rm -rf -- /builder/incoming/fetch /builder/plugins/fetch
+2024-01-07 13:08:31.451590 +0000 build-templates-community: copy-in (cmd): /usr/lib/qubes/qrexec-client-vm -- disp107 qubesbuilder.FileCopyIn /usr/lib/qubes/qfile-agent /home/user/qubes-builderv2/qubesbuilder/plugins/fetch
+2024-01-07 13:08:31.710031 +0000 build-templates-community: copy-in (cmd): /usr/bin/qvm-run-vm -- disp107 mkdir -p -- /builder/plugins && mv -- /builder/incoming/fetch /builder/plugins
+2024-01-07 13:08:31.969717 +0000 build-templates-community: copy-in (cmd): /usr/bin/qvm-run-vm -- disp107 rm -rf -- /builder/incoming/release-configs /builder/release-configs
+2024-01-07 13:08:32.433851 +0000 build-templates-community: copy-in (cmd): /usr/lib/qubes/qrexec-client-vm -- disp107 qubesbuilder.FileCopyIn /usr/lib/qubes/qfile-agent /home/user/builder-templates-community-r4.2/sources/release-configs
+2024-01-07 13:08:32.848930 +0000 build-templates-community: copy-in (cmd): /usr/bin/qvm-run-vm -- disp107 mkdir -p -- /builder && mv -- /builder/incoming/release-configs /builder
+2024-01-07 13:08:32.999834 +0000 build-templates-community: Executing '/usr/bin/qvm-run-vm -- disp107 env -- VERBOSE=1 DEBUG=1 BACKEND_VMM=xen bash -c 'cd /builder && /builder/plugins/fetch/scripts/get-and-verify-source.py https://github.com/QubesOS/qubes-release-configs.git /builder/release-configs /builder/keyring /builder/plugins/fetch/keys --git-branch main --minimum-distinct-maintainers 1 --maintainer 0064428F455451B3EBE78A7F063938BA42CFA724 --maintainer 274E12AB03F2FE293765FC06DA0434BC706E1FCF''.
+2024-01-07 13:08:35.791117 +0000 build-templates-community: output: --> Verifying tags...
+2024-01-07 13:08:35.791179 +0000 build-templates-community: output: ---> Good tag 12fe787fc3b45bbda2a74b43c71cbb7dd669423e.
+2024-01-07 13:08:35.791205 +0000 build-templates-community: output: Enough distinct tag signatures. Found 1, mandatory minimum is 1.
+2024-01-07 13:08:35.791216 +0000 build-templates-community: output: --> Merging...
+2024-01-07 13:08:35.818273 +0000 build-templates-community: copy-out (cmd): /usr/lib/qubes/qrexec-client-vm disp107 qubesbuilder.FileCopyOut+__builder__release-configs /usr/lib/qubes/qfile-unpacker 1000 /home/user/builder-templates-community-r4.2/sources
+2024-01-07 13:08:38.181256 +0000 build-templates-community: > done
+2024-01-07 13:08:38.181314 +0000 > closing log
