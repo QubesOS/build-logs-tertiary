@@ -1,0 +1,21 @@
+2024-01-12 00:18:47.321960 +0000 > starting log
+2024-01-12 00:18:47.322103 +0000 build-templates-community: > starting build with log
+2024-01-12 00:18:47.322112 +0000 build-templates-community: >> args:
+2024-01-12 00:18:47.322116 +0000 build-templates-community: >>   ()
+2024-01-12 00:18:47.322121 +0000 build-templates-community: >> component:
+2024-01-12 00:18:47.322125 +0000 build-templates-community: >>   release-configs
+2024-01-12 00:18:47.322131 +0000 build-templates-community: >>     commit-hash: a3a9ffcca5e162cb7bf997de2dec54168ad3a489
+2024-01-12 00:18:47.322139 +0000 build-templates-community: >>     source-hash: a2ee1c057313219d1ee621d72a27de7198573aa48e1698a4fbb2a53d1913f6752673454c80af9227ffae0ae5801a9a6542bf77656b58d074099b73943d1a2501
+2024-01-12 00:18:47.322147 +0000 build-templates-community: >> distributions:
+2024-01-12 00:18:47.322152 +0000 build-templates-community: >>   []
+2024-01-12 00:18:47.322157 +0000 build-templates-community: release-configs: source already fetched. Updating.
+2024-01-12 00:18:57.327990 +0000 build-templates-community: copy-in (cmd): /usr/lib/qubes/qrexec-client-vm -- disp7699 qubesbuilder.FileCopyIn+-2Fbuilder-2Fplugins-2Ffetch /usr/lib/qubes/qfile-agent /home/user/qubes-builderv2/qubesbuilder/plugins/fetch
+2024-01-12 00:18:57.586430 +0000 build-templates-community: copy-in (cmd): /usr/lib/qubes/qrexec-client-vm -- disp7699 qubesbuilder.FileCopyIn+-2Fbuilder-2Frelease--configs /usr/lib/qubes/qfile-agent /home/user/builder-templates-community-r4.2/sources/release-configs
+2024-01-12 00:18:57.834945 +0000 build-templates-community: Executing '/usr/bin/qvm-run-vm -- disp7699 env -- VERBOSE=1 DEBUG=1 BACKEND_VMM=xen bash -c 'cd /builder && /builder/plugins/fetch/scripts/get-and-verify-source.py https://github.com/QubesOS/qubes-release-configs.git /builder/release-configs /builder/keyring /builder/plugins/fetch/keys --git-branch main --minimum-distinct-maintainers 1 --maintainer 0064428F455451B3EBE78A7F063938BA42CFA724 --maintainer 274E12AB03F2FE293765FC06DA0434BC706E1FCF''.
+2024-01-12 00:19:00.623402 +0000 build-templates-community: output: --> Verifying tags...
+2024-01-12 00:19:00.623490 +0000 build-templates-community: output: ---> Good tag be58e4e451af18cf05120480c2fd6f7dd4c82188.
+2024-01-12 00:19:00.623521 +0000 build-templates-community: output: Enough distinct tag signatures. Found 1, mandatory minimum is 1.
+2024-01-12 00:19:00.623533 +0000 build-templates-community: output: --> Merging...
+2024-01-12 00:19:00.654464 +0000 build-templates-community: copy-out (cmd): /usr/lib/qubes/qrexec-client-vm disp7699 qubesbuilder.FileCopyOut+-2Fbuilder-2Frelease--configs /usr/lib/qubes/qfile-unpacker 1000 /home/user/builder-templates-community-r4.2/sources
+2024-01-12 00:19:02.608124 +0000 build-templates-community: > done
+2024-01-12 00:19:02.608174 +0000 > closing log
