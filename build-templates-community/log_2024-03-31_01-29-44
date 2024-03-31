@@ -1,0 +1,31 @@
+2024-03-31 01:29:44.464219 +0000 > starting log
+2024-03-31 01:29:44.464501 +0000 build-templates-community: > starting build with log
+2024-03-31 01:29:44.464530 +0000 build-templates-community: Executing 'bash -c rsync --partial --progress --hard-links -air --mkpath -- /home/user/builder-templates-community-r4.2/repository-publish/rpm/r4.2/templates-community-testing/ yum.qubes-os.org:/pub/qubes/repo/yum/r4.2/templates-community-testing/'.
+2024-03-31 01:29:45.066806 +0000 build-templates-community: output: sending incremental file list
+2024-03-31 01:29:45.104905 +0000 build-templates-community: output: .d..t...... ./
+2024-03-31 01:29:45.104975 +0000 build-templates-community: output: .d..t...... repodata/
+2024-03-31 01:29:45.104995 +0000 build-templates-community: output: <f+++++++++ repodata/5ebc95f2af7eb816ddeba2d2c8d1477096f8753b01ce8ef57c84821ea0f3313f-other.xml.gz
+2024-03-31 01:29:45.105015 +0000 build-templates-community: output: .          1,703 100%    0.00kB/s    0:00:00  .          1,703 100%    0.00kB/s    0:00:00 (xfr#1, to-chk=38/42)
+2024-03-31 01:29:45.105038 +0000 build-templates-community: output: <f+++++++++ repodata/7f45940ecf46e78cc1597d7f7c4ba366e90f384d90138e52d667e6b3e96cda8a-primary.sqlite.bz2
+2024-03-31 01:29:45.105054 +0000 build-templates-community: output: .          9,071 100%    8.65MB/s    0:00:00  .          9,071 100%    8.65MB/s    0:00:00 (xfr#2, to-chk=37/42)
+2024-03-31 01:29:45.105067 +0000 build-templates-community: output: <f+++++++++ repodata/8543567b4e5e8bcbf849311d7e4eed9ac06bdaa739f14e843790684feb29f91b-filelists.sqlite.bz2
+2024-03-31 01:29:45.105081 +0000 build-templates-community: output: .          4,315 100%    4.12MB/s    0:00:00  .          4,315 100%    4.12MB/s    0:00:00 (xfr#3, to-chk=36/42)
+2024-03-31 01:29:45.105094 +0000 build-templates-community: output: <f+++++++++ repodata/a9d87e518ae6e625694c874af288270ab40103c839731ae13b295bbe65069856-primary.xml.gz
+2024-03-31 01:29:45.105107 +0000 build-templates-community: output: .          4,175 100%    3.98MB/s    0:00:00  .          4,175 100%    3.98MB/s    0:00:00 (xfr#4, to-chk=35/42)
+2024-03-31 01:29:45.105120 +0000 build-templates-community: output: <f+++++++++ repodata/c639f16adb400566a36a5925d723516feffae6dd287cb9bb6e16a6b8dd3fb631-filelists.xml.gz
+2024-03-31 01:29:45.105148 +0000 build-templates-community: output: .          2,644 100%    2.52MB/s    0:00:00  .          2,644 100%    2.52MB/s    0:00:00 (xfr#5, to-chk=34/42)
+2024-03-31 01:29:45.105188 +0000 build-templates-community: output: <f+++++++++ repodata/fb2bc308d74cff373e2e218ee5e6fe3fd7e7b5c621403718478d324a9c9c9ea3-other.sqlite.bz2
+2024-03-31 01:29:45.105204 +0000 build-templates-community: output: .          2,541 100%    2.42MB/s    0:00:00  .          2,541 100%    2.42MB/s    0:00:00 (xfr#6, to-chk=33/42)
+2024-03-31 01:29:45.105214 +0000 build-templates-community: output: <f..t...... repodata/repomd.xml
+2024-03-31 01:29:45.105228 +0000 build-templates-community: output: .          3,078 100%    2.94MB/s    0:00:00  .          3,078 100%    2.94MB/s    0:00:00 (xfr#7, to-chk=32/42)
+2024-03-31 01:29:45.105244 +0000 build-templates-community: output: <f..t...... repodata/repomd.xml.asc
+2024-03-31 01:29:45.105257 +0000 build-templates-community: output: .            228 100%  222.66kB/s    0:00:00  .            228 100%  222.66kB/s    0:00:00 (xfr#8, to-chk=31/42)
+2024-03-31 01:29:45.105285 +0000 build-templates-community: output: <f..t...... repodata/repomd.xml.metalink
+2024-03-31 01:29:45.105323 +0000 build-templates-community: output: .          2,100  70%    2.00MB/s    0:00:00  .          2,959 100%    2.82MB/s    0:00:00 (xfr#9, to-chk=30/42)
+2024-03-31 01:29:45.105380 +0000 build-templates-community: output: .d..t...... rpm/
+2024-03-31 01:29:45.105401 +0000 build-templates-community: output: <f.st...... rpm/qubes-template-archlinux-4.2.0-202403061411.noarch.rpm
+2024-03-31 01:29:53.969955 +0000 build-templates-community: output: .         32,768   0%   10.42MB/s    0:01:05  .     53,739,520   7%   51.25MB/s    0:00:12  .    135,528,448  19%   64.62MB/s    0:00:08  .    217,448,448  31%   69.15MB/s    0:00:06  .    299,008,000  42%   71.31MB/s    0:00:05  .    380,928,000  54%   78.03MB/s    0:00:03  .    462,716,928  66%   78.03MB/s    0:00:02  .    544,374,784  78%   77.96MB/s    0:00:01  .    626,032,640  89%   77.99MB/s    0:00:00  .    696,773,024 100%   74.95MB/s    0:00:08 (xfr#10, to-chk=28/42)
+2024-03-31 01:29:53.970039 +0000 build-templates-community: output: <f+++++++++ rpm/qubes-template-archlinux-4.2.0-202403302353.noarch.rpm
+2024-03-31 01:30:04.068303 +0000 build-templates-community: output: .         32,768   0%   36.70kB/s    5:19:18  .      2,293,760   0%  998.66kB/s    0:11:41  .     71,204,864  10%   20.93MB/s    0:00:29  .    153,452,544  21%   34.49MB/s    0:00:15  .    235,044,864  33%   42.75MB/s    0:00:10  .    316,964,864  45%   75.02MB/s    0:00:05  .    398,327,808  56%   78.01MB/s    0:00:03  .    479,559,680  68%   77.75MB/s    0:00:02  .    561,414,144  79%   77.85MB/s    0:00:01  .    643,596,288  91%   77.91MB/s    0:00:00  .    703,108,049 100%   61.14MB/s    0:00:10 (xfr#11, to-chk=27/42)
+2024-03-31 01:30:04.196650 +0000 build-templates-community: > done
+2024-03-31 01:30:04.196687 +0000 > closing log
