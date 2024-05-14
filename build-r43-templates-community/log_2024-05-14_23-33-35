@@ -1,0 +1,14 @@
+2024-05-14 23:33:35.015270 +0000 > starting log
+2024-05-14 23:33:35.015585 +0000 build-r43-templates-community: > starting build with log
+2024-05-14 23:33:35.015605 +0000 build-r43-templates-community: >> args:
+2024-05-14 23:33:35.015615 +0000 build-r43-templates-community: >>   ()
+2024-05-14 23:33:35.015623 +0000 build-r43-templates-community: >> component:
+2024-05-14 23:33:35.015631 +0000 build-r43-templates-community: >>   builder-rpm
+2024-05-14 23:33:35.015637 +0000 build-r43-templates-community: >> distributions:
+2024-05-14 23:33:35.015644 +0000 build-r43-templates-community: >>   []
+2024-05-14 23:33:44.292084 +0000 build-r43-templates-community: copy-in (cmd): /usr/lib/qubes/qrexec-client-vm -- disp1001 qubesbuilder.FileCopyIn+-2Fbuilder-2Fplugins-2Ffetch /usr/lib/qubes/qfile-agent /home/user/qubes-builderv2/qubesbuilder/plugins/fetch
+2024-05-14 23:33:44.599278 +0000 build-r43-templates-community: Executing '/usr/bin/qvm-run-vm -- disp1001 env -- VERBOSE=1 DEBUG=1 BACKEND_VMM=xen bash -c 'cd /builder && /builder/plugins/fetch/scripts/get-and-verify-source.py https://github.com/QubesOS/qubes-builder-rpm.git /builder/builder-rpm /builder/keyring /builder/plugins/fetch/keys --git-branch main --minimum-distinct-maintainers 1 --maintainer 0064428F455451B3EBE78A7F063938BA42CFA724 --maintainer 274E12AB03F2FE293765FC06DA0434BC706E1FCF''.
+2024-05-14 23:36:14.718248 +0000 build-r43-templates-community: output: args: (128, ['git', 'clone', '-n', '-q', '-b', 'main', 'https://github.com/QubesOS/qubes-builder-rpm.git', PosixPath('/builder/builder-rpm')])
+2024-05-14 23:36:14.718314 +0000 build-r43-templates-community: output: stdout: b''
+2024-05-14 23:36:14.718357 +0000 build-r43-templates-community: output: stderr: b'error: RPC failed; curl 18 Transferred a partial file\nerror: 3574 bytes of body are still expected\nfetch-pack: unexpected disconnect while reading sideband packet\nfatal: early EOF\nfatal: fetch-pack: invalid index-pack output\n'
+2024-05-14 23:36:17.525674 +0000 > closing log
