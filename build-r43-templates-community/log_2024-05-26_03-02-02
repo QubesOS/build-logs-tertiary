@@ -1,0 +1,9 @@
+2024-05-26 03:02:02.127378 +0000 > starting log
+2024-05-26 03:02:02.127742 +0000 build-r43-templates-community: > starting build with log
+2024-05-26 03:02:08.876982 +0000 build-r43-templates-community: copy-in (cmd): /usr/lib/qubes/qrexec-client-vm -- disp7584 qubesbuilder.FileCopyIn+-2Fbuilder-2Fplugins-2Fchroot_deb /usr/lib/qubes/qfile-agent /home/user/qubes-builderv2/qubesbuilder/plugins/chroot_deb
+2024-05-26 03:02:09.154897 +0000 build-r43-templates-community: copy-in (cmd): /usr/lib/qubes/qrexec-client-vm -- disp7584 qubesbuilder.FileCopyIn+-2Fbuilder-2Fplugins-2Fbuild_deb /usr/lib/qubes/qfile-agent /home/user/qubes-builderv2/qubesbuilder/plugins/build_deb
+2024-05-26 03:02:09.519067 +0000 build-r43-templates-community: copy-in (cmd): /usr/lib/qubes/qrexec-client-vm -- disp7584 qubesbuilder.FileCopyIn+-2Fbuilder-2Fplugins-2Ftemplate /usr/lib/qubes/qfile-agent /home/user/qubes-builderv2/qubesbuilder/plugins/template
+2024-05-26 03:02:09.747639 +0000 build-r43-templates-community: copy-in (cmd): /usr/lib/qubes/qrexec-client-vm -- disp7584 qubesbuilder.FileCopyIn+-2Fbuilder-2Fplugins-2Fsource_deb /usr/lib/qubes/qfile-agent /home/user/qubes-builderv2/qubesbuilder/plugins/source_deb
+2024-05-26 03:02:10.097416 +0000 build-r43-templates-community: copy-in (cmd): /usr/lib/qubes/qrexec-client-vm -- disp7584 qubesbuilder.FileCopyIn+-2Fbuilder-2Frepository-2Fvm--bookworm /usr/lib/qubes/qfile-agent /home/user/builder-templates-community-r4.3/repository/vm-bookworm
+2024-05-26 03:02:10.331804 +0000 build-r43-templates-community: copy-in (cmd): /usr/lib/qubes/qrexec-client-vm -- disp7584 qubesbuilder.FileCopyIn+-2Fbuilder-2Fsources-2Ftemplate--whonix /usr/lib/qubes/qfile-agent /home/user/builder-templates-community-r4.3/sources/template-whonix
+2024-05-26 03:02:12.236216 +0000 > closing log
