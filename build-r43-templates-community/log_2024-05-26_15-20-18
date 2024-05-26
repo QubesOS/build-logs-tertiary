@@ -1,0 +1,23 @@
+2024-05-26 15:20:18.474752 +0000 > starting log
+2024-05-26 15:20:18.474917 +0000 build-r43-templates-community: > starting build with log
+2024-05-26 15:20:18.474939 +0000 build-r43-templates-community: Executing 'bash -c rsync --partial --progress --hard-links -air --mkpath -- /home/user/builder-templates-community-r4.3/repository-publish/rpm/r4.3/templates-community-testing/ yum.qubes-os.org:/pub/qubes/repo/yum/r4.3/templates-community-testing/'.
+2024-05-26 15:20:19.080703 +0000 build-r43-templates-community: output: sending incremental file list
+2024-05-26 15:20:19.103607 +0000 build-r43-templates-community: output: .d..t...... ./
+2024-05-26 15:20:19.104447 +0000 build-r43-templates-community: output: .d..t...... repodata/
+2024-05-26 15:20:19.104474 +0000 build-r43-templates-community: output: <f+++++++++ repodata/5a361515040f6e461dc8b64aa113f267def2c05eebc915b7ad475dbc162f8a23-other.xml.zst
+2024-05-26 15:20:19.104496 +0000 build-r43-templates-community: output: .            318 100%    0.00kB/s    0:00:00  .            318 100%    0.00kB/s    0:00:00 (xfr#1, to-chk=7/11)
+2024-05-26 15:20:19.104520 +0000 build-r43-templates-community: output: <f+++++++++ repodata/7adc953ec51c5ab127216bba72c2533acba10a49f32b926218a5dac71215d01c-primary.xml.zst
+2024-05-26 15:20:19.104535 +0000 build-r43-templates-community: output: .            873 100%  852.54kB/s    0:00:00  .            873 100%  852.54kB/s    0:00:00 (xfr#2, to-chk=6/11)
+2024-05-26 15:20:19.104550 +0000 build-r43-templates-community: output: <f+++++++++ repodata/b8b9e69f05593526086629dd14d3717070620433a020d201e186efa6ed3b43f3-filelists.xml.zst
+2024-05-26 15:20:19.104565 +0000 build-r43-templates-community: output: .            546 100%  533.20kB/s    0:00:00  .            546 100%  533.20kB/s    0:00:00 (xfr#3, to-chk=5/11)
+2024-05-26 15:20:19.104578 +0000 build-r43-templates-community: output: <f..t...... repodata/repomd.xml
+2024-05-26 15:20:19.104593 +0000 build-r43-templates-community: output: .          1,550 100%    1.48MB/s    0:00:00  .          1,550 100%    1.48MB/s    0:00:00 (xfr#4, to-chk=4/11)
+2024-05-26 15:20:19.104605 +0000 build-r43-templates-community: output: <f..t...... repodata/repomd.xml.asc
+2024-05-26 15:20:19.104620 +0000 build-r43-templates-community: output: .            228 100%  222.66kB/s    0:00:00  .            228 100%  222.66kB/s    0:00:00 (xfr#5, to-chk=3/11)
+2024-05-26 15:20:19.104631 +0000 build-r43-templates-community: output: <f..t...... repodata/repomd.xml.metalink
+2024-05-26 15:20:19.104646 +0000 build-r43-templates-community: output: .          2,100  70%    2.00MB/s    0:00:00  .          2,959 100%    2.82MB/s    0:00:00 (xfr#6, to-chk=2/11)
+2024-05-26 15:20:19.104657 +0000 build-r43-templates-community: output: .d..t...... rpm/
+2024-05-26 15:20:19.104678 +0000 build-r43-templates-community: output: <f+++++++++ rpm/qubes-template-whonix-workstation-17-4.3.0-202405261335.noarch.rpm
+2024-05-26 15:20:29.379091 +0000 build-r43-templates-community: output: .         32,768   0%   31.25MB/s    0:00:25  .     30,703,616   3%   29.28MB/s    0:00:25  .    113,442,816  14%   54.12MB/s    0:00:12  .    196,673,536  24%   62.52MB/s    0:00:09  .    280,166,400  34%   66.80MB/s    0:00:07  .    363,692,032  45%   79.37MB/s    0:00:05  .    447,119,360  55%   79.55MB/s    0:00:04  .    530,448,384  66%   79.58MB/s    0:00:03  .    613,777,408  76%   79.56MB/s    0:00:02  .    696,877,056  86%   79.44MB/s    0:00:01  .    780,271,616  97%   79.43MB/s    0:00:00  .    803,294,826 100%   74.57MB/s    0:00:10 (xfr#7, to-chk=0/11)
+2024-05-26 15:20:29.503314 +0000 build-r43-templates-community: > done
+2024-05-26 15:20:29.503354 +0000 > closing log
