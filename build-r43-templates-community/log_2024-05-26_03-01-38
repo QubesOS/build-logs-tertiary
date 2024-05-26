@@ -1,0 +1,10 @@
+2024-05-26 03:01:38.111266 +0000 > starting log
+2024-05-26 03:01:38.111540 +0000 build-r43-templates-community: > starting build with log
+2024-05-26 03:01:45.033227 +0000 build-r43-templates-community: copy-in (cmd): /usr/lib/qubes/qrexec-client-vm -- disp2401 qubesbuilder.FileCopyIn+-2Fbuilder-2Fplugins-2Fchroot_deb /usr/lib/qubes/qfile-agent /home/user/qubes-builderv2/qubesbuilder/plugins/chroot_deb
+2024-05-26 03:01:45.340606 +0000 build-r43-templates-community: copy-in (cmd): /usr/lib/qubes/qrexec-client-vm -- disp2401 qubesbuilder.FileCopyIn+-2Fbuilder-2Fplugins-2Ftemplate /usr/lib/qubes/qfile-agent /home/user/qubes-builderv2/qubesbuilder/plugins/template
+2024-05-26 03:01:45.637539 +0000 build-r43-templates-community: copy-in (cmd): /usr/lib/qubes/qrexec-client-vm -- disp2401 qubesbuilder.FileCopyIn+-2Fbuilder-2Fplugins-2Fbuild_deb /usr/lib/qubes/qfile-agent /home/user/qubes-builderv2/qubesbuilder/plugins/build_deb
+2024-05-26 03:01:45.912228 +0000 build-r43-templates-community: copy-in (cmd): /usr/lib/qubes/qrexec-client-vm -- disp2401 qubesbuilder.FileCopyIn+-2Fbuilder-2Fplugins-2Fsource_deb /usr/lib/qubes/qfile-agent /home/user/qubes-builderv2/qubesbuilder/plugins/source_deb
+2024-05-26 03:01:46.275162 +0000 build-r43-templates-community: copy-in (cmd): /usr/lib/qubes/qrexec-client-vm -- disp2401 qubesbuilder.FileCopyIn+-2Fbuilder-2Frepository-2Fvm--bookworm /usr/lib/qubes/qfile-agent /home/user/builder-templates-community-r4.3/repository/vm-bookworm
+2024-05-26 03:01:46.441335 +0000 build-r43-templates-community: copy-in (cmd): /usr/lib/qubes/qrexec-client-vm -- disp2401 qubesbuilder.FileCopyIn+-2Fbuilder-2Fsources-2Fbuilder--debian /usr/lib/qubes/qfile-agent /home/user/builder-templates-community-r4.3/sources/builder-debian
+2024-05-26 03:01:46.634406 +0000 build-r43-templates-community: copy-in (cmd): /usr/lib/qubes/qrexec-client-vm -- disp2401 qubesbuilder.FileCopyIn+-2Fbuilder-2Fsources-2Ftemplate--whonix /usr/lib/qubes/qfile-agent /home/user/builder-templates-community-r4.3/sources/template-whonix
+2024-05-26 03:01:48.509174 +0000 > closing log
