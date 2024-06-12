@@ -1,0 +1,26 @@
+2024-06-12 00:47:42.717082 +0000 > starting log
+2024-06-12 00:47:42.717729 +0000 build-r43-templates-community: > starting build with log
+2024-06-12 00:47:42.717756 +0000 build-r43-templates-community: >> args:
+2024-06-12 00:47:42.717765 +0000 build-r43-templates-community: >>   ()
+2024-06-12 00:47:42.717772 +0000 build-r43-templates-community: >> component:
+2024-06-12 00:47:42.717778 +0000 build-r43-templates-community: >>   builder-archlinux
+2024-06-12 00:47:42.717785 +0000 build-r43-templates-community: >>     commit-hash: 685ec12e9a466a05fcf72c933ebb2bb232af02a5
+2024-06-12 00:47:42.717796 +0000 build-r43-templates-community: >>     source-hash: b416ec08580598180897807a245352e236cd221f0c74824527b0208732a4e8276a1144d0e122789643acf46c84198ea2b8ff7b1c0a9ae34bf0c09c01a68f3b77
+2024-06-12 00:47:42.717803 +0000 build-r43-templates-community: >> distributions:
+2024-06-12 00:47:42.717808 +0000 build-r43-templates-community: >>   []
+2024-06-12 00:47:42.717814 +0000 build-r43-templates-community: builder-archlinux: source already fetched. Updating.
+2024-06-12 00:47:43.414540 +0000 build-r43-templates-community: copy-in (cmd): /usr/lib/qubes/qrexec-client-vm -- disp4218 qubesbuilder.FileCopyIn+-2Fbuilder-2Fbuilder--archlinux /usr/lib/qubes/qfile-agent /home/user/builder-templates-community-r4.3/sources/builder-archlinux
+2024-06-12 00:47:43.659552 +0000 build-r43-templates-community: copy-in (cmd): /usr/lib/qubes/qrexec-client-vm -- disp4218 qubesbuilder.FileCopyIn+-2Fbuilder-2Fplugins-2Ffetch /usr/lib/qubes/qfile-agent /home/user/qubes-builderv2/qubesbuilder/plugins/fetch
+2024-06-12 00:47:43.851518 +0000 build-r43-templates-community: Executing '/usr/bin/qvm-run-vm -- disp4218 env -- VERBOSE=1 DEBUG=1 BACKEND_VMM=xen bash -c 'cd /builder && /builder/plugins/fetch/scripts/get-and-verify-source.py https://github.com/QubesOS/qubes-builder-archlinux.git /builder/builder-archlinux /builder/keyring /builder/plugins/fetch/keys --git-branch main --minimum-distinct-maintainers 1 --maintainer 0064428F455451B3EBE78A7F063938BA42CFA724 --maintainer 274E12AB03F2FE293765FC06DA0434BC706E1FCF''.
+2024-06-12 00:47:45.885008 +0000 build-r43-templates-community: output: --> Verifying tags...
+2024-06-12 00:47:45.885092 +0000 build-r43-templates-community: output: ---> Good tag e7711d6ad5d073baff485a40335dd30a4848a234.
+2024-06-12 00:47:45.885127 +0000 build-r43-templates-community: output: Enough distinct tag signatures. Found 1, mandatory minimum is 1.
+2024-06-12 00:47:45.885141 +0000 build-r43-templates-community: output: --> Merging...
+2024-06-12 00:47:45.907469 +0000 build-r43-templates-community: copy-out (cmd): /usr/lib/qubes/qrexec-client-vm disp4218 qubesbuilder.FileCopyOut+-2Fbuilder-2Fbuilder--archlinux /usr/bin/qfile-unpacker 1000 /home/user/builder-templates-community-r4.3/sources
+2024-06-12 00:47:47.563267 +0000 build-r43-templates-community: ['cd -- /builder', "git -C /builder/builder-archlinux rev-parse 'HEAD^{}' >> hash", "git -C /builder/builder-archlinux tag --points-at HEAD --list 'v*' >> vtags"]
+2024-06-12 00:47:55.802076 +0000 build-r43-templates-community: copy-in (cmd): /usr/lib/qubes/qrexec-client-vm -- disp408 qubesbuilder.FileCopyIn+-2Fbuilder-2Fbuilder--archlinux /usr/lib/qubes/qfile-agent /home/user/builder-templates-community-r4.3/sources/builder-archlinux
+2024-06-12 00:47:56.051739 +0000 build-r43-templates-community: Executing '/usr/bin/qvm-run-vm -- disp408 env -- VERBOSE=1 DEBUG=1 BACKEND_VMM=xen bash -c 'cd -- /builder && git -C /builder/builder-archlinux rev-parse '"'"'HEAD^{}'"'"' >> hash && git -C /builder/builder-archlinux tag --points-at HEAD --list '"'"'v*'"'"' >> vtags''.
+2024-06-12 00:47:56.257883 +0000 build-r43-templates-community: copy-out (cmd): /usr/lib/qubes/qrexec-client-vm disp408 qubesbuilder.FileCopyOut+-2Fbuilder-2Fhash /usr/bin/qfile-unpacker 1000 /home/user/builder-templates-community-r4.3/tmp/tmp6g3a520r
+2024-06-12 00:47:56.532082 +0000 build-r43-templates-community: copy-out (cmd): /usr/lib/qubes/qrexec-client-vm disp408 qubesbuilder.FileCopyOut+-2Fbuilder-2Fvtags /usr/bin/qfile-unpacker 1000 /home/user/builder-templates-community-r4.3/tmp/tmp6g3a520r
+2024-06-12 00:47:58.282944 +0000 build-r43-templates-community: > done
+2024-06-12 00:47:58.283007 +0000 > closing log
