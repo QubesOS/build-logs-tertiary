@@ -1,0 +1,21 @@
+2024-06-18 08:39:16.239207 +0000 > starting log
+2024-06-18 08:39:16.239459 +0000 build-r43-templates-community: > starting build with log
+2024-06-18 08:39:16.239478 +0000 build-r43-templates-community: >> args:
+2024-06-18 08:39:16.239486 +0000 build-r43-templates-community: >>   ()
+2024-06-18 08:39:16.239739 +0000 build-r43-templates-community: >> component:
+2024-06-18 08:39:16.239756 +0000 build-r43-templates-community: >>   builder-rpm
+2024-06-18 08:39:16.239766 +0000 build-r43-templates-community: >>     commit-hash: c0cf4131c294a1496df2b3446d94c755f30ef0ed
+2024-06-18 08:39:16.239782 +0000 build-r43-templates-community: >>     source-hash: b0e8e45d0f8ebb4bc7d37d5fb73f47b5d5970e58758d27d8d9816e97b2cf1be91850c4bf3ef1615ee62aba4c94d301a7921408ba80a976e6d28882f37b823911
+2024-06-18 08:39:16.239788 +0000 build-r43-templates-community: >> distributions:
+2024-06-18 08:39:16.239793 +0000 build-r43-templates-community: >>   []
+2024-06-18 08:39:16.239799 +0000 build-r43-templates-community: builder-rpm: source already fetched. Updating.
+2024-06-18 08:39:27.302594 +0000 build-r43-templates-community: copy-in (cmd): /usr/lib/qubes/qrexec-client-vm -- disp429 qubesbuilder.FileCopyIn+-2Fbuilder-2Fbuilder--rpm /usr/lib/qubes/qfile-agent /home/user/builder-templates-community-r4.3/sources/builder-rpm
+2024-06-18 08:39:28.686086 +0000 build-r43-templates-community: copy-in (cmd): /usr/lib/qubes/qrexec-client-vm -- disp429 qubesbuilder.FileCopyIn+-2Fbuilder-2Fplugins-2Ffetch /usr/lib/qubes/qfile-agent /home/user/qubes-builderv2/qubesbuilder/plugins/fetch
+2024-06-18 08:39:28.852714 +0000 build-r43-templates-community: Executing '/usr/bin/qvm-run-vm -- disp429 env -- VERBOSE=1 DEBUG=1 BACKEND_VMM=xen bash -c 'cd /builder && /builder/plugins/fetch/scripts/get-and-verify-source.py https://github.com/QubesOS/qubes-builder-rpm.git /builder/builder-rpm /builder/keyring /builder/plugins/fetch/keys --git-branch main --minimum-distinct-maintainers 1 --maintainer 0064428F455451B3EBE78A7F063938BA42CFA724 --maintainer 274E12AB03F2FE293765FC06DA0434BC706E1FCF''.
+2024-06-18 08:39:34.196059 +0000 build-r43-templates-community: output: --> Verifying tags...
+2024-06-18 08:39:34.196127 +0000 build-r43-templates-community: output: ---> Good tag 96f4a6913ed26ee6ff07b95adf3f9a3dc0bb4eaa.
+2024-06-18 08:39:34.196160 +0000 build-r43-templates-community: output: Enough distinct tag signatures. Found 1, mandatory minimum is 1.
+2024-06-18 08:39:34.196174 +0000 build-r43-templates-community: output: --> Merging...
+2024-06-18 08:39:34.231534 +0000 build-r43-templates-community: copy-out (cmd): /usr/lib/qubes/qrexec-client-vm disp429 qubesbuilder.FileCopyOut+-2Fbuilder-2Fbuilder--rpm /usr/bin/qfile-unpacker 1000 /home/user/builder-templates-community-r4.3/sources
+2024-06-18 08:39:37.775145 +0000 build-r43-templates-community: > done
+2024-06-18 08:39:37.775198 +0000 > closing log
