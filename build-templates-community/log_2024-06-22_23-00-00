@@ -1,0 +1,26 @@
+2024-06-22 23:00:00.685511 +0000 > starting log
+2024-06-22 23:00:00.685998 +0000 build-templates-community: > starting build with log
+2024-06-22 23:00:00.686030 +0000 build-templates-community: >> args:
+2024-06-22 23:00:00.686040 +0000 build-templates-community: >>   ()
+2024-06-22 23:00:00.686047 +0000 build-templates-community: >> component:
+2024-06-22 23:00:00.686053 +0000 build-templates-community: >>   builder-rpm
+2024-06-22 23:00:00.686059 +0000 build-templates-community: >>     commit-hash: c0cf4131c294a1496df2b3446d94c755f30ef0ed
+2024-06-22 23:00:00.686071 +0000 build-templates-community: >>     source-hash: b0e8e45d0f8ebb4bc7d37d5fb73f47b5d5970e58758d27d8d9816e97b2cf1be91850c4bf3ef1615ee62aba4c94d301a7921408ba80a976e6d28882f37b823911
+2024-06-22 23:00:00.686077 +0000 build-templates-community: >> distributions:
+2024-06-22 23:00:00.686082 +0000 build-templates-community: >>   []
+2024-06-22 23:00:00.686088 +0000 build-templates-community: builder-rpm: source already fetched. Updating.
+2024-06-22 23:00:09.782888 +0000 build-templates-community: copy-in (cmd): /usr/lib/qubes/qrexec-client-vm -- disp2598 qubesbuilder.FileCopyIn+-2Fbuilder-2Fbuilder--rpm /usr/lib/qubes/qfile-agent /home/user/builder-templates-community-r4.2/sources/builder-rpm
+2024-06-22 23:00:10.294242 +0000 build-templates-community: copy-in (cmd): /usr/lib/qubes/qrexec-client-vm -- disp2598 qubesbuilder.FileCopyIn+-2Fbuilder-2Fplugins-2Ffetch /usr/lib/qubes/qfile-agent /home/user/qubes-builderv2/qubesbuilder/plugins/fetch
+2024-06-22 23:00:10.674933 +0000 build-templates-community: Executing '/usr/bin/qvm-run-vm -- disp2598 env -- VERBOSE=1 DEBUG=1 BACKEND_VMM=xen bash -c 'cd /builder && /builder/plugins/fetch/scripts/get-and-verify-source.py https://github.com/QubesOS/qubes-builder-rpm.git /builder/builder-rpm /builder/keyring /builder/plugins/fetch/keys --git-branch main --minimum-distinct-maintainers 1 --maintainer 0064428F455451B3EBE78A7F063938BA42CFA724 --maintainer 274E12AB03F2FE293765FC06DA0434BC706E1FCF''.
+2024-06-22 23:00:14.732982 +0000 build-templates-community: output: --> Verifying tags...
+2024-06-22 23:00:14.733065 +0000 build-templates-community: output: ---> Good tag d37aa68e9440f2c20db3231c85f4204af09e9c8d.
+2024-06-22 23:00:14.733077 +0000 build-templates-community: output: Enough distinct tag signatures. Found 1, mandatory minimum is 1.
+2024-06-22 23:00:14.733086 +0000 build-templates-community: output: --> Merging...
+2024-06-22 23:00:14.775341 +0000 build-templates-community: copy-out (cmd): /usr/lib/qubes/qrexec-client-vm disp2598 qubesbuilder.FileCopyOut+-2Fbuilder-2Fbuilder--rpm /usr/bin/qfile-unpacker 1000 /home/user/builder-templates-community-r4.2/sources
+2024-06-22 23:00:19.218869 +0000 build-templates-community: ['cd -- /builder', "git -C /builder/builder-rpm rev-parse 'HEAD^{}' >> hash", "git -C /builder/builder-rpm tag --points-at HEAD --list 'v*' >> vtags"]
+2024-06-22 23:00:27.941571 +0000 build-templates-community: copy-in (cmd): /usr/lib/qubes/qrexec-client-vm -- disp988 qubesbuilder.FileCopyIn+-2Fbuilder-2Fbuilder--rpm /usr/lib/qubes/qfile-agent /home/user/builder-templates-community-r4.2/sources/builder-rpm
+2024-06-22 23:00:28.568132 +0000 build-templates-community: Executing '/usr/bin/qvm-run-vm -- disp988 env -- VERBOSE=1 DEBUG=1 BACKEND_VMM=xen bash -c 'cd -- /builder && git -C /builder/builder-rpm rev-parse '"'"'HEAD^{}'"'"' >> hash && git -C /builder/builder-rpm tag --points-at HEAD --list '"'"'v*'"'"' >> vtags''.
+2024-06-22 23:00:29.044719 +0000 build-templates-community: copy-out (cmd): /usr/lib/qubes/qrexec-client-vm disp988 qubesbuilder.FileCopyOut+-2Fbuilder-2Fhash /usr/bin/qfile-unpacker 1000 /home/user/builder-templates-community-r4.2/tmp/tmpdnvi5vr9
+2024-06-22 23:00:29.299236 +0000 build-templates-community: copy-out (cmd): /usr/lib/qubes/qrexec-client-vm disp988 qubesbuilder.FileCopyOut+-2Fbuilder-2Fvtags /usr/bin/qfile-unpacker 1000 /home/user/builder-templates-community-r4.2/tmp/tmpdnvi5vr9
+2024-06-22 23:00:32.561370 +0000 build-templates-community: > done
+2024-06-22 23:00:32.561439 +0000 > closing log
