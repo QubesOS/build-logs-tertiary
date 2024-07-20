@@ -1,0 +1,26 @@
+2024-07-20 02:59:19.340611 +0000 > starting log
+2024-07-20 02:59:19.341111 +0000 build-r43-templates-community: > starting build with log
+2024-07-20 02:59:19.341130 +0000 build-r43-templates-community: >> args:
+2024-07-20 02:59:19.341138 +0000 build-r43-templates-community: >>   ()
+2024-07-20 02:59:19.341144 +0000 build-r43-templates-community: >> component:
+2024-07-20 02:59:19.341149 +0000 build-r43-templates-community: >>   builder-debian
+2024-07-20 02:59:19.341156 +0000 build-r43-templates-community: >>     commit-hash: a26d8003f77576a9d6ee22421b47a67afc3d1526
+2024-07-20 02:59:19.341167 +0000 build-r43-templates-community: >>     source-hash: 687225cc8c8a7c973ca1dcf20c0c0c8637e10edce6d5139e60746e2a44a14fa5fa10eb04473586642cdb4700de924fd5f7a2d1b05bc6d7d12e786a9221c5bdca
+2024-07-20 02:59:19.341173 +0000 build-r43-templates-community: >> distributions:
+2024-07-20 02:59:19.341177 +0000 build-r43-templates-community: >>   []
+2024-07-20 02:59:19.341183 +0000 build-r43-templates-community: builder-debian: source already fetched. Updating.
+2024-07-20 02:59:28.007617 +0000 build-r43-templates-community: copy-in (cmd): /usr/lib/qubes/qrexec-client-vm -- disp9412 qubesbuilder.FileCopyIn+-2Fbuilder-2Fbuilder--debian /usr/lib/qubes/qfile-agent /home/user/builder-templates-community-r4.3/sources/builder-debian
+2024-07-20 02:59:28.288163 +0000 build-r43-templates-community: copy-in (cmd): /usr/lib/qubes/qrexec-client-vm -- disp9412 qubesbuilder.FileCopyIn+-2Fbuilder-2Fplugins-2Ffetch /usr/lib/qubes/qfile-agent /home/user/qubes-builderv2/qubesbuilder/plugins/fetch
+2024-07-20 02:59:28.646846 +0000 build-r43-templates-community: Executing '/usr/bin/qvm-run-vm -- disp9412 env -- VERBOSE=1 DEBUG=1 BACKEND_VMM=xen bash -c 'cd /builder && /builder/plugins/fetch/scripts/get-and-verify-source.py https://github.com/QubesOS/qubes-builder-debian.git /builder/builder-debian /builder/keyring /builder/plugins/fetch/keys --git-branch main --minimum-distinct-maintainers 1 --maintainer 0064428F455451B3EBE78A7F063938BA42CFA724 --maintainer 274E12AB03F2FE293765FC06DA0434BC706E1FCF''.
+2024-07-20 02:59:30.538343 +0000 build-r43-templates-community: output: --> Verifying tags...
+2024-07-20 02:59:30.538415 +0000 build-r43-templates-community: output: ---> Good tag 39e9e52d73c0a038b2855a8ddcdfeea30445d742.
+2024-07-20 02:59:30.538440 +0000 build-r43-templates-community: output: Enough distinct tag signatures. Found 1, mandatory minimum is 1.
+2024-07-20 02:59:30.538448 +0000 build-r43-templates-community: output: --> Merging...
+2024-07-20 02:59:30.561771 +0000 build-r43-templates-community: copy-out (cmd): /usr/lib/qubes/qrexec-client-vm disp9412 qubesbuilder.FileCopyOut+-2Fbuilder-2Fbuilder--debian /usr/bin/qfile-unpacker 1000 /home/user/builder-templates-community-r4.3/sources
+2024-07-20 02:59:32.965325 +0000 build-r43-templates-community: ['cd -- /builder', "git -C /builder/builder-debian rev-parse 'HEAD^{}' >> hash", "git -C /builder/builder-debian tag --points-at HEAD --list 'v*' >> vtags"]
+2024-07-20 02:59:42.713511 +0000 build-r43-templates-community: copy-in (cmd): /usr/lib/qubes/qrexec-client-vm -- disp6647 qubesbuilder.FileCopyIn+-2Fbuilder-2Fbuilder--debian /usr/lib/qubes/qfile-agent /home/user/builder-templates-community-r4.3/sources/builder-debian
+2024-07-20 02:59:42.941355 +0000 build-r43-templates-community: Executing '/usr/bin/qvm-run-vm -- disp6647 env -- VERBOSE=1 DEBUG=1 BACKEND_VMM=xen bash -c 'cd -- /builder && git -C /builder/builder-debian rev-parse '"'"'HEAD^{}'"'"' >> hash && git -C /builder/builder-debian tag --points-at HEAD --list '"'"'v*'"'"' >> vtags''.
+2024-07-20 02:59:43.138850 +0000 build-r43-templates-community: copy-out (cmd): /usr/lib/qubes/qrexec-client-vm disp6647 qubesbuilder.FileCopyOut+-2Fbuilder-2Fvtags /usr/bin/qfile-unpacker 1000 /home/user/builder-templates-community-r4.3/tmp/tmpfwzu6hht
+2024-07-20 02:59:43.383695 +0000 build-r43-templates-community: copy-out (cmd): /usr/lib/qubes/qrexec-client-vm disp6647 qubesbuilder.FileCopyOut+-2Fbuilder-2Fhash /usr/bin/qfile-unpacker 1000 /home/user/builder-templates-community-r4.3/tmp/tmpfwzu6hht
+2024-07-20 02:59:46.617239 +0000 build-r43-templates-community: > done
+2024-07-20 02:59:46.617298 +0000 > closing log
