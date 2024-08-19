@@ -1,0 +1,24 @@
+2024-08-19 23:22:48.806966 +0000 > starting log
+2024-08-19 23:22:48.807178 +0000 build-templates-community: .[38;5;246m01:22:48 .[96m[qb] .[38;5;246m> starting build with log.[0m
+2024-08-19 23:22:48.807215 +0000 build-templates-community: .[38;5;246m01:22:48 .[96m[qb] .[38;5;246m>> args:.[0m
+2024-08-19 23:22:48.807228 +0000 build-templates-community: .[38;5;246m01:22:48 .[96m[qb] .[38;5;246m>>   ().[0m
+2024-08-19 23:22:48.807235 +0000 build-templates-community: .[38;5;246m01:22:48 .[96m[qb] .[38;5;246m>> component:.[0m
+2024-08-19 23:22:48.807242 +0000 build-templates-community: .[38;5;246m01:22:48 .[96m[qb] .[38;5;246m>>   builder-rpm.[0m
+2024-08-19 23:22:48.807249 +0000 build-templates-community: .[38;5;246m01:22:48 .[96m[qb] .[38;5;246m>>     commit-hash: 5c74b7f893035da862394f276995334097d4bad4.[0m
+2024-08-19 23:22:48.807258 +0000 build-templates-community: .[38;5;246m01:22:48 .[96m[qb] .[38;5;246m>>     source-hash: 36a74bb6219f988b6a3cd66b37c994c39c79fa75146d7e9a4f1f1cfd4467042dc652dc4f27f42a19551a45650c3124888e3e6cdab8cfe89a84936cae182776ad.[0m
+2024-08-19 23:22:48.807318 +0000 build-templates-community: .[38;5;246m01:22:48 .[96m[qb] .[38;5;246m>> distributions:.[0m
+2024-08-19 23:22:48.807353 +0000 build-templates-community: .[38;5;246m01:22:48 .[96m[qb] .[38;5;246m>>   [].[0m
+2024-08-19 23:22:48.807362 +0000 build-templates-community: .[38;5;246m01:22:48 .[96m[qb] .[0mRunning stage 'fetch'.[0m
+2024-08-19 23:22:48.807371 +0000 build-templates-community: .[38;5;246m01:22:48 .[96m[qb.fetch.builder-rpm] .[0mbuilder-rpm: source already fetched. Updating..[0m
+2024-08-19 23:22:58.377771 +0000 build-templates-community: .[38;5;246m01:22:58 .[96m[qb.fetch.builder-rpm.fetch] .[38;5;246mcopy-in (cmd): /usr/lib/qubes/qrexec-client-vm -- disp6738 qubesbuilder.FileCopyIn+-2Fbuilder-2Fbuilder--rpm /usr/lib/qubes/qfile-agent /home/user/builder-templates-community-r4.2/sources/builder-rpm.[0m
+2024-08-19 23:22:59.100243 +0000 build-templates-community: .[38;5;246m01:22:59 .[96m[qb.fetch.builder-rpm.fetch] .[38;5;246mcopy-in (cmd): /usr/lib/qubes/qrexec-client-vm -- disp6738 qubesbuilder.FileCopyIn+-2Fbuilder-2Fplugins-2Ffetch /usr/lib/qubes/qfile-agent /home/user/qubes-builderv2/qubesbuilder/plugins/fetch.[0m
+2024-08-19 23:22:59.796367 +0000 build-templates-community: .[38;5;246m01:22:59 .[96m[qb.fetch.builder-rpm.fetch] .[0mUsing executor qubes:disp6738..[0m
+2024-08-19 23:22:59.796449 +0000 build-templates-community: .[38;5;246m01:22:59 .[96m[qb.fetch.builder-rpm.fetch] .[38;5;246m/usr/bin/qvm-run-vm -- disp6738 env -- VERBOSE=1 DEBUG=1 BACKEND_VMM=xen bash -c 'cd /builder && /builder/plugins/fetch/scripts/get-and-verify-source.py https://github.com/QubesOS/qubes-builder-rpm.git /builder/builder-rpm /builder/keyring /builder/plugins/fetch/keys --git-branch main --minimum-distinct-maintainers 1 --maintainer 0064428F455451B3EBE78A7F063938BA42CFA724 --maintainer 274E12AB03F2FE293765FC06DA0434BC706E1FCF'.[0m
+2024-08-19 23:23:01.292285 +0000 build-templates-community: .[38;5;246m01:23:01 .[96m[qb.fetch.builder-rpm.fetch] .[38;5;246m--> Verifying tags....[0m
+2024-08-19 23:23:01.292335 +0000 build-templates-community: .[38;5;246m01:23:01 .[96m[qb.fetch.builder-rpm.fetch] .[38;5;246m---> Good tag 3831ffef1f4654be4ce56c0967cd607224136858..[0m
+2024-08-19 23:23:01.292349 +0000 build-templates-community: .[38;5;246m01:23:01 .[96m[qb.fetch.builder-rpm.fetch] .[38;5;246mEnough distinct tag signatures. Found 1, mandatory minimum is 1..[0m
+2024-08-19 23:23:01.292358 +0000 build-templates-community: .[38;5;246m01:23:01 .[96m[qb.fetch.builder-rpm.fetch] .[38;5;246m--> Merging....[0m
+2024-08-19 23:23:01.329338 +0000 build-templates-community: .[38;5;246m01:23:01 .[96m[qb.fetch.builder-rpm.fetch] .[38;5;246mcopy-out (cmd): /usr/lib/qubes/qrexec-client-vm disp6738 qubesbuilder.FileCopyOut+-2Fbuilder-2Fbuilder--rpm /usr/bin/qfile-unpacker 1000 /home/user/builder-templates-community-r4.2/sources.[0m
+2024-08-19 23:23:04.099132 +0000 build-templates-community: .[38;5;246m01:23:04 .[96m[qb.fetch.builder-rpm] .[0mLog file: /home/user/builder-templates-community-r4.2/logs/20240819T232248-builder-rpm.log.[0m
+2024-08-19 23:23:04.111018 +0000 build-templates-community: .[38;5;246m01:23:04 .[96m[qb] .[38;5;246m> done.[0m
+2024-08-19 23:23:04.111049 +0000 > closing log
