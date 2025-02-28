@@ -1,0 +1,24 @@
+2025-02-28 14:19:33.072766 +0000 > starting log
+2025-02-28 14:19:33.073429 +0000 build-templates-community: .[38;5;246m15:19:32 .[96m[qb] .[38;5;246m> starting build with log.[0m
+2025-02-28 14:19:33.073450 +0000 build-templates-community: .[38;5;246m15:19:32 .[96m[qb] .[38;5;246m>> args:.[0m
+2025-02-28 14:19:33.073462 +0000 build-templates-community: .[38;5;246m15:19:32 .[96m[qb] .[38;5;246m>>   ().[0m
+2025-02-28 14:19:33.073470 +0000 build-templates-community: .[38;5;246m15:19:32 .[96m[qb] .[38;5;246m>> component:.[0m
+2025-02-28 14:19:33.073478 +0000 build-templates-community: .[38;5;246m15:19:32 .[96m[qb] .[38;5;246m>>   builder-debian.[0m
+2025-02-28 14:19:33.073486 +0000 build-templates-community: .[38;5;246m15:19:32 .[96m[qb] .[38;5;246m>>     commit-hash: 2fd5868b37ea869b4f0affa6478062c851c80238.[0m
+2025-02-28 14:19:33.073498 +0000 build-templates-community: .[38;5;246m15:19:32 .[96m[qb] .[38;5;246m>>     source-hash: 0fb2d31c60ad2468c9d0f0da680410ed8d3d5d09b86e52940fb57055bc810a7e48f556e2cc957e024bcd7650d7c80c0760692f402719b324ff799fef0fcccadd.[0m
+2025-02-28 14:19:33.073505 +0000 build-templates-community: .[38;5;246m15:19:32 .[96m[qb] .[38;5;246m>> distributions:.[0m
+2025-02-28 14:19:33.073512 +0000 build-templates-community: .[38;5;246m15:19:32 .[96m[qb] .[38;5;246m>>   [].[0m
+2025-02-28 14:19:33.073518 +0000 build-templates-community: .[38;5;246m15:19:32 .[96m[qb] .[0mRunning stage 'fetch'.[0m
+2025-02-28 14:19:33.073526 +0000 build-templates-community: .[38;5;246m15:19:32 .[96m[qb.fetch.builder-debian] .[0mbuilder-debian: source already fetched. Updating..[0m
+2025-02-28 14:19:42.573586 +0000 build-templates-community: .[38;5;246m15:19:42 .[96m[qb.fetch.builder-debian.fetch] .[38;5;246mcopy-in (cmd): /usr/lib/qubes/qrexec-client-vm -- disp8383 qubesbuilder.FileCopyIn+-2Fbuilder-2Fbuilder--debian /usr/lib/qubes/qfile-agent /home/user/builder-templates-community-r4.2/sources/builder-debian.[0m
+2025-02-28 14:19:43.347990 +0000 build-templates-community: .[38;5;246m15:19:43 .[96m[qb.fetch.builder-debian.fetch] .[38;5;246mcopy-in (cmd): /usr/lib/qubes/qrexec-client-vm -- disp8383 qubesbuilder.FileCopyIn+-2Fbuilder-2Fplugins-2Ffetch /usr/lib/qubes/qfile-agent /home/user/qubes-builderv2/qubesbuilder/plugins/fetch.[0m
+2025-02-28 14:19:43.695609 +0000 build-templates-community: .[38;5;246m15:19:43 .[96m[qb.fetch.builder-debian.fetch] .[0mUsing executor qubes:disp8383..[0m
+2025-02-28 14:19:43.695678 +0000 build-templates-community: .[38;5;246m15:19:43 .[96m[qb.fetch.builder-debian.fetch] .[38;5;246m/usr/bin/qvm-run-vm -- disp8383 env -- VERBOSE=1 DEBUG=1 BACKEND_VMM=xen bash -c 'cd /builder && /builder/plugins/fetch/scripts/get-and-verify-source.py https://github.com/QubesOS/qubes-builder-debian.git /builder/builder-debian /builder/keyring /builder/plugins/fetch/keys --git-branch main --minimum-distinct-maintainers 1 --maintainer 0064428F455451B3EBE78A7F063938BA42CFA724 --maintainer 274E12AB03F2FE293765FC06DA0434BC706E1FCF'.[0m
+2025-02-28 14:19:46.343930 +0000 build-templates-community: .[38;5;246m15:19:46 .[96m[qb.fetch.builder-debian.fetch] .[38;5;246m--> Verifying tags....[0m
+2025-02-28 14:19:46.344109 +0000 build-templates-community: .[38;5;246m15:19:46 .[96m[qb.fetch.builder-debian.fetch] .[38;5;246m---> Good tag f3252c98460f80101d0a465359c61c0a3ef3b1a7..[0m
+2025-02-28 14:19:46.344223 +0000 build-templates-community: .[38;5;246m15:19:46 .[96m[qb.fetch.builder-debian.fetch] .[38;5;246mEnough distinct tag signatures. Found 1, mandatory minimum is 1..[0m
+2025-02-28 14:19:46.344310 +0000 build-templates-community: .[38;5;246m15:19:46 .[96m[qb.fetch.builder-debian.fetch] .[38;5;246m--> Merging....[0m
+2025-02-28 14:19:46.406124 +0000 build-templates-community: .[38;5;246m15:19:46 .[96m[qb.fetch.builder-debian.fetch] .[38;5;246mcopy-out (cmd): /usr/lib/qubes/qrexec-client-vm disp8383 qubesbuilder.FileCopyOut+-2Fbuilder-2Fbuilder--debian /usr/bin/qfile-unpacker 1000 /home/user/builder-templates-community-r4.2/sources.[0m
+2025-02-28 14:19:48.743317 +0000 build-templates-community: .[38;5;246m15:19:48 .[96m[qb.fetch.builder-debian] .[0mLog file: /home/user/builder-templates-community-r4.2/logs/20250228T141932-builder-debian.log.[0m
+2025-02-28 14:19:48.756551 +0000 build-templates-community: .[38;5;246m15:19:48 .[96m[qb] .[38;5;246m> done.[0m
+2025-02-28 14:19:48.756620 +0000 > closing log
