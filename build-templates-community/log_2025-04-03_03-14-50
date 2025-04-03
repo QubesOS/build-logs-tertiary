@@ -1,0 +1,24 @@
+2025-04-03 03:14:50.718911 +0000 > starting log
+2025-04-03 03:14:50.719327 +0000 build-templates-community: .[38;5;246m05:14:50 .[96m[qb] .[38;5;246m> starting build with log.[0m
+2025-04-03 03:14:50.719360 +0000 build-templates-community: .[38;5;246m05:14:50 .[96m[qb] .[38;5;246m>> args:.[0m
+2025-04-03 03:14:50.719379 +0000 build-templates-community: .[38;5;246m05:14:50 .[96m[qb] .[38;5;246m>>   ().[0m
+2025-04-03 03:14:50.719393 +0000 build-templates-community: .[38;5;246m05:14:50 .[96m[qb] .[38;5;246m>> component:.[0m
+2025-04-03 03:14:50.719407 +0000 build-templates-community: .[38;5;246m05:14:50 .[96m[qb] .[38;5;246m>>   release-configs.[0m
+2025-04-03 03:14:50.719423 +0000 build-templates-community: .[38;5;246m05:14:50 .[96m[qb] .[38;5;246m>>     commit-hash: 609ecbcc1695a7d93f04742bd1f75f11b5dbcc34.[0m
+2025-04-03 03:14:50.719451 +0000 build-templates-community: .[38;5;246m05:14:50 .[96m[qb] .[38;5;246m>>     source-hash: 666534a3ada62f07d15e884c48411644d31f1bda6d11dd382e84e64e1380b014d4d3c6c9e95eb6ee0d237df2f41082d6e2129d12b36c6b49104220fee1b5bbce.[0m
+2025-04-03 03:14:50.719465 +0000 build-templates-community: .[38;5;246m05:14:50 .[96m[qb] .[38;5;246m>> distributions:.[0m
+2025-04-03 03:14:50.719477 +0000 build-templates-community: .[38;5;246m05:14:50 .[96m[qb] .[38;5;246m>>   [].[0m
+2025-04-03 03:14:50.719489 +0000 build-templates-community: .[38;5;246m05:14:50 .[96m[qb] .[0mRunning stages: fetch.[0m
+2025-04-03 03:14:50.719504 +0000 build-templates-community: .[38;5;246m05:14:50 .[96m[qb.fetch.release-configs] .[0mrelease-configs: source already fetched. Updating..[0m
+2025-04-03 03:14:50.719523 +0000 build-templates-community: .[38;5;246m05:14:50 .[96m[qb.fetch.release-configs.fetch] .[38;5;246mqrexec call (create disposable qube): /usr/lib/qubes/qrexec-client-vm -- builder-dvm admin.vm.CreateDisposable.[0m
+2025-04-03 03:14:51.851129 +0000 build-templates-community: .[38;5;246m05:14:52 .[96m[qb.fetch.release-configs.fetch] .[38;5;246mqrexec call (start vm): /usr/lib/qubes/qrexec-client-vm -- disp9374 admin.vm.Start.[0m
+2025-04-03 03:14:57.689612 +0000 build-templates-community: .[38;5;246m05:14:57 .[96m[qb.fetch.release-configs.fetch] .[38;5;246mqrexec call (copy builder rpc services): /usr/lib/qubes/qrexec-client-vm --filter-escape-chars-stderr -- disp9374 qubes.Filecopy /usr/lib/qubes/qfile-agent /home/user/qubes-builderv2/rpc/qubesbuilder.FileCopyIn /home/user/qubes-builderv2/rpc/qubesbuilder.FileCopyOut.[0m
+2025-04-03 03:14:59.084563 +0000 build-templates-community: .[38;5;246m05:14:59 .[96m[qb.fetch.release-configs.fetch] .[38;5;246mqrexec call (copy-in): /usr/lib/qubes/qrexec-client-vm -- disp9374 qubesbuilder.FileCopyIn+-2Fbuilder-2Frelease--configs /usr/lib/qubes/qfile-agent /home/user/builder-templates-community-r4.2/sources/release-configs.[0m
+2025-04-03 03:14:59.748794 +0000 build-templates-community: .[38;5;246m05:14:59 .[96m[qb.fetch.release-configs.fetch] .[38;5;246mqrexec call (copy-in): /usr/lib/qubes/qrexec-client-vm -- disp9374 qubesbuilder.FileCopyIn+-2Fbuilder-2Fplugins-2Ffetch /usr/lib/qubes/qfile-agent /home/user/qubes-builderv2/qubesbuilder/plugins/fetch.[0m
+2025-04-03 03:15:00.079028 +0000 build-templates-community: .[38;5;246m05:15:00 .[96m[qb.fetch.release-configs.fetch] .[0mUsing executor qubes:disp9374..[0m
+2025-04-03 03:15:00.079105 +0000 build-templates-community: .[38;5;246m05:15:00 .[96m[qb.fetch.release-configs.fetch] .[38;5;246m/usr/bin/qvm-run-vm -- disp9374 env -- VERBOSE=1 DEBUG=1 BACKEND_VMM=xen bash -c 'cd /builder && /builder/plugins/fetch/scripts/get-and-verify-source.py https://github.com/QubesOS/qubes-release-configs.git /builder/release-configs /builder/keyring /builder/plugins/fetch/keys --git-branch main --minimum-distinct-maintainers 1 --maintainer 0064428F455451B3EBE78A7F063938BA42CFA724 --maintainer 274E12AB03F2FE293765FC06DA0434BC706E1FCF'.[0m
+2025-04-03 03:15:01.038048 +0000 build-templates-community: .[38;5;246m05:15:01 .[96m[qb.fetch.release-configs.fetch] .[38;5;246margs: (128, ['git', 'fetch', '-q', '--tags', '--', 'https://github.com/QubesOS/qubes-release-configs.git', 'main']).[0m
+2025-04-03 03:15:01.038141 +0000 build-templates-community: .[38;5;246m05:15:01 .[96m[qb.fetch.release-configs.fetch] .[38;5;246mstdout: b''.[0m
+2025-04-03 03:15:01.038170 +0000 build-templates-community: .[38;5;246m05:15:01 .[96m[qb.fetch.release-configs.fetch] .[38;5;246mstderr: b"fatal: unable to access 'https://github.com/QubesOS/qubes-release-configs.git/': Could not resolve host: github.com\n".[0m
+2025-04-03 03:15:01.056821 +0000 build-templates-community: .[38;5;246m05:15:01 .[96m[qb.fetch.release-configs.fetch] .[38;5;246mqrexec call (kill vm): /usr/lib/qubes/qrexec-client-vm -- disp9374 admin.vm.Kill.[0m
+2025-04-03 03:15:02.891865 +0000 > closing log
