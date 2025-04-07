@@ -1,0 +1,28 @@
+2025-04-07 03:42:59.344361 +0000 > starting log
+2025-04-07 03:42:59.345382 +0000 build-templates-community: .[38;5;246m05:42:58 .[96m[qb] .[38;5;246m> starting build with log.[0m
+2025-04-07 03:42:59.345417 +0000 build-templates-community: .[38;5;246m05:42:58 .[96m[qb] .[38;5;246m>> args:.[0m
+2025-04-07 03:42:59.345438 +0000 build-templates-community: .[38;5;246m05:42:58 .[96m[qb] .[38;5;246m>>   ().[0m
+2025-04-07 03:42:59.345455 +0000 build-templates-community: .[38;5;246m05:42:58 .[96m[qb] .[38;5;246m>> component:.[0m
+2025-04-07 03:42:59.345472 +0000 build-templates-community: .[38;5;246m05:42:58 .[96m[qb] .[38;5;246m>>   release-configs.[0m
+2025-04-07 03:42:59.345492 +0000 build-templates-community: .[38;5;246m05:42:58 .[96m[qb] .[38;5;246m>>     commit-hash: e9c3243ce1bace86c94bd652b45d0a4aa40c8082.[0m
+2025-04-07 03:42:59.345527 +0000 build-templates-community: .[38;5;246m05:42:58 .[96m[qb] .[38;5;246m>>     source-hash: 32d1d029ec0734bc1d22b6a6667df037f3dde99fa1ad59242b8af4047ef2bd53541182ee20740553ce403d600f1f2bcc16cd4b80a0c5d5423093e1c0790f8b12.[0m
+2025-04-07 03:42:59.345543 +0000 build-templates-community: .[38;5;246m05:42:58 .[96m[qb] .[38;5;246m>> distributions:.[0m
+2025-04-07 03:42:59.345558 +0000 build-templates-community: .[38;5;246m05:42:58 .[96m[qb] .[38;5;246m>>   [].[0m
+2025-04-07 03:42:59.345573 +0000 build-templates-community: .[38;5;246m05:42:58 .[96m[qb] .[0mRunning stages: fetch.[0m
+2025-04-07 03:42:59.345592 +0000 build-templates-community: .[38;5;246m05:42:58 .[96m[qb.fetch.release-configs] .[0mrelease-configs: source already fetched. Updating..[0m
+2025-04-07 03:42:59.345618 +0000 build-templates-community: .[38;5;246m05:42:58 .[96m[qb.fetch.release-configs.fetch] .[38;5;246mqrexec call (create disposable qube): /usr/lib/qubes/qrexec-client-vm -- builder-dvm admin.vm.CreateDisposable.[0m
+2025-04-07 03:43:00.489393 +0000 build-templates-community: .[38;5;246m05:43:00 .[96m[qb.fetch.release-configs.fetch] .[38;5;246mqrexec call (start vm): /usr/lib/qubes/qrexec-client-vm -- disp2120 admin.vm.Start.[0m
+2025-04-07 03:43:06.274688 +0000 build-templates-community: .[38;5;246m05:43:06 .[96m[qb.fetch.release-configs.fetch] .[38;5;246mqrexec call (copy builder rpc services): /usr/lib/qubes/qrexec-client-vm --filter-escape-chars-stderr -- disp2120 qubes.Filecopy /usr/lib/qubes/qfile-agent /home/user/qubes-builderv2/rpc/qubesbuilder.FileCopyIn /home/user/qubes-builderv2/rpc/qubesbuilder.FileCopyOut.[0m
+2025-04-07 03:43:07.553788 +0000 build-templates-community: .[38;5;246m05:43:07 .[96m[qb.fetch.release-configs.fetch] .[38;5;246mqrexec call (copy-in): /usr/lib/qubes/qrexec-client-vm -- disp2120 qubesbuilder.FileCopyIn+-2Fbuilder-2Frelease--configs /usr/lib/qubes/qfile-agent /home/user/builder-templates-community-r4.2/sources/release-configs.[0m
+2025-04-07 03:43:08.097699 +0000 build-templates-community: .[38;5;246m05:43:08 .[96m[qb.fetch.release-configs.fetch] .[38;5;246mqrexec call (copy-in): /usr/lib/qubes/qrexec-client-vm -- disp2120 qubesbuilder.FileCopyIn+-2Fbuilder-2Fplugins-2Ffetch /usr/lib/qubes/qfile-agent /home/user/qubes-builderv2/qubesbuilder/plugins/fetch.[0m
+2025-04-07 03:43:08.494680 +0000 build-templates-community: .[38;5;246m05:43:08 .[96m[qb.fetch.release-configs.fetch] .[0mUsing executor qubes:disp2120..[0m
+2025-04-07 03:43:08.494767 +0000 build-templates-community: .[38;5;246m05:43:08 .[96m[qb.fetch.release-configs.fetch] .[38;5;246m/usr/bin/qvm-run-vm -- disp2120 env -- VERBOSE=1 DEBUG=1 BACKEND_VMM=xen bash -c 'cd /builder && /builder/plugins/fetch/scripts/get-and-verify-source.py https://github.com/QubesOS/qubes-release-configs.git /builder/release-configs /builder/keyring /builder/plugins/fetch/keys --git-branch main --minimum-distinct-maintainers 1 --maintainer 0064428F455451B3EBE78A7F063938BA42CFA724 --maintainer 274E12AB03F2FE293765FC06DA0434BC706E1FCF'.[0m
+2025-04-07 03:43:13.144455 +0000 build-templates-community: .[38;5;246m05:43:13 .[96m[qb.fetch.release-configs.fetch] .[38;5;246m--> Verifying tags....[0m
+2025-04-07 03:43:13.144532 +0000 build-templates-community: .[38;5;246m05:43:13 .[96m[qb.fetch.release-configs.fetch] .[38;5;246m---> Good tag 57651cb921fdab018f7802e71e89537287d30e07..[0m
+2025-04-07 03:43:13.144604 +0000 build-templates-community: .[38;5;246m05:43:13 .[96m[qb.fetch.release-configs.fetch] .[38;5;246mEnough distinct tag signatures. Found 1, mandatory minimum is 1..[0m
+2025-04-07 03:43:13.144627 +0000 build-templates-community: .[38;5;246m05:43:13 .[96m[qb.fetch.release-configs.fetch] .[38;5;246m--> Merging....[0m
+2025-04-07 03:43:13.177642 +0000 build-templates-community: .[38;5;246m05:43:13 .[96m[qb.fetch.release-configs.fetch] .[38;5;246mqrexec call (copy-out): /usr/lib/qubes/qrexec-client-vm -- disp2120 qubesbuilder.FileCopyOut+-2Fbuilder-2Frelease--configs /usr/bin/qfile-unpacker 1000 /home/user/builder-templates-community-r4.2/sources.[0m
+2025-04-07 03:43:13.363719 +0000 build-templates-community: .[38;5;246m05:43:13 .[96m[qb.fetch.release-configs.fetch] .[38;5;246mqrexec call (kill vm): /usr/lib/qubes/qrexec-client-vm -- disp2120 admin.vm.Kill.[0m
+2025-04-07 03:43:15.311888 +0000 build-templates-community: .[38;5;246m05:43:15 .[96m[qb.fetch.release-configs] .[0mLog file: /home/user/builder-templates-community-r4.2/logs/20250407T034258-release-configs.log.[0m
+2025-04-07 03:43:15.325622 +0000 build-templates-community: .[38;5;246m05:43:15 .[96m[qb] .[38;5;246m> done.[0m
+2025-04-07 03:43:15.325670 +0000 > closing log
