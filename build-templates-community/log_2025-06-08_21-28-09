@@ -1,0 +1,21 @@
+2025-06-08 21:28:09.442281 +0000 > starting log
+2025-06-08 21:28:09.442577 +0000 build-templates-community: .[38;5;246m23:28:09 .[96m[qb] .[38;5;246m> starting build with log.[0m
+2025-06-08 21:28:09.442600 +0000 build-templates-community: .[38;5;246m23:28:09 .[96m[qb] .[38;5;246m>> args:.[0m
+2025-06-08 21:28:09.442612 +0000 build-templates-community: .[38;5;246m23:28:09 .[96m[qb] .[38;5;246m>>   ().[0m
+2025-06-08 21:28:09.442620 +0000 build-templates-community: .[38;5;246m23:28:09 .[96m[qb] .[38;5;246m>> component:.[0m
+2025-06-08 21:28:09.442628 +0000 build-templates-community: .[38;5;246m23:28:09 .[96m[qb] .[38;5;246m>>   release-configs.[0m
+2025-06-08 21:28:09.442637 +0000 build-templates-community: .[38;5;246m23:28:09 .[96m[qb] .[38;5;246m>>     commit-hash: 68c939327e7e166f80f2525ce9e084b64fdababc.[0m
+2025-06-08 21:28:09.442649 +0000 build-templates-community: .[38;5;246m23:28:09 .[96m[qb] .[38;5;246m>>     source-hash: 5222bfbed23271a76641785ccfe9d8a2d27a046003e9c924de54aafb7e6b883c8399aa4e45ba5a099d7e0a380056c846496f96155e0c05445abe3b8674a56644.[0m
+2025-06-08 21:28:09.442682 +0000 build-templates-community: .[38;5;246m23:28:09 .[96m[qb] .[38;5;246m>> distributions:.[0m
+2025-06-08 21:28:09.442696 +0000 build-templates-community: .[38;5;246m23:28:09 .[96m[qb] .[38;5;246m>>   [].[0m
+2025-06-08 21:28:09.442704 +0000 build-templates-community: .[38;5;246m23:28:09 .[96m[qb] .[0mRunning stages: fetch.[0m
+2025-06-08 21:28:09.442713 +0000 build-templates-community: .[38;5;246m23:28:09 .[96m[qb.fetch.release-configs] .[0mrelease-configs: source already fetched. Updating..[0m
+2025-06-08 21:28:19.851836 +0000 build-templates-community: .[38;5;246m23:28:19 .[96m[qb.fetch.release-configs.fetch] .[0mUsing executor qubes:disp4084..[0m
+2025-06-08 21:28:19.851931 +0000 build-templates-community: .[38;5;246m23:28:19 .[96m[qb.fetch.release-configs.fetch] .[38;5;246m/usr/bin/qvm-run-vm -- disp4084 env -- VERBOSE=1 DEBUG=1 BACKEND_VMM=xen bash -c 'cd /builder && /builder/plugins/fetch/scripts/get-and-verify-source.py https://github.com/QubesOS/qubes-release-configs.git /builder/release-configs /builder/keyring /builder/plugins/fetch/keys --git-branch main --minimum-distinct-maintainers 1 --maintainer 0064428F455451B3EBE78A7F063938BA42CFA724 --maintainer 274E12AB03F2FE293765FC06DA0434BC706E1FCF'.[0m
+2025-06-08 21:28:22.372116 +0000 build-templates-community: .[38;5;246m23:28:22 .[96m[qb.fetch.release-configs.fetch] .[38;5;246m--> Verifying tags....[0m
+2025-06-08 21:28:22.372240 +0000 build-templates-community: .[38;5;246m23:28:22 .[96m[qb.fetch.release-configs.fetch] .[38;5;246m---> Good tag e3b117992f3f1d9ae803982e86a0c3a200887a49..[0m
+2025-06-08 21:28:22.372287 +0000 build-templates-community: .[38;5;246m23:28:22 .[96m[qb.fetch.release-configs.fetch] .[38;5;246mEnough distinct tag signatures. Found 1, mandatory minimum is 1..[0m
+2025-06-08 21:28:22.372424 +0000 build-templates-community: .[38;5;246m23:28:22 .[96m[qb.fetch.release-configs.fetch] .[38;5;246m--> Merging....[0m
+2025-06-08 21:28:25.223951 +0000 build-templates-community: .[38;5;246m23:28:25 .[96m[qb.fetch.release-configs] .[0mLog file: /home/user/builder-templates-community-r4.2/logs/20250608T212809-release-configs.log.[0m
+2025-06-08 21:28:25.237995 +0000 build-templates-community: .[38;5;246m23:28:25 .[96m[qb] .[38;5;246m> done.[0m
+2025-06-08 21:28:25.238033 +0000 > closing log
