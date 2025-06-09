@@ -1,0 +1,24 @@
+2025-06-09 11:23:54.689573 +0000 > starting log
+2025-06-09 11:23:54.689842 +0000 build-r43-templates-community: .[38;5;246m13:23:54 .[96m[qb] .[38;5;246m> starting build with log.[0m
+2025-06-09 11:23:54.689861 +0000 build-r43-templates-community: .[38;5;246m13:23:54 .[96m[qb] .[38;5;246m>> args:.[0m
+2025-06-09 11:23:54.689871 +0000 build-r43-templates-community: .[38;5;246m13:23:54 .[96m[qb] .[38;5;246m>>   ().[0m
+2025-06-09 11:23:54.689882 +0000 build-r43-templates-community: .[38;5;246m13:23:54 .[96m[qb] .[38;5;246m>> component:.[0m
+2025-06-09 11:23:54.689889 +0000 build-r43-templates-community: .[38;5;246m13:23:54 .[96m[qb] .[38;5;246m>>   builder-rpm.[0m
+2025-06-09 11:23:54.689897 +0000 build-r43-templates-community: .[38;5;246m13:23:54 .[96m[qb] .[38;5;246m>>     commit-hash: b9086c402246bdb65b3f8cf31e9ec0a5fb2bd915.[0m
+2025-06-09 11:23:54.689906 +0000 build-r43-templates-community: .[38;5;246m13:23:54 .[96m[qb] .[38;5;246m>>     source-hash: b970a04229f8241d34404d48b86f193e1f2e3588f071adaf48f081b3aa188b39e80bd8a37d4ca4840d7723e9fa705264feecb4b15e19d4521b5e38d7cd3469d3.[0m
+2025-06-09 11:23:54.689912 +0000 build-r43-templates-community: .[38;5;246m13:23:54 .[96m[qb] .[38;5;246m>> distributions:.[0m
+2025-06-09 11:23:54.689955 +0000 build-r43-templates-community: .[38;5;246m13:23:54 .[96m[qb] .[38;5;246m>>   [].[0m
+2025-06-09 11:23:54.689966 +0000 build-r43-templates-community: .[38;5;246m13:23:54 .[96m[qb] .[0mRunning stages: fetch.[0m
+2025-06-09 11:23:54.689974 +0000 build-r43-templates-community: .[38;5;246m13:23:54 .[96m[qb.fetch.builder-rpm] .[0mbuilder-rpm: source already fetched. Updating..[0m
+2025-06-09 11:24:10.803614 +0000 build-r43-templates-community: .[38;5;246m13:24:10 .[96m[qb.fetch.builder-rpm.fetch] .[0mUsing executor qubes:disp2182..[0m
+2025-06-09 11:24:10.803683 +0000 build-r43-templates-community: .[38;5;246m13:24:10 .[96m[qb.fetch.builder-rpm.fetch] .[38;5;246m/usr/bin/qvm-run-vm -- disp2182 env -- VERBOSE=1 DEBUG=1 BACKEND_VMM=xen bash -c 'cd /builder && /builder/plugins/fetch/scripts/get-and-verify-source.py https://github.com/QubesOS/qubes-builder-rpm.git /builder/builder-rpm /builder/keyring /builder/plugins/fetch/keys --git-branch main --minimum-distinct-maintainers 1 --maintainer 0064428F455451B3EBE78A7F063938BA42CFA724 --maintainer 274E12AB03F2FE293765FC06DA0434BC706E1FCF'.[0m
+2025-06-09 11:24:12.994497 +0000 build-r43-templates-community: .[38;5;246m13:24:13 .[96m[qb.fetch.builder-rpm.fetch] .[38;5;246m--> Verifying tags....[0m
+2025-06-09 11:24:12.994579 +0000 build-r43-templates-community: .[38;5;246m13:24:13 .[96m[qb.fetch.builder-rpm.fetch] .[38;5;246m---> Good tag 491a38a41d4d053502031a2a42e5e8c1532e9919..[0m
+2025-06-09 11:24:12.994613 +0000 build-r43-templates-community: .[38;5;246m13:24:13 .[96m[qb.fetch.builder-rpm.fetch] .[38;5;246mEnough distinct tag signatures. Found 1, mandatory minimum is 1..[0m
+2025-06-09 11:24:12.994629 +0000 build-r43-templates-community: .[38;5;246m13:24:13 .[96m[qb.fetch.builder-rpm.fetch] .[38;5;246m--> Merging....[0m
+2025-06-09 11:24:16.347565 +0000 build-r43-templates-community: .[38;5;246m13:24:16 .[96m[qb.fetch.builder-rpm] .[0mLog file: /home/user/builder-templates-community-r4.3/logs/20250609T112354-builder-rpm.log.[0m
+2025-06-09 11:24:16.360639 +0000 build-r43-templates-community: .[38;5;246m13:24:16 .[96m[qb.fetch.builder-rpm] .[38;5;246m['cd -- /builder', "git -C /builder/builder-rpm rev-parse 'HEAD^{}' >> hash", "git -C /builder/builder-rpm tag --points-at HEAD --list 'v*' >> vtags"].[0m
+2025-06-09 11:24:30.435293 +0000 build-r43-templates-community: .[38;5;246m13:24:30 .[96m[qb.fetch.builder-rpm.fetch] .[0mUsing executor qubes:disp8289..[0m
+2025-06-09 11:24:30.435376 +0000 build-r43-templates-community: .[38;5;246m13:24:30 .[96m[qb.fetch.builder-rpm.fetch] .[38;5;246m/usr/bin/qvm-run-vm -- disp8289 env -- VERBOSE=1 DEBUG=1 BACKEND_VMM=xen bash -c 'cd -- /builder && git -C /builder/builder-rpm rev-parse '"'"'HEAD^{}'"'"' >> hash && git -C /builder/builder-rpm tag --points-at HEAD --list '"'"'v*'"'"' >> vtags'.[0m
+2025-06-09 11:24:34.332050 +0000 build-r43-templates-community: .[38;5;246m13:24:34 .[96m[qb] .[38;5;246m> done.[0m
+2025-06-09 11:24:34.332136 +0000 > closing log
