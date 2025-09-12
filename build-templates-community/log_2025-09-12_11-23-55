@@ -1,0 +1,7 @@
+2025-09-12 11:23:55.488842 +0000 > starting log
+2025-09-12 11:23:55.489231 +0000 build-templates-community: .[38;5;246m13:23:55 .[96m[qb] .[38;5;246m> starting build with log.[0m
+2025-09-12 11:23:55.489251 +0000 build-templates-community: .[38;5;246m13:23:55 .[96m[qb.template.kicksecure-17] .[0mkicksecure-17: Already published to 'templates-community'..[0m
+2025-09-12 11:23:55.489278 +0000 build-templates-community: .[38;5;246m13:23:55 .[96m[qb.template.kicksecure-17.upload] .[38;5;246mUsing executor local:/tmp/12475890966305679dcd681/builder to run '['bash', '-c', 'rsync --partial --progress --hard-links -OJair --mkpath -- /home/user/builder-templates-community-r4.2/repository-publish/rpm/r4.2/templates-community/ yum.qubes-os.org:/pub/qubes/repo/yum/r4.2/templates-community/']'..[0m
+2025-09-12 11:23:56.231241 +0000 build-templates-community: .[38;5;246m13:23:56 .[96m[qb.template.kicksecure-17.upload] .[38;5;246msending incremental file list.[0m
+2025-09-12 11:23:56.520571 +0000 build-templates-community: .[38;5;246m13:23:56 .[96m[qb] .[38;5;246m> done.[0m
+2025-09-12 11:23:56.520637 +0000 > closing log
