@@ -1,0 +1,21 @@
+2025-10-23 14:25:28.300865 +0000 > starting log
+2025-10-23 14:25:28.301055 +0000 build-r43-templates-community: .[38;5;246m16:25:28 .[96m[qb] .[38;5;246m> starting build with log.[0m
+2025-10-23 14:25:28.301072 +0000 build-r43-templates-community: .[38;5;246m16:25:28 .[96m[qb] .[38;5;246m>> args:.[0m
+2025-10-23 14:25:28.301080 +0000 build-r43-templates-community: .[38;5;246m16:25:28 .[96m[qb] .[38;5;246m>>   ().[0m
+2025-10-23 14:25:28.301087 +0000 build-r43-templates-community: .[38;5;246m16:25:28 .[96m[qb] .[38;5;246m>> component:.[0m
+2025-10-23 14:25:28.301093 +0000 build-r43-templates-community: .[38;5;246m16:25:28 .[96m[qb] .[38;5;246m>>   template-kicksecure.[0m
+2025-10-23 14:25:28.301100 +0000 build-r43-templates-community: .[38;5;246m16:25:28 .[96m[qb] .[38;5;246m>>     commit-hash: 258fbe58271627d72be8e961f91d5156082a0e24.[0m
+2025-10-23 14:25:28.301112 +0000 build-r43-templates-community: .[38;5;246m16:25:28 .[96m[qb] .[38;5;246m>>     source-hash: e002fdbc0be7c45c64a2dec69da9b2958a7c675d52cbedb156bacea34dc8a957dbb065a39a82404c93defce2f990451877192419984637d87c9a42f9ef8786b9.[0m
+2025-10-23 14:25:28.301118 +0000 build-r43-templates-community: .[38;5;246m16:25:28 .[96m[qb] .[38;5;246m>> distributions:.[0m
+2025-10-23 14:25:28.301123 +0000 build-r43-templates-community: .[38;5;246m16:25:28 .[96m[qb] .[38;5;246m>>   [].[0m
+2025-10-23 14:25:28.301128 +0000 build-r43-templates-community: .[38;5;246m16:25:28 .[96m[qb] .[0mRunning stages: fetch.[0m
+2025-10-23 14:25:28.301135 +0000 build-r43-templates-community: .[38;5;246m16:25:28 .[96m[qb.fetch.template-kicksecure] .[0mtemplate-kicksecure: source already fetched. Updating..[0m
+2025-10-23 14:25:38.254830 +0000 build-r43-templates-community: .[38;5;246m16:25:38 .[96m[qb.fetch.template-kicksecure.fetch] .[0mUsing executor qubes:disp3511..[0m
+2025-10-23 14:25:38.254930 +0000 build-r43-templates-community: .[38;5;246m16:25:38 .[96m[qb.fetch.template-kicksecure.fetch] .[38;5;246m/usr/bin/qvm-run-vm -- disp3511 env -- VERBOSE=1 DEBUG=1 BACKEND_VMM=xen bash -c 'cd /builder && /builder/plugins/fetch/scripts/get-and-verify-source.py https://github.com/Kicksecure/qubes-template-kicksecure /builder/template-kicksecure /builder/keyring /builder/plugins/fetch/keys --git-branch trixie --minimum-distinct-maintainers 1 --maintainer 916B8D99C38EAF5E8ADC7A2A8D66066A2EEACCDA'.[0m
+2025-10-23 14:25:40.614342 +0000 build-r43-templates-community: .[38;5;246m16:25:40 .[96m[qb.fetch.template-kicksecure.fetch] .[38;5;246m--> Verifying tags....[0m
+2025-10-23 14:25:40.614429 +0000 build-r43-templates-community: .[38;5;246m16:25:40 .[96m[qb.fetch.template-kicksecure.fetch] .[38;5;246m---> Good tag 8161196581bc7fc4cba67b20a95ffa132aafc661..[0m
+2025-10-23 14:25:40.614472 +0000 build-r43-templates-community: .[38;5;246m16:25:40 .[96m[qb.fetch.template-kicksecure.fetch] .[38;5;246mEnough distinct tag signatures. Found 1, mandatory minimum is 1..[0m
+2025-10-23 14:25:40.614492 +0000 build-r43-templates-community: .[38;5;246m16:25:40 .[96m[qb.fetch.template-kicksecure.fetch] .[38;5;246m--> Merging....[0m
+2025-10-23 14:25:42.738915 +0000 build-r43-templates-community: .[38;5;246m16:25:42 .[96m[qb.fetch.template-kicksecure] .[0mLog file: /home/user/builder-templates-community-r4.3/logs/20251023T142528-template-kicksecure.log.[0m
+2025-10-23 14:25:42.741966 +0000 build-r43-templates-community: .[38;5;246m16:25:42 .[96m[qb] .[38;5;246m> done.[0m
+2025-10-23 14:25:42.742003 +0000 > closing log
