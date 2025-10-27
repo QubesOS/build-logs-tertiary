@@ -1,0 +1,24 @@
+2025-10-27 01:28:32.555678 +0000 > starting log
+2025-10-27 01:28:32.555979 +0000 build-templates-community: .[38;5;246m02:28:32 .[96m[qb] .[38;5;246m> starting build with log.[0m
+2025-10-27 01:28:32.556003 +0000 build-templates-community: .[38;5;246m02:28:32 .[96m[qb] .[38;5;246m>> args:.[0m
+2025-10-27 01:28:32.556013 +0000 build-templates-community: .[38;5;246m02:28:32 .[96m[qb] .[38;5;246m>>   ().[0m
+2025-10-27 01:28:32.556020 +0000 build-templates-community: .[38;5;246m02:28:32 .[96m[qb] .[38;5;246m>> component:.[0m
+2025-10-27 01:28:32.556027 +0000 build-templates-community: .[38;5;246m02:28:32 .[96m[qb] .[38;5;246m>>   builder-debian.[0m
+2025-10-27 01:28:32.556034 +0000 build-templates-community: .[38;5;246m02:28:32 .[96m[qb] .[38;5;246m>>     commit-hash: 8d80f7b51533d665db98fd353f3b6bb4e88c4171.[0m
+2025-10-27 01:28:32.556047 +0000 build-templates-community: .[38;5;246m02:28:32 .[96m[qb] .[38;5;246m>>     source-hash: 981b7ff36ab6c306caeeebaece8d5e4e8a340d7418ef5a26b25b58a43b4dcdf52859bd635d98a6129871433a12326aa4b7dcde56ae97220e5a883302ef7d960e.[0m
+2025-10-27 01:28:32.556054 +0000 build-templates-community: .[38;5;246m02:28:32 .[96m[qb] .[38;5;246m>> distributions:.[0m
+2025-10-27 01:28:32.556059 +0000 build-templates-community: .[38;5;246m02:28:32 .[96m[qb] .[38;5;246m>>   [].[0m
+2025-10-27 01:28:32.556064 +0000 build-templates-community: .[38;5;246m02:28:32 .[96m[qb] .[0mRunning stages: fetch.[0m
+2025-10-27 01:28:32.556071 +0000 build-templates-community: .[38;5;246m02:28:32 .[96m[qb.fetch.builder-debian] .[0mbuilder-debian: source already fetched. Updating..[0m
+2025-10-27 01:28:43.881922 +0000 build-templates-community: .[38;5;246m02:28:43 .[96m[qb.fetch.builder-debian.fetch] .[0mUsing executor qubes:disp3785..[0m
+2025-10-27 01:28:43.881989 +0000 build-templates-community: .[38;5;246m02:28:43 .[96m[qb.fetch.builder-debian.fetch] .[38;5;246m/usr/bin/qvm-run-vm -- disp3785 env -- VERBOSE=1 DEBUG=1 BACKEND_VMM=xen bash -c 'cd /builder && /builder/plugins/fetch/scripts/get-and-verify-source.py https://github.com/QubesOS/qubes-builder-debian.git /builder/builder-debian /builder/keyring /builder/plugins/fetch/keys --git-branch main --minimum-distinct-maintainers 1 --maintainer 0064428F455451B3EBE78A7F063938BA42CFA724 --maintainer 274E12AB03F2FE293765FC06DA0434BC706E1FCF'.[0m
+2025-10-27 01:28:46.025813 +0000 build-templates-community: .[38;5;246m02:28:46 .[96m[qb.fetch.builder-debian.fetch] .[38;5;246m--> Verifying tags....[0m
+2025-10-27 01:28:46.025869 +0000 build-templates-community: .[38;5;246m02:28:46 .[96m[qb.fetch.builder-debian.fetch] .[38;5;246m---> Good tag 7b6bdb0572788672a89e22f3c8e75308776e7853..[0m
+2025-10-27 01:28:46.025911 +0000 build-templates-community: .[38;5;246m02:28:46 .[96m[qb.fetch.builder-debian.fetch] .[38;5;246mEnough distinct tag signatures. Found 1, mandatory minimum is 1..[0m
+2025-10-27 01:28:46.025972 +0000 build-templates-community: .[38;5;246m02:28:46 .[96m[qb.fetch.builder-debian.fetch] .[38;5;246m--> Merging....[0m
+2025-10-27 01:28:49.376374 +0000 build-templates-community: .[38;5;246m02:28:49 .[96m[qb.fetch.builder-debian] .[0mLog file: /home/user/builder-templates-community-r4.2/logs/20251027T012831-builder-debian.log.[0m
+2025-10-27 01:28:49.392380 +0000 build-templates-community: .[38;5;246m02:28:49 .[96m[qb.fetch.builder-debian] .[38;5;246m['cd -- /builder', "git -C /builder/builder-debian rev-parse 'HEAD^{}' >> hash", "git -C /builder/builder-debian tag --points-at HEAD --list 'v*' >> vtags"].[0m
+2025-10-27 01:29:01.559376 +0000 build-templates-community: .[38;5;246m02:29:01 .[96m[qb.fetch.builder-debian.fetch] .[0mUsing executor qubes:disp4037..[0m
+2025-10-27 01:29:01.559472 +0000 build-templates-community: .[38;5;246m02:29:01 .[96m[qb.fetch.builder-debian.fetch] .[38;5;246m/usr/bin/qvm-run-vm -- disp4037 env -- VERBOSE=1 DEBUG=1 BACKEND_VMM=xen bash -c 'cd -- /builder && git -C /builder/builder-debian rev-parse '"'"'HEAD^{}'"'"' >> hash && git -C /builder/builder-debian tag --points-at HEAD --list '"'"'v*'"'"' >> vtags'.[0m
+2025-10-27 01:29:04.039440 +0000 build-templates-community: .[38;5;246m02:29:04 .[96m[qb] .[38;5;246m> done.[0m
+2025-10-27 01:29:04.039532 +0000 > closing log
