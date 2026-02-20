@@ -1,0 +1,25 @@
+2026-02-20 20:33:55.362078 +0000 > starting log
+2026-02-20 20:33:55.366052 +0000 build-templates-community: .[38;5;246m21:33:48 .[96m[qb] .[38;5;246m> starting build with log.[0m
+2026-02-20 20:33:55.366066 +0000 build-templates-community: .[38;5;246m21:33:48 .[96m[qb] .[38;5;246m>> args:.[0m
+2026-02-20 20:33:55.366074 +0000 build-templates-community: .[38;5;246m21:33:48 .[96m[qb] .[38;5;246m>>   ().[0m
+2026-02-20 20:33:55.366081 +0000 build-templates-community: .[38;5;246m21:33:48 .[96m[qb] .[38;5;246m>> component:.[0m
+2026-02-20 20:33:55.366087 +0000 build-templates-community: .[38;5;246m21:33:48 .[96m[qb] .[38;5;246m>>   release-configs.[0m
+2026-02-20 20:33:55.366094 +0000 build-templates-community: .[38;5;246m21:33:48 .[96m[qb] .[38;5;246m>>     commit-hash: 55c1c25e88ef284e121bcb1e5d38508d8a406baa.[0m
+2026-02-20 20:33:55.366104 +0000 build-templates-community: .[38;5;246m21:33:48 .[96m[qb] .[38;5;246m>>     source-hash: 67f5d205dbff76414688572fcf1639018ac9b942fc94b5ff8ab81bd38cae29a28c89152f1ac4d60ccac3bd74d97355e7592fcfee325963693674618a50ea17dd.[0m
+2026-02-20 20:33:55.366111 +0000 build-templates-community: .[38;5;246m21:33:48 .[96m[qb] .[38;5;246m>> distributions:.[0m
+2026-02-20 20:33:55.366116 +0000 build-templates-community: .[38;5;246m21:33:48 .[96m[qb] .[38;5;246m>>   [].[0m
+2026-02-20 20:33:55.366122 +0000 build-templates-community: .[38;5;246m21:33:48 .[96m[qb] .[0mRunning stages: fetch.[0m
+2026-02-20 20:33:55.366129 +0000 build-templates-community: .[38;5;246m21:33:48 .[96m[qb.fetch.release-configs] .[0mrelease-configs: source already fetched. Updating..[0m
+2026-02-20 20:34:03.519715 +0000 build-templates-community: .[38;5;246m21:34:03 .[96m[qb.fetch.release-configs.fetch] .[0mUsing executor qubes:disp7986..[0m
+2026-02-20 20:34:03.519854 +0000 build-templates-community: .[38;5;246m21:34:03 .[96m[qb.fetch.release-configs.fetch] .[38;5;246m/usr/bin/qvm-run-vm -- disp7986 env -- VERBOSE=1 DEBUG=1 BACKEND_VMM=xen bash -c 'cd /builder && /builder/plugins/fetch/scripts/get-and-verify-source.py https://github.com/QubesOS/qubes-release-configs.git /builder/release-configs /builder/keyring /builder/plugins/fetch/keys --git-branch main --minimum-distinct-maintainers 1 --maintainer 0064428F455451B3EBE78A7F063938BA42CFA724 --maintainer 274E12AB03F2FE293765FC06DA0434BC706E1FCF'.[0m
+2026-02-20 20:34:05.699436 +0000 build-templates-community: .[38;5;246m21:34:05 .[96m[qb.fetch.release-configs.fetch] .[38;5;246m--> Verifying tags....[0m
+2026-02-20 20:34:05.699502 +0000 build-templates-community: .[38;5;246m21:34:05 .[96m[qb.fetch.release-configs.fetch] .[38;5;246m---> Good tag 817ab920aee49d054083dc0d4d45960ccab1f551..[0m
+2026-02-20 20:34:05.699542 +0000 build-templates-community: .[38;5;246m21:34:05 .[96m[qb.fetch.release-configs.fetch] .[38;5;246mEnough distinct tag signatures. Found 1, mandatory minimum is 1..[0m
+2026-02-20 20:34:05.699596 +0000 build-templates-community: .[38;5;246m21:34:05 .[96m[qb.fetch.release-configs.fetch] .[38;5;246m--> Switching branch from master branch to main.[0m
+2026-02-20 20:34:05.699620 +0000 build-templates-community: .[38;5;246m21:34:05 .[96m[qb.fetch.release-configs.fetch] .[38;5;246m--> Merging....[0m
+2026-02-20 20:34:10.861047 +0000 build-templates-community: .[38;5;246m21:34:10 .[96m[qb.fetch.release-configs] .[0mLog file: /home/user/builder-templates-community-r4.2/logs/20260220T203348-release-configs.log.[0m
+2026-02-20 20:34:10.880569 +0000 build-templates-community: .[38;5;246m21:34:10 .[96m[qb.fetch.release-configs] .[38;5;246m['cd -- /builder', "git -C /builder/release-configs rev-parse 'HEAD^{}' >> hash", "git -C /builder/release-configs tag --points-at HEAD --list 'v*' >> vtags"].[0m
+2026-02-20 20:34:22.608117 +0000 build-templates-community: .[38;5;246m21:34:22 .[96m[qb.fetch.release-configs.fetch] .[0mUsing executor qubes:disp4934..[0m
+2026-02-20 20:34:22.608198 +0000 build-templates-community: .[38;5;246m21:34:22 .[96m[qb.fetch.release-configs.fetch] .[38;5;246m/usr/bin/qvm-run-vm -- disp4934 env -- VERBOSE=1 DEBUG=1 BACKEND_VMM=xen bash -c 'cd -- /builder && git -C /builder/release-configs rev-parse '"'"'HEAD^{}'"'"' >> hash && git -C /builder/release-configs tag --points-at HEAD --list '"'"'v*'"'"' >> vtags'.[0m
+2026-02-20 20:34:28.410032 +0000 build-templates-community: .[38;5;246m21:34:28 .[96m[qb] .[38;5;246m> done.[0m
+2026-02-20 20:34:28.410095 +0000 > closing log
