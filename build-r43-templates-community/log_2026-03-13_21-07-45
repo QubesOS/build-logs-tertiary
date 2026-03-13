@@ -1,0 +1,885 @@
+2026-03-13 21:07:45.310246 +0000 > starting log
+2026-03-13 21:07:45.310464 +0000 build-r43-templates-community: .[38;5;246m22:07:45 .[96m[qb] .[38;5;246m> starting build with log.[0m
+2026-03-13 21:07:45.310488 +0000 build-r43-templates-community: .[38;5;246m22:07:45 .[96m[qb.fetch.builder-archlinux] .[0mbuilder-archlinux: source already fetched. Updating..[0m
+2026-03-13 21:07:56.130838 +0000 build-r43-templates-community: .[38;5;246m22:07:56 .[96m[qb.fetch.builder-archlinux.fetch] .[0mUsing executor qubes:disp2323..[0m
+2026-03-13 21:07:56.130908 +0000 build-r43-templates-community: .[38;5;246m22:07:56 .[96m[qb.fetch.builder-archlinux.fetch] .[38;5;246m/usr/bin/qvm-run-vm -- disp2323 env -- VERBOSE=1 DEBUG=1 BACKEND_VMM=xen bash -c 'cd /builder && /builder/plugins/fetch/scripts/get-and-verify-source.py https://github.com/QubesOS/qubes-builder-archlinux.git /builder/builder-archlinux /builder/keyring /builder/plugins/fetch/keys --git-branch main --minimum-distinct-maintainers 1 --maintainer 0064428F455451B3EBE78A7F063938BA42CFA724 --maintainer 274E12AB03F2FE293765FC06DA0434BC706E1FCF'.[0m
+2026-03-13 21:08:00.103234 +0000 build-r43-templates-community: .[38;5;246m22:08:00 .[96m[qb.fetch.builder-archlinux.fetch] .[38;5;246m--> Verifying tags....[0m
+2026-03-13 21:08:00.103301 +0000 build-r43-templates-community: .[38;5;246m22:08:00 .[96m[qb.fetch.builder-archlinux.fetch] .[38;5;246m---> Good tag dc64c67f9fa1f7d7aa49294abf42f70615fb087f..[0m
+2026-03-13 21:08:00.103326 +0000 build-r43-templates-community: .[38;5;246m22:08:00 .[96m[qb.fetch.builder-archlinux.fetch] .[38;5;246mEnough distinct tag signatures. Found 1, mandatory minimum is 1..[0m
+2026-03-13 21:08:00.103357 +0000 build-r43-templates-community: .[38;5;246m22:08:00 .[96m[qb.fetch.builder-archlinux.fetch] .[38;5;246m--> Merging....[0m
+2026-03-13 21:08:03.197732 +0000 build-r43-templates-community: .[38;5;246m22:08:03 .[96m[qb.fetch.builder-archlinux] .[0mLog file: /home/user/builder-templates-community-r4.3/logs/20260313T210514-builder-archlinux.log.[0m
+2026-03-13 21:08:15.726782 +0000 build-r43-templates-community: .[38;5;246m22:08:15 .[96m[qb.template.archlinux.prep] .[0mUsing executor qubes:disp9287..[0m
+2026-03-13 21:08:15.726931 +0000 build-r43-templates-community: .[38;5;246m22:08:15 .[96m[qb.template.archlinux.prep] .[38;5;246m/usr/bin/qvm-run-vm -- disp9287 env -- VERBOSE=1 DEBUG=1 BACKEND_VMM=xen DIST=archlinux DISTRIBUTION=archlinux DIST_CODENAME=archlinux DIST_NAME=archlinux DIST_VER=rolling TEMPLATE_NAME=archlinux TEMPLATE_VERSION=4.3.0 TEMPLATE_FLAVOR= TEMPLATE_OPTIONS= INSTALL_DIR=/builder/mnt ARTIFACTS_DIR=/builder/build PLUGINS_DIR=/builder/plugins PACKAGES_DIR=/builder/repository DISCARD_PREPARED_IMAGE=1 BUILDER_TURBO_MODE=1 CACHE_DIR=/builder/cache RELEASE=4.3 TEMPLATE_SCRIPTS_DIR=/builder/plugins/template/scripts TEMPLATE_ROOT_SIZE=20G TEMPLATE_ROOT_WITH_PARTITIONS=1 USE_QUBES_REPO_VERSION=4.3 USE_QUBES_REPO_TESTING=1 TEMPLATE_CONTENT_DIR=/builder/sources/builder-archlinux/template_archlinux KEYS_DIR=/builder/sources/builder-archlinux/keys ARCHLINUX_MIRROR= TEMPLATE_FLAVOR_DIR=+:/builder/sources/builder-archlinux/template_archlinux/ TEMPLATE_TIMESTAMP=202603132105 bash -c 'make -C /builder/plugins/template prepare build-rootimg'.[0m
+2026-03-13 21:08:15.859909 +0000 build-r43-templates-community: .[38;5;246m22:08:16 .[96m[qb.template.archlinux.prep] .[38;5;246mmake: Entering directory '/builder/plugins/template'.[0m
+2026-03-13 21:08:15.877150 +0000 build-r43-templates-community: .[38;5;246m22:08:16 .[96m[qb.template.archlinux.prep] .[38;5;246mBuilding template: archlinux (202603132105).[0m
+2026-03-13 21:08:15.877194 +0000 build-r43-templates-community: .[38;5;246m22:08:16 .[96m[qb.template.archlinux.prep] .[38;5;246mmkdir -p /builder/build.[0m
+2026-03-13 21:08:15.879036 +0000 build-r43-templates-community: .[38;5;246m22:08:16 .[96m[qb.template.archlinux.prep] .[38;5;246mecho 202603132105 > /builder/build/build_timestamp_archlinux.[0m
+2026-03-13 21:08:15.881100 +0000 build-r43-templates-community: .[38;5;246m22:08:16 .[96m[qb.template.archlinux.prep] .[38;5;246m# Check that required env are defined.[0m
+2026-03-13 21:08:15.883701 +0000 build-r43-templates-community: .[38;5;246m22:08:16 .[96m[qb.template.archlinux.prep] .[38;5;246msudo env -i DIST_CODENAME="archlinux" DIST_NAME="archlinux" DIST_VER="rolling" PLUGINS_DIR="/builder/plugins" ARTIFACTS_DIR="/builder/build" CACHE_DIR="/builder/cache" TEMPLATE_CONTENT_DIR="/builder/sources/builder-archlinux/template_archlinux" TEMPLATE_NAME="archlinux" TEMPLATE_VERSION="4.3.0" PACKAGES_DIR="/builder/repository" TEMPLATE_SCRIPTS_DIR="/builder/plugins/template/scripts" KEYS_DIR="/builder/sources/builder-archlinux/keys" TEMPLATE_FLAVOR="" TEMPLATE_OPTIONS="" TEMPLATE_FLAVOR_DIR="+:/builder/sources/builder-archlinux/template_archlinux/" APPMENUS_DIR="" CONFIG_DIR="" TEMPLATE_CONF="/builder/build/template.conf" VERBOSE="1" DEBUG="1" PATH="/usr/local/sbin:/usr/local/bin:/usr/bin" DISCARD_PREPARED_IMAGE="1" TEMPLATE_ROOT_WITH_PARTITIONS="1" TEMPLATE_ROOT_SIZE="20G" USE_QUBES_REPO_VERSION="4.3" USE_QUBES_REPO_TESTING="1" BUILDER_TURBO_MODE="1" REPO_PROXY="" FEDORA_MIRROR="" CENTOS_MIRROR="" EPEL_MIRROR="" QUBES_MIRROR="" DEBIAN_MIRRORS="" GENTOO_MIRROR="" ARCHLINUX_MIRROR="" FLAVORS_DIR="" RELEASE="4.3" DIST="archlinux" DISTRIBUTION="archlinux" /builder/plugins/template/scripts/prepare-image /builder/build/prepared_images/archlinux.img /builder/mnt.[0m
+2026-03-13 21:08:15.917662 +0000 build-r43-templates-community: .[38;5;246m22:08:16 .[96m[qb.template.archlinux.prep] .[38;5;246m+ IMG=/builder/build/prepared_images/archlinux.img.[0m
+2026-03-13 21:08:15.917808 +0000 build-r43-templates-community: .[38;5;246m22:08:16 .[96m[qb.template.archlinux.prep] .[38;5;246m++ readlink -m /builder/mnt.[0m
+2026-03-13 21:08:15.918998 +0000 build-r43-templates-community: .[38;5;246m22:08:16 .[96m[qb.template.archlinux.prep] .[38;5;246m+ INSTALL_DIR=/builder/mnt.[0m
+2026-03-13 21:08:15.919417 +0000 build-r43-templates-community: .[38;5;246m22:08:16 .[96m[qb.template.archlinux.prep] .[38;5;246m++ dirname /builder/plugins/template/scripts/prepare-image.[0m
+2026-03-13 21:08:15.920284 +0000 build-r43-templates-community: .[38;5;246m22:08:16 .[96m[qb.template.archlinux.prep] .[38;5;246m+ BUILDER_SCRIPTS_DIR=/builder/plugins/template/scripts.[0m
+2026-03-13 21:08:15.920311 +0000 build-r43-templates-community: .[38;5;246m22:08:16 .[96m[qb.template.archlinux.prep] .[38;5;246m+ LC_ALL=POSIX.[0m
+2026-03-13 21:08:15.920417 +0000 build-r43-templates-community: .[38;5;246m22:08:16 .[96m[qb.template.archlinux.prep] .[38;5;246m+ RETCODE=0.[0m
+2026-03-13 21:08:15.920477 +0000 build-r43-templates-community: .[38;5;246m22:08:16 .[96m[qb.template.archlinux.prep] .[38;5;246m+ . /builder/plugins/template/scripts/builder-setup.[0m
+2026-03-13 21:08:15.920690 +0000 build-r43-templates-community: .[38;5;246m22:08:16 .[96m[qb.template.archlinux.prep] .[38;5;246m++ REQUIRED_ENV=(DIST_CODENAME DIST_NAME DIST_VER PLUGINS_DIR ARTIFACTS_DIR CACHE_DIR TEMPLATE_CONTENT_DIR TEMPLATE_NAME TEMPLATE_SCRIPTS_DIR KEYS_DIR).[0m
+2026-03-13 21:08:15.920783 +0000 build-r43-templates-community: .[38;5;246m22:08:16 .[96m[qb.template.archlinux.prep] .[38;5;246m++ for var in "${REQUIRED_ENV[@]}".[0m
+2026-03-13 21:08:15.920931 +0000 build-r43-templates-community: .[38;5;246m22:08:16 .[96m[qb.template.archlinux.prep] .[38;5;246m++ '[' -z archlinux ']'.[0m
+2026-03-13 21:08:15.921005 +0000 build-r43-templates-community: .[38;5;246m22:08:16 .[96m[qb.template.archlinux.prep] .[38;5;246m++ for var in "${REQUIRED_ENV[@]}".[0m
+2026-03-13 21:08:15.921065 +0000 build-r43-templates-community: .[38;5;246m22:08:16 .[96m[qb.template.archlinux.prep] .[38;5;246m++ '[' -z archlinux ']'.[0m
+2026-03-13 21:08:15.921111 +0000 build-r43-templates-community: .[38;5;246m22:08:16 .[96m[qb.template.archlinux.prep] .[38;5;246m++ for var in "${REQUIRED_ENV[@]}".[0m
+2026-03-13 21:08:15.921157 +0000 build-r43-templates-community: .[38;5;246m22:08:16 .[96m[qb.template.archlinux.prep] .[38;5;246m++ '[' -z rolling ']'.[0m
+2026-03-13 21:08:15.921193 +0000 build-r43-templates-community: .[38;5;246m22:08:16 .[96m[qb.template.archlinux.prep] .[38;5;246m++ for var in "${REQUIRED_ENV[@]}".[0m
+2026-03-13 21:08:15.921421 +0000 build-r43-templates-community: .[38;5;246m22:08:16 .[96m[qb.template.archlinux.prep] .[38;5;246m++ '[' -z /builder/plugins ']'.[0m
+2026-03-13 21:08:15.921540 +0000 build-r43-templates-community: .[38;5;246m22:08:16 .[96m[qb.template.archlinux.prep] .[38;5;246m++ for var in "${REQUIRED_ENV[@]}".[0m
+2026-03-13 21:08:15.921656 +0000 build-r43-templates-community: .[38;5;246m22:08:16 .[96m[qb.template.archlinux.prep] .[38;5;246m++ '[' -z /builder/build ']'.[0m
+2026-03-13 21:08:15.921744 +0000 build-r43-templates-community: .[38;5;246m22:08:16 .[96m[qb.template.archlinux.prep] .[38;5;246m++ for var in "${REQUIRED_ENV[@]}".[0m
+2026-03-13 21:08:15.921762 +0000 build-r43-templates-community: .[38;5;246m22:08:16 .[96m[qb.template.archlinux.prep] .[38;5;246m++ '[' -z /builder/cache ']'.[0m
+2026-03-13 21:08:15.921927 +0000 build-r43-templates-community: .[38;5;246m22:08:16 .[96m[qb.template.archlinux.prep] .[38;5;246m++ for var in "${REQUIRED_ENV[@]}".[0m
+2026-03-13 21:08:15.921948 +0000 build-r43-templates-community: .[38;5;246m22:08:16 .[96m[qb.template.archlinux.prep] .[38;5;246m++ '[' -z /builder/sources/builder-archlinux/template_archlinux ']'.[0m
+2026-03-13 21:08:15.922033 +0000 build-r43-templates-community: .[38;5;246m22:08:16 .[96m[qb.template.archlinux.prep] .[38;5;246m++ for var in "${REQUIRED_ENV[@]}".[0m
+2026-03-13 21:08:15.922058 +0000 build-r43-templates-community: .[38;5;246m22:08:16 .[96m[qb.template.archlinux.prep] .[38;5;246m++ '[' -z archlinux ']'.[0m
+2026-03-13 21:08:15.922125 +0000 build-r43-templates-community: .[38;5;246m22:08:16 .[96m[qb.template.archlinux.prep] .[38;5;246m++ for var in "${REQUIRED_ENV[@]}".[0m
+2026-03-13 21:08:15.922144 +0000 build-r43-templates-community: .[38;5;246m22:08:16 .[96m[qb.template.archlinux.prep] .[38;5;246m++ '[' -z /builder/plugins/template/scripts ']'.[0m
+2026-03-13 21:08:15.922159 +0000 build-r43-templates-community: .[38;5;246m22:08:16 .[96m[qb.template.archlinux.prep] .[38;5;246m++ for var in "${REQUIRED_ENV[@]}".[0m
+2026-03-13 21:08:15.922250 +0000 build-r43-templates-community: .[38;5;246m22:08:16 .[96m[qb.template.archlinux.prep] .[38;5;246m++ '[' -z /builder/sources/builder-archlinux/keys ']'.[0m
+2026-03-13 21:08:15.922349 +0000 build-r43-templates-community: .[38;5;246m22:08:16 .[96m[qb.template.archlinux.prep] .[38;5;246m+++ id -ur.[0m
+2026-03-13 21:08:15.922724 +0000 build-r43-templates-community: .[38;5;246m22:08:16 .[96m[qb.template.archlinux.prep] .[38;5;246m++ [[ 0 != 0 ]].[0m
+2026-03-13 21:08:15.922840 +0000 build-r43-templates-community: .[38;5;246m22:08:16 .[96m[qb.template.archlinux.prep] .[38;5;246m+ . /builder/plugins/template/scripts/umount-kill.[0m
+2026-03-13 21:08:15.922911 +0000 build-r43-templates-community: .[38;5;246m22:08:16 .[96m[qb.template.archlinux.prep] .[38;5;246m++ '[' 1 == 1 ']'.[0m
+2026-03-13 21:08:15.922928 +0000 build-r43-templates-community: .[38;5;246m22:08:16 .[96m[qb.template.archlinux.prep] .[38;5;246m++ set -x.[0m
+2026-03-13 21:08:15.923681 +0000 build-r43-templates-community: .[38;5;246m22:08:16 .[96m[qb.template.archlinux.prep] .[38;5;246m+++ basename /builder/plugins/template/scripts/prepare-image.[0m
+2026-03-13 21:08:15.925146 +0000 build-r43-templates-community: .[38;5;246m22:08:16 .[96m[qb.template.archlinux.prep] .[38;5;246m++ '[' prepare-image == umount-kill ']'.[0m
+2026-03-13 21:08:15.925165 +0000 build-r43-templates-community: .[38;5;246m22:08:16 .[96m[qb.template.archlinux.prep] .[38;5;246m+ '[' 2 -ne 2 ']'.[0m
+2026-03-13 21:08:15.925207 +0000 build-r43-templates-community: .[38;5;246m22:08:16 .[96m[qb.template.archlinux.prep] .[38;5;246m+ '[' -z 20G ']'.[0m
+2026-03-13 21:08:15.925257 +0000 build-r43-templates-community: .[38;5;246m22:08:16 .[96m[qb.template.archlinux.prep] .[38;5;246m+ mkdir -p /builder/mnt /builder/cache /builder/repository /builder/build.[0m
+2026-03-13 21:08:15.926667 +0000 build-r43-templates-community: .[38;5;246m22:08:16 .[96m[qb.template.archlinux.prep] .[38;5;246m+ export INSTALL_DIR LC_ALL IMG.[0m
+2026-03-13 21:08:15.927557 +0000 build-r43-templates-community: .[38;5;246m22:08:16 .[96m[qb.template.archlinux.prep] .[38;5;246m++ df -T /dev.[0m
+2026-03-13 21:08:15.928296 +0000 build-r43-templates-community: .[38;5;246m22:08:16 .[96m[qb.template.archlinux.prep] .[38;5;246m++ cut -f 1 -d ' '.[0m
+2026-03-13 21:08:15.928362 +0000 build-r43-templates-community: .[38;5;246m22:08:16 .[96m[qb.template.archlinux.prep] .[38;5;246m++ tail -1.[0m
+2026-03-13 21:08:15.931155 +0000 build-r43-templates-community: .[38;5;246m22:08:16 .[96m[qb.template.archlinux.prep] .[38;5;246m+ '[' devtmpfs = tmpfs ']'.[0m
+2026-03-13 21:08:15.931195 +0000 build-r43-templates-community: .[38;5;246m22:08:16 .[96m[qb.template.archlinux.prep] .[38;5;246m+ DIST_TO_STR=archlinux+.[0m
+2026-03-13 21:08:15.931229 +0000 build-r43-templates-community: .[38;5;246m22:08:16 .[96m[qb.template.archlinux.prep] .[38;5;246mINFO: Preparing installation of archlinux+ template....[0m
+2026-03-13 21:08:15.931642 +0000 build-r43-templates-community: .[38;5;246m22:08:16 .[96m[qb.template.archlinux.prep] .[38;5;246m+ '[' 0 -gt 0 ']'.[0m
+2026-03-13 21:08:15.931855 +0000 build-r43-templates-community: .[38;5;246m22:08:16 .[96m[qb.template.archlinux.prep] .[38;5;246m+ echo 'INFO: Preparing installation of archlinux+ template...'.[0m
+2026-03-13 21:08:15.931959 +0000 build-r43-templates-community: .[38;5;246m22:08:16 .[96m[qb.template.archlinux.prep] .[38;5;246m+ /builder/sources/builder-archlinux/template_archlinux/00_prepare.sh.[0m
+2026-03-13 21:08:15.932547 +0000 build-r43-templates-community: .[38;5;246m22:08:16 .[96m[qb.template.archlinux.prep] .[38;5;246m+ '[' 00 -eq 1 ']'.[0m
+2026-03-13 21:08:15.932567 +0000 build-r43-templates-community: .[38;5;246m22:08:16 .[96m[qb.template.archlinux.prep] .[38;5;246m+ echo '--> Archlinux 00_prepare.sh'.[0m
+2026-03-13 21:08:15.932650 +0000 build-r43-templates-community: .[38;5;246m22:08:16 .[96m[qb.template.archlinux.prep] .[38;5;246m+ [[ -n x ]].[0m
+2026-03-13 21:08:15.932675 +0000 build-r43-templates-community: .[38;5;246m22:08:16 .[96m[qb.template.archlinux.prep] .[38;5;246m+ export https_proxy= http_proxy=.[0m
+2026-03-13 21:08:15.932685 +0000 build-r43-templates-community: .[38;5;246m22:08:16 .[96m[qb.template.archlinux.prep] .[38;5;246m+ https_proxy=.[0m
+2026-03-13 21:08:15.932693 +0000 build-r43-templates-community: .[38;5;246m22:08:16 .[96m[qb.template.archlinux.prep] .[38;5;246m+ http_proxy=.[0m
+2026-03-13 21:08:15.932734 +0000 build-r43-templates-community: .[38;5;246m22:08:16 .[96m[qb.template.archlinux.prep] .[38;5;246m+ ARCHLINUX_SRC_PREFIX=https://mirrors.edge.kernel.org/archlinux.[0m
+2026-03-13 21:08:15.932837 +0000 build-r43-templates-community: .[38;5;246m22:08:16 .[96m[qb.template.archlinux.prep] .[38;5;246m--> Archlinux 00_prepare.sh.[0m
+2026-03-13 21:08:15.933982 +0000 build-r43-templates-community: .[38;5;246m22:08:16 .[96m[qb.template.archlinux.prep] .[38;5;246m++ wget -O- https://mirrors.edge.kernel.org/archlinux/iso/latest/sha256sums.txt.[0m
+2026-03-13 21:08:15.934057 +0000 build-r43-templates-community: .[38;5;246m22:08:16 .[96m[qb.template.archlinux.prep] .[38;5;246m++ grep -o 'archlinux-bootstrap-[0-9.]*-x86_64\.tar\.[a-z]*'.[0m
+2026-03-13 21:08:15.935367 +0000 build-r43-templates-community: .[38;5;246m22:08:16 .[96m[qb.template.archlinux.prep] .[38;5;246m++ head -1.[0m
+2026-03-13 21:08:17.149827 +0000 build-r43-templates-community: .[38;5;246m22:08:17 .[96m[qb.template.archlinux.prep] .[38;5;246m[0] Downloading 'https://mirrors.edge.kernel.org/archlinux/iso/latest/sha256sums.txt' ....[0m
+2026-03-13 21:08:17.414999 +0000 build-r43-templates-community: .[38;5;246m22:08:17 .[96m[qb.template.archlinux.prep] .[38;5;246mHTTP response 200  [https://mirrors.edge.kernel.org/archlinux/iso/latest/sha256sums.txt].[0m
+2026-03-13 21:08:17.421819 +0000 build-r43-templates-community: .[38;5;246m22:08:17 .[96m[qb.template.archlinux.prep] .[38;5;246m+ BOOTSTRAP_TARBALL=archlinux-bootstrap-2026.03.01-x86_64.tar.zst.[0m
+2026-03-13 21:08:17.421933 +0000 build-r43-templates-community: .[38;5;246m22:08:17 .[96m[qb.template.archlinux.prep] .[38;5;246m+ BOOTSTRAP_URL=https://mirrors.edge.kernel.org/archlinux/iso/latest/archlinux-bootstrap-2026.03.01-x86_64.tar.zst.[0m
+2026-03-13 21:08:17.422050 +0000 build-r43-templates-community: .[38;5;246m22:08:17 .[96m[qb.template.archlinux.prep] .[38;5;246m+ mkdir -p /builder/cache/pacman_cache.[0m
+2026-03-13 21:08:17.424196 +0000 build-r43-templates-community: .[38;5;246m22:08:17 .[96m[qb.template.archlinux.prep] .[38;5;246m+ echo '  --> Downloading Archlinux bootstrap tarball (v)...'.[0m
+2026-03-13 21:08:17.424220 +0000 build-r43-templates-community: .[38;5;246m22:08:17 .[96m[qb.template.archlinux.prep] .[38;5;246m+ wget -N -P /builder/cache https://mirrors.edge.kernel.org/archlinux/iso/latest/archlinux-bootstrap-2026.03.01-x86_64.tar.zst.[0m
+2026-03-13 21:08:17.424303 +0000 build-r43-templates-community: .[38;5;246m22:08:17 .[96m[qb.template.archlinux.prep] .[38;5;246m  --> Downloading Archlinux bootstrap tarball (v)....[0m
+2026-03-13 21:09:27.050637 +0000 build-r43-templates-community: .[38;5;246m22:09:27 .[96m[qb.template.archlinux.prep] .[38;5;246m[0] Downloading 'https://mirrors.edge.kernel.org/archlinux/iso/latest/archlinux-bootstrap-2026.03.01-x86_64.tar.zst' ....[0m
+2026-03-13 21:09:27.050706 +0000 build-r43-templates-community: .[38;5;246m22:09:27 .[96m[qb.template.archlinux.prep] .[38;5;246mSaving '/builder/cache/archlinux-bootstrap-2026.03.01-x86_64.tar.zst'.[0m
+2026-03-13 21:09:27.050749 +0000 build-r43-templates-community: .[38;5;246m22:09:27 .[96m[qb.template.archlinux.prep] .[38;5;246mHTTP response 200  [https://mirrors.edge.kernel.org/archlinux/iso/latest/archlinux-bootstrap-2026.03.01-x86_64.tar.zst].[0m
+2026-03-13 21:09:27.057074 +0000 build-r43-templates-community: .[38;5;246m22:09:27 .[96m[qb.template.archlinux.prep] .[38;5;246m+ wget -N -P /builder/cache https://mirrors.edge.kernel.org/archlinux/iso/latest/archlinux-bootstrap-2026.03.01-x86_64.tar.zst.sig.[0m
+2026-03-13 21:09:38.654047 +0000 build-r43-templates-community: .[38;5;246m22:09:38 .[96m[qb.template.archlinux.prep] .[38;5;246m[0] Downloading 'https://mirrors.edge.kernel.org/archlinux/iso/latest/archlinux-bootstrap-2026.03.01-x86_64.tar.zst.sig' ....[0m
+2026-03-13 21:09:38.654118 +0000 build-r43-templates-community: .[38;5;246m22:09:38 .[96m[qb.template.archlinux.prep] .[38;5;246mSaving '/builder/cache/archlinux-bootstrap-2026.03.01-x86_64.tar.zst.sig'.[0m
+2026-03-13 21:09:38.654159 +0000 build-r43-templates-community: .[38;5;246m22:09:38 .[96m[qb.template.archlinux.prep] .[38;5;246mHTTP response 200  [https://mirrors.edge.kernel.org/archlinux/iso/latest/archlinux-bootstrap-2026.03.01-x86_64.tar.zst.sig].[0m
+2026-03-13 21:09:38.659274 +0000 build-r43-templates-community: .[38;5;246m22:09:38 .[96m[qb.template.archlinux.prep] .[38;5;246m+ echo '  --> Preparing GnuPG to verify tarball...'.[0m
+2026-03-13 21:09:38.659312 +0000 build-r43-templates-community: .[38;5;246m22:09:38 .[96m[qb.template.archlinux.prep] .[38;5;246m+ mkdir -p /builder/cache/gpghome.[0m
+2026-03-13 21:09:38.659487 +0000 build-r43-templates-community: .[38;5;246m22:09:38 .[96m[qb.template.archlinux.prep] .[38;5;246m  --> Preparing GnuPG to verify tarball....[0m
+2026-03-13 21:09:38.661514 +0000 build-r43-templates-community: .[38;5;246m22:09:38 .[96m[qb.template.archlinux.prep] .[38;5;246m+ touch /builder/cache/gpghome/pubring.gpg.[0m
+2026-03-13 21:09:38.664735 +0000 build-r43-templates-community: .[38;5;246m22:09:38 .[96m[qb.template.archlinux.prep] .[38;5;246m+ chmod -R go-rwx /builder/cache/gpghome.[0m
+2026-03-13 21:09:38.666144 +0000 build-r43-templates-community: .[38;5;246m22:09:38 .[96m[qb.template.archlinux.prep] .[38;5;246m+ gpg --keyring /builder/cache/gpghome/pubring.gpg --import /builder/sources/builder-archlinux/keys/archlinux-master-keys.asc.[0m
+2026-03-13 21:09:38.680635 +0000 build-r43-templates-community: .[38;5;246m22:09:38 .[96m[qb.template.archlinux.prep] .[38;5;246mgpg: directory '/root/.gnupg' created.[0m
+2026-03-13 21:09:38.762496 +0000 build-r43-templates-community: .[38;5;246m22:09:38 .[96m[qb.template.archlinux.prep] .[38;5;246mgpg: /root/.gnupg/trustdb.gpg: trustdb created.[0m
+2026-03-13 21:09:38.762804 +0000 build-r43-templates-community: .[38;5;246m22:09:38 .[96m[qb.template.archlinux.prep] .[38;5;246mgpg: key 4DC95B6D7BE9892E: public key "David Runge (Arch Linux Master Key) <dvzrv@master-key.archlinux.org>" imported.[0m
+2026-03-13 21:09:38.785366 +0000 build-r43-templates-community: .[38;5;246m22:09:38 .[96m[qb.template.archlinux.prep] .[38;5;246mgpg: key 76A5EF9054449A5C: 6 signatures not checked due to missing keys.[0m
+2026-03-13 21:09:38.792928 +0000 build-r43-templates-community: .[38;5;246m22:09:38 .[96m[qb.template.archlinux.prep] .[38;5;246mgpg: key 76A5EF9054449A5C: public key "Pierre Schmitz <pierre@archlinux.org>" imported.[0m
+2026-03-13 21:09:38.803821 +0000 build-r43-templates-community: .[38;5;246m22:09:38 .[96m[qb.template.archlinux.prep] .[38;5;246mgpg: key 6BA0F5A2037F4F41: public key "Johannes L.thberg (Arch Linux Master Key) <demize@master-key.archlinux.org>" imported.[0m
+2026-03-13 21:09:38.806760 +0000 build-r43-templates-community: .[38;5;246m22:09:38 .[96m[qb.template.archlinux.prep] .[38;5;246mgpg: key B1B73B02CC52A02A: 1 signature not checked due to a missing key.[0m
+2026-03-13 21:09:38.813876 +0000 build-r43-templates-community: .[38;5;246m22:09:38 .[96m[qb.template.archlinux.prep] .[38;5;246mgpg: key B1B73B02CC52A02A: public key "Jonas Witschel (Arch Linux Master Key) <diabonas@master-key.archlinux.org>" imported.[0m
+2026-03-13 21:09:38.815444 +0000 build-r43-templates-community: .[38;5;246m22:09:38 .[96m[qb.template.archlinux.prep] .[38;5;246mgpg: key A88E23E377514E00: 1 signature not checked due to a missing key.[0m
+2026-03-13 21:09:38.821077 +0000 build-r43-templates-community: .[38;5;246m22:09:38 .[96m[qb.template.archlinux.prep] .[38;5;246mgpg: key A88E23E377514E00: public key "Florian Pritz (Arch Linux Master Key) <florian@master-key.archlinux.org>" imported.[0m
+2026-03-13 21:09:38.823111 +0000 build-r43-templates-community: .[38;5;246m22:09:38 .[96m[qb.template.archlinux.prep] .[38;5;246mgpg: key D6D055F927843F1C: 2 signatures not checked due to missing keys.[0m
+2026-03-13 21:09:38.829376 +0000 build-r43-templates-community: .[38;5;246m22:09:38 .[96m[qb.template.archlinux.prep] .[38;5;246mgpg: key D6D055F927843F1C: public key "Levente Polyak (Arch Linux Master Key) <anthraxx@master-key.archlinux.org>" imported.[0m
+2026-03-13 21:09:38.830380 +0000 build-r43-templates-community: .[38;5;246m22:09:38 .[96m[qb.template.archlinux.prep] .[38;5;246mgpg: Total number processed: 6.[0m
+2026-03-13 21:09:38.830528 +0000 build-r43-templates-community: .[38;5;246m22:09:38 .[96m[qb.template.archlinux.prep] .[38;5;246mgpg:               imported: 6.[0m
+2026-03-13 21:09:38.830658 +0000 build-r43-templates-community: .[38;5;246m22:09:38 .[96m[qb.template.archlinux.prep] .[38;5;246mgpg: no ultimately trusted keys found.[0m
+2026-03-13 21:09:38.832005 +0000 build-r43-templates-community: .[38;5;246m22:09:38 .[96m[qb.template.archlinux.prep] .[38;5;246m+ echo '  --> Verifying tarball...'.[0m
+2026-03-13 21:09:38.832063 +0000 build-r43-templates-community: .[38;5;246m22:09:38 .[96m[qb.template.archlinux.prep] .[38;5;246m+ gpg --keyring /builder/cache/gpghome/pubring.gpg --verify /builder/cache/archlinux-bootstrap-2026.03.01-x86_64.tar.zst.sig /builder/cache/archlinux-bootstrap-2026.03.01-x86_64.tar.zst.[0m
+2026-03-13 21:09:38.832286 +0000 build-r43-templates-community: .[38;5;246m22:09:38 .[96m[qb.template.archlinux.prep] .[38;5;246m  --> Verifying tarball....[0m
+2026-03-13 21:09:38.834800 +0000 build-r43-templates-community: .[38;5;246m22:09:38 .[96m[qb.template.archlinux.prep] .[38;5;246mgpg: Note: Specified keyrings are ignored due to option "use-keyboxd".[0m
+2026-03-13 21:09:39.016984 +0000 build-r43-templates-community: .[38;5;246m22:09:39 .[96m[qb.template.archlinux.prep] .[38;5;246mgpg: Signature made Sun Mar  1 11:46:18 2026 CET.[0m
+2026-03-13 21:09:39.017041 +0000 build-r43-templates-community: .[38;5;246m22:09:39 .[96m[qb.template.archlinux.prep] .[38;5;246mgpg:                using EDDSA key 3E80CA1A8B89F69CBA57D98A76A5EF9054449A5C.[0m
+2026-03-13 21:09:39.017066 +0000 build-r43-templates-community: .[38;5;246m22:09:39 .[96m[qb.template.archlinux.prep] .[38;5;246mgpg:                issuer "pierre@archlinux.org".[0m
+2026-03-13 21:09:39.019411 +0000 build-r43-templates-community: .[38;5;246m22:09:39 .[96m[qb.template.archlinux.prep] .[38;5;246mgpg: Good signature from "Pierre Schmitz <pierre@archlinux.org>" [unknown].[0m
+2026-03-13 21:09:39.019462 +0000 build-r43-templates-community: .[38;5;246m22:09:39 .[96m[qb.template.archlinux.prep] .[38;5;246mgpg:                 aka "Pierre Schmitz <pierre@archlinux.de>" [unknown].[0m
+2026-03-13 21:09:39.019681 +0000 build-r43-templates-community: .[38;5;246m22:09:39 .[96m[qb.template.archlinux.prep] .[38;5;246mgpg: WARNING: The key's User ID is not certified with a trusted signature!.[0m
+2026-03-13 21:09:39.019716 +0000 build-r43-templates-community: .[38;5;246m22:09:39 .[96m[qb.template.archlinux.prep] .[38;5;246mgpg:          There is no indication that the signature belongs to the owner..[0m
+2026-03-13 21:09:39.019808 +0000 build-r43-templates-community: .[38;5;246m22:09:39 .[96m[qb.template.archlinux.prep] .[38;5;246mPrimary key fingerprint: 3E80 CA1A 8B89 F69C BA57  D98A 76A5 EF90 5444 9A5C.[0m
+2026-03-13 21:09:39.019976 +0000 build-r43-templates-community: .[38;5;246m22:09:39 .[96m[qb.template.archlinux.prep] .[38;5;246m+ '[' /builder/cache/archlinux-bootstrap-2026.03.01-x86_64.tar.zst -nt /builder/cache/bootstrap/.extracted ']'.[0m
+2026-03-13 21:09:39.020080 +0000 build-r43-templates-community: .[38;5;246m22:09:39 .[96m[qb.template.archlinux.prep] .[38;5;246m+ echo '  --> Extracting bootstrap tarball (nuking previous directory)...'.[0m
+2026-03-13 21:09:39.020166 +0000 build-r43-templates-community: .[38;5;246m22:09:39 .[96m[qb.template.archlinux.prep] .[38;5;246m+ rm -rf /builder/cache/bootstrap/.[0m
+2026-03-13 21:09:39.020388 +0000 build-r43-templates-community: .[38;5;246m22:09:39 .[96m[qb.template.archlinux.prep] .[38;5;246m  --> Extracting bootstrap tarball (nuking previous directory)....[0m
+2026-03-13 21:09:39.021730 +0000 build-r43-templates-community: .[38;5;246m22:09:39 .[96m[qb.template.archlinux.prep] .[38;5;246m+ mkdir -p /builder/cache/bootstrap.[0m
+2026-03-13 21:09:39.023672 +0000 build-r43-templates-community: .[38;5;246m22:09:39 .[96m[qb.template.archlinux.prep] .[38;5;246m+ tar -xC /builder/cache/bootstrap --strip-components=1 -f /builder/cache/archlinux-bootstrap-2026.03.01-x86_64.tar.zst.[0m
+2026-03-13 21:09:39.404040 +0000 build-r43-templates-community: .[38;5;246m22:09:39 .[96m[qb.template.archlinux.prep] .[38;5;246mtar: Ignoring unknown extended header keyword 'LIBARCHIVE.xattr.security.capability'.[0m
+2026-03-13 21:09:39.404097 +0000 build-r43-templates-community: .[38;5;246m22:09:39 .[96m[qb.template.archlinux.prep] .[38;5;246mtar: Ignoring unknown extended header keyword 'LIBARCHIVE.xattr.security.capability'.[0m
+2026-03-13 21:09:41.633300 +0000 build-r43-templates-community: .[38;5;246m22:09:41 .[96m[qb.template.archlinux.prep] .[38;5;246m+ cp -a /builder/cache/bootstrap/etc/pacman.d/mirrorlist /builder/cache/bootstrap/etc/pacman.d/mirrorlist.dist.[0m
+2026-03-13 21:09:41.637824 +0000 build-r43-templates-community: .[38;5;246m22:09:41 .[96m[qb.template.archlinux.prep] .[38;5;246m+ touch /builder/cache/bootstrap/.extracted.[0m
+2026-03-13 21:09:41.640185 +0000 build-r43-templates-community: .[38;5;246m22:09:41 .[96m[qb.template.archlinux.prep] .[38;5;246m+ '[' -f /builder/build/prepared_images/archlinux.img ']'.[0m
+2026-03-13 21:09:41.640253 +0000 build-r43-templates-community: .[38;5;246m22:09:41 .[96m[qb.template.archlinux.prep] .[38;5;246m+ echo 'INFO: Initializing empty image...'.[0m
+2026-03-13 21:09:41.640389 +0000 build-r43-templates-community: .[38;5;246m22:09:41 .[96m[qb.template.archlinux.prep] .[38;5;246mINFO: Initializing empty image....[0m
+2026-03-13 21:09:41.641366 +0000 build-r43-templates-community: .[38;5;246m22:09:41 .[96m[qb.template.archlinux.prep] .[38;5;246m++ dirname /builder/build/prepared_images/archlinux.img.[0m
+2026-03-13 21:09:41.642067 +0000 build-r43-templates-community: .[38;5;246m22:09:41 .[96m[qb.template.archlinux.prep] .[38;5;246m+ mkdir -p /builder/build/prepared_images.[0m
+2026-03-13 21:09:41.644150 +0000 build-r43-templates-community: .[38;5;246m22:09:41 .[96m[qb.template.archlinux.prep] .[38;5;246m+ truncate -s 20G /builder/build/prepared_images/archlinux.img.[0m
+2026-03-13 21:09:41.647164 +0000 build-r43-templates-community: .[38;5;246m22:09:41 .[96m[qb.template.archlinux.prep] .[38;5;246m+ '[' 01 -eq 1 ']'.[0m
+2026-03-13 21:09:41.647202 +0000 build-r43-templates-community: .[38;5;246m22:09:41 .[96m[qb.template.archlinux.prep] .[38;5;246m+ echo 'INFO: Creating partition table'.[0m
+2026-03-13 21:09:41.647266 +0000 build-r43-templates-community: .[38;5;246m22:09:41 .[96m[qb.template.archlinux.prep] .[38;5;246mINFO: Creating partition table.[0m
+2026-03-13 21:09:41.647362 +0000 build-r43-templates-community: .[38;5;246m22:09:41 .[96m[qb.template.archlinux.prep] .[38;5;246m+ /usr/sbin/sfdisk /builder/build/prepared_images/archlinux.img.[0m
+2026-03-13 21:09:41.972355 +0000 build-r43-templates-community: .[38;5;246m22:09:42 .[96m[qb.template.archlinux.prep] .[38;5;246mChecking that no-one is using this disk right now ... OK.[0m
+2026-03-13 21:09:41.972424 +0000 build-r43-templates-community: .[38;5;246m22:09:42 .[96m[qb.template.archlinux.prep] .[38;5;246m.[0m
+2026-03-13 21:09:41.972450 +0000 build-r43-templates-community: .[38;5;246m22:09:42 .[96m[qb.template.archlinux.prep] .[38;5;246mDisk /builder/build/prepared_images/archlinux.img: 20 GiB, 21474836480 bytes, 41943040 sectors.[0m
+2026-03-13 21:09:41.972482 +0000 build-r43-templates-community: .[38;5;246m22:09:42 .[96m[qb.template.archlinux.prep] .[38;5;246mUnits: sectors of 1 * 512 = 512 bytes.[0m
+2026-03-13 21:09:41.972593 +0000 build-r43-templates-community: .[38;5;246m22:09:42 .[96m[qb.template.archlinux.prep] .[38;5;246mSector size (logical/physical): 512 bytes / 512 bytes.[0m
+2026-03-13 21:09:41.972807 +0000 build-r43-templates-community: .[38;5;246m22:09:42 .[96m[qb.template.archlinux.prep] .[38;5;246mI/O size (minimum/optimal): 512 bytes / 512 bytes.[0m
+2026-03-13 21:09:41.972887 +0000 build-r43-templates-community: .[38;5;246m22:09:42 .[96m[qb.template.archlinux.prep] .[38;5;246m.[0m
+2026-03-13 21:09:41.972999 +0000 build-r43-templates-community: .[38;5;246m22:09:42 .[96m[qb.template.archlinux.prep] .[38;5;246m>>> Script header accepted..[0m
+2026-03-13 21:09:41.973043 +0000 build-r43-templates-community: .[38;5;246m22:09:42 .[96m[qb.template.archlinux.prep] .[38;5;246m>>> Script header accepted..[0m
+2026-03-13 21:09:41.973252 +0000 build-r43-templates-community: .[38;5;246m22:09:42 .[96m[qb.template.archlinux.prep] .[38;5;246m>>> Created a new GPT disklabel (GUID: F4796A2A-E377-45BD-B539-D6D49E569055)..[0m
+2026-03-13 21:09:41.973383 +0000 build-r43-templates-community: .[38;5;246m22:09:42 .[96m[qb.template.archlinux.prep] .[38;5;246m/builder/build/prepared_images/archlinux.img1: Created a new partition 1 of type 'EFI System' and of size 200 MiB..[0m
+2026-03-13 21:09:41.973420 +0000 build-r43-templates-community: .[38;5;246m22:09:42 .[96m[qb.template.archlinux.prep] .[38;5;246m/builder/build/prepared_images/archlinux.img2: Created a new partition 2 of type 'BIOS boot' and of size 2 MiB..[0m
+2026-03-13 21:09:41.973737 +0000 build-r43-templates-community: .[38;5;246m22:09:42 .[96m[qb.template.archlinux.prep] .[38;5;246m/builder/build/prepared_images/archlinux.img3: Created a new partition 3 of type 'Linux filesystem' and of size 19.8 GiB..[0m
+2026-03-13 21:09:41.973793 +0000 build-r43-templates-community: .[38;5;246m22:09:42 .[96m[qb.template.archlinux.prep] .[38;5;246m/builder/build/prepared_images/archlinux.img4: Done..[0m
+2026-03-13 21:09:41.973952 +0000 build-r43-templates-community: .[38;5;246m22:09:42 .[96m[qb.template.archlinux.prep] .[38;5;246m.[0m
+2026-03-13 21:09:41.974052 +0000 build-r43-templates-community: .[38;5;246m22:09:42 .[96m[qb.template.archlinux.prep] .[38;5;246mNew situation:.[0m
+2026-03-13 21:09:41.974167 +0000 build-r43-templates-community: .[38;5;246m22:09:42 .[96m[qb.template.archlinux.prep] .[38;5;246mDisklabel type: gpt.[0m
+2026-03-13 21:09:41.974275 +0000 build-r43-templates-community: .[38;5;246m22:09:42 .[96m[qb.template.archlinux.prep] .[38;5;246mDisk identifier: F4796A2A-E377-45BD-B539-D6D49E569055.[0m
+2026-03-13 21:09:41.974393 +0000 build-r43-templates-community: .[38;5;246m22:09:42 .[96m[qb.template.archlinux.prep] .[38;5;246m.[0m
+2026-03-13 21:09:41.974576 +0000 build-r43-templates-community: .[38;5;246m22:09:42 .[96m[qb.template.archlinux.prep] .[38;5;246mDevice                                         Start      End  Sectors  Size Type.[0m
+2026-03-13 21:09:41.974705 +0000 build-r43-templates-community: .[38;5;246m22:09:42 .[96m[qb.template.archlinux.prep] .[38;5;246m/builder/build/prepared_images/archlinux.img1   2048   411647   409600  200M EFI System.[0m
+2026-03-13 21:09:41.974747 +0000 build-r43-templates-community: .[38;5;246m22:09:42 .[96m[qb.template.archlinux.prep] .[38;5;246m/builder/build/prepared_images/archlinux.img2 411648   415743     4096    2M BIOS boot.[0m
+2026-03-13 21:09:41.975096 +0000 build-r43-templates-community: .[38;5;246m22:09:42 .[96m[qb.template.archlinux.prep] .[38;5;246m/builder/build/prepared_images/archlinux.img3 415744 41940991 41525248 19.8G Linux filesystem.[0m
+2026-03-13 21:09:41.975197 +0000 build-r43-templates-community: .[38;5;246m22:09:42 .[96m[qb.template.archlinux.prep] .[38;5;246m.[0m
+2026-03-13 21:09:41.975428 +0000 build-r43-templates-community: .[38;5;246m22:09:42 .[96m[qb.template.archlinux.prep] .[38;5;246mThe partition table has been altered..[0m
+2026-03-13 21:09:41.975789 +0000 build-r43-templates-community: .[38;5;246m22:09:42 .[96m[qb.template.archlinux.prep] .[38;5;246m++ /sbin/losetup -P -f --show /builder/build/prepared_images/archlinux.img.[0m
+2026-03-13 21:09:41.980635 +0000 build-r43-templates-community: .[38;5;246m22:09:42 .[96m[qb.template.archlinux.prep] .[38;5;246m+ IMG_LOOP=/dev/loop0.[0m
+2026-03-13 21:09:41.980671 +0000 build-r43-templates-community: .[38;5;246m22:09:42 .[96m[qb.template.archlinux.prep] .[38;5;246m+ IMG_DEV=/dev/loop0p3.[0m
+2026-03-13 21:09:41.980703 +0000 build-r43-templates-community: .[38;5;246m22:09:42 .[96m[qb.template.archlinux.prep] .[38;5;246m+ udevadm settle --exit-if-exists=/dev/loop0p1.[0m
+2026-03-13 21:09:41.992109 +0000 build-r43-templates-community: .[38;5;246m22:09:42 .[96m[qb.template.archlinux.prep] .[38;5;246m+ /sbin/mkfs.vfat -S 4096 -n EFI /dev/loop0p1.[0m
+2026-03-13 21:09:42.003734 +0000 build-r43-templates-community: .[38;5;246m22:09:42 .[96m[qb.template.archlinux.prep] .[38;5;246mmkfs.fat 4.2 (2021-01-31).[0m
+2026-03-13 21:09:42.003998 +0000 build-r43-templates-community: .[38;5;246m22:09:42 .[96m[qb.template.archlinux.prep] .[38;5;246m+ udevadm settle --exit-if-exists=/dev/loop0p3.[0m
+2026-03-13 21:09:42.016406 +0000 build-r43-templates-community: .[38;5;246m22:09:42 .[96m[qb.template.archlinux.prep] .[38;5;246m+ echo 'INFO: Creating filesystem...'.[0m
+2026-03-13 21:09:42.016453 +0000 build-r43-templates-community: .[38;5;246m22:09:42 .[96m[qb.template.archlinux.prep] .[38;5;246m+ /sbin/mkfs.ext4 -q -F /dev/loop0p3.[0m
+2026-03-13 21:09:42.016685 +0000 build-r43-templates-community: .[38;5;246m22:09:42 .[96m[qb.template.archlinux.prep] .[38;5;246mINFO: Creating filesystem....[0m
+2026-03-13 21:09:42.070179 +0000 build-r43-templates-community: .[38;5;246m22:09:42 .[96m[qb.template.archlinux.prep] .[38;5;246m+ mount /dev/loop0p3 /builder/mnt.[0m
+2026-03-13 21:09:42.112274 +0000 build-r43-templates-community: .[38;5;246m22:09:42 .[96m[qb.template.archlinux.prep] .[38;5;246m++ readlink -m /builder/mnt.[0m
+2026-03-13 21:09:42.113845 +0000 build-r43-templates-community: .[38;5;246m22:09:42 .[96m[qb.template.archlinux.prep] .[38;5;246m+ trap 'umount_kill /builder/mnt' EXIT.[0m
+2026-03-13 21:09:42.113866 +0000 build-r43-templates-community: .[38;5;246m22:09:42 .[96m[qb.template.archlinux.prep] .[38;5;246m+ echo 'INFO: Bootstrapping distribution...'.[0m
+2026-03-13 21:09:42.113878 +0000 build-r43-templates-community: .[38;5;246m22:09:42 .[96m[qb.template.archlinux.prep] .[38;5;246mINFO: Bootstrapping distribution....[0m
+2026-03-13 21:09:42.113889 +0000 build-r43-templates-community: .[38;5;246m22:09:42 .[96m[qb.template.archlinux.prep] .[38;5;246m+ /builder/sources/builder-archlinux/template_archlinux/01_install_core.sh.[0m
+2026-03-13 21:09:42.116086 +0000 build-r43-templates-community: .[38;5;246m22:09:42 .[96m[qb.template.archlinux.prep] .[38;5;246m--> Archlinux 01_install_core.sh.[0m
+2026-03-13 21:09:42.116273 +0000 build-r43-templates-community: .[38;5;246m22:09:42 .[96m[qb.template.archlinux.prep] .[38;5;246m+ unset SKIP_VOLATILE_SECRET_KEY_DIR.[0m
+2026-03-13 21:09:42.116497 +0000 build-r43-templates-community: .[38;5;246m22:09:42 .[96m[qb.template.archlinux.prep] .[38;5;246m+ /builder/sources/builder-archlinux/template_archlinux/../prepare-chroot-base /builder/mnt archlinux.[0m
+2026-03-13 21:09:42.118182 +0000 build-r43-templates-community: .[38;5;246m22:09:42 .[96m[qb.template.archlinux.prep] .[38;5;246m--> Archlinux prepare-chroot-base.[0m
+2026-03-13 21:09:42.120506 +0000 build-r43-templates-community: .[38;5;246m22:09:42 .[96m[qb.template.archlinux.prep] .[38;5;246m+ INSTALL_DIR=/builder/mnt.[0m
+2026-03-13 21:09:42.120533 +0000 build-r43-templates-community: .[38;5;246m22:09:42 .[96m[qb.template.archlinux.prep] .[38;5;246m+ BOOTSTRAP_DIR=/builder/cache/bootstrap.[0m
+2026-03-13 21:09:42.120553 +0000 build-r43-templates-community: .[38;5;246m22:09:42 .[96m[qb.template.archlinux.prep] .[38;5;246m+ DEFAULT_ARCHLINUX_MIRROR=https://mirror.rackspace.com/archlinux,https://arch.mirror.constant.com,https://mirror.f4st.host/archlinux,https://mirrors.edge.kernel.org/archlinux.[0m
+2026-03-13 21:09:42.120573 +0000 build-r43-templates-community: .[38;5;246m22:09:42 .[96m[qb.template.archlinux.prep] .[38;5;246m+ ARCHLINUX_MIRROR=https://mirror.rackspace.com/archlinux,https://arch.mirror.constant.com,https://mirror.f4st.host/archlinux,https://mirrors.edge.kernel.org/archlinux.[0m
+2026-03-13 21:09:42.120584 +0000 build-r43-templates-community: .[38;5;246m22:09:42 .[96m[qb.template.archlinux.prep] .[38;5;246m+ IFS=,.[0m
+2026-03-13 21:09:42.120595 +0000 build-r43-templates-community: .[38;5;246m22:09:42 .[96m[qb.template.archlinux.prep] .[38;5;246m+ read -r -a ARCHLINUX_MIRROR.[0m
+2026-03-13 21:09:42.120607 +0000 build-r43-templates-community: .[38;5;246m22:09:42 .[96m[qb.template.archlinux.prep] .[38;5;246m+ PACMAN_CACHE_DIR=/builder/cache/pacman_cache.[0m
+2026-03-13 21:09:42.120618 +0000 build-r43-templates-community: .[38;5;246m22:09:42 .[96m[qb.template.archlinux.prep] .[38;5;246m+ export PACMAN_CACHE_DIR.[0m
+2026-03-13 21:09:42.120628 +0000 build-r43-templates-community: .[38;5;246m22:09:42 .[96m[qb.template.archlinux.prep] .[38;5;246m+ trap exit_prepare 0 1 2 3 6 15.[0m
+2026-03-13 21:09:42.120661 +0000 build-r43-templates-community: .[38;5;246m22:09:42 .[96m[qb.template.archlinux.prep] .[38;5;246m+ '[' -f /builder/cache/bootstrap/.extracted ']'.[0m
+2026-03-13 21:09:42.120685 +0000 build-r43-templates-community: .[38;5;246m22:09:42 .[96m[qb.template.archlinux.prep] .[38;5;246m+ '[' -d /builder/cache/pacman_cache ']'.[0m
+2026-03-13 21:09:42.120698 +0000 build-r43-templates-community: .[38;5;246m22:09:42 .[96m[qb.template.archlinux.prep] .[38;5;246m+ '[' -f /builder/mnt/.prepared_base ']'.[0m
+2026-03-13 21:09:42.120739 +0000 build-r43-templates-community: .[38;5;246m22:09:42 .[96m[qb.template.archlinux.prep] .[38;5;246m  --> Binding INSTALL_DIR '/builder/mnt' to bootstrap environment....[0m
+2026-03-13 21:09:42.120776 +0000 build-r43-templates-community: .[38;5;246m22:09:42 .[96m[qb.template.archlinux.prep] .[38;5;246m+ echo '  --> Binding INSTALL_DIR '\''/builder/mnt'\'' to bootstrap environment...'.[0m
+2026-03-13 21:09:42.120872 +0000 build-r43-templates-community: .[38;5;246m22:09:42 .[96m[qb.template.archlinux.prep] .[38;5;246m+ mount --bind /builder/mnt /builder/cache/bootstrap/mnt.[0m
+2026-03-13 21:09:42.129516 +0000 build-r43-templates-community: .[38;5;246m22:09:42 .[96m[qb.template.archlinux.prep] .[38;5;246m++ echo https://mirror.rackspace.com/archlinux https://arch.mirror.constant.com https://mirror.f4st.host/archlinux https://mirrors.edge.kernel.org/archlinux.[0m
+2026-03-13 21:09:42.129550 +0000 build-r43-templates-community: .[38;5;246m22:09:42 .[96m[qb.template.archlinux.prep] .[38;5;246m++ tr ' ' '\n'.[0m
+2026-03-13 21:09:42.132338 +0000 build-r43-templates-community: .[38;5;246m22:09:42 .[96m[qb.template.archlinux.prep] .[38;5;246m+ echo -e '  --> Setting pacman mirrorlist as:\nhttps://mirror.rackspace.com/archlinux.[0m
+2026-03-13 21:09:42.132363 +0000 build-r43-templates-community: .[38;5;246m22:09:42 .[96m[qb.template.archlinux.prep] .[38;5;246mhttps://arch.mirror.constant.com.[0m
+2026-03-13 21:09:42.132384 +0000 build-r43-templates-community: .[38;5;246m22:09:42 .[96m[qb.template.archlinux.prep] .[38;5;246mhttps://mirror.f4st.host/archlinux.[0m
+2026-03-13 21:09:42.132650 +0000 build-r43-templates-community: .[38;5;246m22:09:42 .[96m[qb.template.archlinux.prep] .[38;5;246mhttps://mirrors.edge.kernel.org/archlinux\n'.[0m
+2026-03-13 21:09:42.132811 +0000 build-r43-templates-community: .[38;5;246m22:09:42 .[96m[qb.template.archlinux.prep] .[38;5;246m  --> Setting pacman mirrorlist as:.[0m
+2026-03-13 21:09:42.132886 +0000 build-r43-templates-community: .[38;5;246m22:09:42 .[96m[qb.template.archlinux.prep] .[38;5;246mhttps://mirror.rackspace.com/archlinux.[0m
+2026-03-13 21:09:42.132996 +0000 build-r43-templates-community: .[38;5;246m22:09:42 .[96m[qb.template.archlinux.prep] .[38;5;246mhttps://arch.mirror.constant.com.[0m
+2026-03-13 21:09:42.133139 +0000 build-r43-templates-community: .[38;5;246m22:09:42 .[96m[qb.template.archlinux.prep] .[38;5;246mhttps://mirror.f4st.host/archlinux.[0m
+2026-03-13 21:09:42.133338 +0000 build-r43-templates-community: .[38;5;246m22:09:42 .[96m[qb.template.archlinux.prep] .[38;5;246mhttps://mirrors.edge.kernel.org/archlinux.[0m
+2026-03-13 21:09:42.133488 +0000 build-r43-templates-community: .[38;5;246m22:09:42 .[96m[qb.template.archlinux.prep] .[38;5;246m.[0m
+2026-03-13 21:09:42.133660 +0000 build-r43-templates-community: .[38;5;246m22:09:42 .[96m[qb.template.archlinux.prep] .[38;5;246m+ for MIRROR_ENTRY in "${ARCHLINUX_MIRROR[@]}".[0m
+2026-03-13 21:09:42.133727 +0000 build-r43-templates-community: .[38;5;246m22:09:42 .[96m[qb.template.archlinux.prep] .[38;5;246m+ echo 'Server = https://mirror.rackspace.com/archlinux/$repo/os/$arch'.[0m
+2026-03-13 21:09:42.133887 +0000 build-r43-templates-community: .[38;5;246m22:09:42 .[96m[qb.template.archlinux.prep] .[38;5;246m+ for MIRROR_ENTRY in "${ARCHLINUX_MIRROR[@]}".[0m
+2026-03-13 21:09:42.133973 +0000 build-r43-templates-community: .[38;5;246m22:09:42 .[96m[qb.template.archlinux.prep] .[38;5;246m+ echo 'Server = https://arch.mirror.constant.com/$repo/os/$arch'.[0m
+2026-03-13 21:09:42.134091 +0000 build-r43-templates-community: .[38;5;246m22:09:42 .[96m[qb.template.archlinux.prep] .[38;5;246m+ for MIRROR_ENTRY in "${ARCHLINUX_MIRROR[@]}".[0m
+2026-03-13 21:09:42.134203 +0000 build-r43-templates-community: .[38;5;246m22:09:42 .[96m[qb.template.archlinux.prep] .[38;5;246m+ echo 'Server = https://mirror.f4st.host/archlinux/$repo/os/$arch'.[0m
+2026-03-13 21:09:42.134328 +0000 build-r43-templates-community: .[38;5;246m22:09:42 .[96m[qb.template.archlinux.prep] .[38;5;246m+ for MIRROR_ENTRY in "${ARCHLINUX_MIRROR[@]}".[0m
+2026-03-13 21:09:42.134570 +0000 build-r43-templates-community: .[38;5;246m22:09:42 .[96m[qb.template.archlinux.prep] .[38;5;246m+ echo 'Server = https://mirrors.edge.kernel.org/archlinux/$repo/os/$arch'.[0m
+2026-03-13 21:09:42.134654 +0000 build-r43-templates-community: .[38;5;246m22:09:42 .[96m[qb.template.archlinux.prep] .[38;5;246m+ cp /etc/resolv.conf /builder/cache/bootstrap/etc/.[0m
+2026-03-13 21:09:42.136325 +0000 build-r43-templates-community: .[38;5;246m22:09:42 .[96m[qb.template.archlinux.prep] .[38;5;246m+ echo '  --> Initializing pacman keychain...'.[0m
+2026-03-13 21:09:42.136500 +0000 build-r43-templates-community: .[38;5;246m22:09:42 .[96m[qb.template.archlinux.prep] .[38;5;246m+ /builder/sources/builder-archlinux/template_archlinux/arch-chroot-lite /builder/cache/bootstrap /bin/sh -c 'pacman-key --init && pacman-key --populate'.[0m
+2026-03-13 21:09:42.136644 +0000 build-r43-templates-community: .[38;5;246m22:09:42 .[96m[qb.template.archlinux.prep] .[38;5;246m  --> Initializing pacman keychain....[0m
+2026-03-13 21:09:42.241470 +0000 build-r43-templates-community: .[38;5;246m22:09:42 .[96m[qb.template.archlinux.prep] .[38;5;246mgpg: /etc/pacman.d/gnupg/trustdb.gpg: trustdb created.[0m
+2026-03-13 21:09:42.241524 +0000 build-r43-templates-community: .[38;5;246m22:09:42 .[96m[qb.template.archlinux.prep] .[38;5;246mgpg: no ultimately trusted keys found.[0m
+2026-03-13 21:09:42.276060 +0000 build-r43-templates-community: .[38;5;246m22:09:42 .[96m[qb.template.archlinux.prep] .[38;5;246mgpg: starting migration from earlier GnuPG versions.[0m
+2026-03-13 21:09:42.283420 +0000 build-r43-templates-community: .[38;5;246m22:09:42 .[96m[qb.template.archlinux.prep] .[38;5;246mgpg: porting secret keys from '/etc/pacman.d/gnupg/secring.gpg' to gpg-agent.[0m
+2026-03-13 21:09:42.283458 +0000 build-r43-templates-community: .[38;5;246m22:09:42 .[96m[qb.template.archlinux.prep] .[38;5;246mgpg: migration succeeded.[0m
+2026-03-13 21:09:42.289345 +0000 build-r43-templates-community: .[38;5;246m22:09:42 .[96m[qb.template.archlinux.prep] .[38;5;246m==> Generating pacman master key. This may take some time..[0m
+2026-03-13 21:09:42.294577 +0000 build-r43-templates-community: .[38;5;246m22:09:42 .[96m[qb.template.archlinux.prep] .[38;5;246mgpg: Generating pacman keyring master key....[0m
+2026-03-13 21:09:43.621911 +0000 build-r43-templates-community: .[38;5;246m22:09:43 .[96m[qb.template.archlinux.prep] .[38;5;246mgpg: directory '/etc/pacman.d/gnupg/openpgp-revocs.d' created.[0m
+2026-03-13 21:09:43.651087 +0000 build-r43-templates-community: .[38;5;246m22:09:43 .[96m[qb.template.archlinux.prep] .[38;5;246mgpg: revocation certificate stored as '/etc/pacman.d/gnupg/openpgp-revocs.d/FB1A0B28E9D32737EF23A05D0BFAB0677C1F7D4B.rev'.[0m
+2026-03-13 21:09:43.651137 +0000 build-r43-templates-community: .[38;5;246m22:09:43 .[96m[qb.template.archlinux.prep] .[38;5;246mgpg: Done.[0m
+2026-03-13 21:09:43.654574 +0000 build-r43-templates-community: .[38;5;246m22:09:43 .[96m[qb.template.archlinux.prep] .[38;5;246m==> Updating trust database....[0m
+2026-03-13 21:09:43.659675 +0000 build-r43-templates-community: .[38;5;246m22:09:43 .[96m[qb.template.archlinux.prep] .[38;5;246mgpg: marginals needed: 3  completes needed: 1  trust model: pgp.[0m
+2026-03-13 21:09:43.659715 +0000 build-r43-templates-community: .[38;5;246m22:09:43 .[96m[qb.template.archlinux.prep] .[38;5;246mgpg: depth: 0  valid:   1  signed:   0  trust: 0-, 0q, 0n, 0m, 0f, 1u.[0m
+2026-03-13 21:09:43.686635 +0000 build-r43-templates-community: .[38;5;246m22:09:43 .[96m[qb.template.archlinux.prep] .[38;5;246m==> Appending keys from archlinux.gpg....[0m
+2026-03-13 21:09:46.852426 +0000 build-r43-templates-community: .[38;5;246m22:09:46 .[96m[qb.template.archlinux.prep] .[38;5;246m==> Locally signing trusted keys in keyring....[0m
+2026-03-13 21:09:47.490432 +0000 build-r43-templates-community: .[38;5;246m22:09:47 .[96m[qb.template.archlinux.prep] .[38;5;246m  -> Locally signed 5 keys..[0m
+2026-03-13 21:09:47.492150 +0000 build-r43-templates-community: .[38;5;246m22:09:47 .[96m[qb.template.archlinux.prep] .[38;5;246m==> Importing owner trust values....[0m
+2026-03-13 21:09:47.496361 +0000 build-r43-templates-community: .[38;5;246m22:09:47 .[96m[qb.template.archlinux.prep] .[38;5;246mgpg: setting ownertrust to 4.[0m
+2026-03-13 21:09:47.496414 +0000 build-r43-templates-community: .[38;5;246m22:09:47 .[96m[qb.template.archlinux.prep] .[38;5;246mgpg: setting ownertrust to 4.[0m
+2026-03-13 21:09:47.496736 +0000 build-r43-templates-community: .[38;5;246m22:09:47 .[96m[qb.template.archlinux.prep] .[38;5;246mgpg: setting ownertrust to 4.[0m
+2026-03-13 21:09:47.496769 +0000 build-r43-templates-community: .[38;5;246m22:09:47 .[96m[qb.template.archlinux.prep] .[38;5;246mgpg: inserting ownertrust of 4.[0m
+2026-03-13 21:09:47.496998 +0000 build-r43-templates-community: .[38;5;246m22:09:47 .[96m[qb.template.archlinux.prep] .[38;5;246mgpg: setting ownertrust to 4.[0m
+2026-03-13 21:09:47.499233 +0000 build-r43-templates-community: .[38;5;246m22:09:47 .[96m[qb.template.archlinux.prep] .[38;5;246m==> Disabling revoked keys in keyring....[0m
+2026-03-13 21:09:47.864776 +0000 build-r43-templates-community: .[38;5;246m22:09:48 .[96m[qb.template.archlinux.prep] .[38;5;246m  -> Disabled 36 keys..[0m
+2026-03-13 21:09:47.865509 +0000 build-r43-templates-community: .[38;5;246m22:09:48 .[96m[qb.template.archlinux.prep] .[38;5;246m==> Updating trust database....[0m
+2026-03-13 21:09:47.868151 +0000 build-r43-templates-community: .[38;5;246m22:09:48 .[96m[qb.template.archlinux.prep] .[38;5;246mgpg: Note: third-party key signatures using the SHA1 algorithm are rejected.[0m
+2026-03-13 21:09:47.868173 +0000 build-r43-templates-community: .[38;5;246m22:09:48 .[96m[qb.template.archlinux.prep] .[38;5;246mgpg: (use option "--allow-weak-key-signatures" to override).[0m
+2026-03-13 21:09:47.893321 +0000 build-r43-templates-community: .[38;5;246m22:09:48 .[96m[qb.template.archlinux.prep] .[38;5;246mgpg: marginals needed: 3  completes needed: 1  trust model: pgp.[0m
+2026-03-13 21:09:47.926668 +0000 build-r43-templates-community: .[38;5;246m22:09:48 .[96m[qb.template.archlinux.prep] .[38;5;246mgpg: depth: 0  valid:   1  signed:   5  trust: 0-, 0q, 0n, 0m, 0f, 1u.[0m
+2026-03-13 21:09:47.952537 +0000 build-r43-templates-community: .[38;5;246m22:09:48 .[96m[qb.template.archlinux.prep] .[38;5;246mgpg: depth: 1  valid:   5  signed:  84  trust: 0-, 0q, 0n, 5m, 0f, 0u.[0m
+2026-03-13 21:09:47.969565 +0000 build-r43-templates-community: .[38;5;246m22:09:48 .[96m[qb.template.archlinux.prep] .[38;5;246mgpg: depth: 2  valid:  71  signed:  19  trust: 71-, 0q, 0n, 0m, 0f, 0u.[0m
+2026-03-13 21:09:47.969616 +0000 build-r43-templates-community: .[38;5;246m22:09:48 .[96m[qb.template.archlinux.prep] .[38;5;246mgpg: next trustdb check due at 2026-10-21.[0m
+2026-03-13 21:09:48.000768 +0000 build-r43-templates-community: .[38;5;246m22:09:48 .[96m[qb.template.archlinux.prep] .[38;5;246m  --> Installing core pacman packages....[0m
+2026-03-13 21:09:48.002481 +0000 build-r43-templates-community: .[38;5;246m22:09:48 .[96m[qb.template.archlinux.prep] .[38;5;246m+ echo '  --> Installing core pacman packages...'.[0m
+2026-03-13 21:09:48.002526 +0000 build-r43-templates-community: .[38;5;246m22:09:48 .[96m[qb.template.archlinux.prep] .[38;5;246m+ export PACMAN_CACHE_MOUNT_DIR=/builder/cache/bootstrap/mnt/var/cache/pacman.[0m
+2026-03-13 21:09:48.002700 +0000 build-r43-templates-community: .[38;5;246m22:09:48 .[96m[qb.template.archlinux.prep] .[38;5;246m+ PACMAN_CACHE_MOUNT_DIR=/builder/cache/bootstrap/mnt/var/cache/pacman.[0m
+2026-03-13 21:09:48.002759 +0000 build-r43-templates-community: .[38;5;246m22:09:48 .[96m[qb.template.archlinux.prep] .[38;5;246m+ /builder/sources/builder-archlinux/template_archlinux/arch-chroot-lite /builder/cache/bootstrap /bin/sh -c 'trap break SIGINT SIGTERM; for i in 1 2 3 4 5; do ALL_PROXY=$1 http_proxy=$1 https_proxy=$1 NO_PROXY=127.0.0.1 pacstrap /mnt base && exit 0; done' sh ''.[0m
+2026-03-13 21:09:48.038252 +0000 build-r43-templates-community: .[38;5;246m22:09:48 .[96m[qb.template.archlinux.prep] .[38;5;246m==> Creating install root at /mnt.[0m
+2026-03-13 21:09:48.051576 +0000 build-r43-templates-community: .[38;5;246m22:09:48 .[96m[qb.template.archlinux.prep] .[38;5;246m==> Installing packages to /mnt.[0m
+2026-03-13 21:09:48.058016 +0000 build-r43-templates-community: .[38;5;246m22:09:48 .[96m[qb.template.archlinux.prep] .[38;5;246m:: Synchronizing package databases....[0m
+2026-03-13 21:10:25.730728 +0000 build-r43-templates-community: .[38;5;246m22:10:25 .[96m[qb.template.archlinux.prep] .[38;5;246m core downloading....[0m
+2026-03-13 21:10:25.730794 +0000 build-r43-templates-community: .[38;5;246m22:10:25 .[96m[qb.template.archlinux.prep] .[38;5;246m extra downloading....[0m
+2026-03-13 21:10:25.736019 +0000 build-r43-templates-community: .[38;5;246m22:10:25 .[96m[qb.template.archlinux.prep] .[38;5;246mresolving dependencies....[0m
+2026-03-13 21:10:25.932741 +0000 build-r43-templates-community: .[38;5;246m22:10:26 .[96m[qb.template.archlinux.prep] .[38;5;246m:: There are 2 providers available for libxtables.so=12-64:.[0m
+2026-03-13 21:10:25.932790 +0000 build-r43-templates-community: .[38;5;246m22:10:26 .[96m[qb.template.archlinux.prep] .[38;5;246m:: Repository core.[0m
+2026-03-13 21:10:25.932812 +0000 build-r43-templates-community: .[38;5;246m22:10:26 .[96m[qb.template.archlinux.prep] .[38;5;246m   1) iptables  2) iptables-nft.[0m
+2026-03-13 21:10:25.932827 +0000 build-r43-templates-community: .[38;5;246m22:10:26 .[96m[qb.template.archlinux.prep] .[38;5;246m.[0m
+2026-03-13 21:10:25.932855 +0000 build-r43-templates-community: .[38;5;246m22:10:26 .[96m[qb.template.archlinux.prep] .[38;5;246mEnter a number (default=1):.[0m
+2026-03-13 21:10:25.932871 +0000 build-r43-templates-community: .[38;5;246m22:10:26 .[96m[qb.template.archlinux.prep] .[38;5;246mlooking for conflicting packages....[0m
+2026-03-13 21:10:25.934941 +0000 build-r43-templates-community: .[38;5;246m22:10:26 .[96m[qb.template.archlinux.prep] .[38;5;246m.[0m
+2026-03-13 21:10:25.935578 +0000 build-r43-templates-community: .[38;5;246m22:10:26 .[96m[qb.template.archlinux.prep] .[38;5;246mPackages (135) acl-2.3.2-1  archlinux-keyring-20260301-1  attr-2.5.2-1  audit-4.1.3-1  bash-5.3.9-1  binutils-2.46-1  brotli-1.2.0-1  bzip2-1.0.8-6  ca-certificates-20240618-1  ca-certificates-mozilla-3.121-1  ca-certificates-utils-20240618-1  coreutils-9.10-1  cryptsetup-2.8.4-1  curl-8.19.0-1  dbus-1.16.2-1  dbus-broker-37-3  dbus-broker-units-37-3  dbus-units-37-3  device-mapper-2.03.38-1  e2fsprogs-1.47.4-1  expat-2.7.4-1  file-5.47-1  filesystem-2025.10.12-1  findutils-4.10.0-3  gawk-5.4.0-1  gcc-libs-15.2.1+r604+g0b99615a8aef-1  gdbm-1.26-2  gettext-1.0-2  glib2-2.86.4-1  glibc-2.43+r5+g856c426a7534-1  gmp-6.3.0-3  gnulib-l10n-20241231-1  gnupg-2.4.9-1  gnutls-3.8.12-2  gpgme-2.0.1-3  grep-3.12-2  gzip-1.14-2  hwdata-0.405-1  iana-etc-20260306-1  icu-78.2-2  iproute2-6.19.0-2  iptables-1:1.8.11-2  iputils-20250605-1  jansson-2.15.0-1  json-c-0.18-2  kbd-2.9.0-1  keyutils-1.6.3-3  kmod-34.2-1  krb5-1.21.3-2  leancrypto-1.6.0-1  libarchive-3.8.6-1  libasan-15.2.1+r604+g0b99615a8aef-1  libassuan-3.0.0-1  libatomic-15.2.1+r604+g0b99615a8aef-1  libbpf-1.6.2-1  libcap-2.77-1  libcap-ng-0.9.1-1  libelf-0.194-2  libevent-2.1.12-5  libffi-3.5.2-1  libgcc-15.2.1+r604+g0b99615a8aef-1  libgcrypt-1.12.1-1  libgfortran-15.2.1+r604+g0b99615a8aef-1  libgomp-15.2.1+r604+g0b99615a8aef-1  libgpg-error-1.59-1  libidn2-2.3.8-1  libksba-1.6.8-1  libldap-2.6.13-1  liblsan-15.2.1+r604+g0b99615a8aef-1  libmakepkg-dropins-20-1  libmnl-1.0.5-2  libnetfilter_conntrack-1.0.9-2  libnfnetlink-1.0.2-2  libnftnl-1.3.1-1  libnghttp2-1.68.0-1  libnghttp3-1.15.0-1  libngtcp2-1.21.0-1  libnl-3.12.0-1  libnsl-2.0.1-1  libobjc-15.2.1+r604+g0b99615a8aef-1  libp11-kit-0.26.2-1  libpcap-1.10.6-1  libpsl-0.21.5-2  libquadmath-15.2.1+r604+g0b99615a8aef-1  libsasl-2.1.28-5  libseccomp-2.6.0-1  libsecret-0.21.7-1  libssh2-1.11.1-1  libstdc++-15.2.1+r604+g0b99615a8aef-1  libsysprof-capture-49.0-2  libtasn1-4.21.0-1  libtirpc-1.3.7-1  libtsan-15.2.1+r604+g0b99615a8aef-1  libubsan-15.2.1+r604+g0b99615a8aef-1  libunistring-1.4.1-1  libusb-1.0.29-1  libverto-0.3.2-5  libxcrypt-4.5.2-1  libxml2-2.15.2-1  licenses-20240728-1  linux-api-headers-6.19-1  lmdb-0.9.35-1  lz4-1:1.10.0-2  mpfr-4.2.2-1  ncurses-6.6-1  nettle-3.10.2-1  npth-1.8-1  openssl-3.6.1-1  p11-kit-0.26.2-1  pacman-7.1.0.r9.g54d9411-1  pacman-mirrorlist-20260213-1  pam-1.7.2-2  pambase-20250719-1  pciutils-3.14.0-1  pcre2-10.47-1  pinentry-1.3.2-2  popt-1.19-2  procps-ng-4.0.6-1  psmisc-23.7-1  readline-8.3.003-1  sed-4.9-3  shadow-4.18.0-1  sqlite-3.52.0-1  systemd-259.4-1  systemd-libs-259.4-1  systemd-sysvcompat-259.4-1  tar-1.35-2  tpm2-tss-4.1.3-1  tzdata-2026a-1  util-linux-2.41.3-2  util-linux-libs-2.41.3-2  xz-5.8.2-1  zlib-1:1.3.2-3  zstd-1.5.7-3  base-3-3.[0m
+2026-03-13 21:10:25.935948 +0000 build-r43-templates-community: .[38;5;246m22:10:26 .[96m[qb.template.archlinux.prep] .[38;5;246m.[0m
+2026-03-13 21:10:25.935972 +0000 build-r43-templates-community: .[38;5;246m22:10:26 .[96m[qb.template.archlinux.prep] .[38;5;246mTotal Download Size:   116.06 MiB.[0m
+2026-03-13 21:10:25.936024 +0000 build-r43-templates-community: .[38;5;246m22:10:26 .[96m[qb.template.archlinux.prep] .[38;5;246mTotal Installed Size:  506.30 MiB.[0m
+2026-03-13 21:10:25.936037 +0000 build-r43-templates-community: .[38;5;246m22:10:26 .[96m[qb.template.archlinux.prep] .[38;5;246m.[0m
+2026-03-13 21:10:25.936047 +0000 build-r43-templates-community: .[38;5;246m22:10:26 .[96m[qb.template.archlinux.prep] .[38;5;246m:: Proceed with installation? [Y/n].[0m
+2026-03-13 21:10:25.936056 +0000 build-r43-templates-community: .[38;5;246m22:10:26 .[96m[qb.template.archlinux.prep] .[38;5;246m:: Retrieving packages....[0m
+2026-03-13 21:14:57.732419 +0000 build-r43-templates-community: .[38;5;246m22:14:57 .[96m[qb.template.archlinux.prep] .[38;5;246m icu-78.2-2-x86_64 downloading....[0m
+2026-03-13 21:14:57.732488 +0000 build-r43-templates-community: .[38;5;246m22:14:57 .[96m[qb.template.archlinux.prep] .[38;5;246m glibc-2.43+r5+g856c426a7534-1-x86_64 downloading....[0m
+2026-03-13 21:14:57.732537 +0000 build-r43-templates-community: .[38;5;246m22:14:57 .[96m[qb.template.archlinux.prep] .[38;5;246m systemd-259.4-1-x86_64 downloading....[0m
+2026-03-13 21:14:57.732565 +0000 build-r43-templates-community: .[38;5;246m22:14:57 .[96m[qb.template.archlinux.prep] .[38;5;246m binutils-2.46-1-x86_64 downloading....[0m
+2026-03-13 21:14:57.732636 +0000 build-r43-templates-community: .[38;5;246m22:14:57 .[96m[qb.template.archlinux.prep] .[38;5;246m openssl-3.6.1-1-x86_64 downloading....[0m
+2026-03-13 21:14:57.732778 +0000 build-r43-templates-community: .[38;5;246m22:14:57 .[96m[qb.template.archlinux.prep] .[38;5;246m util-linux-2.41.3-2-x86_64 downloading....[0m
+2026-03-13 21:14:57.732915 +0000 build-r43-templates-community: .[38;5;246m22:14:57 .[96m[qb.template.archlinux.prep] .[38;5;246m glib2-2.86.4-1-x86_64 downloading....[0m
+2026-03-13 21:14:57.732999 +0000 build-r43-templates-community: .[38;5;246m22:14:57 .[96m[qb.template.archlinux.prep] .[38;5;246m gettext-1.0-2-x86_64 downloading....[0m
+2026-03-13 21:14:57.733424 +0000 build-r43-templates-community: .[38;5;246m22:14:57 .[96m[qb.template.archlinux.prep] .[38;5;246merror: failed retrieving file 'openssl-3.6.1-1-x86_64.pkg.tar.zst' from mirror.rackspace.com : OpenSSL SSL_read: OpenSSL/3.6.1: error:0A000126:SSL routines::unexpected eof while reading, errno 0.[0m
+2026-03-13 21:14:57.733485 +0000 build-r43-templates-community: .[38;5;246m22:14:57 .[96m[qb.template.archlinux.prep] .[38;5;246merror: failed retrieving file 'systemd-259.4-1-x86_64.pkg.tar.zst' from mirror.rackspace.com : OpenSSL SSL_read: OpenSSL/3.6.1: error:0A000126:SSL routines::unexpected eof while reading, errno 0.[0m
+2026-03-13 21:14:57.733660 +0000 build-r43-templates-community: .[38;5;246m22:14:57 .[96m[qb.template.archlinux.prep] .[38;5;246merror: failed retrieving file 'glibc-2.43+r5+g856c426a7534-1-x86_64.pkg.tar.zst' from mirror.rackspace.com : OpenSSL SSL_read: OpenSSL/3.6.1: error:0A000126:SSL routines::unexpected eof while reading, errno 0.[0m
+2026-03-13 21:14:57.733775 +0000 build-r43-templates-community: .[38;5;246m22:14:57 .[96m[qb.template.archlinux.prep] .[38;5;246mwarning: too many errors from mirror.rackspace.com, skipping for the remainder of this transaction.[0m
+2026-03-13 21:14:57.733895 +0000 build-r43-templates-community: .[38;5;246m22:14:57 .[96m[qb.template.archlinux.prep] .[38;5;246merror: failed retrieving file 'gettext-1.0-2-x86_64.pkg.tar.zst' from arch.mirror.constant.com : Operation too slow. Less than 1 bytes/sec transferred the last 10 seconds.[0m
+2026-03-13 21:14:57.734020 +0000 build-r43-templates-community: .[38;5;246m22:14:57 .[96m[qb.template.archlinux.prep] .[38;5;246merror: failed retrieving file 'gettext-1.0-2-x86_64.pkg.tar.zst' from mirror.f4st.host : Could not resolve host: mirror.f4st.host.[0m
+2026-03-13 21:14:57.734064 +0000 build-r43-templates-community: .[38;5;246m22:14:57 .[96m[qb.template.archlinux.prep] .[38;5;246mwarning: fatal error from mirror.f4st.host, skipping for the remainder of this transaction.[0m
+2026-03-13 21:14:57.734298 +0000 build-r43-templates-community: .[38;5;246m22:14:57 .[96m[qb.template.archlinux.prep] .[38;5;246merror: failed retrieving file 'glibc-2.43+r5+g856c426a7534-1-x86_64.pkg.tar.zst.sig' from arch.mirror.constant.com : Operation too slow. Less than 1 bytes/sec transferred the last 10 seconds.[0m
+2026-03-13 21:14:57.734351 +0000 build-r43-templates-community: .[38;5;246m22:14:57 .[96m[qb.template.archlinux.prep] .[38;5;246merror: failed retrieving file 'icu-78.2-2-x86_64.pkg.tar.zst' from mirror.rackspace.com : OpenSSL SSL_read: OpenSSL/3.6.1: error:0A000126:SSL routines::unexpected eof while reading, errno 0.[0m
+2026-03-13 21:14:57.734574 +0000 build-r43-templates-community: .[38;5;246m22:14:57 .[96m[qb.template.archlinux.prep] .[38;5;246mwarning: failed to retrieve some files.[0m
+2026-03-13 21:14:57.734659 +0000 build-r43-templates-community: .[38;5;246m22:14:57 .[96m[qb.template.archlinux.prep] .[38;5;246merror: failed to commit transaction (unexpected error).[0m
+2026-03-13 21:14:57.762616 +0000 build-r43-templates-community: .[38;5;246m22:14:57 .[96m[qb.template.archlinux.prep] .[38;5;246mErrors occurred, no packages were upgraded..[0m
+2026-03-13 21:14:57.776264 +0000 build-r43-templates-community: .[38;5;246m22:14:57 .[96m[qb.template.archlinux.prep] .[38;5;246m==> ERROR: Failed to install packages to new root.[0m
+2026-03-13 21:14:57.802820 +0000 build-r43-templates-community: .[38;5;246m22:14:57 .[96m[qb.template.archlinux.prep] .[38;5;246m==> Creating install root at /mnt.[0m
+2026-03-13 21:14:57.827944 +0000 build-r43-templates-community: .[38;5;246m22:14:57 .[96m[qb.template.archlinux.prep] .[38;5;246m==> Installing packages to /mnt.[0m
+2026-03-13 21:14:57.837158 +0000 build-r43-templates-community: .[38;5;246m22:14:57 .[96m[qb.template.archlinux.prep] .[38;5;246m:: Synchronizing package databases....[0m
+2026-03-13 21:15:00.222602 +0000 build-r43-templates-community: .[38;5;246m22:15:00 .[96m[qb.template.archlinux.prep] .[38;5;246m core downloading....[0m
+2026-03-13 21:15:00.222677 +0000 build-r43-templates-community: .[38;5;246m22:15:00 .[96m[qb.template.archlinux.prep] .[38;5;246m extra downloading....[0m
+2026-03-13 21:15:00.227970 +0000 build-r43-templates-community: .[38;5;246m22:15:00 .[96m[qb.template.archlinux.prep] .[38;5;246mresolving dependencies....[0m
+2026-03-13 21:15:00.466479 +0000 build-r43-templates-community: .[38;5;246m22:15:00 .[96m[qb.template.archlinux.prep] .[38;5;246m:: There are 2 providers available for libxtables.so=12-64:.[0m
+2026-03-13 21:15:00.466526 +0000 build-r43-templates-community: .[38;5;246m22:15:00 .[96m[qb.template.archlinux.prep] .[38;5;246m:: Repository core.[0m
+2026-03-13 21:15:00.466541 +0000 build-r43-templates-community: .[38;5;246m22:15:00 .[96m[qb.template.archlinux.prep] .[38;5;246m   1) iptables  2) iptables-nft.[0m
+2026-03-13 21:15:00.466633 +0000 build-r43-templates-community: .[38;5;246m22:15:00 .[96m[qb.template.archlinux.prep] .[38;5;246m.[0m
+2026-03-13 21:15:00.466712 +0000 build-r43-templates-community: .[38;5;246m22:15:00 .[96m[qb.template.archlinux.prep] .[38;5;246mEnter a number (default=1):.[0m
+2026-03-13 21:15:00.466802 +0000 build-r43-templates-community: .[38;5;246m22:15:00 .[96m[qb.template.archlinux.prep] .[38;5;246mlooking for conflicting packages....[0m
+2026-03-13 21:15:00.467461 +0000 build-r43-templates-community: .[38;5;246m22:15:00 .[96m[qb.template.archlinux.prep] .[38;5;246m.[0m
+2026-03-13 21:15:00.468094 +0000 build-r43-templates-community: .[38;5;246m22:15:00 .[96m[qb.template.archlinux.prep] .[38;5;246mPackages (135) acl-2.3.2-1  archlinux-keyring-20260301-1  attr-2.5.2-1  audit-4.1.3-1  bash-5.3.9-1  binutils-2.46-1  brotli-1.2.0-1  bzip2-1.0.8-6  ca-certificates-20240618-1  ca-certificates-mozilla-3.121-1  ca-certificates-utils-20240618-1  coreutils-9.10-1  cryptsetup-2.8.4-1  curl-8.19.0-1  dbus-1.16.2-1  dbus-broker-37-3  dbus-broker-units-37-3  dbus-units-37-3  device-mapper-2.03.38-1  e2fsprogs-1.47.4-1  expat-2.7.4-1  file-5.47-1  filesystem-2025.10.12-1  findutils-4.10.0-3  gawk-5.4.0-1  gcc-libs-15.2.1+r604+g0b99615a8aef-1  gdbm-1.26-2  gettext-1.0-2  glib2-2.86.4-1  glibc-2.43+r5+g856c426a7534-1  gmp-6.3.0-3  gnulib-l10n-20241231-1  gnupg-2.4.9-1  gnutls-3.8.12-2  gpgme-2.0.1-3  grep-3.12-2  gzip-1.14-2  hwdata-0.405-1  iana-etc-20260306-1  icu-78.2-2  iproute2-6.19.0-2  iptables-1:1.8.11-2  iputils-20250605-1  jansson-2.15.0-1  json-c-0.18-2  kbd-2.9.0-1  keyutils-1.6.3-3  kmod-34.2-1  krb5-1.21.3-2  leancrypto-1.6.0-1  libarchive-3.8.6-1  libasan-15.2.1+r604+g0b99615a8aef-1  libassuan-3.0.0-1  libatomic-15.2.1+r604+g0b99615a8aef-1  libbpf-1.6.2-1  libcap-2.77-1  libcap-ng-0.9.1-1  libelf-0.194-2  libevent-2.1.12-5  libffi-3.5.2-1  libgcc-15.2.1+r604+g0b99615a8aef-1  libgcrypt-1.12.1-1  libgfortran-15.2.1+r604+g0b99615a8aef-1  libgomp-15.2.1+r604+g0b99615a8aef-1  libgpg-error-1.59-1  libidn2-2.3.8-1  libksba-1.6.8-1  libldap-2.6.13-1  liblsan-15.2.1+r604+g0b99615a8aef-1  libmakepkg-dropins-20-1  libmnl-1.0.5-2  libnetfilter_conntrack-1.0.9-2  libnfnetlink-1.0.2-2  libnftnl-1.3.1-1  libnghttp2-1.68.0-1  libnghttp3-1.15.0-1  libngtcp2-1.21.0-1  libnl-3.12.0-1  libnsl-2.0.1-1  libobjc-15.2.1+r604+g0b99615a8aef-1  libp11-kit-0.26.2-1  libpcap-1.10.6-1  libpsl-0.21.5-2  libquadmath-15.2.1+r604+g0b99615a8aef-1  libsasl-2.1.28-5  libseccomp-2.6.0-1  libsecret-0.21.7-1  libssh2-1.11.1-1  libstdc++-15.2.1+r604+g0b99615a8aef-1  libsysprof-capture-49.0-2  libtasn1-4.21.0-1  libtirpc-1.3.7-1  libtsan-15.2.1+r604+g0b99615a8aef-1  libubsan-15.2.1+r604+g0b99615a8aef-1  libunistring-1.4.1-1  libusb-1.0.29-1  libverto-0.3.2-5  libxcrypt-4.5.2-1  libxml2-2.15.2-1  licenses-20240728-1  linux-api-headers-6.19-1  lmdb-0.9.35-1  lz4-1:1.10.0-2  mpfr-4.2.2-1  ncurses-6.6-1  nettle-3.10.2-1  npth-1.8-1  openssl-3.6.1-1  p11-kit-0.26.2-1  pacman-7.1.0.r9.g54d9411-1  pacman-mirrorlist-20260213-1  pam-1.7.2-2  pambase-20250719-1  pciutils-3.14.0-1  pcre2-10.47-1  pinentry-1.3.2-2  popt-1.19-2  procps-ng-4.0.6-1  psmisc-23.7-1  readline-8.3.003-1  sed-4.9-3  shadow-4.18.0-1  sqlite-3.52.0-1  systemd-259.4-1  systemd-libs-259.4-1  systemd-sysvcompat-259.4-1  tar-1.35-2  tpm2-tss-4.1.3-1  tzdata-2026a-1  util-linux-2.41.3-2  util-linux-libs-2.41.3-2  xz-5.8.2-1  zlib-1:1.3.2-3  zstd-1.5.7-3  base-3-3.[0m
+2026-03-13 21:15:00.468162 +0000 build-r43-templates-community: .[38;5;246m22:15:00 .[96m[qb.template.archlinux.prep] .[38;5;246m.[0m
+2026-03-13 21:15:00.468184 +0000 build-r43-templates-community: .[38;5;246m22:15:00 .[96m[qb.template.archlinux.prep] .[38;5;246mTotal Download Size:    58.13 MiB.[0m
+2026-03-13 21:15:00.468201 +0000 build-r43-templates-community: .[38;5;246m22:15:00 .[96m[qb.template.archlinux.prep] .[38;5;246mTotal Installed Size:  506.30 MiB.[0m
+2026-03-13 21:15:00.468213 +0000 build-r43-templates-community: .[38;5;246m22:15:00 .[96m[qb.template.archlinux.prep] .[38;5;246m.[0m
+2026-03-13 21:15:00.468235 +0000 build-r43-templates-community: .[38;5;246m22:15:00 .[96m[qb.template.archlinux.prep] .[38;5;246m:: Proceed with installation? [Y/n].[0m
+2026-03-13 21:15:00.468342 +0000 build-r43-templates-community: .[38;5;246m22:15:00 .[96m[qb.template.archlinux.prep] .[38;5;246m:: Retrieving packages....[0m
+2026-03-13 21:19:33.032895 +0000 build-r43-templates-community: .[38;5;246m22:19:33 .[96m[qb.template.archlinux.prep] .[38;5;246m glibc-2.43+r5+g856c426a7534-1-x86_64 downloading....[0m
+2026-03-13 21:19:33.033000 +0000 build-r43-templates-community: .[38;5;246m22:19:33 .[96m[qb.template.archlinux.prep] .[38;5;246m coreutils-9.10-1-x86_64 downloading....[0m
+2026-03-13 21:19:33.033061 +0000 build-r43-templates-community: .[38;5;246m22:19:33 .[96m[qb.template.archlinux.prep] .[38;5;246m gnupg-2.4.9-1-x86_64 downloading....[0m
+2026-03-13 21:19:33.033097 +0000 build-r43-templates-community: .[38;5;246m22:19:33 .[96m[qb.template.archlinux.prep] .[38;5;246m sqlite-3.52.0-1-x86_64 downloading....[0m
+2026-03-13 21:19:33.033113 +0000 build-r43-templates-community: .[38;5;246m22:19:33 .[96m[qb.template.archlinux.prep] .[38;5;246m bash-5.3.9-1-x86_64 downloading....[0m
+2026-03-13 21:19:33.033256 +0000 build-r43-templates-community: .[38;5;246m22:19:33 .[96m[qb.template.archlinux.prep] .[38;5;246m gnutls-3.8.12-2-x86_64 downloading....[0m
+2026-03-13 21:19:33.033369 +0000 build-r43-templates-community: .[38;5;246m22:19:33 .[96m[qb.template.archlinux.prep] .[38;5;246m hwdata-0.405-1-any downloading....[0m
+2026-03-13 21:19:33.033528 +0000 build-r43-templates-community: .[38;5;246m22:19:33 .[96m[qb.template.archlinux.prep] .[38;5;246m pcre2-10.47-1-x86_64 downloading....[0m
+2026-03-13 21:19:33.033614 +0000 build-r43-templates-community: .[38;5;246m22:19:33 .[96m[qb.template.archlinux.prep] .[38;5;246m linux-api-headers-6.19-1-x86_64 downloading....[0m
+2026-03-13 21:19:33.033770 +0000 build-r43-templates-community: .[38;5;246m22:19:33 .[96m[qb.template.archlinux.prep] .[38;5;246m gawk-5.4.0-1-x86_64 downloading....[0m
+2026-03-13 21:19:33.033870 +0000 build-r43-templates-community: .[38;5;246m22:19:33 .[96m[qb.template.archlinux.prep] .[38;5;246m leancrypto-1.6.0-1-x86_64 downloading....[0m
+2026-03-13 21:19:33.034011 +0000 build-r43-templates-community: .[38;5;246m22:19:33 .[96m[qb.template.archlinux.prep] .[38;5;246m krb5-1.21.3-2-x86_64 downloading....[0m
+2026-03-13 21:19:33.034052 +0000 build-r43-templates-community: .[38;5;246m22:19:33 .[96m[qb.template.archlinux.prep] .[38;5;246m systemd-libs-259.4-1-x86_64 downloading....[0m
+2026-03-13 21:19:33.034222 +0000 build-r43-templates-community: .[38;5;246m22:19:33 .[96m[qb.template.archlinux.prep] .[38;5;246m kbd-2.9.0-1-x86_64 downloading....[0m
+2026-03-13 21:19:33.034349 +0000 build-r43-templates-community: .[38;5;246m22:19:33 .[96m[qb.template.archlinux.prep] .[38;5;246m e2fsprogs-1.47.4-1-x86_64 downloading....[0m
+2026-03-13 21:19:33.034389 +0000 build-r43-templates-community: .[38;5;246m22:19:33 .[96m[qb.template.archlinux.prep] .[38;5;246m curl-8.19.0-1-x86_64 downloading....[0m
+2026-03-13 21:19:33.034611 +0000 build-r43-templates-community: .[38;5;246m22:19:33 .[96m[qb.template.archlinux.prep] .[38;5;246m shadow-4.18.0-1-x86_64 downloading....[0m
+2026-03-13 21:19:33.034696 +0000 build-r43-templates-community: .[38;5;246m22:19:33 .[96m[qb.template.archlinux.prep] .[38;5;246m archlinux-keyring-20260301-1-any downloading....[0m
+2026-03-13 21:19:33.034829 +0000 build-r43-templates-community: .[38;5;246m22:19:33 .[96m[qb.template.archlinux.prep] .[38;5;246m ncurses-6.6-1-x86_64 downloading....[0m
+2026-03-13 21:19:33.034939 +0000 build-r43-templates-community: .[38;5;246m22:19:33 .[96m[qb.template.archlinux.prep] .[38;5;246m iproute2-6.19.0-2-x86_64 downloading....[0m
+2026-03-13 21:19:33.035035 +0000 build-r43-templates-community: .[38;5;246m22:19:33 .[96m[qb.template.archlinux.prep] .[38;5;246m procps-ng-4.0.6-1-x86_64 downloading....[0m
+2026-03-13 21:19:33.035165 +0000 build-r43-templates-community: .[38;5;246m22:19:33 .[96m[qb.template.archlinux.prep] .[38;5;246m pacman-7.1.0.r9.g54d9411-1-x86_64 downloading....[0m
+2026-03-13 21:19:33.035250 +0000 build-r43-templates-community: .[38;5;246m22:19:33 .[96m[qb.template.archlinux.prep] .[38;5;246m tpm2-tss-4.1.3-1-x86_64 downloading....[0m
+2026-03-13 21:19:33.035397 +0000 build-r43-templates-community: .[38;5;246m22:19:33 .[96m[qb.template.archlinux.prep] .[38;5;246m libgfortran-15.2.1+r604+g0b99615a8aef-1-x86_64 downloading....[0m
+2026-03-13 21:19:33.035533 +0000 build-r43-templates-community: .[38;5;246m22:19:33 .[96m[qb.template.archlinux.prep] .[38;5;246m xz-5.8.2-1-x86_64 downloading....[0m
+2026-03-13 21:19:33.035660 +0000 build-r43-templates-community: .[38;5;246m22:19:33 .[96m[qb.template.archlinux.prep] .[38;5;246m cryptsetup-2.8.4-1-x86_64 downloading....[0m
+2026-03-13 21:19:33.035783 +0000 build-r43-templates-community: .[38;5;246m22:19:33 .[96m[qb.template.archlinux.prep] .[38;5;246m libcap-2.77-1-x86_64 downloading....[0m
+2026-03-13 21:19:33.035869 +0000 build-r43-templates-community: .[38;5;246m22:19:33 .[96m[qb.template.archlinux.prep] .[38;5;246m tar-1.35-2-x86_64 downloading....[0m
+2026-03-13 21:19:33.036010 +0000 build-r43-templates-community: .[38;5;246m22:19:33 .[96m[qb.template.archlinux.prep] .[38;5;246m libxml2-2.15.2-1-x86_64 downloading....[0m
+2026-03-13 21:19:33.036152 +0000 build-r43-templates-community: .[38;5;246m22:19:33 .[96m[qb.template.archlinux.prep] .[38;5;246m libstdc++-15.2.1+r604+g0b99615a8aef-1-x86_64 downloading....[0m
+2026-03-13 21:19:33.036238 +0000 build-r43-templates-community: .[38;5;246m22:19:33 .[96m[qb.template.archlinux.prep] .[38;5;246m libgcrypt-1.12.1-1-x86_64 downloading....[0m
+2026-03-13 21:19:33.036381 +0000 build-r43-templates-community: .[38;5;246m22:19:33 .[96m[qb.template.archlinux.prep] .[38;5;246m libunistring-1.4.1-1-x86_64 downloading....[0m
+2026-03-13 21:19:33.036517 +0000 build-r43-templates-community: .[38;5;246m22:19:33 .[96m[qb.template.archlinux.prep] .[38;5;246m libelf-0.194-2-x86_64 downloading....[0m
+2026-03-13 21:19:33.036640 +0000 build-r43-templates-community: .[38;5;246m22:19:33 .[96m[qb.template.archlinux.prep] .[38;5;246m pam-1.7.2-2-x86_64 downloading....[0m
+2026-03-13 21:19:33.036756 +0000 build-r43-templates-community: .[38;5;246m22:19:33 .[96m[qb.template.archlinux.prep] .[38;5;246m libarchive-3.8.6-1-x86_64 downloading....[0m
+2026-03-13 21:19:33.036873 +0000 build-r43-templates-community: .[38;5;246m22:19:33 .[96m[qb.template.archlinux.prep] .[38;5;246m zstd-1.5.7-3-x86_64 downloading....[0m
+2026-03-13 21:19:33.037005 +0000 build-r43-templates-community: .[38;5;246m22:19:33 .[96m[qb.template.archlinux.prep] .[38;5;246m libp11-kit-0.26.2-1-x86_64 downloading....[0m
+2026-03-13 21:19:33.037045 +0000 build-r43-templates-community: .[38;5;246m22:19:33 .[96m[qb.template.archlinux.prep] .[38;5;246m util-linux-libs-2.41.3-2-x86_64 downloading....[0m
+2026-03-13 21:19:33.037227 +0000 build-r43-templates-community: .[38;5;246m22:19:33 .[96m[qb.template.archlinux.prep] .[38;5;246m libasan-15.2.1+r604+g0b99615a8aef-1-x86_64 downloading....[0m
+2026-03-13 21:19:33.037313 +0000 build-r43-templates-community: .[38;5;246m22:19:33 .[96m[qb.template.archlinux.prep] .[38;5;246m findutils-4.10.0-3-x86_64 downloading....[0m
+2026-03-13 21:19:33.037465 +0000 build-r43-templates-community: .[38;5;246m22:19:33 .[96m[qb.template.archlinux.prep] .[38;5;246m nettle-3.10.2-1-x86_64 downloading....[0m
+2026-03-13 21:19:33.037592 +0000 build-r43-templates-community: .[38;5;246m22:19:33 .[96m[qb.template.archlinux.prep] .[38;5;246m libtsan-15.2.1+r604+g0b99615a8aef-1-x86_64 downloading....[0m
+2026-03-13 21:19:33.037677 +0000 build-r43-templates-community: .[38;5;246m22:19:33 .[96m[qb.template.archlinux.prep] .[38;5;246m gmp-6.3.0-3-x86_64 downloading....[0m
+2026-03-13 21:19:33.037804 +0000 build-r43-templates-community: .[38;5;246m22:19:33 .[96m[qb.template.archlinux.prep] .[38;5;246m file-5.47-1-x86_64 downloading....[0m
+2026-03-13 21:19:33.037890 +0000 build-r43-templates-community: .[38;5;246m22:19:33 .[96m[qb.template.archlinux.prep] .[38;5;246m mpfr-4.2.2-1-x86_64 downloading....[0m
+2026-03-13 21:19:33.038027 +0000 build-r43-templates-community: .[38;5;246m22:19:33 .[96m[qb.template.archlinux.prep] .[38;5;246m libnl-3.12.0-1-x86_64 downloading....[0m
+2026-03-13 21:19:33.038067 +0000 build-r43-templates-community: .[38;5;246m22:19:33 .[96m[qb.template.archlinux.prep] .[38;5;246m iptables-1:1.8.11-2-x86_64 downloading....[0m
+2026-03-13 21:19:33.038250 +0000 build-r43-templates-community: .[38;5;246m22:19:33 .[96m[qb.template.archlinux.prep] .[38;5;246m readline-8.3.003-1-x86_64 downloading....[0m
+2026-03-13 21:19:33.038302 +0000 build-r43-templates-community: .[38;5;246m22:19:33 .[96m[qb.template.archlinux.prep] .[38;5;246m iana-etc-20260306-1-any downloading....[0m
+2026-03-13 21:19:33.038470 +0000 build-r43-templates-community: .[38;5;246m22:19:33 .[96m[qb.template.archlinux.prep] .[38;5;246m brotli-1.2.0-1-x86_64 downloading....[0m
+2026-03-13 21:19:33.038609 +0000 build-r43-templates-community: .[38;5;246m22:19:33 .[96m[qb.template.archlinux.prep] .[38;5;246m ca-certificates-mozilla-3.121-1-x86_64 downloading....[0m
+2026-03-13 21:19:33.038694 +0000 build-r43-templates-community: .[38;5;246m22:19:33 .[96m[qb.template.archlinux.prep] .[38;5;246m audit-4.1.3-1-x86_64 downloading....[0m
+2026-03-13 21:19:33.038831 +0000 build-r43-templates-community: .[38;5;246m22:19:33 .[96m[qb.template.archlinux.prep] .[38;5;246m dbus-1.16.2-1-x86_64 downloading....[0m
+2026-03-13 21:19:33.038917 +0000 build-r43-templates-community: .[38;5;246m22:19:33 .[96m[qb.template.archlinux.prep] .[38;5;246m gpgme-2.0.1-3-x86_64 downloading....[0m
+2026-03-13 21:19:33.039304 +0000 build-r43-templates-community: .[38;5;246m22:19:33 .[96m[qb.template.archlinux.prep] .[38;5;246m tzdata-2026a-1-x86_64 downloading....[0m
+2026-03-13 21:19:33.039566 +0000 build-r43-templates-community: .[38;5;246m22:19:33 .[96m[qb.template.archlinux.prep] .[38;5;246m libpcap-1.10.6-1-x86_64 downloading....[0m
+2026-03-13 21:19:33.039719 +0000 build-r43-templates-community: .[38;5;246m22:19:33 .[96m[qb.template.archlinux.prep] .[38;5;246m libldap-2.6.13-1-x86_64 downloading....[0m
+2026-03-13 21:19:33.039843 +0000 build-r43-templates-community: .[38;5;246m22:19:33 .[96m[qb.template.archlinux.prep] .[38;5;246m device-mapper-2.03.38-1-x86_64 downloading....[0m
+2026-03-13 21:19:33.040076 +0000 build-r43-templates-community: .[38;5;246m22:19:33 .[96m[qb.template.archlinux.prep] .[38;5;246m libgpg-error-1.59-1-x86_64 downloading....[0m
+2026-03-13 21:19:33.040108 +0000 build-r43-templates-community: .[38;5;246m22:19:33 .[96m[qb.template.archlinux.prep] .[38;5;246m libevent-2.1.12-5-x86_64 downloading....[0m
+2026-03-13 21:19:33.040211 +0000 build-r43-templates-community: .[38;5;246m22:19:33 .[96m[qb.template.archlinux.prep] .[38;5;246m psmisc-23.7-1-x86_64 downloading....[0m
+2026-03-13 21:19:33.040332 +0000 build-r43-templates-community: .[38;5;246m22:19:33 .[96m[qb.template.archlinux.prep] .[38;5;246m libbpf-1.6.2-1-x86_64 downloading....[0m
+2026-03-13 21:19:33.040416 +0000 build-r43-templates-community: .[38;5;246m22:19:33 .[96m[qb.template.archlinux.prep] .[38;5;246m gdbm-1.26-2-x86_64 downloading....[0m
+2026-03-13 21:19:33.040621 +0000 build-r43-templates-community: .[38;5;246m22:19:33 .[96m[qb.template.archlinux.prep] .[38;5;246m libssh2-1.11.1-1-x86_64 downloading....[0m
+2026-03-13 21:19:33.040659 +0000 build-r43-templates-community: .[38;5;246m22:19:33 .[96m[qb.template.archlinux.prep] .[38;5;246m p11-kit-0.26.2-1-x86_64 downloading....[0m
+2026-03-13 21:19:33.040849 +0000 build-r43-templates-community: .[38;5;246m22:19:33 .[96m[qb.template.archlinux.prep] .[38;5;246m grep-3.12-2-x86_64 downloading....[0m
+2026-03-13 21:19:33.040934 +0000 build-r43-templates-community: .[38;5;246m22:19:33 .[96m[qb.template.archlinux.prep] .[38;5;246m liblsan-15.2.1+r604+g0b99615a8aef-1-x86_64 downloading....[0m
+2026-03-13 21:19:33.041086 +0000 build-r43-templates-community: .[38;5;246m22:19:33 .[96m[qb.template.archlinux.prep] .[38;5;246m libgomp-15.2.1+r604+g0b99615a8aef-1-x86_64 downloading....[0m
+2026-03-13 21:19:33.041125 +0000 build-r43-templates-community: .[38;5;246m22:19:33 .[96m[qb.template.archlinux.prep] .[38;5;246m sed-4.9-3-x86_64 downloading....[0m
+2026-03-13 21:19:33.041311 +0000 build-r43-templates-community: .[38;5;246m22:19:33 .[96m[qb.template.archlinux.prep] .[38;5;246m libubsan-15.2.1+r604+g0b99615a8aef-1-x86_64 downloading....[0m
+2026-03-13 21:19:33.041393 +0000 build-r43-templates-community: .[38;5;246m22:19:33 .[96m[qb.template.archlinux.prep] .[38;5;246m libngtcp2-1.21.0-1-x86_64 downloading....[0m
+2026-03-13 21:19:33.041589 +0000 build-r43-templates-community: .[38;5;246m22:19:33 .[96m[qb.template.archlinux.prep] .[38;5;246m pinentry-1.3.2-2-x86_64 downloading....[0m
+2026-03-13 21:19:33.041680 +0000 build-r43-templates-community: .[38;5;246m22:19:33 .[96m[qb.template.archlinux.prep] .[38;5;246m libsecret-0.21.7-1-x86_64 downloading....[0m
+2026-03-13 21:19:33.041832 +0000 build-r43-templates-community: .[38;5;246m22:19:33 .[96m[qb.template.archlinux.prep] .[38;5;246m libtirpc-1.3.7-1-x86_64 downloading....[0m
+2026-03-13 21:19:33.041949 +0000 build-r43-templates-community: .[38;5;246m22:19:33 .[96m[qb.template.archlinux.prep] .[38;5;246m libquadmath-15.2.1+r604+g0b99615a8aef-1-x86_64 downloading....[0m
+2026-03-13 21:19:33.042106 +0000 build-r43-templates-community: .[38;5;246m22:19:33 .[96m[qb.template.archlinux.prep] .[38;5;246m lz4-1:1.10.0-2-x86_64 downloading....[0m
+2026-03-13 21:19:33.042138 +0000 build-r43-templates-community: .[38;5;246m22:19:33 .[96m[qb.template.archlinux.prep] .[38;5;246m dbus-broker-37-3-x86_64 downloading....[0m
+2026-03-13 21:19:33.042335 +0000 build-r43-templates-community: .[38;5;246m22:19:33 .[96m[qb.template.archlinux.prep] .[38;5;246m libsasl-2.1.28-5-x86_64 downloading....[0m
+2026-03-13 21:19:33.042420 +0000 build-r43-templates-community: .[38;5;246m22:19:33 .[96m[qb.template.archlinux.prep] .[38;5;246m pciutils-3.14.0-1-x86_64 downloading....[0m
+2026-03-13 21:19:33.042619 +0000 build-r43-templates-community: .[38;5;246m22:19:33 .[96m[qb.template.archlinux.prep] .[38;5;246m libksba-1.6.8-1-x86_64 downloading....[0m
+2026-03-13 21:19:33.042703 +0000 build-r43-templates-community: .[38;5;246m22:19:33 .[96m[qb.template.archlinux.prep] .[38;5;246m iputils-20250605-1-x86_64 downloading....[0m
+2026-03-13 21:19:33.042830 +0000 build-r43-templates-community: .[38;5;246m22:19:33 .[96m[qb.template.archlinux.prep] .[38;5;246m acl-2.3.2-1-x86_64 downloading....[0m
+2026-03-13 21:19:33.042938 +0000 build-r43-templates-community: .[38;5;246m22:19:33 .[96m[qb.template.archlinux.prep] .[38;5;246m libtasn1-4.21.0-1-x86_64 downloading....[0m
+2026-03-13 21:19:33.043052 +0000 build-r43-templates-community: .[38;5;246m22:19:33 .[96m[qb.template.archlinux.prep] .[38;5;246m libidn2-2.3.8-1-x86_64 downloading....[0m
+2026-03-13 21:19:33.043163 +0000 build-r43-templates-community: .[38;5;246m22:19:33 .[96m[qb.template.archlinux.prep] .[38;5;246m kmod-34.2-1-x86_64 downloading....[0m
+2026-03-13 21:19:33.043287 +0000 build-r43-templates-community: .[38;5;246m22:19:33 .[96m[qb.template.archlinux.prep] .[38;5;246m gnulib-l10n-20241231-1-any downloading....[0m
+2026-03-13 21:19:33.043400 +0000 build-r43-templates-community: .[38;5;246m22:19:33 .[96m[qb.template.archlinux.prep] .[38;5;246m expat-2.7.4-1-x86_64 downloading....[0m
+2026-03-13 21:19:33.043578 +0000 build-r43-templates-community: .[38;5;246m22:19:33 .[96m[qb.template.archlinux.prep] .[38;5;246m lmdb-0.9.35-1-x86_64 downloading....[0m
+2026-03-13 21:19:33.043617 +0000 build-r43-templates-community: .[38;5;246m22:19:33 .[96m[qb.template.archlinux.prep] .[38;5;246m libassuan-3.0.0-1-x86_64 downloading....[0m
+2026-03-13 21:19:33.043788 +0000 build-r43-templates-community: .[38;5;246m22:19:33 .[96m[qb.template.archlinux.prep] .[38;5;246m licenses-20240728-1-any downloading....[0m
+2026-03-13 21:19:33.043902 +0000 build-r43-templates-community: .[38;5;246m22:19:33 .[96m[qb.template.archlinux.prep] .[38;5;246m keyutils-1.6.3-3-x86_64 downloading....[0m
+2026-03-13 21:19:33.044010 +0000 build-r43-templates-community: .[38;5;246m22:19:33 .[96m[qb.template.archlinux.prep] .[38;5;246m libseccomp-2.6.0-1-x86_64 downloading....[0m
+2026-03-13 21:19:33.044048 +0000 build-r43-templates-community: .[38;5;246m22:19:33 .[96m[qb.template.archlinux.prep] .[38;5;246m libnghttp2-1.68.0-1-x86_64 downloading....[0m
+2026-03-13 21:19:33.044238 +0000 build-r43-templates-community: .[38;5;246m22:19:33 .[96m[qb.template.archlinux.prep] .[38;5;246m libxcrypt-4.5.2-1-x86_64 downloading....[0m
+2026-03-13 21:19:33.044335 +0000 build-r43-templates-community: .[38;5;246m22:19:33 .[96m[qb.template.archlinux.prep] .[38;5;246m jansson-2.15.0-1-x86_64 downloading....[0m
+2026-03-13 21:19:33.044466 +0000 build-r43-templates-community: .[38;5;246m22:19:33 .[96m[qb.template.archlinux.prep] .[38;5;246m libpsl-0.21.5-2-x86_64 downloading....[0m
+2026-03-13 21:19:33.044598 +0000 build-r43-templates-community: .[38;5;246m22:19:33 .[96m[qb.template.archlinux.prep] .[38;5;246m gzip-1.14-2-x86_64 downloading....[0m
+2026-03-13 21:19:33.044706 +0000 build-r43-templates-community: .[38;5;246m22:19:33 .[96m[qb.template.archlinux.prep] .[38;5;246m zlib-1:1.3.2-3-x86_64 downloading....[0m
+2026-03-13 21:19:51.741188 +0000 build-r43-templates-community: .[38;5;246m22:19:51 .[96m[qb.template.archlinux.prep] .[38;5;246m libnghttp3-1.15.0-1-x86_64 downloading....[0m
+2026-03-13 21:19:51.741255 +0000 build-r43-templates-community: .[38;5;246m22:19:51 .[96m[qb.template.archlinux.prep] .[38;5;246m libgcc-15.2.1+r604+g0b99615a8aef-1-x86_64 downloading....[0m
+2026-03-13 21:19:51.741290 +0000 build-r43-templates-community: .[38;5;246m22:19:51 .[96m[qb.template.archlinux.prep] .[38;5;246m popt-1.19-2-x86_64 downloading....[0m
+2026-03-13 21:19:51.741308 +0000 build-r43-templates-community: .[38;5;246m22:19:51 .[96m[qb.template.archlinux.prep] .[38;5;246m libusb-1.0.29-1-x86_64 downloading....[0m
+2026-03-13 21:19:51.741467 +0000 build-r43-templates-community: .[38;5;246m22:19:51 .[96m[qb.template.archlinux.prep] .[38;5;246m libnftnl-1.3.1-1-x86_64 downloading....[0m
+2026-03-13 21:19:51.741620 +0000 build-r43-templates-community: .[38;5;246m22:19:51 .[96m[qb.template.archlinux.prep] .[38;5;246m attr-2.5.2-1-x86_64 downloading....[0m
+2026-03-13 21:19:51.741708 +0000 build-r43-templates-community: .[38;5;246m22:19:51 .[96m[qb.template.archlinux.prep] .[38;5;246m json-c-0.18-2-x86_64 downloading....[0m
+2026-03-13 21:19:51.741852 +0000 build-r43-templates-community: .[38;5;246m22:19:51 .[96m[qb.template.archlinux.prep] .[38;5;246m bzip2-1.0.8-6-x86_64 downloading....[0m
+2026-03-13 21:19:51.741938 +0000 build-r43-templates-community: .[38;5;246m22:19:51 .[96m[qb.template.archlinux.prep] .[38;5;246m libsysprof-capture-49.0-2-x86_64 downloading....[0m
+2026-03-13 21:19:51.742074 +0000 build-r43-templates-community: .[38;5;246m22:19:51 .[96m[qb.template.archlinux.prep] .[38;5;246m libnetfilter_conntrack-1.0.9-2-x86_64 downloading....[0m
+2026-03-13 21:19:51.742159 +0000 build-r43-templates-community: .[38;5;246m22:19:51 .[96m[qb.template.archlinux.prep] .[38;5;246m libffi-3.5.2-1-x86_64 downloading....[0m
+2026-03-13 21:19:51.742290 +0000 build-r43-templates-community: .[38;5;246m22:19:51 .[96m[qb.template.archlinux.prep] .[38;5;246m libcap-ng-0.9.1-1-x86_64 downloading....[0m
+2026-03-13 21:19:51.742418 +0000 build-r43-templates-community: .[38;5;246m22:19:51 .[96m[qb.template.archlinux.prep] .[38;5;246m libobjc-15.2.1+r604+g0b99615a8aef-1-x86_64 downloading....[0m
+2026-03-13 21:19:51.742588 +0000 build-r43-templates-community: .[38;5;246m22:19:51 .[96m[qb.template.archlinux.prep] .[38;5;246m npth-1.8-1-x86_64 downloading....[0m
+2026-03-13 21:19:51.742628 +0000 build-r43-templates-community: .[38;5;246m22:19:51 .[96m[qb.template.archlinux.prep] .[38;5;246m libnsl-2.0.1-1-x86_64 downloading....[0m
+2026-03-13 21:19:51.742804 +0000 build-r43-templates-community: .[38;5;246m22:19:51 .[96m[qb.template.archlinux.prep] .[38;5;246m libverto-0.3.2-5-x86_64 downloading....[0m
+2026-03-13 21:19:51.742889 +0000 build-r43-templates-community: .[38;5;246m22:19:51 .[96m[qb.template.archlinux.prep] .[38;5;246m libnfnetlink-1.0.2-2-x86_64 downloading....[0m
+2026-03-13 21:19:51.743178 +0000 build-r43-templates-community: .[38;5;246m22:19:51 .[96m[qb.template.archlinux.prep] .[38;5;246m filesystem-2025.10.12-1-any downloading....[0m
+2026-03-13 21:19:51.743424 +0000 build-r43-templates-community: .[38;5;246m22:19:51 .[96m[qb.template.archlinux.prep] .[38;5;246m libatomic-15.2.1+r604+g0b99615a8aef-1-x86_64 downloading....[0m
+2026-03-13 21:19:51.743596 +0000 build-r43-templates-community: .[38;5;246m22:19:51 .[96m[qb.template.archlinux.prep] .[38;5;246m libmnl-1.0.5-2-x86_64 downloading....[0m
+2026-03-13 21:19:51.743681 +0000 build-r43-templates-community: .[38;5;246m22:19:51 .[96m[qb.template.archlinux.prep] .[38;5;246m ca-certificates-utils-20240618-1-any downloading....[0m
+2026-03-13 21:19:51.743832 +0000 build-r43-templates-community: .[38;5;246m22:19:51 .[96m[qb.template.archlinux.prep] .[38;5;246m pacman-mirrorlist-20260213-1-any downloading....[0m
+2026-03-13 21:19:51.743872 +0000 build-r43-templates-community: .[38;5;246m22:19:51 .[96m[qb.template.archlinux.prep] .[38;5;246m systemd-sysvcompat-259.4-1-x86_64 downloading....[0m
+2026-03-13 21:19:51.744063 +0000 build-r43-templates-community: .[38;5;246m22:19:51 .[96m[qb.template.archlinux.prep] .[38;5;246m libmakepkg-dropins-20-1-any downloading....[0m
+2026-03-13 21:19:51.744201 +0000 build-r43-templates-community: .[38;5;246m22:19:51 .[96m[qb.template.archlinux.prep] .[38;5;246m pambase-20250719-1-any downloading....[0m
+2026-03-13 21:19:51.744317 +0000 build-r43-templates-community: .[38;5;246m22:19:51 .[96m[qb.template.archlinux.prep] .[38;5;246m gcc-libs-15.2.1+r604+g0b99615a8aef-1-x86_64 downloading....[0m
+2026-03-13 21:19:51.744428 +0000 build-r43-templates-community: .[38;5;246m22:19:51 .[96m[qb.template.archlinux.prep] .[38;5;246m dbus-broker-units-37-3-x86_64 downloading....[0m
+2026-03-13 21:19:51.744577 +0000 build-r43-templates-community: .[38;5;246m22:19:51 .[96m[qb.template.archlinux.prep] .[38;5;246m base-3-3-any downloading....[0m
+2026-03-13 21:19:51.744691 +0000 build-r43-templates-community: .[38;5;246m22:19:51 .[96m[qb.template.archlinux.prep] .[38;5;246m dbus-units-37-3-x86_64 downloading....[0m
+2026-03-13 21:19:51.744804 +0000 build-r43-templates-community: .[38;5;246m22:19:51 .[96m[qb.template.archlinux.prep] .[38;5;246m ca-certificates-20240618-1-any downloading....[0m
+2026-03-13 21:19:51.744923 +0000 build-r43-templates-community: .[38;5;246m22:19:51 .[96m[qb.template.archlinux.prep] .[38;5;246mchecking keyring....[0m
+2026-03-13 21:19:51.983332 +0000 build-r43-templates-community: .[38;5;246m22:19:52 .[96m[qb.template.archlinux.prep] .[38;5;246mchecking package integrity....[0m
+2026-03-13 21:19:55.342061 +0000 build-r43-templates-community: .[38;5;246m22:19:55 .[96m[qb.template.archlinux.prep] .[38;5;246mloading package files....[0m
+2026-03-13 21:19:55.500725 +0000 build-r43-templates-community: .[38;5;246m22:19:55 .[96m[qb.template.archlinux.prep] .[38;5;246mchecking for file conflicts....[0m
+2026-03-13 21:19:55.566637 +0000 build-r43-templates-community: .[38;5;246m22:19:55 .[96m[qb.template.archlinux.prep] .[38;5;246mchecking available disk space....[0m
+2026-03-13 21:19:55.567945 +0000 build-r43-templates-community: .[38;5;246m22:19:55 .[96m[qb.template.archlinux.prep] .[38;5;246m:: Processing package changes....[0m
+2026-03-13 21:19:55.567971 +0000 build-r43-templates-community: .[38;5;246m22:19:55 .[96m[qb.template.archlinux.prep] .[38;5;246minstalling iana-etc....[0m
+2026-03-13 21:19:55.577428 +0000 build-r43-templates-community: .[38;5;246m22:19:55 .[96m[qb.template.archlinux.prep] .[38;5;246minstalling filesystem....[0m
+2026-03-13 21:19:55.587730 +0000 build-r43-templates-community: .[38;5;246m22:19:55 .[96m[qb.template.archlinux.prep] .[38;5;246minstalling linux-api-headers....[0m
+2026-03-13 21:19:55.680544 +0000 build-r43-templates-community: .[38;5;246m22:19:55 .[96m[qb.template.archlinux.prep] .[38;5;246minstalling tzdata....[0m
+2026-03-13 21:19:55.849123 +0000 build-r43-templates-community: .[38;5;246m22:19:55 .[96m[qb.template.archlinux.prep] .[38;5;246mOptional dependencies for tzdata.[0m
+2026-03-13 21:19:55.849176 +0000 build-r43-templates-community: .[38;5;246m22:19:55 .[96m[qb.template.archlinux.prep] .[38;5;246m    bash: for tzselect [pending].[0m
+2026-03-13 21:19:55.849198 +0000 build-r43-templates-community: .[38;5;246m22:19:55 .[96m[qb.template.archlinux.prep] .[38;5;246m    glibc: for zdump, zic [pending].[0m
+2026-03-13 21:19:55.849277 +0000 build-r43-templates-community: .[38;5;246m22:19:55 .[96m[qb.template.archlinux.prep] .[38;5;246minstalling glibc....[0m
+2026-03-13 21:19:56.111127 +0000 build-r43-templates-community: .[38;5;246m22:19:56 .[96m[qb.template.archlinux.prep] .[38;5;246mOptional dependencies for glibc.[0m
+2026-03-13 21:19:56.111202 +0000 build-r43-templates-community: .[38;5;246m22:19:56 .[96m[qb.template.archlinux.prep] .[38;5;246m    gd: for memusagestat.[0m
+2026-03-13 21:19:56.111221 +0000 build-r43-templates-community: .[38;5;246m22:19:56 .[96m[qb.template.archlinux.prep] .[38;5;246m    perl: for mtrace.[0m
+2026-03-13 21:19:56.111236 +0000 build-r43-templates-community: .[38;5;246m22:19:56 .[96m[qb.template.archlinux.prep] .[38;5;246minstalling libasan....[0m
+2026-03-13 21:19:56.119066 +0000 build-r43-templates-community: .[38;5;246m22:19:56 .[96m[qb.template.archlinux.prep] .[38;5;246minstalling libatomic....[0m
+2026-03-13 21:19:56.120265 +0000 build-r43-templates-community: .[38;5;246m22:19:56 .[96m[qb.template.archlinux.prep] .[38;5;246minstalling libgfortran....[0m
+2026-03-13 21:19:56.134780 +0000 build-r43-templates-community: .[38;5;246m22:19:56 .[96m[qb.template.archlinux.prep] .[38;5;246minstalling libgcc....[0m
+2026-03-13 21:19:56.136700 +0000 build-r43-templates-community: .[38;5;246m22:19:56 .[96m[qb.template.archlinux.prep] .[38;5;246minstalling libgomp....[0m
+2026-03-13 21:19:56.139631 +0000 build-r43-templates-community: .[38;5;246m22:19:56 .[96m[qb.template.archlinux.prep] .[38;5;246minstalling liblsan....[0m
+2026-03-13 21:19:56.142609 +0000 build-r43-templates-community: .[38;5;246m22:19:56 .[96m[qb.template.archlinux.prep] .[38;5;246minstalling libobjc....[0m
+2026-03-13 21:19:56.143252 +0000 build-r43-templates-community: .[38;5;246m22:19:56 .[96m[qb.template.archlinux.prep] .[38;5;246minstalling libquadmath....[0m
+2026-03-13 21:19:56.145961 +0000 build-r43-templates-community: .[38;5;246m22:19:56 .[96m[qb.template.archlinux.prep] .[38;5;246minstalling libstdc++....[0m
+2026-03-13 21:19:56.157606 +0000 build-r43-templates-community: .[38;5;246m22:19:56 .[96m[qb.template.archlinux.prep] .[38;5;246minstalling libtsan....[0m
+2026-03-13 21:19:56.163319 +0000 build-r43-templates-community: .[38;5;246m22:19:56 .[96m[qb.template.archlinux.prep] .[38;5;246minstalling libubsan....[0m
+2026-03-13 21:19:56.164760 +0000 build-r43-templates-community: .[38;5;246m22:19:56 .[96m[qb.template.archlinux.prep] .[38;5;246minstalling gcc-libs....[0m
+2026-03-13 21:19:56.164978 +0000 build-r43-templates-community: .[38;5;246m22:19:56 .[96m[qb.template.archlinux.prep] .[38;5;246minstalling ncurses....[0m
+2026-03-13 21:19:56.530473 +0000 build-r43-templates-community: .[38;5;246m22:19:56 .[96m[qb.template.archlinux.prep] .[38;5;246mOptional dependencies for ncurses.[0m
+2026-03-13 21:19:56.530550 +0000 build-r43-templates-community: .[38;5;246m22:19:56 .[96m[qb.template.archlinux.prep] .[38;5;246m    bash: for ncursesw6-config [pending].[0m
+2026-03-13 21:19:56.530570 +0000 build-r43-templates-community: .[38;5;246m22:19:56 .[96m[qb.template.archlinux.prep] .[38;5;246minstalling readline....[0m
+2026-03-13 21:19:56.541505 +0000 build-r43-templates-community: .[38;5;246m22:19:56 .[96m[qb.template.archlinux.prep] .[38;5;246minstalling bash....[0m
+2026-03-13 21:19:56.582896 +0000 build-r43-templates-community: .[38;5;246m22:19:56 .[96m[qb.template.archlinux.prep] .[38;5;246mOptional dependencies for bash.[0m
+2026-03-13 21:19:56.582959 +0000 build-r43-templates-community: .[38;5;246m22:19:56 .[96m[qb.template.archlinux.prep] .[38;5;246m    bash-completion: for tab completion.[0m
+2026-03-13 21:19:56.582986 +0000 build-r43-templates-community: .[38;5;246m22:19:56 .[96m[qb.template.archlinux.prep] .[38;5;246minstalling acl....[0m
+2026-03-13 21:19:56.588827 +0000 build-r43-templates-community: .[38;5;246m22:19:56 .[96m[qb.template.archlinux.prep] .[38;5;246minstalling attr....[0m
+2026-03-13 21:19:56.593466 +0000 build-r43-templates-community: .[38;5;246m22:19:56 .[96m[qb.template.archlinux.prep] .[38;5;246minstalling gmp....[0m
+2026-03-13 21:19:56.597797 +0000 build-r43-templates-community: .[38;5;246m22:19:56 .[96m[qb.template.archlinux.prep] .[38;5;246minstalling zlib....[0m
+2026-03-13 21:19:56.599813 +0000 build-r43-templates-community: .[38;5;246m22:19:56 .[96m[qb.template.archlinux.prep] .[38;5;246minstalling sqlite....[0m
+2026-03-13 21:19:56.633738 +0000 build-r43-templates-community: .[38;5;246m22:19:56 .[96m[qb.template.archlinux.prep] .[38;5;246minstalling util-linux-libs....[0m
+2026-03-13 21:19:56.640157 +0000 build-r43-templates-community: .[38;5;246m22:19:56 .[96m[qb.template.archlinux.prep] .[38;5;246mOptional dependencies for util-linux-libs.[0m
+2026-03-13 21:19:56.640227 +0000 build-r43-templates-community: .[38;5;246m22:19:56 .[96m[qb.template.archlinux.prep] .[38;5;246m    python: python bindings to libmount.[0m
+2026-03-13 21:19:56.640311 +0000 build-r43-templates-community: .[38;5;246m22:19:56 .[96m[qb.template.archlinux.prep] .[38;5;246minstalling e2fsprogs....[0m
+2026-03-13 21:19:56.656546 +0000 build-r43-templates-community: .[38;5;246m22:19:56 .[96m[qb.template.archlinux.prep] .[38;5;246mOptional dependencies for e2fsprogs.[0m
+2026-03-13 21:19:56.656627 +0000 build-r43-templates-community: .[38;5;246m22:19:56 .[96m[qb.template.archlinux.prep] .[38;5;246m    lvm2: for e2scrub.[0m
+2026-03-13 21:19:56.656713 +0000 build-r43-templates-community: .[38;5;246m22:19:56 .[96m[qb.template.archlinux.prep] .[38;5;246m    util-linux: for e2scrub [pending].[0m
+2026-03-13 21:19:56.656732 +0000 build-r43-templates-community: .[38;5;246m22:19:56 .[96m[qb.template.archlinux.prep] .[38;5;246m    smtp-forwarder: for e2scrub_fail script.[0m
+2026-03-13 21:19:56.656792 +0000 build-r43-templates-community: .[38;5;246m22:19:56 .[96m[qb.template.archlinux.prep] .[38;5;246minstalling keyutils....[0m
+2026-03-13 21:19:56.660293 +0000 build-r43-templates-community: .[38;5;246m22:19:56 .[96m[qb.template.archlinux.prep] .[38;5;246minstalling gdbm....[0m
+2026-03-13 21:19:56.663998 +0000 build-r43-templates-community: .[38;5;246m22:19:56 .[96m[qb.template.archlinux.prep] .[38;5;246minstalling openssl....[0m
+2026-03-13 21:19:57.151581 +0000 build-r43-templates-community: .[38;5;246m22:19:57 .[96m[qb.template.archlinux.prep] .[38;5;246mOptional dependencies for openssl.[0m
+2026-03-13 21:19:57.151648 +0000 build-r43-templates-community: .[38;5;246m22:19:57 .[96m[qb.template.archlinux.prep] .[38;5;246m    ca-certificates [pending].[0m
+2026-03-13 21:19:57.153363 +0000 build-r43-templates-community: .[38;5;246m22:19:57 .[96m[qb.template.archlinux.prep] .[38;5;246m    perl.[0m
+2026-03-13 21:19:57.153446 +0000 build-r43-templates-community: .[38;5;246m22:19:57 .[96m[qb.template.archlinux.prep] .[38;5;246minstalling libsasl....[0m
+2026-03-13 21:19:57.158903 +0000 build-r43-templates-community: .[38;5;246m22:19:57 .[96m[qb.template.archlinux.prep] .[38;5;246minstalling libldap....[0m
+2026-03-13 21:19:57.186543 +0000 build-r43-templates-community: .[38;5;246m22:19:57 .[96m[qb.template.archlinux.prep] .[38;5;246minstalling libevent....[0m
+2026-03-13 21:19:57.198666 +0000 build-r43-templates-community: .[38;5;246m22:19:57 .[96m[qb.template.archlinux.prep] .[38;5;246mOptional dependencies for libevent.[0m
+2026-03-13 21:19:57.198717 +0000 build-r43-templates-community: .[38;5;246m22:19:57 .[96m[qb.template.archlinux.prep] .[38;5;246m    python: event_rpcgen.py.[0m
+2026-03-13 21:19:57.198809 +0000 build-r43-templates-community: .[38;5;246m22:19:57 .[96m[qb.template.archlinux.prep] .[38;5;246minstalling libverto....[0m
+2026-03-13 21:19:57.200987 +0000 build-r43-templates-community: .[38;5;246m22:19:57 .[96m[qb.template.archlinux.prep] .[38;5;246minstalling lmdb....[0m
+2026-03-13 21:19:57.204703 +0000 build-r43-templates-community: .[38;5;246m22:19:57 .[96m[qb.template.archlinux.prep] .[38;5;246minstalling krb5....[0m
+2026-03-13 21:19:57.232340 +0000 build-r43-templates-community: .[38;5;246m22:19:57 .[96m[qb.template.archlinux.prep] .[38;5;246minstalling libcap-ng....[0m
+2026-03-13 21:19:57.237546 +0000 build-r43-templates-community: .[38;5;246m22:19:57 .[96m[qb.template.archlinux.prep] .[38;5;246minstalling audit....[0m
+2026-03-13 21:19:57.262300 +0000 build-r43-templates-community: .[38;5;246m22:19:57 .[96m[qb.template.archlinux.prep] .[38;5;246mOptional dependencies for audit.[0m
+2026-03-13 21:19:57.262338 +0000 build-r43-templates-community: .[38;5;246m22:19:57 .[96m[qb.template.archlinux.prep] .[38;5;246m    audispd-plugins: for audit event dispatcher plugins.[0m
+2026-03-13 21:19:57.262373 +0000 build-r43-templates-community: .[38;5;246m22:19:57 .[96m[qb.template.archlinux.prep] .[38;5;246m    audispd-plugins-zos: for z/OS audit event dispatcher plugin.[0m
+2026-03-13 21:19:57.262390 +0000 build-r43-templates-community: .[38;5;246m22:19:57 .[96m[qb.template.archlinux.prep] .[38;5;246minstalling libxcrypt....[0m
+2026-03-13 21:19:57.264123 +0000 build-r43-templates-community: .[38;5;246m22:19:57 .[96m[qb.template.archlinux.prep] .[38;5;246minstalling libtirpc....[0m
+2026-03-13 21:19:57.269217 +0000 build-r43-templates-community: .[38;5;246m22:19:57 .[96m[qb.template.archlinux.prep] .[38;5;246minstalling libnsl....[0m
+2026-03-13 21:19:57.270345 +0000 build-r43-templates-community: .[38;5;246m22:19:57 .[96m[qb.template.archlinux.prep] .[38;5;246minstalling pambase....[0m
+2026-03-13 21:19:57.270893 +0000 build-r43-templates-community: .[38;5;246m22:19:57 .[96m[qb.template.archlinux.prep] .[38;5;246minstalling libgpg-error....[0m
+2026-03-13 21:19:57.278379 +0000 build-r43-templates-community: .[38;5;246m22:19:57 .[96m[qb.template.archlinux.prep] .[38;5;246minstalling libgcrypt....[0m
+2026-03-13 21:19:57.284637 +0000 build-r43-templates-community: .[38;5;246m22:19:57 .[96m[qb.template.archlinux.prep] .[38;5;246minstalling lz4....[0m
+2026-03-13 21:19:57.286467 +0000 build-r43-templates-community: .[38;5;246m22:19:57 .[96m[qb.template.archlinux.prep] .[38;5;246minstalling xz....[0m
+2026-03-13 21:19:57.311141 +0000 build-r43-templates-community: .[38;5;246m22:19:57 .[96m[qb.template.archlinux.prep] .[38;5;246minstalling zstd....[0m
+2026-03-13 21:19:57.317987 +0000 build-r43-templates-community: .[38;5;246m22:19:57 .[96m[qb.template.archlinux.prep] .[38;5;246minstalling systemd-libs....[0m
+2026-03-13 21:19:57.420886 +0000 build-r43-templates-community: .[38;5;246m22:19:57 .[96m[qb.template.archlinux.prep] .[38;5;246minstalling pam....[0m
+2026-03-13 21:19:57.481969 +0000 build-r43-templates-community: .[38;5;246m22:19:57 .[96m[qb.template.archlinux.prep] .[38;5;246minstalling libcap....[0m
+2026-03-13 21:19:57.492322 +0000 build-r43-templates-community: .[38;5;246m22:19:57 .[96m[qb.template.archlinux.prep] .[38;5;246minstalling coreutils....[0m
+2026-03-13 21:19:57.592818 +0000 build-r43-templates-community: .[38;5;246m22:19:57 .[96m[qb.template.archlinux.prep] .[38;5;246minstalling bzip2....[0m
+2026-03-13 21:19:57.595020 +0000 build-r43-templates-community: .[38;5;246m22:19:57 .[96m[qb.template.archlinux.prep] .[38;5;246minstalling libseccomp....[0m
+2026-03-13 21:19:57.600889 +0000 build-r43-templates-community: .[38;5;246m22:19:57 .[96m[qb.template.archlinux.prep] .[38;5;246minstalling file....[0m
+2026-03-13 21:19:57.613367 +0000 build-r43-templates-community: .[38;5;246m22:19:57 .[96m[qb.template.archlinux.prep] .[38;5;246minstalling findutils....[0m
+2026-03-13 21:19:57.619127 +0000 build-r43-templates-community: .[38;5;246m22:19:57 .[96m[qb.template.archlinux.prep] .[38;5;246minstalling mpfr....[0m
+2026-03-13 21:19:57.622621 +0000 build-r43-templates-community: .[38;5;246m22:19:57 .[96m[qb.template.archlinux.prep] .[38;5;246minstalling gawk....[0m
+2026-03-13 21:19:57.634095 +0000 build-r43-templates-community: .[38;5;246m22:19:57 .[96m[qb.template.archlinux.prep] .[38;5;246minstalling pcre2....[0m
+2026-03-13 21:19:57.658814 +0000 build-r43-templates-community: .[38;5;246m22:19:57 .[96m[qb.template.archlinux.prep] .[38;5;246mOptional dependencies for pcre2.[0m
+2026-03-13 21:19:57.658851 +0000 build-r43-templates-community: .[38;5;246m22:19:57 .[96m[qb.template.archlinux.prep] .[38;5;246m    sh: for pcre2-config [installed].[0m
+2026-03-13 21:19:57.658874 +0000 build-r43-templates-community: .[38;5;246m22:19:57 .[96m[qb.template.archlinux.prep] .[38;5;246minstalling grep....[0m
+2026-03-13 21:19:57.663617 +0000 build-r43-templates-community: .[38;5;246m22:19:57 .[96m[qb.template.archlinux.prep] .[38;5;246minstalling procps-ng....[0m
+2026-03-13 21:19:57.678332 +0000 build-r43-templates-community: .[38;5;246m22:19:57 .[96m[qb.template.archlinux.prep] .[38;5;246minstalling sed....[0m
+2026-03-13 21:19:57.682515 +0000 build-r43-templates-community: .[38;5;246m22:19:57 .[96m[qb.template.archlinux.prep] .[38;5;246minstalling tar....[0m
+2026-03-13 21:19:57.690400 +0000 build-r43-templates-community: .[38;5;246m22:19:57 .[96m[qb.template.archlinux.prep] .[38;5;246minstalling libtasn1....[0m
+2026-03-13 21:19:57.695098 +0000 build-r43-templates-community: .[38;5;246m22:19:57 .[96m[qb.template.archlinux.prep] .[38;5;246minstalling libffi....[0m
+2026-03-13 21:19:57.696244 +0000 build-r43-templates-community: .[38;5;246m22:19:57 .[96m[qb.template.archlinux.prep] .[38;5;246minstalling libp11-kit....[0m
+2026-03-13 21:19:57.706681 +0000 build-r43-templates-community: .[38;5;246m22:19:57 .[96m[qb.template.archlinux.prep] .[38;5;246minstalling p11-kit....[0m
+2026-03-13 21:19:57.803004 +0000 build-r43-templates-community: .[38;5;246m22:19:57 .[96m[qb.template.archlinux.prep] .[38;5;246minstalling ca-certificates-utils....[0m
+2026-03-13 21:19:57.805188 +0000 build-r43-templates-community: .[38;5;246m22:19:57 .[96m[qb.template.archlinux.prep] .[38;5;246minstalling ca-certificates-mozilla....[0m
+2026-03-13 21:19:57.808738 +0000 build-r43-templates-community: .[38;5;246m22:19:57 .[96m[qb.template.archlinux.prep] .[38;5;246minstalling ca-certificates....[0m
+2026-03-13 21:19:57.808995 +0000 build-r43-templates-community: .[38;5;246m22:19:57 .[96m[qb.template.archlinux.prep] .[38;5;246minstalling brotli....[0m
+2026-03-13 21:19:57.815034 +0000 build-r43-templates-community: .[38;5;246m22:19:57 .[96m[qb.template.archlinux.prep] .[38;5;246minstalling libunistring....[0m
+2026-03-13 21:19:57.825694 +0000 build-r43-templates-community: .[38;5;246m22:19:57 .[96m[qb.template.archlinux.prep] .[38;5;246minstalling libidn2....[0m
+2026-03-13 21:19:57.830561 +0000 build-r43-templates-community: .[38;5;246m22:19:57 .[96m[qb.template.archlinux.prep] .[38;5;246minstalling libnghttp2....[0m
+2026-03-13 21:19:57.832006 +0000 build-r43-templates-community: .[38;5;246m22:19:57 .[96m[qb.template.archlinux.prep] .[38;5;246minstalling libnghttp3....[0m
+2026-03-13 21:19:57.833210 +0000 build-r43-templates-community: .[38;5;246m22:19:57 .[96m[qb.template.archlinux.prep] .[38;5;246minstalling nettle....[0m
+2026-03-13 21:19:57.839563 +0000 build-r43-templates-community: .[38;5;246m22:19:57 .[96m[qb.template.archlinux.prep] .[38;5;246minstalling leancrypto....[0m
+2026-03-13 21:19:57.852319 +0000 build-r43-templates-community: .[38;5;246m22:19:57 .[96m[qb.template.archlinux.prep] .[38;5;246minstalling gnutls....[0m
+2026-03-13 21:19:57.983296 +0000 build-r43-templates-community: .[38;5;246m22:19:58 .[96m[qb.template.archlinux.prep] .[38;5;246mOptional dependencies for gnutls.[0m
+2026-03-13 21:19:57.983328 +0000 build-r43-templates-community: .[38;5;246m22:19:58 .[96m[qb.template.archlinux.prep] .[38;5;246m    tpm2-tss: support for TPM2 wrapped keys [pending].[0m
+2026-03-13 21:19:57.983523 +0000 build-r43-templates-community: .[38;5;246m22:19:58 .[96m[qb.template.archlinux.prep] .[38;5;246minstalling libngtcp2....[0m
+2026-03-13 21:19:57.985700 +0000 build-r43-templates-community: .[38;5;246m22:19:58 .[96m[qb.template.archlinux.prep] .[38;5;246minstalling libpsl....[0m
+2026-03-13 21:19:57.987648 +0000 build-r43-templates-community: .[38;5;246m22:19:58 .[96m[qb.template.archlinux.prep] .[38;5;246minstalling libssh2....[0m
+2026-03-13 21:19:57.999240 +0000 build-r43-templates-community: .[38;5;246m22:19:58 .[96m[qb.template.archlinux.prep] .[38;5;246minstalling curl....[0m
+2026-03-13 21:19:58.052792 +0000 build-r43-templates-community: .[38;5;246m22:19:58 .[96m[qb.template.archlinux.prep] .[38;5;246minstalling json-c....[0m
+2026-03-13 21:19:58.055983 +0000 build-r43-templates-community: .[38;5;246m22:19:58 .[96m[qb.template.archlinux.prep] .[38;5;246minstalling gnulib-l10n....[0m
+2026-03-13 21:19:58.062056 +0000 build-r43-templates-community: .[38;5;246m22:19:58 .[96m[qb.template.archlinux.prep] .[38;5;246minstalling icu....[0m
+2026-03-13 21:19:58.195135 +0000 build-r43-templates-community: .[38;5;246m22:19:58 .[96m[qb.template.archlinux.prep] .[38;5;246minstalling libxml2....[0m
+2026-03-13 21:19:58.203871 +0000 build-r43-templates-community: .[38;5;246m22:19:58 .[96m[qb.template.archlinux.prep] .[38;5;246mOptional dependencies for libxml2.[0m
+2026-03-13 21:19:58.203893 +0000 build-r43-templates-community: .[38;5;246m22:19:58 .[96m[qb.template.archlinux.prep] .[38;5;246m    python: Python bindings.[0m
+2026-03-13 21:19:58.203976 +0000 build-r43-templates-community: .[38;5;246m22:19:58 .[96m[qb.template.archlinux.prep] .[38;5;246minstalling gettext....[0m
+2026-03-13 21:19:58.265076 +0000 build-r43-templates-community: .[38;5;246m22:19:58 .[96m[qb.template.archlinux.prep] .[38;5;246mOptional dependencies for gettext.[0m
+2026-03-13 21:19:58.265141 +0000 build-r43-templates-community: .[38;5;246m22:19:58 .[96m[qb.template.archlinux.prep] .[38;5;246m    git: for autopoint infrastructure updates.[0m
+2026-03-13 21:19:58.265153 +0000 build-r43-templates-community: .[38;5;246m22:19:58 .[96m[qb.template.archlinux.prep] .[38;5;246m    appstream: for appstream support.[0m
+2026-03-13 21:19:58.265166 +0000 build-r43-templates-community: .[38;5;246m22:19:58 .[96m[qb.template.archlinux.prep] .[38;5;246minstalling hwdata....[0m
+2026-03-13 21:19:58.277806 +0000 build-r43-templates-community: .[38;5;246m22:19:58 .[96m[qb.template.archlinux.prep] .[38;5;246minstalling kmod....[0m
+2026-03-13 21:19:58.283936 +0000 build-r43-templates-community: .[38;5;246m22:19:58 .[96m[qb.template.archlinux.prep] .[38;5;246minstalling pciutils....[0m
+2026-03-13 21:19:58.286921 +0000 build-r43-templates-community: .[38;5;246m22:19:58 .[96m[qb.template.archlinux.prep] .[38;5;246mOptional dependencies for pciutils.[0m
+2026-03-13 21:19:58.286992 +0000 build-r43-templates-community: .[38;5;246m22:19:58 .[96m[qb.template.archlinux.prep] .[38;5;246m    which: for update-pciids.[0m
+2026-03-13 21:19:58.287112 +0000 build-r43-templates-community: .[38;5;246m22:19:58 .[96m[qb.template.archlinux.prep] .[38;5;246m    grep: for update-pciids [installed].[0m
+2026-03-13 21:19:58.287227 +0000 build-r43-templates-community: .[38;5;246m22:19:58 .[96m[qb.template.archlinux.prep] .[38;5;246m    curl: for update-pciids [installed].[0m
+2026-03-13 21:19:58.287328 +0000 build-r43-templates-community: .[38;5;246m22:19:58 .[96m[qb.template.archlinux.prep] .[38;5;246minstalling psmisc....[0m
+2026-03-13 21:19:58.294941 +0000 build-r43-templates-community: .[38;5;246m22:19:58 .[96m[qb.template.archlinux.prep] .[38;5;246minstalling shadow....[0m
+2026-03-13 21:19:58.327754 +0000 build-r43-templates-community: .[38;5;246m22:19:58 .[96m[qb.template.archlinux.prep] .[38;5;246minstalling util-linux....[0m
+2026-03-13 21:19:58.466083 +0000 build-r43-templates-community: .[38;5;246m22:19:58 .[96m[qb.template.archlinux.prep] .[38;5;246mOptional dependencies for util-linux.[0m
+2026-03-13 21:19:58.466146 +0000 build-r43-templates-community: .[38;5;246m22:19:58 .[96m[qb.template.archlinux.prep] .[38;5;246m    words: default dictionary for look.[0m
+2026-03-13 21:19:58.466165 +0000 build-r43-templates-community: .[38;5;246m22:19:58 .[96m[qb.template.archlinux.prep] .[38;5;246minstalling gzip....[0m
+2026-03-13 21:19:58.470297 +0000 build-r43-templates-community: .[38;5;246m22:19:58 .[96m[qb.template.archlinux.prep] .[38;5;246mOptional dependencies for gzip.[0m
+2026-03-13 21:19:58.470330 +0000 build-r43-templates-community: .[38;5;246m22:19:58 .[96m[qb.template.archlinux.prep] .[38;5;246m    less: zless support.[0m
+2026-03-13 21:19:58.470401 +0000 build-r43-templates-community: .[38;5;246m22:19:58 .[96m[qb.template.archlinux.prep] .[38;5;246m    util-linux: zmore support [installed].[0m
+2026-03-13 21:19:58.470518 +0000 build-r43-templates-community: .[38;5;246m22:19:58 .[96m[qb.template.archlinux.prep] .[38;5;246m    diffutils: zdiff/zcmp support.[0m
+2026-03-13 21:19:58.470549 +0000 build-r43-templates-community: .[38;5;246m22:19:58 .[96m[qb.template.archlinux.prep] .[38;5;246minstalling licenses....[0m
+2026-03-13 21:19:58.493133 +0000 build-r43-templates-community: .[38;5;246m22:19:58 .[96m[qb.template.archlinux.prep] .[38;5;246minstalling libksba....[0m
+2026-03-13 21:19:58.497253 +0000 build-r43-templates-community: .[38;5;246m22:19:58 .[96m[qb.template.archlinux.prep] .[38;5;246minstalling libusb....[0m
+2026-03-13 21:19:58.501341 +0000 build-r43-templates-community: .[38;5;246m22:19:58 .[96m[qb.template.archlinux.prep] .[38;5;246minstalling libassuan....[0m
+2026-03-13 21:19:58.502842 +0000 build-r43-templates-community: .[38;5;246m22:19:58 .[96m[qb.template.archlinux.prep] .[38;5;246minstalling libsysprof-capture....[0m
+2026-03-13 21:19:58.507203 +0000 build-r43-templates-community: .[38;5;246m22:19:58 .[96m[qb.template.archlinux.prep] .[38;5;246minstalling glib2....[0m
+2026-03-13 21:19:58.668741 +0000 build-r43-templates-community: .[38;5;246m22:19:58 .[96m[qb.template.archlinux.prep] .[38;5;246mOptional dependencies for glib2.[0m
+2026-03-13 21:19:58.668798 +0000 build-r43-templates-community: .[38;5;246m22:19:58 .[96m[qb.template.archlinux.prep] .[38;5;246m    dconf: GSettings storage backend.[0m
+2026-03-13 21:19:58.668825 +0000 build-r43-templates-community: .[38;5;246m22:19:58 .[96m[qb.template.archlinux.prep] .[38;5;246m    glib2-devel: development tools.[0m
+2026-03-13 21:19:58.668963 +0000 build-r43-templates-community: .[38;5;246m22:19:58 .[96m[qb.template.archlinux.prep] .[38;5;246m    gvfs: most gio functionality.[0m
+2026-03-13 21:19:58.669109 +0000 build-r43-templates-community: .[38;5;246m22:19:58 .[96m[qb.template.archlinux.prep] .[38;5;246minstalling tpm2-tss....[0m
+2026-03-13 21:19:58.694099 +0000 build-r43-templates-community: .[38;5;246m22:19:58 .[96m[qb.template.archlinux.prep] .[38;5;246minstalling libsecret....[0m
+2026-03-13 21:19:58.701348 +0000 build-r43-templates-community: .[38;5;246m22:19:58 .[96m[qb.template.archlinux.prep] .[38;5;246mOptional dependencies for libsecret.[0m
+2026-03-13 21:19:58.701497 +0000 build-r43-templates-community: .[38;5;246m22:19:58 .[96m[qb.template.archlinux.prep] .[38;5;246m    org.freedesktop.secrets: secret storage backend.[0m
+2026-03-13 21:19:58.701631 +0000 build-r43-templates-community: .[38;5;246m22:19:58 .[96m[qb.template.archlinux.prep] .[38;5;246minstalling pinentry....[0m
+2026-03-13 21:19:58.703616 +0000 build-r43-templates-community: .[38;5;246m22:19:58 .[96m[qb.template.archlinux.prep] .[38;5;246mOptional dependencies for pinentry.[0m
+2026-03-13 21:19:58.703736 +0000 build-r43-templates-community: .[38;5;246m22:19:58 .[96m[qb.template.archlinux.prep] .[38;5;246m    gcr: GNOME backend.[0m
+2026-03-13 21:19:58.704023 +0000 build-r43-templates-community: .[38;5;246m22:19:58 .[96m[qb.template.archlinux.prep] .[38;5;246m    gtk3: GTK backend.[0m
+2026-03-13 21:19:58.704042 +0000 build-r43-templates-community: .[38;5;246m22:19:58 .[96m[qb.template.archlinux.prep] .[38;5;246m    qt5-x11extras: Qt5 backend.[0m
+2026-03-13 21:19:58.704226 +0000 build-r43-templates-community: .[38;5;246m22:19:58 .[96m[qb.template.archlinux.prep] .[38;5;246m    kwayland5: Qt5 backend.[0m
+2026-03-13 21:19:58.704247 +0000 build-r43-templates-community: .[38;5;246m22:19:58 .[96m[qb.template.archlinux.prep] .[38;5;246m    kguiaddons: Qt6 backend.[0m
+2026-03-13 21:19:58.704373 +0000 build-r43-templates-community: .[38;5;246m22:19:58 .[96m[qb.template.archlinux.prep] .[38;5;246m    kwindowsystem: Qt6 backend.[0m
+2026-03-13 21:19:58.704550 +0000 build-r43-templates-community: .[38;5;246m22:19:58 .[96m[qb.template.archlinux.prep] .[38;5;246minstalling npth....[0m
+2026-03-13 21:19:58.704738 +0000 build-r43-templates-community: .[38;5;246m22:19:58 .[96m[qb.template.archlinux.prep] .[38;5;246minstalling gnupg....[0m
+2026-03-13 21:19:58.805968 +0000 build-r43-templates-community: .[38;5;246m22:19:58 .[96m[qb.template.archlinux.prep] .[38;5;246mOptional dependencies for gnupg.[0m
+2026-03-13 21:19:58.806026 +0000 build-r43-templates-community: .[38;5;246m22:19:58 .[96m[qb.template.archlinux.prep] .[38;5;246m    pcsclite: for using scdaemon not with the gnupg internal card driver.[0m
+2026-03-13 21:19:58.806039 +0000 build-r43-templates-community: .[38;5;246m22:19:58 .[96m[qb.template.archlinux.prep] .[38;5;246minstalling gpgme....[0m
+2026-03-13 21:19:58.809524 +0000 build-r43-templates-community: .[38;5;246m22:19:58 .[96m[qb.template.archlinux.prep] .[38;5;246minstalling libarchive....[0m
+2026-03-13 21:19:58.817873 +0000 build-r43-templates-community: .[38;5;246m22:19:58 .[96m[qb.template.archlinux.prep] .[38;5;246minstalling pacman-mirrorlist....[0m
+2026-03-13 21:19:58.818586 +0000 build-r43-templates-community: .[38;5;246m22:19:58 .[96m[qb.template.archlinux.prep] .[38;5;246minstalling device-mapper....[0m
+2026-03-13 21:19:58.822778 +0000 build-r43-templates-community: .[38;5;246m22:19:58 .[96m[qb.template.archlinux.prep] .[38;5;246minstalling popt....[0m
+2026-03-13 21:19:58.826056 +0000 build-r43-templates-community: .[38;5;246m22:19:58 .[96m[qb.template.archlinux.prep] .[38;5;246minstalling cryptsetup....[0m
+2026-03-13 21:19:58.841212 +0000 build-r43-templates-community: .[38;5;246m22:19:58 .[96m[qb.template.archlinux.prep] .[38;5;246minstalling expat....[0m
+2026-03-13 21:19:58.846062 +0000 build-r43-templates-community: .[38;5;246m22:19:58 .[96m[qb.template.archlinux.prep] .[38;5;246minstalling dbus....[0m
+2026-03-13 21:19:58.860015 +0000 build-r43-templates-community: .[38;5;246m22:19:59 .[96m[qb.template.archlinux.prep] .[38;5;246minstalling dbus-broker....[0m
+2026-03-13 21:19:58.863699 +0000 build-r43-templates-community: .[38;5;246m22:19:59 .[96m[qb.template.archlinux.prep] .[38;5;246minstalling dbus-broker-units....[0m
+2026-03-13 21:19:58.864409 +0000 build-r43-templates-community: .[38;5;246m22:19:59 .[96m[qb.template.archlinux.prep] .[38;5;246minstalling dbus-units....[0m
+2026-03-13 21:19:58.864921 +0000 build-r43-templates-community: .[38;5;246m22:19:59 .[96m[qb.template.archlinux.prep] .[38;5;246minstalling kbd....[0m
+2026-03-13 21:19:58.971255 +0000 build-r43-templates-community: .[38;5;246m22:19:59 .[96m[qb.template.archlinux.prep] .[38;5;246minstalling libelf....[0m
+2026-03-13 21:19:58.997434 +0000 build-r43-templates-community: .[38;5;246m22:19:59 .[96m[qb.template.archlinux.prep] .[38;5;246minstalling systemd....[0m
+2026-03-13 21:19:59.267149 +0000 build-r43-templates-community: .[38;5;246m22:19:59 .[96m[qb.template.archlinux.prep] .[38;5;246mInitializing machine ID from random generator..[0m
+2026-03-13 21:20:00.052608 +0000 build-r43-templates-community: .[38;5;246m22:20:00 .[96m[qb.template.archlinux.prep] .[38;5;246mCreating group 'sys' with GID 3..[0m
+2026-03-13 21:20:00.054295 +0000 build-r43-templates-community: .[38;5;246m22:20:00 .[96m[qb.template.archlinux.prep] .[38;5;246mCreating group 'mem' with GID 8..[0m
+2026-03-13 21:20:00.054341 +0000 build-r43-templates-community: .[38;5;246m22:20:00 .[96m[qb.template.archlinux.prep] .[38;5;246mCreating group 'ftp' with GID 11..[0m
+2026-03-13 21:20:00.054553 +0000 build-r43-templates-community: .[38;5;246m22:20:00 .[96m[qb.template.archlinux.prep] .[38;5;246mCreating group 'mail' with GID 12..[0m
+2026-03-13 21:20:00.055060 +0000 build-r43-templates-community: .[38;5;246m22:20:00 .[96m[qb.template.archlinux.prep] .[38;5;246mCreating group 'log' with GID 19..[0m
+2026-03-13 21:20:00.055937 +0000 build-r43-templates-community: .[38;5;246m22:20:00 .[96m[qb.template.archlinux.prep] .[38;5;246mCreating group 'smmsp' with GID 25..[0m
+2026-03-13 21:20:00.056673 +0000 build-r43-templates-community: .[38;5;246m22:20:00 .[96m[qb.template.archlinux.prep] .[38;5;246mCreating group 'proc' with GID 26..[0m
+2026-03-13 21:20:00.057309 +0000 build-r43-templates-community: .[38;5;246m22:20:00 .[96m[qb.template.archlinux.prep] .[38;5;246mCreating group 'games' with GID 50..[0m
+2026-03-13 21:20:00.057985 +0000 build-r43-templates-community: .[38;5;246m22:20:00 .[96m[qb.template.archlinux.prep] .[38;5;246mCreating group 'lock' with GID 54..[0m
+2026-03-13 21:20:00.058715 +0000 build-r43-templates-community: .[38;5;246m22:20:00 .[96m[qb.template.archlinux.prep] .[38;5;246mCreating group 'network' with GID 90..[0m
+2026-03-13 21:20:00.059405 +0000 build-r43-templates-community: .[38;5;246m22:20:00 .[96m[qb.template.archlinux.prep] .[38;5;246mCreating group 'floppy' with GID 94..[0m
+2026-03-13 21:20:00.060067 +0000 build-r43-templates-community: .[38;5;246m22:20:00 .[96m[qb.template.archlinux.prep] .[38;5;246mCreating group 'scanner' with GID 96..[0m
+2026-03-13 21:20:00.060771 +0000 build-r43-templates-community: .[38;5;246m22:20:00 .[96m[qb.template.archlinux.prep] .[38;5;246mCreating group 'power' with GID 98..[0m
+2026-03-13 21:20:00.060814 +0000 build-r43-templates-community: .[38;5;246m22:20:00 .[96m[qb.template.archlinux.prep] .[38;5;246mCreating group 'nobody' with GID 65534..[0m
+2026-03-13 21:20:00.061731 +0000 build-r43-templates-community: .[38;5;246m22:20:00 .[96m[qb.template.archlinux.prep] .[38;5;246mCreating group 'adm' with GID 999..[0m
+2026-03-13 21:20:00.062663 +0000 build-r43-templates-community: .[38;5;246m22:20:00 .[96m[qb.template.archlinux.prep] .[38;5;246mCreating group 'wheel' with GID 998..[0m
+2026-03-13 21:20:00.063699 +0000 build-r43-templates-community: .[38;5;246m22:20:00 .[96m[qb.template.archlinux.prep] .[38;5;246mCreating group 'empower' with GID 997..[0m
+2026-03-13 21:20:00.064650 +0000 build-r43-templates-community: .[38;5;246m22:20:00 .[96m[qb.template.archlinux.prep] .[38;5;246mCreating group 'utmp' with GID 996..[0m
+2026-03-13 21:20:00.065530 +0000 build-r43-templates-community: .[38;5;246m22:20:00 .[96m[qb.template.archlinux.prep] .[38;5;246mCreating group 'audio' with GID 995..[0m
+2026-03-13 21:20:00.066336 +0000 build-r43-templates-community: .[38;5;246m22:20:00 .[96m[qb.template.archlinux.prep] .[38;5;246mCreating group 'clock' with GID 994..[0m
+2026-03-13 21:20:00.067196 +0000 build-r43-templates-community: .[38;5;246m22:20:00 .[96m[qb.template.archlinux.prep] .[38;5;246mCreating group 'disk' with GID 993..[0m
+2026-03-13 21:20:00.068072 +0000 build-r43-templates-community: .[38;5;246m22:20:00 .[96m[qb.template.archlinux.prep] .[38;5;246mCreating group 'input' with GID 992..[0m
+2026-03-13 21:20:00.068994 +0000 build-r43-templates-community: .[38;5;246m22:20:00 .[96m[qb.template.archlinux.prep] .[38;5;246mCreating group 'kmem' with GID 991..[0m
+2026-03-13 21:20:00.069873 +0000 build-r43-templates-community: .[38;5;246m22:20:00 .[96m[qb.template.archlinux.prep] .[38;5;246mCreating group 'kvm' with GID 990..[0m
+2026-03-13 21:20:00.070740 +0000 build-r43-templates-community: .[38;5;246m22:20:00 .[96m[qb.template.archlinux.prep] .[38;5;246mCreating group 'lp' with GID 989..[0m
+2026-03-13 21:20:00.071736 +0000 build-r43-templates-community: .[38;5;246m22:20:00 .[96m[qb.template.archlinux.prep] .[38;5;246mCreating group 'optical' with GID 988..[0m
+2026-03-13 21:20:00.072629 +0000 build-r43-templates-community: .[38;5;246m22:20:00 .[96m[qb.template.archlinux.prep] .[38;5;246mCreating group 'render' with GID 987..[0m
+2026-03-13 21:20:00.073457 +0000 build-r43-templates-community: .[38;5;246m22:20:00 .[96m[qb.template.archlinux.prep] .[38;5;246mCreating group 'sgx' with GID 986..[0m
+2026-03-13 21:20:00.074313 +0000 build-r43-templates-community: .[38;5;246m22:20:00 .[96m[qb.template.archlinux.prep] .[38;5;246mCreating group 'storage' with GID 985..[0m
+2026-03-13 21:20:00.074983 +0000 build-r43-templates-community: .[38;5;246m22:20:00 .[96m[qb.template.archlinux.prep] .[38;5;246mCreating group 'tty' with GID 5..[0m
+2026-03-13 21:20:00.075884 +0000 build-r43-templates-community: .[38;5;246m22:20:00 .[96m[qb.template.archlinux.prep] .[38;5;246mCreating group 'uucp' with GID 984..[0m
+2026-03-13 21:20:00.076807 +0000 build-r43-templates-community: .[38;5;246m22:20:00 .[96m[qb.template.archlinux.prep] .[38;5;246mCreating group 'video' with GID 983..[0m
+2026-03-13 21:20:00.077684 +0000 build-r43-templates-community: .[38;5;246m22:20:00 .[96m[qb.template.archlinux.prep] .[38;5;246mCreating group 'users' with GID 982..[0m
+2026-03-13 21:20:00.078636 +0000 build-r43-templates-community: .[38;5;246m22:20:00 .[96m[qb.template.archlinux.prep] .[38;5;246mCreating group 'groups' with GID 981..[0m
+2026-03-13 21:20:00.079506 +0000 build-r43-templates-community: .[38;5;246m22:20:00 .[96m[qb.template.archlinux.prep] .[38;5;246mCreating group 'systemd-journal' with GID 980..[0m
+2026-03-13 21:20:00.080534 +0000 build-r43-templates-community: .[38;5;246m22:20:00 .[96m[qb.template.archlinux.prep] .[38;5;246mCreating group 'rfkill' with GID 979..[0m
+2026-03-13 21:20:00.081324 +0000 build-r43-templates-community: .[38;5;246m22:20:00 .[96m[qb.template.archlinux.prep] .[38;5;246mCreating group 'bin' with GID 1..[0m
+2026-03-13 21:20:00.082061 +0000 build-r43-templates-community: .[38;5;246m22:20:00 .[96m[qb.template.archlinux.prep] .[38;5;246mCreating user 'bin' (n/a) with UID 1 and GID 1..[0m
+2026-03-13 21:20:00.082935 +0000 build-r43-templates-community: .[38;5;246m22:20:00 .[96m[qb.template.archlinux.prep] .[38;5;246mCreating group 'daemon' with GID 2..[0m
+2026-03-13 21:20:00.083708 +0000 build-r43-templates-community: .[38;5;246m22:20:00 .[96m[qb.template.archlinux.prep] .[38;5;246mCreating user 'daemon' (n/a) with UID 2 and GID 2..[0m
+2026-03-13 21:20:00.084138 +0000 build-r43-templates-community: .[38;5;246m22:20:00 .[96m[qb.template.archlinux.prep] .[38;5;246mCreating user 'mail' (n/a) with UID 8 and GID 12..[0m
+2026-03-13 21:20:00.084608 +0000 build-r43-templates-community: .[38;5;246m22:20:00 .[96m[qb.template.archlinux.prep] .[38;5;246mCreating user 'ftp' (n/a) with UID 14 and GID 11..[0m
+2026-03-13 21:20:00.085567 +0000 build-r43-templates-community: .[38;5;246m22:20:00 .[96m[qb.template.archlinux.prep] .[38;5;246mCreating group 'http' with GID 33..[0m
+2026-03-13 21:20:00.086244 +0000 build-r43-templates-community: .[38;5;246m22:20:00 .[96m[qb.template.archlinux.prep] .[38;5;246mCreating user 'http' (n/a) with UID 33 and GID 33..[0m
+2026-03-13 21:20:00.086283 +0000 build-r43-templates-community: .[38;5;246m22:20:00 .[96m[qb.template.archlinux.prep] .[38;5;246mCreating user 'nobody' (Kernel Overflow User) with UID 65534 and GID 65534..[0m
+2026-03-13 21:20:00.087213 +0000 build-r43-templates-community: .[38;5;246m22:20:00 .[96m[qb.template.archlinux.prep] .[38;5;246mCreating group 'dbus' with GID 81..[0m
+2026-03-13 21:20:00.087904 +0000 build-r43-templates-community: .[38;5;246m22:20:00 .[96m[qb.template.archlinux.prep] .[38;5;246mCreating user 'dbus' (System Message Bus) with UID 81 and GID 81..[0m
+2026-03-13 21:20:00.088840 +0000 build-r43-templates-community: .[38;5;246m22:20:00 .[96m[qb.template.archlinux.prep] .[38;5;246mCreating group 'systemd-coredump' with GID 978..[0m
+2026-03-13 21:20:00.089498 +0000 build-r43-templates-community: .[38;5;246m22:20:00 .[96m[qb.template.archlinux.prep] .[38;5;246mCreating user 'systemd-coredump' (systemd Core Dumper) with UID 978 and GID 978..[0m
+2026-03-13 21:20:00.090349 +0000 build-r43-templates-community: .[38;5;246m22:20:00 .[96m[qb.template.archlinux.prep] .[38;5;246mCreating group 'systemd-network' with GID 977..[0m
+2026-03-13 21:20:00.091071 +0000 build-r43-templates-community: .[38;5;246m22:20:00 .[96m[qb.template.archlinux.prep] .[38;5;246mCreating user 'systemd-network' (systemd Network Management) with UID 977 and GID 977..[0m
+2026-03-13 21:20:00.091976 +0000 build-r43-templates-community: .[38;5;246m22:20:00 .[96m[qb.template.archlinux.prep] .[38;5;246mCreating group 'systemd-oom' with GID 976..[0m
+2026-03-13 21:20:00.092710 +0000 build-r43-templates-community: .[38;5;246m22:20:00 .[96m[qb.template.archlinux.prep] .[38;5;246mCreating user 'systemd-oom' (systemd Userspace OOM Killer) with UID 976 and GID 976..[0m
+2026-03-13 21:20:00.093641 +0000 build-r43-templates-community: .[38;5;246m22:20:00 .[96m[qb.template.archlinux.prep] .[38;5;246mCreating group 'systemd-journal-remote' with GID 975..[0m
+2026-03-13 21:20:00.094297 +0000 build-r43-templates-community: .[38;5;246m22:20:00 .[96m[qb.template.archlinux.prep] .[38;5;246mCreating user 'systemd-journal-remote' (systemd Journal Remote) with UID 975 and GID 975..[0m
+2026-03-13 21:20:00.095195 +0000 build-r43-templates-community: .[38;5;246m22:20:00 .[96m[qb.template.archlinux.prep] .[38;5;246mCreating group 'systemd-resolve' with GID 974..[0m
+2026-03-13 21:20:00.096040 +0000 build-r43-templates-community: .[38;5;246m22:20:00 .[96m[qb.template.archlinux.prep] .[38;5;246mCreating user 'systemd-resolve' (systemd Resolver) with UID 974 and GID 974..[0m
+2026-03-13 21:20:00.096819 +0000 build-r43-templates-community: .[38;5;246m22:20:00 .[96m[qb.template.archlinux.prep] .[38;5;246mCreating group 'systemd-timesync' with GID 973..[0m
+2026-03-13 21:20:00.097491 +0000 build-r43-templates-community: .[38;5;246m22:20:00 .[96m[qb.template.archlinux.prep] .[38;5;246mCreating user 'systemd-timesync' (systemd Time Synchronization) with UID 973 and GID 973..[0m
+2026-03-13 21:20:00.098324 +0000 build-r43-templates-community: .[38;5;246m22:20:00 .[96m[qb.template.archlinux.prep] .[38;5;246mCreating group 'tss' with GID 972..[0m
+2026-03-13 21:20:00.098994 +0000 build-r43-templates-community: .[38;5;246m22:20:00 .[96m[qb.template.archlinux.prep] .[38;5;246mCreating user 'tss' (tss user for tpm2) with UID 972 and GID 972..[0m
+2026-03-13 21:20:00.099895 +0000 build-r43-templates-community: .[38;5;246m22:20:00 .[96m[qb.template.archlinux.prep] .[38;5;246mCreating group 'uuidd' with GID 971..[0m
+2026-03-13 21:20:00.100675 +0000 build-r43-templates-community: .[38;5;246m22:20:00 .[96m[qb.template.archlinux.prep] .[38;5;246mCreating user 'uuidd' (UUID generator helper daemon) with UID 971 and GID 971..[0m
+2026-03-13 21:20:00.163439 +0000 build-r43-templates-community: .[38;5;246m22:20:00 .[96m[qb.template.archlinux.prep] .[38;5;246mCreated symlink '/etc/systemd/system/getty.target.wants/getty@tty1.service' -> '/usr/lib/systemd/system/getty@.service'..[0m
+2026-03-13 21:20:00.163526 +0000 build-r43-templates-community: .[38;5;246m22:20:00 .[96m[qb.template.archlinux.prep] .[38;5;246mCreated symlink '/etc/systemd/system/multi-user.target.wants/remote-fs.target' -> '/usr/lib/systemd/system/remote-fs.target'..[0m
+2026-03-13 21:20:00.163624 +0000 build-r43-templates-community: .[38;5;246m22:20:00 .[96m[qb.template.archlinux.prep] .[38;5;246mCreated symlink '/etc/systemd/system/sockets.target.wants/systemd-userdbd.socket' -> '/usr/lib/systemd/system/systemd-userdbd.socket'..[0m
+2026-03-13 21:20:00.168655 +0000 build-r43-templates-community: .[38;5;246m22:20:00 .[96m[qb.template.archlinux.prep] .[38;5;246mOptional dependencies for systemd.[0m
+2026-03-13 21:20:00.168694 +0000 build-r43-templates-community: .[38;5;246m22:20:00 .[96m[qb.template.archlinux.prep] .[38;5;246m    libmicrohttpd: systemd-journal-gatewayd and systemd-journal-remote.[0m
+2026-03-13 21:20:00.168754 +0000 build-r43-templates-community: .[38;5;246m22:20:00 .[96m[qb.template.archlinux.prep] .[38;5;246m    apparmor: additional security features.[0m
+2026-03-13 21:20:00.168900 +0000 build-r43-templates-community: .[38;5;246m22:20:00 .[96m[qb.template.archlinux.prep] .[38;5;246m    quota-tools: kernel-level quota management.[0m
+2026-03-13 21:20:00.168976 +0000 build-r43-templates-community: .[38;5;246m22:20:00 .[96m[qb.template.archlinux.prep] .[38;5;246m    systemd-sysvcompat: symlink package to provide sysvinit binaries [pending].[0m
+2026-03-13 21:20:00.169097 +0000 build-r43-templates-community: .[38;5;246m22:20:00 .[96m[qb.template.archlinux.prep] .[38;5;246m    systemd-ukify: combine kernel and initrd into a signed Unified Kernel Image.[0m
+2026-03-13 21:20:00.169131 +0000 build-r43-templates-community: .[38;5;246m22:20:00 .[96m[qb.template.archlinux.prep] .[38;5;246m    polkit: allow administration as unprivileged user.[0m
+2026-03-13 21:20:00.169153 +0000 build-r43-templates-community: .[38;5;246m22:20:00 .[96m[qb.template.archlinux.prep] .[38;5;246m    curl: systemd-journal-upload, machinectl pull-tar and pull-raw [installed].[0m
+2026-03-13 21:20:00.169210 +0000 build-r43-templates-community: .[38;5;246m22:20:00 .[96m[qb.template.archlinux.prep] .[38;5;246m    gnutls: systemd-journal-gatewayd and systemd-journal-remote [installed].[0m
+2026-03-13 21:20:00.169355 +0000 build-r43-templates-community: .[38;5;246m22:20:00 .[96m[qb.template.archlinux.prep] .[38;5;246m    qrencode: show QR codes.[0m
+2026-03-13 21:20:00.169406 +0000 build-r43-templates-community: .[38;5;246m22:20:00 .[96m[qb.template.archlinux.prep] .[38;5;246m    iptables: firewall features [pending].[0m
+2026-03-13 21:20:00.169449 +0000 build-r43-templates-community: .[38;5;246m22:20:00 .[96m[qb.template.archlinux.prep] .[38;5;246m    libarchive: convert DDIs to tarballs [installed].[0m
+2026-03-13 21:20:00.169632 +0000 build-r43-templates-community: .[38;5;246m22:20:00 .[96m[qb.template.archlinux.prep] .[38;5;246m    libbpf: support BPF programs [pending].[0m
+2026-03-13 21:20:00.169720 +0000 build-r43-templates-community: .[38;5;246m22:20:00 .[96m[qb.template.archlinux.prep] .[38;5;246m    libpwquality: check password quality.[0m
+2026-03-13 21:20:00.169782 +0000 build-r43-templates-community: .[38;5;246m22:20:00 .[96m[qb.template.archlinux.prep] .[38;5;246m    libfido2: unlocking LUKS2 volumes with FIDO2 token.[0m
+2026-03-13 21:20:00.169879 +0000 build-r43-templates-community: .[38;5;246m22:20:00 .[96m[qb.template.archlinux.prep] .[38;5;246m    libp11-kit: support PKCS#11 [installed].[0m
+2026-03-13 21:20:00.170010 +0000 build-r43-templates-community: .[38;5;246m22:20:00 .[96m[qb.template.archlinux.prep] .[38;5;246m    tpm2-tss: unlocking LUKS2 volumes with TPM2 [installed].[0m
+2026-03-13 21:20:00.170042 +0000 build-r43-templates-community: .[38;5;246m22:20:00 .[96m[qb.template.archlinux.prep] .[38;5;246minstalling jansson....[0m
+2026-03-13 21:20:00.171679 +0000 build-r43-templates-community: .[38;5;246m22:20:00 .[96m[qb.template.archlinux.prep] .[38;5;246minstalling binutils....[0m
+2026-03-13 21:20:00.275024 +0000 build-r43-templates-community: .[38;5;246m22:20:00 .[96m[qb.template.archlinux.prep] .[38;5;246mOptional dependencies for binutils.[0m
+2026-03-13 21:20:00.275067 +0000 build-r43-templates-community: .[38;5;246m22:20:00 .[96m[qb.template.archlinux.prep] .[38;5;246m    debuginfod: for debuginfod server/client functionality.[0m
+2026-03-13 21:20:00.275085 +0000 build-r43-templates-community: .[38;5;246m22:20:00 .[96m[qb.template.archlinux.prep] .[38;5;246m    perl: for gprofng-display-html.[0m
+2026-03-13 21:20:00.275111 +0000 build-r43-templates-community: .[38;5;246m22:20:00 .[96m[qb.template.archlinux.prep] .[38;5;246minstalling libmakepkg-dropins....[0m
+2026-03-13 21:20:00.276805 +0000 build-r43-templates-community: .[38;5;246m22:20:00 .[96m[qb.template.archlinux.prep] .[38;5;246minstalling pacman....[0m
+2026-03-13 21:20:00.306148 +0000 build-r43-templates-community: .[38;5;246m22:20:00 .[96m[qb.template.archlinux.prep] .[38;5;246mOptional dependencies for pacman.[0m
+2026-03-13 21:20:00.306187 +0000 build-r43-templates-community: .[38;5;246m22:20:00 .[96m[qb.template.archlinux.prep] .[38;5;246m    base-devel: required to use makepkg.[0m
+2026-03-13 21:20:00.306213 +0000 build-r43-templates-community: .[38;5;246m22:20:00 .[96m[qb.template.archlinux.prep] .[38;5;246m    perl-locale-gettext: translation support in makepkg-template.[0m
+2026-03-13 21:20:00.306243 +0000 build-r43-templates-community: .[38;5;246m22:20:00 .[96m[qb.template.archlinux.prep] .[38;5;246minstalling archlinux-keyring....[0m
+2026-03-13 21:20:00.479705 +0000 build-r43-templates-community: .[38;5;246m22:20:00 .[96m[qb.template.archlinux.prep] .[38;5;246m==> Appending keys from archlinux.gpg....[0m
+2026-03-13 21:20:03.106340 +0000 build-r43-templates-community: .[38;5;246m22:20:03 .[96m[qb.template.archlinux.prep] .[38;5;246m==> Updating trust database....[0m
+2026-03-13 21:20:03.109799 +0000 build-r43-templates-community: .[38;5;246m22:20:03 .[96m[qb.template.archlinux.prep] .[38;5;246mgpg: next trustdb check due at 2026-10-21.[0m
+2026-03-13 21:20:03.111381 +0000 build-r43-templates-community: .[38;5;246m22:20:03 .[96m[qb.template.archlinux.prep] .[38;5;246minstalling systemd-sysvcompat....[0m
+2026-03-13 21:20:03.113652 +0000 build-r43-templates-community: .[38;5;246m22:20:03 .[96m[qb.template.archlinux.prep] .[38;5;246minstalling iputils....[0m
+2026-03-13 21:20:03.120692 +0000 build-r43-templates-community: .[38;5;246m22:20:03 .[96m[qb.template.archlinux.prep] .[38;5;246minstalling libmnl....[0m
+2026-03-13 21:20:03.122058 +0000 build-r43-templates-community: .[38;5;246m22:20:03 .[96m[qb.template.archlinux.prep] .[38;5;246minstalling libnftnl....[0m
+2026-03-13 21:20:03.125842 +0000 build-r43-templates-community: .[38;5;246m22:20:03 .[96m[qb.template.archlinux.prep] .[38;5;246minstalling libnl....[0m
+2026-03-13 21:20:03.165464 +0000 build-r43-templates-community: .[38;5;246m22:20:03 .[96m[qb.template.archlinux.prep] .[38;5;246minstalling libpcap....[0m
+2026-03-13 21:20:03.183110 +0000 build-r43-templates-community: .[38;5;246m22:20:03 .[96m[qb.template.archlinux.prep] .[38;5;246minstalling libnfnetlink....[0m
+2026-03-13 21:20:03.184962 +0000 build-r43-templates-community: .[38;5;246m22:20:03 .[96m[qb.template.archlinux.prep] .[38;5;246minstalling libnetfilter_conntrack....[0m
+2026-03-13 21:20:03.187933 +0000 build-r43-templates-community: .[38;5;246m22:20:03 .[96m[qb.template.archlinux.prep] .[38;5;246minstalling iptables....[0m
+2026-03-13 21:20:03.224000 +0000 build-r43-templates-community: .[38;5;246m22:20:03 .[96m[qb.template.archlinux.prep] .[38;5;246minstalling libbpf....[0m
+2026-03-13 21:20:03.228004 +0000 build-r43-templates-community: .[38;5;246m22:20:03 .[96m[qb.template.archlinux.prep] .[38;5;246minstalling iproute2....[0m
+2026-03-13 21:20:03.254909 +0000 build-r43-templates-community: .[38;5;246m22:20:03 .[96m[qb.template.archlinux.prep] .[38;5;246mOptional dependencies for iproute2.[0m
+2026-03-13 21:20:03.255022 +0000 build-r43-templates-community: .[38;5;246m22:20:03 .[96m[qb.template.archlinux.prep] .[38;5;246m    db: userspace arp daemon.[0m
+2026-03-13 21:20:03.255099 +0000 build-r43-templates-community: .[38;5;246m22:20:03 .[96m[qb.template.archlinux.prep] .[38;5;246m    linux-atm: ATM support.[0m
+2026-03-13 21:20:03.255131 +0000 build-r43-templates-community: .[38;5;246m22:20:03 .[96m[qb.template.archlinux.prep] .[38;5;246m    python: for routel.[0m
+2026-03-13 21:20:03.255162 +0000 build-r43-templates-community: .[38;5;246m22:20:03 .[96m[qb.template.archlinux.prep] .[38;5;246minstalling base....[0m
+2026-03-13 21:20:03.255501 +0000 build-r43-templates-community: .[38;5;246m22:20:03 .[96m[qb.template.archlinux.prep] .[38;5;246mOptional dependencies for base.[0m
+2026-03-13 21:20:03.255542 +0000 build-r43-templates-community: .[38;5;246m22:20:03 .[96m[qb.template.archlinux.prep] .[38;5;246m    linux: bare metal support.[0m
+2026-03-13 21:20:03.384752 +0000 build-r43-templates-community: .[38;5;246m22:20:03 .[96m[qb.template.archlinux.prep] .[38;5;246m:: Running post-transaction hooks....[0m
+2026-03-13 21:20:03.384799 +0000 build-r43-templates-community: .[38;5;246m22:20:03 .[96m[qb.template.archlinux.prep] .[38;5;246m( 1/11) Creating system user accounts....[0m
+2026-03-13 21:20:03.462311 +0000 build-r43-templates-community: .[38;5;246m22:20:03 .[96m[qb.template.archlinux.prep] .[38;5;246mCreating group 'alpm' with GID 970..[0m
+2026-03-13 21:20:03.462730 +0000 build-r43-templates-community: .[38;5;246m22:20:03 .[96m[qb.template.archlinux.prep] .[38;5;246mCreating user 'alpm' (Arch Linux Package Management) with UID 970 and GID 970..[0m
+2026-03-13 21:20:03.499302 +0000 build-r43-templates-community: .[38;5;246m22:20:03 .[96m[qb.template.archlinux.prep] .[38;5;246m( 2/11) Creating temporary files....[0m
+2026-03-13 21:20:03.603109 +0000 build-r43-templates-community: .[38;5;246m22:20:03 .[96m[qb.template.archlinux.prep] .[38;5;246m( 3/11) Updating journal message catalog....[0m
+2026-03-13 21:20:03.698027 +0000 build-r43-templates-community: .[38;5;246m22:20:03 .[96m[qb.template.archlinux.prep] .[38;5;246m( 4/11) Updating udev hardware database....[0m
+2026-03-13 21:20:04.172546 +0000 build-r43-templates-community: .[38;5;246m22:20:04 .[96m[qb.template.archlinux.prep] .[38;5;246m( 5/11) Applying kernel sysctl settings....[0m
+2026-03-13 21:20:04.252026 +0000 build-r43-templates-community: .[38;5;246m22:20:04 .[96m[qb.template.archlinux.prep] .[38;5;246m  Skipped: Running in chroot..[0m
+2026-03-13 21:20:04.252088 +0000 build-r43-templates-community: .[38;5;246m22:20:04 .[96m[qb.template.archlinux.prep] .[38;5;246m( 6/11) Reloading system manager configuration....[0m
+2026-03-13 21:20:04.324533 +0000 build-r43-templates-community: .[38;5;246m22:20:04 .[96m[qb.template.archlinux.prep] .[38;5;246m  Skipped: Running in chroot..[0m
+2026-03-13 21:20:04.324601 +0000 build-r43-templates-community: .[38;5;246m22:20:04 .[96m[qb.template.archlinux.prep] .[38;5;246m( 7/11) Reloading user manager configuration....[0m
+2026-03-13 21:20:04.376020 +0000 build-r43-templates-community: .[38;5;246m22:20:04 .[96m[qb.template.archlinux.prep] .[38;5;246m  Skipped: Running in chroot..[0m
+2026-03-13 21:20:04.376069 +0000 build-r43-templates-community: .[38;5;246m22:20:04 .[96m[qb.template.archlinux.prep] .[38;5;246m( 8/11) Reloading device manager configuration....[0m
+2026-03-13 21:20:04.437082 +0000 build-r43-templates-community: .[38;5;246m22:20:04 .[96m[qb.template.archlinux.prep] .[38;5;246m  Skipped: Running in chroot..[0m
+2026-03-13 21:20:04.437132 +0000 build-r43-templates-community: .[38;5;246m22:20:04 .[96m[qb.template.archlinux.prep] .[38;5;246m( 9/11) Arming ConditionNeedsUpdate....[0m
+2026-03-13 21:20:04.491996 +0000 build-r43-templates-community: .[38;5;246m22:20:04 .[96m[qb.template.archlinux.prep] .[38;5;246m(10/11) Rebuilding certificate stores....[0m
+2026-03-13 21:20:05.257179 +0000 build-r43-templates-community: .[38;5;246m22:20:05 .[96m[qb.template.archlinux.prep] .[38;5;246m(11/11) Reloading system bus configuration....[0m
+2026-03-13 21:20:05.355135 +0000 build-r43-templates-community: .[38;5;246m22:20:05 .[96m[qb.template.archlinux.prep] .[38;5;246m  Skipped: Running in chroot..[0m
+2026-03-13 21:20:05.478782 +0000 build-r43-templates-community: .[38;5;246m22:20:05 .[96m[qb.template.archlinux.prep] .[38;5;246m+ unset PACMAN_CACHE_MOUNT_DIR.[0m
+2026-03-13 21:20:05.478851 +0000 build-r43-templates-community: .[38;5;246m22:20:05 .[96m[qb.template.archlinux.prep] .[38;5;246m+ touch /builder/mnt/.prepared_base.[0m
+2026-03-13 21:20:05.479144 +0000 build-r43-templates-community: .[38;5;246m22:20:05 .[96m[qb.template.archlinux.prep] .[38;5;246m+ exit_prepare.[0m
+2026-03-13 21:20:05.479179 +0000 build-r43-templates-community: .[38;5;246m22:20:05 .[96m[qb.template.archlinux.prep] .[38;5;246m+ local exit_code=0.[0m
+2026-03-13 21:20:05.479197 +0000 build-r43-templates-community: .[38;5;246m22:20:05 .[96m[qb.template.archlinux.prep] .[38;5;246m+ echo '  --> Unbinding INSTALL_DIR...'.[0m
+2026-03-13 21:20:05.479383 +0000 build-r43-templates-community: .[38;5;246m22:20:05 .[96m[qb.template.archlinux.prep] .[38;5;246m+ umount /builder/cache/bootstrap/mnt.[0m
+2026-03-13 21:20:05.479557 +0000 build-r43-templates-community: .[38;5;246m22:20:05 .[96m[qb.template.archlinux.prep] .[38;5;246m  --> Unbinding INSTALL_DIR....[0m
+2026-03-13 21:20:05.483351 +0000 build-r43-templates-community: .[38;5;246m22:20:05 .[96m[qb.template.archlinux.prep] .[38;5;246m+ exit 0.[0m
+2026-03-13 21:20:05.483908 +0000 build-r43-templates-community: .[38;5;246m22:20:05 .[96m[qb.template.archlinux.prep] .[38;5;246mINFO: Installing package groups....[0m
+2026-03-13 21:20:05.484059 +0000 build-r43-templates-community: .[38;5;246m22:20:05 .[96m[qb.template.archlinux.prep] .[38;5;246m+ echo 'INFO: Installing package groups...'.[0m
+2026-03-13 21:20:05.484122 +0000 build-r43-templates-community: .[38;5;246m22:20:05 .[96m[qb.template.archlinux.prep] .[38;5;246m+ /builder/sources/builder-archlinux/template_archlinux/02_install_groups.sh.[0m
+2026-03-13 21:20:05.484605 +0000 build-r43-templates-community: .[38;5;246m22:20:05 .[96m[qb.template.archlinux.prep] .[38;5;246m--> Archlinux 02_install_groups.sh.[0m
+2026-03-13 21:20:05.484782 +0000 build-r43-templates-community: .[38;5;246m22:20:05 .[96m[qb.template.archlinux.prep] .[38;5;246m+ '[' -n '' ']'.[0m
+2026-03-13 21:20:05.484858 +0000 build-r43-templates-community: .[38;5;246m22:20:05 .[96m[qb.template.archlinux.prep] .[38;5;246m+ PKGLISTFILE=/builder/sources/builder-archlinux/template_archlinux/packages.list.[0m
+2026-03-13 21:20:05.485225 +0000 build-r43-templates-community: .[38;5;246m22:20:05 .[96m[qb.template.archlinux.prep] .[38;5;246m++ sed '/^ *#/d; s/  *#.*//' /builder/sources/builder-archlinux/template_archlinux/packages.list.[0m
+2026-03-13 21:20:05.485287 +0000 build-r43-templates-community: .[38;5;246m22:20:05 .[96m[qb.template.archlinux.prep] .[38;5;246m++ sed ':a;N;$!ba; s/\n/ /g; s/  */ /g'.[0m
+2026-03-13 21:20:05.486283 +0000 build-r43-templates-community: .[38;5;246m22:20:05 .[96m[qb.template.archlinux.prep] .[38;5;246m+ PKGGROUPS='xorg-server xterm ethtool net-tools sudo wget diffutils python-urllib3 ldns tmux vim terminus-font ttf-bitstream-vera ttf-dejavu ttf-inconsolata ttf-linux-libertine noto-fonts noto-fonts-emoji gnome-settings-daemon gvfs lxappearance mousepad thunar thunar-volman xfce4-terminal xfce4-settings evince firefox thunderbird checksec'.[0m
+2026-03-13 21:20:05.486332 +0000 build-r43-templates-community: .[38;5;246m22:20:05 .[96m[qb.template.archlinux.prep] .[38;5;246m  --> Synchronize resolv.conf....[0m
+2026-03-13 21:20:05.486568 +0000 build-r43-templates-community: .[38;5;246m22:20:05 .[96m[qb.template.archlinux.prep] .[38;5;246m+ '[' 4.3 == 4.2 ']'.[0m
+2026-03-13 21:20:05.486649 +0000 build-r43-templates-community: .[38;5;246m22:20:05 .[96m[qb.template.archlinux.prep] .[38;5;246m+ PACMAN_CACHE_DIR=/builder/cache/pacman_cache.[0m
+2026-03-13 21:20:05.486734 +0000 build-r43-templates-community: .[38;5;246m22:20:05 .[96m[qb.template.archlinux.prep] .[38;5;246m+ export PACMAN_CACHE_DIR.[0m
+2026-03-13 21:20:05.486819 +0000 build-r43-templates-community: .[38;5;246m22:20:05 .[96m[qb.template.archlinux.prep] .[38;5;246m+ echo '  --> Synchronize resolv.conf...'.[0m
+2026-03-13 21:20:05.486889 +0000 build-r43-templates-community: .[38;5;246m22:20:05 .[96m[qb.template.archlinux.prep] .[38;5;246m+ cp /etc/resolv.conf /builder/mnt/etc/resolv.conf.[0m
+2026-03-13 21:20:05.487193 +0000 build-r43-templates-community: .[38;5;246m22:20:05 .[96m[qb.template.archlinux.prep] .[38;5;246m+ echo '  --> Updating installed packages...'.[0m
+2026-03-13 21:20:05.487215 +0000 build-r43-templates-community: .[38;5;246m22:20:05 .[96m[qb.template.archlinux.prep] .[38;5;246m+ /builder/sources/builder-archlinux/template_archlinux/arch-chroot-lite /builder/mnt /bin/sh -c 'http_proxy='\'''\'' pacman -Syu --noconfirm --noprogressbar'.[0m
+2026-03-13 21:20:05.487226 +0000 build-r43-templates-community: .[38;5;246m22:20:05 .[96m[qb.template.archlinux.prep] .[38;5;246m  --> Updating installed packages....[0m
+2026-03-13 21:20:05.521718 +0000 build-r43-templates-community: .[38;5;246m22:20:05 .[96m[qb.template.archlinux.prep] .[38;5;246m:: Synchronizing package databases....[0m
+2026-03-13 21:20:07.315240 +0000 build-r43-templates-community: .[38;5;246m22:20:07 .[96m[qb.template.archlinux.prep] .[38;5;246m core downloading....[0m
+2026-03-13 21:20:07.315306 +0000 build-r43-templates-community: .[38;5;246m22:20:07 .[96m[qb.template.archlinux.prep] .[38;5;246m extra downloading....[0m
+2026-03-13 21:20:07.315327 +0000 build-r43-templates-community: .[38;5;246m22:20:07 .[96m[qb.template.archlinux.prep] .[38;5;246m:: Starting full system upgrade....[0m
+2026-03-13 21:20:07.526016 +0000 build-r43-templates-community: .[38;5;246m22:20:07 .[96m[qb.template.archlinux.prep] .[38;5;246m there is nothing to do.[0m
+2026-03-13 21:20:07.558754 +0000 build-r43-templates-community: .[38;5;246m22:20:07 .[96m[qb.template.archlinux.prep] .[38;5;246m+ echo '  --> Installing archlinux package groups...'.[0m
+2026-03-13 21:20:07.558826 +0000 build-r43-templates-community: .[38;5;246m22:20:07 .[96m[qb.template.archlinux.prep] .[38;5;246m+ echo '    --> Selected packages: xorg-server xterm ethtool net-tools sudo wget diffutils python-urllib3 ldns tmux vim terminus-font ttf-bitstream-vera ttf-dejavu ttf-inconsolata ttf-linux-libertine noto-fonts noto-fonts-emoji gnome-settings-daemon gvfs lxappearance mousepad thunar thunar-volman xfce4-terminal xfce4-settings evince firefox thunderbird checksec'.[0m
+2026-03-13 21:20:07.559085 +0000 build-r43-templates-community: .[38;5;246m22:20:07 .[96m[qb.template.archlinux.prep] .[38;5;246m+ /builder/sources/builder-archlinux/template_archlinux/arch-chroot-lite /builder/mnt /bin/sh -c 'http_proxy='\'''\'' pacman -S --needed --noconfirm --noprogressbar xorg-server xterm ethtool net-tools sudo wget diffutils python-urllib3 ldns tmux vim terminus-font ttf-bitstream-vera ttf-dejavu ttf-inconsolata ttf-linux-libertine noto-fonts noto-fonts-emoji gnome-settings-daemon gvfs lxappearance mousepad thunar thunar-volman xfce4-terminal xfce4-settings evince firefox thunderbird checksec'.[0m
+2026-03-13 21:20:07.559141 +0000 build-r43-templates-community: .[38;5;246m22:20:07 .[96m[qb.template.archlinux.prep] .[38;5;246m  --> Installing archlinux package groups....[0m
+2026-03-13 21:20:07.559327 +0000 build-r43-templates-community: .[38;5;246m22:20:07 .[96m[qb.template.archlinux.prep] .[38;5;246m    --> Selected packages: xorg-server xterm ethtool net-tools sudo wget diffutils python-urllib3 ldns tmux vim terminus-font ttf-bitstream-vera ttf-dejavu ttf-inconsolata ttf-linux-libertine noto-fonts noto-fonts-emoji gnome-settings-daemon gvfs lxappearance mousepad thunar thunar-volman xfce4-terminal xfce4-settings evince firefox thunderbird checksec.[0m
+2026-03-13 21:20:07.796391 +0000 build-r43-templates-community: .[38;5;246m22:20:07 .[96m[qb.template.archlinux.prep] .[38;5;246mresolving dependencies....[0m
+2026-03-13 21:20:07.813975 +0000 build-r43-templates-community: .[38;5;246m22:20:07 .[96m[qb.template.archlinux.prep] .[38;5;246m:: There are 2 providers available for jack:.[0m
+2026-03-13 21:20:07.814046 +0000 build-r43-templates-community: .[38;5;246m22:20:07 .[96m[qb.template.archlinux.prep] .[38;5;246m:: Repository extra.[0m
+2026-03-13 21:20:07.814085 +0000 build-r43-templates-community: .[38;5;246m22:20:07 .[96m[qb.template.archlinux.prep] .[38;5;246m   1) jack2  2) pipewire-jack.[0m
+2026-03-13 21:20:07.814102 +0000 build-r43-templates-community: .[38;5;246m22:20:07 .[96m[qb.template.archlinux.prep] .[38;5;246m.[0m
+2026-03-13 21:20:07.820995 +0000 build-r43-templates-community: .[38;5;246m22:20:07 .[96m[qb.template.archlinux.prep] .[38;5;246mEnter a number (default=1):.[0m
+2026-03-13 21:20:07.821031 +0000 build-r43-templates-community: .[38;5;246m22:20:07 .[96m[qb.template.archlinux.prep] .[38;5;246mlooking for conflicting packages....[0m
+2026-03-13 21:20:07.849762 +0000 build-r43-templates-community: .[38;5;246m22:20:07 .[96m[qb.template.archlinux.prep] .[38;5;246m.[0m
+2026-03-13 21:20:07.851390 +0000 build-r43-templates-community: .[38;5;246m22:20:07 .[96m[qb.template.archlinux.prep] .[38;5;246mPackages (344) abseil-cpp-20250814.1-1  adwaita-cursors-49.0-1  adwaita-fonts-50.0-1  adwaita-icon-theme-49.0-1  adwaita-icon-theme-legacy-46.2-3  alsa-card-profiles-1:1.6.1-1  alsa-lib-1.2.15.3-2  alsa-topology-conf-1.2.5.1-4  alsa-ucm-conf-1.2.15.3-1  aom-3.13.1-2  at-spi2-core-2.58.3-1  avahi-1:0.9rc3-1  bluez-libs-5.86-4  botan-3.10.0-2  bubblewrap-0.11.0-2  cairo-1.18.4-1  colord-1.4.8-1  dav1d-1.5.3-1  db5.3-5.3.28-7  dbus-glib-0.114-1  dconf-0.49.0-1  default-cursors-3-1  desktop-file-utils-0.28-1  djvulibre-3.5.29-1  dnssec-anchors-20250524-1  duktape-2.7.0-7  elementary-icon-theme-8.2.0-1  enchant-2.8.15-1  exempi-2.6.6-2  exo-4.20.0-2  ffmpeg-2:8.0.1-7  fftw-3.3.10-8  flac-1.5.0-1  fontconfig-2:2.17.1-1  freetype2-2.14.2-1  fribidi-1.0.16-2  fuse-common-3.18.1-1  fuse3-3.18.1-1  garcon-4.20.0-2  gcr-4-4.4.0.1-1  gdk-pixbuf2-2.44.4-1  geoclue-2.8.0-1  geocode-glib-2-3.26.4-5  geocode-glib-common-3.26.4-5  ghostscript-10.06.0-1  giflib-5.2.2-2  glib-networking-1:2.80.1-1  glslang-1:1.4.341.0-2  glycin-2.0.8-1  gnome-desktop-1:44.5-1  gnome-desktop-4-1:44.5-1  gnome-desktop-common-1:44.5-1  gnome-themes-extra-1:3.28-1  gperftools-2.17.2-1  gpgmepp-2.0.0-2  gpm-1.20.7.r38.ge82d1a6-6  graphene-1.10.8-2  graphite-1:1.3.14-6  gsettings-desktop-schemas-49.1-1  gsettings-system-schemas-49.1-1  gsfonts-20200910-6  gsm-1.0.24-1  gspell-1.14.2-1  gssdp-1.6.4-1  gst-plugins-bad-libs-1.28.1-1  gst-plugins-base-libs-1.28.1-1  gstreamer-1.28.1-1  gtest-1.17.0-2  gtk-layer-shell-0.10.0-1  gtk-update-icon-cache-1:4.20.3-1  gtk3-1:3.24.51-1  gtk4-1:4.20.3-1  gtksourceview4-4.8.4-2  gupnp-1:1.6.9-1  gupnp-igd-1.6.0-2  harfbuzz-13.1.1-1  hicolor-icon-theme-0.18-1  hidapi-0.15.0-1  highway-1.3.0-2  hunspell-1.7.2-3  ijs-0.35-6  iso-codes-4.20.1-1  jack2-1.9.22-2  jbig2dec-0.20-1  jbigkit-2.1-8  json-glib-1.10.8-1  l-smash-2.14.5-4  lame-3.101.r6531-1  lcms2-2.18-1  libass-0.17.4-1  libasyncns-1:0.8+r3+g68cd5af-3  libatasmart-0.19-7  libavc1394-0.5.4-7  libblockdev-3.4.0-2  libblockdev-crypto-3.4.0-2  libblockdev-fs-3.4.0-2  libblockdev-loop-3.4.0-2  libblockdev-mdraid-3.4.0-2  libblockdev-nvme-3.4.0-2  libblockdev-part-3.4.0-2  libblockdev-smart-3.4.0-2  libblockdev-swap-3.4.0-2  libbluray-1.4.1-1  libbs2b-3.1.0-10  libbsd-0.12.2-2  libbytesize-2.12-3  libcanberra-1:0.30+r2+gc0620e4-6  libcdio-2.3.0-1  libcdio-paranoia-10.2+2.0.2-1  libcloudproviders-0.4.0-1  libcolord-1.4.8-1  libcups-2:2.4.16-2  libdaemon-0.14-6  libdatrie-0.2.14-1  libdeflate-1.25-1  libdovi-3.3.2-1  libdrm-2.4.131-1  libdvdnav-7.0.0-1  libdvdread-7.0.1-1  libebur128-1.2.6-2  libedit-20251016_3.1-1  libepoxy-1.5.10-3  libevdev-1.13.6-1  libexif-0.6.25-1  libfdk-aac-2.0.3-1  libfontenc-1.1.9-1  libfreeaptx-0.2.2-1  libglvnd-1.7.0-3  libgtop-2.41.3-2  libgudev-238-3  libgusb-0.4.9-2  libgweather-4-4.4.4-3  libgxps-0.3.2-5  libhandy-1.8.3-2  libice-1.1.2-1  libidn-1.43-1  libiec61883-1.2.0-9  libimobiledevice-1.4.0-2  libimobiledevice-glue-1.3.2-1  libinput-1.30.1-1  libjpeg-turbo-3.1.3-1  libjxl-0.11.2-2  liblc3-1.1.3-2  libldac-2.0.2.3-3  libmd-1.1.0-2  libmm-glib-1.24.2-1  libmodplug-0.8.9.0-6  libmysofa-1.3.3-1  libnice-0.1.23-1  libnm-1.56.0-1  libnotify-0.8.8-1  libnvme-1.16.1-3  libogg-1.3.6-1  libopenmpt-0.8.4-1  libpaper-2.2.7-1  libpciaccess-0.18.1-2  libpgm-5.3.128-3  libpipewire-1:1.6.1-1  libplacebo-7.360.0-2  libplist-2.7.0-3  libpng-1.6.55-1  libproxy-0.5.12-1  libpulse-17.0+r98+gb096704c0-1  libraw1394-2.1.2-4  librsvg-2:2.61.4-1  libsamplerate-0.2.2-3  libsm-1.2.6-1  libsndfile-1.2.2-4  libsodium-1.0.21-1  libsoup3-3.6.6-2  libsoxr-0.1.3-4  libspectre-0.2.12-2  libssh-0.12.0-1  libstemmer-3.0.1-1  libsynctex-2026.0-1  libtatsu-1.0.5-1  libthai-0.1.30-1  libtheora-1.2.0-1  libtiff-4.7.1-1  libtool-2.6.0-4  libunibreak-6.1-1  libunwind-1.8.2-1  liburing-2.14-1  libusbmuxd-2.1.1-2  libutempter-1.2.3-1  libva-2.23.0-1  libvdpau-1.5-4  libvorbis-1.3.7-4  libvpl-2.16.0-2  libvpx-1.15.2-3  libwacom-2.18.0-2  libwebp-1.6.0-2  libwireplumber-0.5.13-1  libx11-1.8.13-1  libxau-1.0.12-1  libxaw-1.0.16-1  libxcb-1.17.0-1  libxcomposite-0.4.7-1  libxcursor-1.2.3-1  libxcvt-0.1.3-1  libxdamage-1.1.7-1  libxdmcp-1.1.5-1  libxext-1.3.7-1  libxfce4ui-4.20.2-1  libxfce4util-4.20.1-1  libxfixes-6.0.2-1  libxfont2-2.0.7-1  libxft-2.3.9-1  libxi-1.8.2-1  libxinerama-1.1.6-1  libxkbcommon-1.13.1-1  libxkbcommon-x11-1.13.1-1  libxkbfile-1.2.0-1  libxklavier-5.4-7  libxmu-1.3.1-1  libxpm-3.5.18-1  libxrandr-1.5.5-1  libxrender-0.9.12-1  libxshmfence-1.3.3-1  libxss-1.2.5-1  libxt-1.3.1-1  libxtst-1.2.5-1  libxv-1.0.13-1  libxxf86vm-1.1.7-1  lilv-0.26.4-1  llvm-libs-21.1.8-1  lm_sensors-1:3.6.2-1  lua-5.4.8-2  luit-20250912-1  lv2-1.18.10-2  lzo-2.10-5  mailcap-2.1.54-2  mdadm-4.5-2  mesa-1:26.0.1-1  mpdecimal-4.0.1-1  mpg123-1.33.4-1  mtdev-1.1.7-1  nspr-4.38.2-1  nss-3.121-1  ocl-icd-2.3.4-1  opencore-amr-0.1.6-2  openjpeg2-2.5.4-1  openssh-10.2p1-2  opus-1.6.1-1  orc-0.4.42-1  pango-1:1.57.0-2  parted-3.6-2  pipewire-1:1.6.1-1  pipewire-audio-1:1.6.1-1  pipewire-pulse-1:1.6.1-1  pipewire-session-manager-1:1.6.1-1  pixman-0.46.4-1  polkit-127-3  poppler-26.02.0-2  poppler-data-0.4.12-2  poppler-glib-26.02.0-2  portaudio-1:19.7.0-3  pulse-native-provider-1:1.6.1-1  python-3.14.3-1  rav1e-0.8.1-2  rubberband-4.0.0-1  sbc-2.2-1  sdl2-compat-2.32.64-1  sdl3-3.4.2-1  serd-0.32.8-1  shaderc-2026.1-2  shared-mime-info-2.4-3  snappy-1.2.2-3  sndio-1.10.0-1  sord-0.16.22-1  sound-theme-freedesktop-0.8-6  spandsp-0.0.6-7  speex-1.2.1-2  speexdsp-1.2.1-2  spirv-tools-1:1.4.341.0-2  sratom-0.6.22-1  srt-1.5.4-1  startup-notification-0.12-9  svt-av1-4.0.1-1  tdb-1.4.15-1  tinysparql-3.10.1-2  udisks2-2.11.1-2  upower-1.91.1-1  v4l-utils-1.32.0-2  vapoursynth-73-2  vid.stab-1.1.1-2  vim-runtime-9.2.0081-1  vmaf-3.0.0-2  volume_key-0.3.12-12  vte-common-0.82.3-1  vte3-0.82.3-1  vulkan-icd-loader-1.4.341.0-1  wayland-1.24.0-1  webrtc-audio-processing-1-1.3-5  wireplumber-0.5.13-1  x264-3:0.165.r3222.b35605a-2  x265-4.1-1  xbitmaps-1.1.3-2  xcb-proto-1.17.0-4  xcb-util-0.4.1-2  xf86-input-libinput-1.5.0-1  xfconf-4.20.0-2  xkeyboard-config-2.47-1  xorg-fonts-encodings-1.1.0-1  xorg-server-common-21.1.21-1  xorg-setxkbmap-1.3.4-2  xorg-xkbcomp-1.5.0-1  xorg-xprop-1.2.8-1  xorgproto-2025.1-1  xvidcore-1.3.7-3  xxhash-0.8.3-1  zeromq-4.3.5-3  zimg-3.0.6-1  zix-0.8.0-1  checksec-3.1.0-2  diffutils-3.12-2  ethtool-1:6.19-1  evince-1:48.1-1  firefox-148.0.2-1  gnome-settings-daemon-49.1-1  gvfs-1.58.3-1  ldns-1.9.0-1  lxappearance-0.6.4-3  mousepad-0.7.0-1  net-tools-2.10-3  noto-fonts-1:2026.03.01-1  noto-fonts-emoji-1:2.051-1  python-urllib3-2.6.3-1  sudo-1.9.17.p2-2  terminus-font-4.49.1-8  thunar-4.20.7-1  thunar-volman-4.20.0-2  thunderbird-148.0-4  tmux-3.6_a-1  ttf-bitstream-vera-1.10-16  ttf-dejavu-2.37+18+g9b5d1b2f-7  ttf-inconsolata-1:3.000-5  ttf-linux-libertine-5.3.0-10  vim-9.2.0081-1  wget-1.25.0-3  xfce4-settings-4.20.4-1  xfce4-terminal-1.2.0-1  xorg-server-21.1.21-1  xterm-407-1.[0m
+2026-03-13 21:20:07.851456 +0000 build-r43-templates-community: .[38;5;246m22:20:07 .[96m[qb.template.archlinux.prep] .[38;5;246m.[0m
+2026-03-13 21:20:07.851493 +0000 build-r43-templates-community: .[38;5;246m22:20:07 .[96m[qb.template.archlinux.prep] .[38;5;246mTotal Download Size:    481.31 MiB.[0m
+2026-03-13 21:20:07.851511 +0000 build-r43-templates-community: .[38;5;246m22:20:07 .[96m[qb.template.archlinux.prep] .[38;5;246mTotal Installed Size:  1953.17 MiB.[0m
+2026-03-13 21:20:07.851524 +0000 build-r43-templates-community: .[38;5;246m22:20:07 .[96m[qb.template.archlinux.prep] .[38;5;246m.[0m
+2026-03-13 21:20:07.851538 +0000 build-r43-templates-community: .[38;5;246m22:20:07 .[96m[qb.template.archlinux.prep] .[38;5;246m:: Proceed with installation? [Y/n].[0m
+2026-03-13 21:20:07.851552 +0000 build-r43-templates-community: .[38;5;246m22:20:07 .[96m[qb.template.archlinux.prep] .[38;5;246m:: Retrieving packages....[0m
+2026-03-13 21:22:18.558766 +0000 build-r43-templates-community: .[38;5;246m22:22:18 .[96m[qb.template.archlinux.prep] .[38;5;246m firefox-148.0.2-1-x86_64 downloading....[0m
+2026-03-13 21:22:18.558832 +0000 build-r43-templates-community: .[38;5;246m22:22:18 .[96m[qb.template.archlinux.prep] .[38;5;246m thunderbird-148.0-4-x86_64 downloading....[0m
+2026-03-13 21:22:18.558899 +0000 build-r43-templates-community: .[38;5;246m22:22:18 .[96m[qb.template.archlinux.prep] .[38;5;246m llvm-libs-21.1.8-1-x86_64 downloading....[0m
+2026-03-13 21:22:18.558924 +0000 build-r43-templates-community: .[38;5;246m22:22:18 .[96m[qb.template.archlinux.prep] .[38;5;246m noto-fonts-1:2026.03.01-1-any downloading....[0m
+2026-03-13 21:22:18.558987 +0000 build-r43-templates-community: .[38;5;246m22:22:18 .[96m[qb.template.archlinux.prep] .[38;5;246m ghostscript-10.06.0-1-x86_64 downloading....[0m
+2026-03-13 21:22:18.559027 +0000 build-r43-templates-community: .[38;5;246m22:22:18 .[96m[qb.template.archlinux.prep] .[38;5;246m ffmpeg-2:8.0.1-7-x86_64 downloading....[0m
+2026-03-13 21:22:18.559044 +0000 build-r43-templates-community: .[38;5;246m22:22:18 .[96m[qb.template.archlinux.prep] .[38;5;246m python-3.14.3-1-x86_64 downloading....[0m
+2026-03-13 21:22:18.559059 +0000 build-r43-templates-community: .[38;5;246m22:22:18 .[96m[qb.template.archlinux.prep] .[38;5;246m mesa-1:26.0.1-1-x86_64 downloading....[0m
+2026-03-13 21:22:18.559117 +0000 build-r43-templates-community: .[38;5;246m22:22:18 .[96m[qb.template.archlinux.prep] .[38;5;246m noto-fonts-emoji-1:2.051-1-any downloading....[0m
+2026-03-13 21:22:18.559151 +0000 build-r43-templates-community: .[38;5;246m22:22:18 .[96m[qb.template.archlinux.prep] .[38;5;246m gtk4-1:4.20.3-1-x86_64 downloading....[0m
+2026-03-13 21:22:18.559166 +0000 build-r43-templates-community: .[38;5;246m22:22:18 .[96m[qb.template.archlinux.prep] .[38;5;246m gtk3-1:3.24.51-1-x86_64 downloading....[0m
+2026-03-13 21:22:18.559182 +0000 build-r43-templates-community: .[38;5;246m22:22:18 .[96m[qb.template.archlinux.prep] .[38;5;246m vim-runtime-9.2.0081-1-x86_64 downloading....[0m
+2026-03-13 21:22:18.559197 +0000 build-r43-templates-community: .[38;5;246m22:22:18 .[96m[qb.template.archlinux.prep] .[38;5;246m ttf-linux-libertine-5.3.0-10-any downloading....[0m
+2026-03-13 21:22:18.559240 +0000 build-r43-templates-community: .[38;5;246m22:22:18 .[96m[qb.template.archlinux.prep] .[38;5;246m glycin-2.0.8-1-x86_64 downloading....[0m
+2026-03-13 21:22:18.559271 +0000 build-r43-templates-community: .[38;5;246m22:22:18 .[96m[qb.template.archlinux.prep] .[38;5;246m iso-codes-4.20.1-1-any downloading....[0m
+2026-03-13 21:22:18.559306 +0000 build-r43-templates-community: .[38;5;246m22:22:18 .[96m[qb.template.archlinux.prep] .[38;5;246m opus-1.6.1-1-x86_64 downloading....[0m
+2026-03-13 21:22:18.559322 +0000 build-r43-templates-community: .[38;5;246m22:22:18 .[96m[qb.template.archlinux.prep] .[38;5;246m botan-3.10.0-2-x86_64 downloading....[0m
+2026-03-13 21:22:18.559372 +0000 build-r43-templates-community: .[38;5;246m22:22:18 .[96m[qb.template.archlinux.prep] .[38;5;246m gst-plugins-bad-libs-1.28.1-1-x86_64 downloading....[0m
+2026-03-13 21:22:18.559399 +0000 build-r43-templates-community: .[38;5;246m22:22:18 .[96m[qb.template.archlinux.prep] .[38;5;246m libgweather-4-4.4.4-3-x86_64 downloading....[0m
+2026-03-13 21:22:18.559447 +0000 build-r43-templates-community: .[38;5;246m22:22:18 .[96m[qb.template.archlinux.prep] .[38;5;246m aom-3.13.1-2-x86_64 downloading....[0m
+2026-03-13 21:22:18.559640 +0000 build-r43-templates-community: .[38;5;246m22:22:18 .[96m[qb.template.archlinux.prep] .[38;5;246m elementary-icon-theme-8.2.0-1-any downloading....[0m
+2026-03-13 21:22:18.559671 +0000 build-r43-templates-community: .[38;5;246m22:22:18 .[96m[qb.template.archlinux.prep] .[38;5;246m fftw-3.3.10-8-x86_64 downloading....[0m
+2026-03-13 21:22:18.559850 +0000 build-r43-templates-community: .[38;5;246m22:22:18 .[96m[qb.template.archlinux.prep] .[38;5;246m ttf-dejavu-2.37+18+g9b5d1b2f-7-any downloading....[0m
+2026-03-13 21:22:18.559882 +0000 build-r43-templates-community: .[38;5;246m22:22:18 .[96m[qb.template.archlinux.prep] .[38;5;246m gnome-themes-extra-1:3.28-1-any downloading....[0m
+2026-03-13 21:22:18.560120 +0000 build-r43-templates-community: .[38;5;246m22:22:18 .[96m[qb.template.archlinux.prep] .[38;5;246m glslang-1:1.4.341.0-2-x86_64 downloading....[0m
+2026-03-13 21:22:18.560152 +0000 build-r43-templates-community: .[38;5;246m22:22:18 .[96m[qb.template.archlinux.prep] .[38;5;246m gst-plugins-base-libs-1.28.1-1-x86_64 downloading....[0m
+2026-03-13 21:22:18.560353 +0000 build-r43-templates-community: .[38;5;246m22:22:18 .[96m[qb.template.archlinux.prep] .[38;5;246m vim-9.2.0081-1-x86_64 downloading....[0m
+2026-03-13 21:22:18.560385 +0000 build-r43-templates-community: .[38;5;246m22:22:18 .[96m[qb.template.archlinux.prep] .[38;5;246m librsvg-2:2.61.4-1-x86_64 downloading....[0m
+2026-03-13 21:22:18.560565 +0000 build-r43-templates-community: .[38;5;246m22:22:18 .[96m[qb.template.archlinux.prep] .[38;5;246m libjxl-0.11.2-2-x86_64 downloading....[0m
+2026-03-13 21:22:18.560598 +0000 build-r43-templates-community: .[38;5;246m22:22:18 .[96m[qb.template.archlinux.prep] .[38;5;246m adwaita-icon-theme-legacy-46.2-3-any downloading....[0m
+2026-03-13 21:22:18.560828 +0000 build-r43-templates-community: .[38;5;246m22:22:18 .[96m[qb.template.archlinux.prep] .[38;5;246m adwaita-fonts-50.0-1-any downloading....[0m
+2026-03-13 21:22:18.560961 +0000 build-r43-templates-community: .[38;5;246m22:22:18 .[96m[qb.template.archlinux.prep] .[38;5;246m evince-1:48.1-1-x86_64 downloading....[0m
+2026-03-13 21:22:18.561009 +0000 build-r43-templates-community: .[38;5;246m22:22:18 .[96m[qb.template.archlinux.prep] .[38;5;246m gstreamer-1.28.1-1-x86_64 downloading....[0m
+2026-03-13 21:22:18.561181 +0000 build-r43-templates-community: .[38;5;246m22:22:18 .[96m[qb.template.archlinux.prep] .[38;5;246m libx11-1.8.13-1-x86_64 downloading....[0m
+2026-03-13 21:22:18.561286 +0000 build-r43-templates-community: .[38;5;246m22:22:18 .[96m[qb.template.archlinux.prep] .[38;5;246m v4l-utils-1.32.0-2-x86_64 downloading....[0m
+2026-03-13 21:22:18.561370 +0000 build-r43-templates-community: .[38;5;246m22:22:18 .[96m[qb.template.archlinux.prep] .[38;5;246m x265-4.1-1-x86_64 downloading....[0m
+2026-03-13 21:22:18.561568 +0000 build-r43-templates-community: .[38;5;246m22:22:18 .[96m[qb.template.archlinux.prep] .[38;5;246m svt-av1-4.0.1-1-x86_64 downloading....[0m
+2026-03-13 21:22:18.561681 +0000 build-r43-templates-community: .[38;5;246m22:22:18 .[96m[qb.template.archlinux.prep] .[38;5;246m spirv-tools-1:1.4.341.0-2-x86_64 downloading....[0m
+2026-03-13 21:22:18.561819 +0000 build-r43-templates-community: .[38;5;246m22:22:18 .[96m[qb.template.archlinux.prep] .[38;5;246m poppler-data-0.4.12-2-any downloading....[0m
+2026-03-13 21:22:18.561924 +0000 build-r43-templates-community: .[38;5;246m22:22:18 .[96m[qb.template.archlinux.prep] .[38;5;246m sudo-1.9.17.p2-2-x86_64 downloading....[0m
+2026-03-13 21:22:18.562044 +0000 build-r43-templates-community: .[38;5;246m22:22:18 .[96m[qb.template.archlinux.prep] .[38;5;246m pipewire-audio-1:1.6.1-1-x86_64 downloading....[0m
+2026-03-13 21:22:18.562277 +0000 build-r43-templates-community: .[38;5;246m22:22:18 .[96m[qb.template.archlinux.prep] .[38;5;246merror: failed retrieving file 'pipewire-audio-1:1.6.1-1-x86_64.pkg.tar.zst' from mirror.rackspace.com : Could not resolve host: mirror.rackspace.com.[0m
+2026-03-13 21:22:18.562329 +0000 build-r43-templates-community: .[38;5;246m22:22:18 .[96m[qb.template.archlinux.prep] .[38;5;246mwarning: fatal error from mirror.rackspace.com, skipping for the remainder of this transaction.[0m
+2026-03-13 21:22:18.562568 +0000 build-r43-templates-community: .[38;5;246m22:22:18 .[96m[qb.template.archlinux.prep] .[38;5;246merror: failed retrieving file 'svt-av1-4.0.1-1-x86_64.pkg.tar.zst.sig' from mirror.rackspace.com : Failed to connect to mirror.rackspace.com port 443 after 630 ms: Could not connect to server.[0m
+2026-03-13 21:22:18.562620 +0000 build-r43-templates-community: .[38;5;246m22:22:18 .[96m[qb.template.archlinux.prep] .[38;5;246merror: failed retrieving file 'spirv-tools-1:1.4.341.0-2-x86_64.pkg.tar.zst.sig' from mirror.rackspace.com : Failed to connect to mirror.rackspace.com port 443 after 290 ms: Could not connect to server.[0m
+2026-03-13 21:22:18.562816 +0000 build-r43-templates-community: .[38;5;246m22:22:18 .[96m[qb.template.archlinux.prep] .[38;5;246merror: failed retrieving file 'poppler-data-0.4.12-2-any.pkg.tar.zst.sig' from mirror.rackspace.com : Failed to connect to mirror.rackspace.com port 443 after 254 ms: Could not connect to server.[0m
+2026-03-13 21:22:18.562963 +0000 build-r43-templates-community: .[38;5;246m22:22:18 .[96m[qb.template.archlinux.prep] .[38;5;246merror: failed retrieving file 'sudo-1.9.17.p2-2-x86_64.pkg.tar.zst' from mirror.rackspace.com : Failed to connect to mirror.rackspace.com port 443 after 2718 ms: Could not connect to server.[0m
+2026-03-13 21:22:18.562999 +0000 build-r43-templates-community: .[38;5;246m22:22:18 .[96m[qb.template.archlinux.prep] .[38;5;246mwarning: failed to retrieve some files.[0m
+2026-03-13 21:22:18.563030 +0000 build-r43-templates-community: .[38;5;246m22:22:18 .[96m[qb.template.archlinux.prep] .[38;5;246merror: failed to commit transaction (failed to retrieve some files).[0m
+2026-03-13 21:22:18.603061 +0000 build-r43-templates-community: .[38;5;246m22:22:18 .[96m[qb.template.archlinux.prep] .[38;5;246mErrors occurred, no packages were upgraded..[0m
+2026-03-13 21:22:18.643151 +0000 build-r43-templates-community: .[38;5;246m22:22:18 .[96m[qb.template.archlinux.prep] .[38;5;246m+ umount_kill /builder/mnt.[0m
+2026-03-13 21:22:18.643218 +0000 build-r43-templates-community: .[38;5;246m22:22:18 .[96m[qb.template.archlinux.prep] .[38;5;246m+ '[' 01 -le 2 ']'.[0m
+2026-03-13 21:22:18.643237 +0000 build-r43-templates-community: .[38;5;246m22:22:18 .[96m[qb.template.archlinux.prep] .[38;5;246m+ test -o xtrace.[0m
+2026-03-13 21:22:18.643256 +0000 build-r43-templates-community: .[38;5;246m22:22:18 .[96m[qb.template.archlinux.prep] .[38;5;246m+ true 'umount_kill: Disabling xtrace, because variable VERBOSE (1) is lower than or equal 2...'.[0m
+2026-03-13 21:22:18.643271 +0000 build-r43-templates-community: .[38;5;246m22:22:18 .[96m[qb.template.archlinux.prep] .[38;5;246m+ set +x.[0m
+2026-03-13 21:22:18.813254 +0000 build-r43-templates-community: .[38;5;246m22:22:18 .[96m[qb.template.archlinux.prep] .[38;5;246mINFO: Attempting to kill any processes still running in '/builder/mnt' before un-mounting.[0m
+2026-03-13 21:22:19.040158 +0000 build-r43-templates-community: .[38;5;246m22:22:19 .[96m[qb.template.archlinux.prep] .[38;5;246mINFO: umount /builder/mnt.[0m
+2026-03-13 21:22:19.372900 +0000 build-r43-templates-community: .[38;5;246m22:22:19 .[96m[qb.template.archlinux.prep] .[38;5;246m+ true 'umount_kill: Restoring xtrace...'.[0m
+2026-03-13 21:22:19.376103 +0000 build-r43-templates-community: .[38;5;246m22:22:19 .[96m[qb.template.archlinux.prep] .[38;5;246mmake: Leaving directory '/builder/plugins/template'.[0m
+2026-03-13 21:22:19.376142 +0000 build-r43-templates-community: .[38;5;246m22:22:19 .[96m[qb.template.archlinux.prep] .[38;5;246mmake: *** [Makefile:69: build-rootimg-prepare] Error 1.[0m
+2026-03-13 21:22:22.387305 +0000 > closing log
