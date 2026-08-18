@@ -1,0 +1,84 @@
+2026-08-18 18:59:00.945482 +0000 > starting log
+2026-08-18 18:59:00.945797 +0000 build-r43-templates-community: .[38;5;246m20:59:00 .[96m[qb] .[38;5;246m> starting build with log.[0m
+2026-08-18 18:59:00.945827 +0000 build-r43-templates-community: .[38;5;246m20:59:00 .[96m[qb.fetch.builder-archlinux] .[0mbuilder-archlinux: source already fetched. Updating..[0m
+2026-08-18 18:59:11.226559 +0000 build-r43-templates-community: .[38;5;246m20:59:11 .[96m[qb.fetch.builder-archlinux.fetch] .[0mUsing executor qubes:disp9877..[0m
+2026-08-18 18:59:11.226663 +0000 build-r43-templates-community: .[38;5;246m20:59:11 .[96m[qb.fetch.builder-archlinux.fetch] .[38;5;246m/usr/bin/qvm-run-vm -- disp9877 env -- VERBOSE=1 DEBUG=1 BACKEND_VMM=xen bash -c 'cd /builder && /builder/plugins/fetch/scripts/get-and-verify-source.py https://github.com/QubesOS/qubes-builder-archlinux.git /builder/builder-archlinux /builder/keyring /builder/plugins/fetch/keys --git-branch main --minimum-distinct-maintainers 1 --maintainer 0064428F455451B3EBE78A7F063938BA42CFA724 --maintainer 274E12AB03F2FE293765FC06DA0434BC706E1FCF'.[0m
+2026-08-18 18:59:13.581482 +0000 build-r43-templates-community: .[38;5;246m20:59:13 .[96m[qb.fetch.builder-archlinux.fetch] .[38;5;246m--> Verifying tags....[0m
+2026-08-18 18:59:13.581548 +0000 build-r43-templates-community: .[38;5;246m20:59:13 .[96m[qb.fetch.builder-archlinux.fetch] .[38;5;246m---> Good tag dc64c67f9fa1f7d7aa49294abf42f70615fb087f..[0m
+2026-08-18 18:59:13.581618 +0000 build-r43-templates-community: .[38;5;246m20:59:13 .[96m[qb.fetch.builder-archlinux.fetch] .[38;5;246mEnough distinct tag signatures. Found 1, mandatory minimum is 1..[0m
+2026-08-18 18:59:13.581677 +0000 build-r43-templates-community: .[38;5;246m20:59:13 .[96m[qb.fetch.builder-archlinux.fetch] .[38;5;246m--> Merging....[0m
+2026-08-18 18:59:15.213357 +0000 build-r43-templates-community: .[38;5;246m20:59:15 .[96m[qb.fetch.builder-archlinux] .[0mLog file: /home/user/builder-templates-community-r4.3/logs/20260818T185559-builder-archlinux.log.[0m
+2026-08-18 18:59:27.531974 +0000 build-r43-templates-community: .[38;5;246m20:59:27 .[96m[qb.template.archlinux.prep] .[0mUsing executor qubes:disp4366..[0m
+2026-08-18 18:59:27.532091 +0000 build-r43-templates-community: .[38;5;246m20:59:27 .[96m[qb.template.archlinux.prep] .[38;5;246m/usr/bin/qvm-run-vm -- disp4366 env -- VERBOSE=1 DEBUG=1 BACKEND_VMM=xen DIST=archlinux DISTRIBUTION=archlinux DIST_CODENAME=archlinux DIST_NAME=archlinux DIST_VER=rolling TEMPLATE_NAME=archlinux TEMPLATE_VERSION=4.3.0 TEMPLATE_FLAVOR= TEMPLATE_OPTIONS= INSTALL_DIR=/builder/mnt ARTIFACTS_DIR=/builder/build PLUGINS_DIR=/builder/plugins PACKAGES_DIR=/builder/repository DISCARD_PREPARED_IMAGE=1 BUILDER_TURBO_MODE=1 CACHE_DIR=/builder/cache RELEASE=4.3 TEMPLATE_SCRIPTS_DIR=/builder/plugins/template/scripts TEMPLATE_ROOT_SIZE=20G TEMPLATE_ROOT_WITH_PARTITIONS=1 USE_QUBES_REPO_VERSION=4.3 USE_QUBES_REPO_TESTING=1 TEMPLATE_CONTENT_DIR=/builder/sources/builder-archlinux/template_archlinux KEYS_DIR=/builder/sources/builder-archlinux/keys ARCHLINUX_MIRROR= TEMPLATE_FLAVOR_DIR=+:/builder/sources/builder-archlinux/template_archlinux/ TEMPLATE_TIMESTAMP=202608181855 bash -c 'make -C /builder/plugins/template prepare build-rootimg'.[0m
+2026-08-18 18:59:27.612623 +0000 build-r43-templates-community: .[38;5;246m20:59:27 .[96m[qb.template.archlinux.prep] .[38;5;246mmake: Entering directory '/builder/plugins/template'.[0m
+2026-08-18 18:59:27.631565 +0000 build-r43-templates-community: .[38;5;246m20:59:27 .[96m[qb.template.archlinux.prep] .[38;5;246mBuilding template: archlinux (202608181855).[0m
+2026-08-18 18:59:27.633194 +0000 build-r43-templates-community: .[38;5;246m20:59:27 .[96m[qb.template.archlinux.prep] .[38;5;246mmkdir -p /builder/build.[0m
+2026-08-18 18:59:27.633542 +0000 build-r43-templates-community: .[38;5;246m20:59:27 .[96m[qb.template.archlinux.prep] .[38;5;246mecho 202608181855 > /builder/build/build_timestamp_archlinux.[0m
+2026-08-18 18:59:27.636064 +0000 build-r43-templates-community: .[38;5;246m20:59:27 .[96m[qb.template.archlinux.prep] .[38;5;246m# Check that required env are defined.[0m
+2026-08-18 18:59:27.638548 +0000 build-r43-templates-community: .[38;5;246m20:59:27 .[96m[qb.template.archlinux.prep] .[38;5;246msudo env -i DIST_CODENAME="archlinux" DIST_NAME="archlinux" DIST_VER="rolling" PLUGINS_DIR="/builder/plugins" ARTIFACTS_DIR="/builder/build" CACHE_DIR="/builder/cache" TEMPLATE_CONTENT_DIR="/builder/sources/builder-archlinux/template_archlinux" TEMPLATE_NAME="archlinux" TEMPLATE_VERSION="4.3.0" PACKAGES_DIR="/builder/repository" TEMPLATE_SCRIPTS_DIR="/builder/plugins/template/scripts" KEYS_DIR="/builder/sources/builder-archlinux/keys" TEMPLATE_FLAVOR="" TEMPLATE_OPTIONS="" TEMPLATE_FLAVOR_DIR="+:/builder/sources/builder-archlinux/template_archlinux/" APPMENUS_DIR="" CONFIG_DIR="" TEMPLATE_CONF="/builder/build/template.conf" VERBOSE="1" DEBUG="1" PATH="/home/user/.local/bin:/home/user/bin:/usr/local/sbin:/usr/local/bin:/usr/bin" DISCARD_PREPARED_IMAGE="1" TEMPLATE_ROOT_WITH_PARTITIONS="1" TEMPLATE_ROOT_SIZE="20G" USE_QUBES_REPO_VERSION="4.3" USE_QUBES_REPO_TESTING="1" BUILDER_TURBO_MODE="1" REPO_PROXY="" FEDORA_MIRROR="" CENTOS_MIRROR="" EPEL_MIRROR="" QUBES_MIRROR="" DEBIAN_MIRRORS="" GENTOO_MIRROR="" ARCHLINUX_MIRROR="" FLAVORS_DIR="" RELEASE="4.3" DIST="archlinux" DISTRIBUTION="archlinux" /builder/plugins/template/scripts/prepare-image /builder/build/prepared_images/archlinux.img /builder/mnt.[0m
+2026-08-18 18:59:27.667655 +0000 build-r43-templates-community: .[38;5;246m20:59:27 .[96m[qb.template.archlinux.prep] .[38;5;246m+ IMG=/builder/build/prepared_images/archlinux.img.[0m
+2026-08-18 18:59:27.667901 +0000 build-r43-templates-community: .[38;5;246m20:59:27 .[96m[qb.template.archlinux.prep] .[38;5;246m++ readlink -m /builder/mnt.[0m
+2026-08-18 18:59:27.668249 +0000 build-r43-templates-community: .[38;5;246m20:59:27 .[96m[qb.template.archlinux.prep] .[38;5;246m+ INSTALL_DIR=/builder/mnt.[0m
+2026-08-18 18:59:27.668523 +0000 build-r43-templates-community: .[38;5;246m20:59:27 .[96m[qb.template.archlinux.prep] .[38;5;246m++ dirname /builder/plugins/template/scripts/prepare-image.[0m
+2026-08-18 18:59:27.669248 +0000 build-r43-templates-community: .[38;5;246m20:59:27 .[96m[qb.template.archlinux.prep] .[38;5;246m+ BUILDER_SCRIPTS_DIR=/builder/plugins/template/scripts.[0m
+2026-08-18 18:59:27.669354 +0000 build-r43-templates-community: .[38;5;246m20:59:27 .[96m[qb.template.archlinux.prep] .[38;5;246m+ LC_ALL=POSIX.[0m
+2026-08-18 18:59:27.669575 +0000 build-r43-templates-community: .[38;5;246m20:59:27 .[96m[qb.template.archlinux.prep] .[38;5;246m+ RETCODE=0.[0m
+2026-08-18 18:59:27.669780 +0000 build-r43-templates-community: .[38;5;246m20:59:27 .[96m[qb.template.archlinux.prep] .[38;5;246m+ . /builder/plugins/template/scripts/builder-setup.[0m
+2026-08-18 18:59:27.669940 +0000 build-r43-templates-community: .[38;5;246m20:59:27 .[96m[qb.template.archlinux.prep] .[38;5;246m++ REQUIRED_ENV=(DIST_CODENAME DIST_NAME DIST_VER PLUGINS_DIR ARTIFACTS_DIR CACHE_DIR TEMPLATE_CONTENT_DIR TEMPLATE_NAME TEMPLATE_SCRIPTS_DIR KEYS_DIR).[0m
+2026-08-18 18:59:27.670136 +0000 build-r43-templates-community: .[38;5;246m20:59:27 .[96m[qb.template.archlinux.prep] .[38;5;246m++ for var in "${REQUIRED_ENV[@]}".[0m
+2026-08-18 18:59:27.670291 +0000 build-r43-templates-community: .[38;5;246m20:59:27 .[96m[qb.template.archlinux.prep] .[38;5;246m++ '[' -z archlinux ']'.[0m
+2026-08-18 18:59:27.670869 +0000 build-r43-templates-community: .[38;5;246m20:59:27 .[96m[qb.template.archlinux.prep] .[38;5;246m++ for var in "${REQUIRED_ENV[@]}".[0m
+2026-08-18 18:59:27.670906 +0000 build-r43-templates-community: .[38;5;246m20:59:27 .[96m[qb.template.archlinux.prep] .[38;5;246m++ '[' -z archlinux ']'.[0m
+2026-08-18 18:59:27.670922 +0000 build-r43-templates-community: .[38;5;246m20:59:27 .[96m[qb.template.archlinux.prep] .[38;5;246m++ for var in "${REQUIRED_ENV[@]}".[0m
+2026-08-18 18:59:27.670933 +0000 build-r43-templates-community: .[38;5;246m20:59:27 .[96m[qb.template.archlinux.prep] .[38;5;246m++ '[' -z rolling ']'.[0m
+2026-08-18 18:59:27.670981 +0000 build-r43-templates-community: .[38;5;246m20:59:27 .[96m[qb.template.archlinux.prep] .[38;5;246m++ for var in "${REQUIRED_ENV[@]}".[0m
+2026-08-18 18:59:27.671145 +0000 build-r43-templates-community: .[38;5;246m20:59:27 .[96m[qb.template.archlinux.prep] .[38;5;246m++ '[' -z /builder/plugins ']'.[0m
+2026-08-18 18:59:27.671320 +0000 build-r43-templates-community: .[38;5;246m20:59:27 .[96m[qb.template.archlinux.prep] .[38;5;246m++ for var in "${REQUIRED_ENV[@]}".[0m
+2026-08-18 18:59:27.671477 +0000 build-r43-templates-community: .[38;5;246m20:59:27 .[96m[qb.template.archlinux.prep] .[38;5;246m++ '[' -z /builder/build ']'.[0m
+2026-08-18 18:59:27.671557 +0000 build-r43-templates-community: .[38;5;246m20:59:27 .[96m[qb.template.archlinux.prep] .[38;5;246m++ for var in "${REQUIRED_ENV[@]}".[0m
+2026-08-18 18:59:27.671746 +0000 build-r43-templates-community: .[38;5;246m20:59:27 .[96m[qb.template.archlinux.prep] .[38;5;246m++ '[' -z /builder/cache ']'.[0m
+2026-08-18 18:59:27.671929 +0000 build-r43-templates-community: .[38;5;246m20:59:27 .[96m[qb.template.archlinux.prep] .[38;5;246m++ for var in "${REQUIRED_ENV[@]}".[0m
+2026-08-18 18:59:27.672092 +0000 build-r43-templates-community: .[38;5;246m20:59:27 .[96m[qb.template.archlinux.prep] .[38;5;246m++ '[' -z /builder/sources/builder-archlinux/template_archlinux ']'.[0m
+2026-08-18 18:59:27.672249 +0000 build-r43-templates-community: .[38;5;246m20:59:27 .[96m[qb.template.archlinux.prep] .[38;5;246m++ for var in "${REQUIRED_ENV[@]}".[0m
+2026-08-18 18:59:27.672387 +0000 build-r43-templates-community: .[38;5;246m20:59:27 .[96m[qb.template.archlinux.prep] .[38;5;246m++ '[' -z archlinux ']'.[0m
+2026-08-18 18:59:27.672503 +0000 build-r43-templates-community: .[38;5;246m20:59:27 .[96m[qb.template.archlinux.prep] .[38;5;246m++ for var in "${REQUIRED_ENV[@]}".[0m
+2026-08-18 18:59:27.672655 +0000 build-r43-templates-community: .[38;5;246m20:59:27 .[96m[qb.template.archlinux.prep] .[38;5;246m++ '[' -z /builder/plugins/template/scripts ']'.[0m
+2026-08-18 18:59:27.672837 +0000 build-r43-templates-community: .[38;5;246m20:59:27 .[96m[qb.template.archlinux.prep] .[38;5;246m++ for var in "${REQUIRED_ENV[@]}".[0m
+2026-08-18 18:59:27.673018 +0000 build-r43-templates-community: .[38;5;246m20:59:27 .[96m[qb.template.archlinux.prep] .[38;5;246m++ '[' -z /builder/sources/builder-archlinux/keys ']'.[0m
+2026-08-18 18:59:27.673183 +0000 build-r43-templates-community: .[38;5;246m20:59:27 .[96m[qb.template.archlinux.prep] .[38;5;246m+++ id -ur.[0m
+2026-08-18 18:59:27.673408 +0000 build-r43-templates-community: .[38;5;246m20:59:27 .[96m[qb.template.archlinux.prep] .[38;5;246m++ [[ 0 != 0 ]].[0m
+2026-08-18 18:59:27.673565 +0000 build-r43-templates-community: .[38;5;246m20:59:27 .[96m[qb.template.archlinux.prep] .[38;5;246m+ . /builder/plugins/template/scripts/umount-kill.[0m
+2026-08-18 18:59:27.673733 +0000 build-r43-templates-community: .[38;5;246m20:59:27 .[96m[qb.template.archlinux.prep] .[38;5;246m++ '[' 1 == 1 ']'.[0m
+2026-08-18 18:59:27.673933 +0000 build-r43-templates-community: .[38;5;246m20:59:27 .[96m[qb.template.archlinux.prep] .[38;5;246m++ set -x.[0m
+2026-08-18 18:59:27.674036 +0000 build-r43-templates-community: .[38;5;246m20:59:27 .[96m[qb.template.archlinux.prep] .[38;5;246m+++ basename /builder/plugins/template/scripts/prepare-image.[0m
+2026-08-18 18:59:27.674204 +0000 build-r43-templates-community: .[38;5;246m20:59:27 .[96m[qb.template.archlinux.prep] .[38;5;246m++ '[' prepare-image == umount-kill ']'.[0m
+2026-08-18 18:59:27.674360 +0000 build-r43-templates-community: .[38;5;246m20:59:27 .[96m[qb.template.archlinux.prep] .[38;5;246m+ '[' 2 -ne 2 ']'.[0m
+2026-08-18 18:59:27.674539 +0000 build-r43-templates-community: .[38;5;246m20:59:27 .[96m[qb.template.archlinux.prep] .[38;5;246m+ '[' -z 20G ']'.[0m
+2026-08-18 18:59:27.674697 +0000 build-r43-templates-community: .[38;5;246m20:59:27 .[96m[qb.template.archlinux.prep] .[38;5;246m+ mkdir -p /builder/mnt /builder/cache /builder/repository /builder/build.[0m
+2026-08-18 18:59:27.675006 +0000 build-r43-templates-community: .[38;5;246m20:59:27 .[96m[qb.template.archlinux.prep] .[38;5;246m+ export INSTALL_DIR LC_ALL IMG.[0m
+2026-08-18 18:59:27.675150 +0000 build-r43-templates-community: .[38;5;246m20:59:27 .[96m[qb.template.archlinux.prep] .[38;5;246m++ tail -1.[0m
+2026-08-18 18:59:27.675298 +0000 build-r43-templates-community: .[38;5;246m20:59:27 .[96m[qb.template.archlinux.prep] .[38;5;246m++ cut -f 1 -d ' '.[0m
+2026-08-18 18:59:27.675456 +0000 build-r43-templates-community: .[38;5;246m20:59:27 .[96m[qb.template.archlinux.prep] .[38;5;246m++ df -T /dev.[0m
+2026-08-18 18:59:27.676326 +0000 build-r43-templates-community: .[38;5;246m20:59:27 .[96m[qb.template.archlinux.prep] .[38;5;246m+ '[' devtmpfs = tmpfs ']'.[0m
+2026-08-18 18:59:27.676358 +0000 build-r43-templates-community: .[38;5;246m20:59:27 .[96m[qb.template.archlinux.prep] .[38;5;246m+ DIST_TO_STR=archlinux+.[0m
+2026-08-18 18:59:27.676567 +0000 build-r43-templates-community: .[38;5;246m20:59:27 .[96m[qb.template.archlinux.prep] .[38;5;246m+ '[' 0 -gt 0 ']'.[0m
+2026-08-18 18:59:27.676758 +0000 build-r43-templates-community: .[38;5;246m20:59:27 .[96m[qb.template.archlinux.prep] .[38;5;246m+ echo 'INFO: Preparing installation of archlinux+ template...'.[0m
+2026-08-18 18:59:27.676980 +0000 build-r43-templates-community: .[38;5;246m20:59:27 .[96m[qb.template.archlinux.prep] .[38;5;246m+ /builder/sources/builder-archlinux/template_archlinux/00_prepare.sh.[0m
+2026-08-18 18:59:27.677191 +0000 build-r43-templates-community: .[38;5;246m20:59:27 .[96m[qb.template.archlinux.prep] .[38;5;246mINFO: Preparing installation of archlinux+ template....[0m
+2026-08-18 18:59:27.677587 +0000 build-r43-templates-community: .[38;5;246m20:59:27 .[96m[qb.template.archlinux.prep] .[38;5;246m+ '[' 00 -eq 1 ']'.[0m
+2026-08-18 18:59:27.678422 +0000 build-r43-templates-community: .[38;5;246m20:59:27 .[96m[qb.template.archlinux.prep] .[38;5;246m+ echo '--> Archlinux 00_prepare.sh'.[0m
+2026-08-18 18:59:27.678455 +0000 build-r43-templates-community: .[38;5;246m20:59:27 .[96m[qb.template.archlinux.prep] .[38;5;246m+ [[ -n x ]].[0m
+2026-08-18 18:59:27.678472 +0000 build-r43-templates-community: .[38;5;246m20:59:27 .[96m[qb.template.archlinux.prep] .[38;5;246m--> Archlinux 00_prepare.sh.[0m
+2026-08-18 18:59:27.678500 +0000 build-r43-templates-community: .[38;5;246m20:59:27 .[96m[qb.template.archlinux.prep] .[38;5;246m+ export https_proxy= http_proxy=.[0m
+2026-08-18 18:59:27.678512 +0000 build-r43-templates-community: .[38;5;246m20:59:27 .[96m[qb.template.archlinux.prep] .[38;5;246m+ https_proxy=.[0m
+2026-08-18 18:59:27.678524 +0000 build-r43-templates-community: .[38;5;246m20:59:27 .[96m[qb.template.archlinux.prep] .[38;5;246m+ http_proxy=.[0m
+2026-08-18 18:59:27.678538 +0000 build-r43-templates-community: .[38;5;246m20:59:27 .[96m[qb.template.archlinux.prep] .[38;5;246m+ ARCHLINUX_SRC_PREFIX=https://mirrors.edge.kernel.org/archlinux.[0m
+2026-08-18 18:59:27.679892 +0000 build-r43-templates-community: .[38;5;246m20:59:27 .[96m[qb.template.archlinux.prep] .[38;5;246m++ grep -o 'archlinux-bootstrap-[0-9.]*-x86_64\.tar\.[a-z]*'.[0m
+2026-08-18 18:59:27.680033 +0000 build-r43-templates-community: .[38;5;246m20:59:27 .[96m[qb.template.archlinux.prep] .[38;5;246m++ head -1.[0m
+2026-08-18 18:59:27.680263 +0000 build-r43-templates-community: .[38;5;246m20:59:27 .[96m[qb.template.archlinux.prep] .[38;5;246m++ wget -O- https://mirrors.edge.kernel.org/archlinux/iso/latest/sha256sums.txt.[0m
+2026-08-18 18:59:30.464066 +0000 build-r43-templates-community: .[38;5;246m20:59:30 .[96m[qb.template.archlinux.prep] .[38;5;246mFailed to resolve 'mirrors.edge.kernel.org' (Name or service not known).[0m
+2026-08-18 18:59:30.464328 +0000 build-r43-templates-community: .[38;5;246m20:59:30 .[96m[qb.template.archlinux.prep] .[38;5;246mFailed to connect: Connect error.[0m
+2026-08-18 18:59:30.467094 +0000 build-r43-templates-community: .[38;5;246m20:59:30 .[96m[qb.template.archlinux.prep] .[38;5;246m+ BOOTSTRAP_TARBALL=.[0m
+2026-08-18 18:59:30.471218 +0000 build-r43-templates-community: .[38;5;246m20:59:30 .[96m[qb.template.archlinux.prep] .[38;5;246mmake: *** [Makefile:69: build-rootimg-prepare] Error 1.[0m
+2026-08-18 18:59:30.471279 +0000 build-r43-templates-community: .[38;5;246m20:59:30 .[96m[qb.template.archlinux.prep] .[38;5;246mmake: Leaving directory '/builder/plugins/template'.[0m
+2026-08-18 18:59:31.959634 +0000 > closing log
