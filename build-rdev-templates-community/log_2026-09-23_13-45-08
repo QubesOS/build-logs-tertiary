@@ -1,0 +1,64 @@
+2026-09-23 13:45:08.936868 +0000 > starting log
+2026-09-23 13:45:08.937501 +0000 build-rdev-templates-community: + keyring_path=/home/user/.config/qubes-builder-github/trusted-keys-for-commands.gpg
+2026-09-23 13:45:08.937520 +0000 build-rdev-templates-community: + scripts_dir=/usr/local/lib/qubes-builder-github
+2026-09-23 13:45:08.937530 +0000 build-rdev-templates-community: + '[' /usr/local/lib/qubes-builder-github/keys -nt /home/user/.config/qubes-builder-github/trusted-keys-for-commands.gpg ']'
+2026-09-23 13:45:08.937536 +0000 build-rdev-templates-community: + . /usr/local/lib/qubes-builder-github/lib/functions.sh
+2026-09-23 13:45:08.937541 +0000 build-rdev-templates-community: ++ config_file=/home/user/.config/qubes-builder-github/builders.list
+2026-09-23 13:45:08.937546 +0000 build-rdev-templates-community: ++ '[' -z /home/user/builder-github-logs/1790171108-1082 ']'
+2026-09-23 13:45:08.937551 +0000 build-rdev-templates-community: +++ mktemp -d
+2026-09-23 13:45:08.937555 +0000 build-rdev-templates-community: ++ tmpdir=/tmp/tmp.sErrOHpnku
+2026-09-23 13:45:08.937560 +0000 build-rdev-templates-community: ++ trap 'rm -rf $tmpdir' EXIT
+2026-09-23 13:45:08.937578 +0000 build-rdev-templates-community: ++ command -v mkmetalink
+2026-09-23 13:45:08.937588 +0000 build-rdev-templates-community: /home/user/.local/bin/mkmetalink
+2026-09-23 13:45:08.937610 +0000 build-rdev-templates-community: + command_signer=
+2026-09-23 13:45:08.937626 +0000 build-rdev-templates-community: + read_stdin_command_and_verify_signature /usr/local/lib/qubes-builder-github /home/user/.config/qubes-builder-github/trusted-keys-for-commands.gpg /tmp/tmp.sErrOHpnku/command command_signer
+2026-09-23 13:45:08.937633 +0000 build-rdev-templates-community: + local fpr python_script_path local_keyring_path local_output_file local_signer
+2026-09-23 13:45:08.937637 +0000 build-rdev-templates-community: + '[' 4 -ne 4 ']'
+2026-09-23 13:45:08.937642 +0000 build-rdev-templates-community: + python_script_path=/usr/local/lib/qubes-builder-github
+2026-09-23 13:45:08.937648 +0000 build-rdev-templates-community: + local_keyring_path=/home/user/.config/qubes-builder-github/trusted-keys-for-commands.gpg
+2026-09-23 13:45:08.937653 +0000 build-rdev-templates-community: + local_output_file=/tmp/tmp.sErrOHpnku/command
+2026-09-23 13:45:08.937657 +0000 build-rdev-templates-community: + local_signer=command_signer
+2026-09-23 13:45:08.937663 +0000 build-rdev-templates-community: + '[' -r /home/user/.config/qubes-builder-github/trusted-keys-for-commands.gpg ']'
+2026-09-23 13:45:08.937667 +0000 build-rdev-templates-community: + '[' -d /tmp/tmp.sErrOHpnku ']'
+2026-09-23 13:45:08.937674 +0000 build-rdev-templates-community: + /usr/local/lib/qubes-builder-github/utils/parse-command /tmp/tmp.sErrOHpnku/untrusted_command /tmp/tmp.sErrOHpnku/untrusted_command.sig
+2026-09-23 13:45:08.937678 +0000 build-rdev-templates-community: + exec
+2026-09-23 13:45:08.937683 +0000 build-rdev-templates-community: + '[' '!' -r /tmp/tmp.sErrOHpnku/untrusted_command ']'
+2026-09-23 13:45:08.937687 +0000 build-rdev-templates-community: + '[' '!' -r /tmp/tmp.sErrOHpnku/untrusted_command.sig ']'
+2026-09-23 13:45:08.937691 +0000 build-rdev-templates-community: ++ date --iso-8601=seconds -d tomorrow
+2026-09-23 13:45:08.937696 +0000 build-rdev-templates-community: + future=2026-09-24T15:45:08+02:00
+2026-09-23 13:45:08.937704 +0000 build-rdev-templates-community: ++ sqv --not-after 2026-09-24T15:45:08+02:00 --keyring /home/user/.config/qubes-builder-github/trusted-keys-for-commands.gpg -- /tmp/tmp.sErrOHpnku/untrusted_command.sig /tmp/tmp.sErrOHpnku/untrusted_command
+2026-09-23 13:45:08.937709 +0000 build-rdev-templates-community: + fpr=17B7CC1986BD3D28C41475B6846D6B709C6E2E7F
+2026-09-23 13:45:08.937713 +0000 build-rdev-templates-community: + [[ 17B7CC1986BD3D28C41475B6846D6B709C6E2E7F =~ ^[A-F0-9]{40}$ ]]
+2026-09-23 13:45:08.937718 +0000 build-rdev-templates-community: + '[' -n command_signer ']'
+2026-09-23 13:45:08.937722 +0000 build-rdev-templates-community: + eval 'command_signer=$fpr'
+2026-09-23 13:45:08.937726 +0000 build-rdev-templates-community: ++ command_signer=17B7CC1986BD3D28C41475B6846D6B709C6E2E7F
+2026-09-23 13:45:08.937731 +0000 build-rdev-templates-community: + rm -f /tmp/tmp.sErrOHpnku/gpg-status
+2026-09-23 13:45:08.937735 +0000 build-rdev-templates-community: + head -n 1 /tmp/tmp.sErrOHpnku/untrusted_command
+2026-09-23 13:45:08.937739 +0000 build-rdev-templates-community: + echo ''
+2026-09-23 13:45:08.937743 +0000 build-rdev-templates-community: + printf 'Command: '
+2026-09-23 13:45:08.937748 +0000 build-rdev-templates-community: Command: + cat /tmp/tmp.sErrOHpnku/command
+2026-09-23 13:45:08.937752 +0000 build-rdev-templates-community: Build-iso rdevel devel.202609231000 202609231000
+2026-09-23 13:45:08.937757 +0000 build-rdev-templates-community: + trap 'rc=$?; rm -rf "$tmpdir"; [ "$rc" -eq 0 ] || upload_command_log' EXIT
+2026-09-23 13:45:08.937765 +0000 build-rdev-templates-community: + read -r action args
+2026-09-23 13:45:08.937769 +0000 build-rdev-templates-community: + case "$action" in
+2026-09-23 13:45:08.937777 +0000 build-rdev-templates-community: + /usr/local/lib/qubes-builder-github/github-command.py dispatch --command-log /home/user/builder-github-logs/1790171108-1082.log --signer-fpr 17B7CC1986BD3D28C41475B6846D6B709C6E2E7F Build-iso /tmp/tmp.sErrOHpnku/command
+2026-09-23 13:45:08.937782 +0000 build-rdev-templates-community: Traceback (most recent call last):
+2026-09-23 13:45:08.937787 +0000 build-rdev-templates-community:   File "/usr/local/lib/qubes-builder-github/github-command.py", line 706, in <module>
+2026-09-23 13:45:08.937791 +0000 build-rdev-templates-community:     main()
+2026-09-23 13:45:08.937795 +0000 build-rdev-templates-community:     ~~~~^^
+2026-09-23 13:45:08.937800 +0000 build-rdev-templates-community:   File "/usr/local/lib/qubes-builder-github/github-command.py", line 701, in main
+2026-09-23 13:45:08.937804 +0000 build-rdev-templates-community:     args.func(args)
+2026-09-23 13:45:08.937808 +0000 build-rdev-templates-community:     ~~~~~~~~~^^^^^^
+2026-09-23 13:45:08.937813 +0000 build-rdev-templates-community:   File "/usr/local/lib/qubes-builder-github/github-command.py", line 161, in _run_dispatch
+2026-09-23 13:45:08.937818 +0000 build-rdev-templates-community:     raise GithubCommandError(
+2026-09-23 13:45:08.937824 +0000 build-rdev-templates-community:         f"Timestamp outside of allowed range (min: {timestamp_min}, max: {timestamp_max}, current={timestamp})"
+2026-09-23 13:45:08.937827 +0000 build-rdev-templates-community:     )
+2026-09-23 13:45:08.937834 +0000 build-rdev-templates-community: GithubCommandError: Timestamp outside of allowed range (min: 2026-09-23 12:45:08.923640+00:00, max: 2026-09-23 13:50:08.923640+00:00, current=2026-09-23 10:00:00+00:00)
+2026-09-23 13:45:08.937842 +0000 build-rdev-templates-community: 2026-09-23 15:45:08,924 [github-command] ERROR: Timestamp outside of allowed range (min: 2026-09-23 12:45:08.923640+00:00, max: 2026-09-23 13:50:08.923640+00:00, current=2026-09-23 10:00:00+00:00)
+2026-09-23 13:45:08.937846 +0000 build-rdev-templates-community: + rc=1
+2026-09-23 13:45:08.937850 +0000 build-rdev-templates-community: + rm -rf /tmp/tmp.sErrOHpnku
+2026-09-23 13:45:08.937854 +0000 build-rdev-templates-community: + '[' 1 -eq 0 ']'
+2026-09-23 13:45:08.937858 +0000 build-rdev-templates-community: + upload_command_log
+2026-09-23 13:45:08.937863 +0000 build-rdev-templates-community: + '[' -s /home/user/builder-github-logs/1790171108-1082.log ']'
+2026-09-23 13:45:08.937867 +0000 build-rdev-templates-community: + qrexec-client-vm dom0 qubesbuilder.BuildLog
+2026-09-23 13:45:08.937874 +0000 > closing log
