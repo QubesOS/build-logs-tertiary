@@ -1,0 +1,24 @@
+2026-09-24 12:35:14.523158 +0000 > starting log
+2026-09-24 12:35:14.523389 +0000 build-rdev-templates-community: .[38;5;246m14:35:14 .[96m[qb] .[38;5;246m> starting build with log.[0m
+2026-09-24 12:35:14.523408 +0000 build-rdev-templates-community: .[38;5;246m14:35:14 .[96m[qb] .[38;5;246m>> args:.[0m
+2026-09-24 12:35:14.523417 +0000 build-rdev-templates-community: .[38;5;246m14:35:14 .[96m[qb] .[38;5;246m>>   ().[0m
+2026-09-24 12:35:14.523423 +0000 build-rdev-templates-community: .[38;5;246m14:35:14 .[96m[qb] .[38;5;246m>> component:.[0m
+2026-09-24 12:35:14.523429 +0000 build-rdev-templates-community: .[38;5;246m14:35:14 .[96m[qb] .[38;5;246m>>   builder-debian.[0m
+2026-09-24 12:35:14.523435 +0000 build-rdev-templates-community: .[38;5;246m14:35:14 .[96m[qb] .[38;5;246m>>     commit-hash: ec20a08b9347fbc08d4fabfbd888f3ce54c78f31.[0m
+2026-09-24 12:35:14.523444 +0000 build-rdev-templates-community: .[38;5;246m14:35:14 .[96m[qb] .[38;5;246m>>     source-hash: e2b0f41034a79bc2cf593b22367db34e67b286c49e2587a435f791901336b41650a3bef2ee126a367492cf33df6ac50eb3e6ceb81e2523355e45a9322ec9cc0f.[0m
+2026-09-24 12:35:14.523450 +0000 build-rdev-templates-community: .[38;5;246m14:35:14 .[96m[qb] .[38;5;246m>> distributions:.[0m
+2026-09-24 12:35:14.523455 +0000 build-rdev-templates-community: .[38;5;246m14:35:14 .[96m[qb] .[38;5;246m>>   [].[0m
+2026-09-24 12:35:14.523460 +0000 build-rdev-templates-community: .[38;5;246m14:35:14 .[96m[qb] .[0mRunning stages: fetch.[0m
+2026-09-24 12:35:14.537297 +0000 build-rdev-templates-community: .[38;5;246m14:35:14 .[96m[qb.fetch.builder-debian] .[0mbuilder-debian: source already fetched. Updating..[0m
+2026-09-24 12:35:24.353467 +0000 build-rdev-templates-community: .[38;5;246m14:35:24 .[96m[qb.fetch.builder-debian.fetch] .[0mUsing executor qubes:disp6120..[0m
+2026-09-24 12:35:24.353537 +0000 build-rdev-templates-community: .[38;5;246m14:35:24 .[96m[qb.fetch.builder-debian.fetch] .[38;5;246m/usr/bin/qvm-run-vm -- disp6120 env -- VERBOSE=1 DEBUG=1 BACKEND_VMM=xen bash -c 'cd /builder && /builder/plugins/fetch/scripts/get-and-verify-source.py https://github.com/QubesOS/qubes-builder-debian.git /builder/builder-debian /builder/keyring /builder/plugins/fetch/keys --git-branch main --minimum-distinct-maintainers 1 --maintainer 0064428F455451B3EBE78A7F063938BA42CFA724 --maintainer 274E12AB03F2FE293765FC06DA0434BC706E1FCF'.[0m
+2026-09-24 12:35:26.405854 +0000 build-rdev-templates-community: .[38;5;246m14:35:26 .[96m[qb.fetch.builder-debian.fetch] .[38;5;246m--> Verifying tags....[0m
+2026-09-24 12:35:26.405903 +0000 build-rdev-templates-community: .[38;5;246m14:35:26 .[96m[qb.fetch.builder-debian.fetch] .[38;5;246m---> Good tag 24c659c0f15d7d5dd2f1863334c5933b98daab74..[0m
+2026-09-24 12:35:26.405947 +0000 build-rdev-templates-community: .[38;5;246m14:35:26 .[96m[qb.fetch.builder-debian.fetch] .[38;5;246mEnough distinct tag signatures. Found 1, mandatory minimum is 1..[0m
+2026-09-24 12:35:26.405970 +0000 build-rdev-templates-community: .[38;5;246m14:35:26 .[96m[qb.fetch.builder-debian.fetch] .[38;5;246m--> Merging....[0m
+2026-09-24 12:35:28.268517 +0000 build-rdev-templates-community: .[38;5;246m14:35:28 .[96m[qb.fetch.builder-debian] .[0mLog file: /home/user/builder-templates-community-rdevel/logs/20260924T123509-builder-debian.log.[0m
+2026-09-24 12:35:28.283186 +0000 build-rdev-templates-community: .[38;5;246m14:35:28 .[96m[qb.fetch.builder-debian] .[38;5;246m['cd -- /builder', "git -C /builder/builder-debian rev-parse 'HEAD^{}' >> hash", "git -C /builder/builder-debian tag --points-at HEAD --list 'v*' >> vtags"].[0m
+2026-09-24 12:35:39.013033 +0000 build-rdev-templates-community: .[38;5;246m14:35:39 .[96m[qb.fetch.builder-debian.fetch] .[0mUsing executor qubes:disp4113..[0m
+2026-09-24 12:35:39.013086 +0000 build-rdev-templates-community: .[38;5;246m14:35:39 .[96m[qb.fetch.builder-debian.fetch] .[38;5;246m/usr/bin/qvm-run-vm -- disp4113 env -- VERBOSE=1 DEBUG=1 BACKEND_VMM=xen bash -c 'cd -- /builder && git -C /builder/builder-debian rev-parse '"'"'HEAD^{}'"'"' >> hash && git -C /builder/builder-debian tag --points-at HEAD --list '"'"'v*'"'"' >> vtags'.[0m
+2026-09-24 12:35:40.332660 +0000 build-rdev-templates-community: .[38;5;246m14:35:40 .[96m[qb] .[38;5;246m> done.[0m
+2026-09-24 12:35:40.332715 +0000 > closing log
