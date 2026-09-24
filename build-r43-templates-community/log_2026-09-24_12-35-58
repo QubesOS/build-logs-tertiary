@@ -1,0 +1,21 @@
+2026-09-24 12:35:58.864234 +0000 > starting log
+2026-09-24 12:35:58.864827 +0000 build-r43-templates-community: .[38;5;246m14:35:58 .[96m[qb] .[38;5;246m> starting build with log.[0m
+2026-09-24 12:35:58.864846 +0000 build-r43-templates-community: .[38;5;246m14:35:58 .[96m[qb] .[38;5;246m>> args:.[0m
+2026-09-24 12:35:58.864855 +0000 build-r43-templates-community: .[38;5;246m14:35:58 .[96m[qb] .[38;5;246m>>   ().[0m
+2026-09-24 12:35:58.864862 +0000 build-r43-templates-community: .[38;5;246m14:35:58 .[96m[qb] .[38;5;246m>> component:.[0m
+2026-09-24 12:35:58.864868 +0000 build-r43-templates-community: .[38;5;246m14:35:58 .[96m[qb] .[38;5;246m>>   builder-debian.[0m
+2026-09-24 12:35:58.864874 +0000 build-r43-templates-community: .[38;5;246m14:35:58 .[96m[qb] .[38;5;246m>>     commit-hash: aae65a00d1a18ca685b540ecfb252bcf32e0554c.[0m
+2026-09-24 12:35:58.864883 +0000 build-r43-templates-community: .[38;5;246m14:35:58 .[96m[qb] .[38;5;246m>>     source-hash: 17af23533b84d981138690e49f9d272eae2985814d7ad0bf03688dfd913ffe09f72470128a756bd367aa6d31ec01809d29db2007a73ccd05fe345ae354b6c88b.[0m
+2026-09-24 12:35:58.864889 +0000 build-r43-templates-community: .[38;5;246m14:35:58 .[96m[qb] .[38;5;246m>> distributions:.[0m
+2026-09-24 12:35:58.864899 +0000 build-r43-templates-community: .[38;5;246m14:35:58 .[96m[qb] .[38;5;246m>>   [].[0m
+2026-09-24 12:35:58.864905 +0000 build-r43-templates-community: .[38;5;246m14:35:58 .[96m[qb] .[0mRunning stages: fetch.[0m
+2026-09-24 12:35:58.864945 +0000 build-r43-templates-community: .[38;5;246m14:35:58 .[96m[qb.fetch.builder-debian] .[0mbuilder-debian: source already fetched. Updating..[0m
+2026-09-24 12:36:08.123768 +0000 build-r43-templates-community: .[38;5;246m14:36:08 .[96m[qb.fetch.builder-debian.fetch] .[0mUsing executor qubes:disp6851..[0m
+2026-09-24 12:36:08.123838 +0000 build-r43-templates-community: .[38;5;246m14:36:08 .[96m[qb.fetch.builder-debian.fetch] .[38;5;246m/usr/bin/qvm-run-vm -- disp6851 env -- VERBOSE=1 DEBUG=1 BACKEND_VMM=xen bash -c 'cd /builder && /builder/plugins/fetch/scripts/get-and-verify-source.py https://github.com/QubesOS/qubes-builder-debian.git /builder/builder-debian /builder/keyring /builder/plugins/fetch/keys --git-branch main --minimum-distinct-maintainers 1 --maintainer 0064428F455451B3EBE78A7F063938BA42CFA724 --maintainer 274E12AB03F2FE293765FC06DA0434BC706E1FCF'.[0m
+2026-09-24 12:36:12.977546 +0000 build-r43-templates-community: .[38;5;246m14:36:12 .[96m[qb.fetch.builder-debian.fetch] .[38;5;246m--> Verifying tags....[0m
+2026-09-24 12:36:12.979244 +0000 build-r43-templates-community: .[38;5;246m14:36:12 .[96m[qb.fetch.builder-debian.fetch] .[38;5;246m---> Good tag 24c659c0f15d7d5dd2f1863334c5933b98daab74..[0m
+2026-09-24 12:36:12.979283 +0000 build-r43-templates-community: .[38;5;246m14:36:12 .[96m[qb.fetch.builder-debian.fetch] .[38;5;246mEnough distinct tag signatures. Found 1, mandatory minimum is 1..[0m
+2026-09-24 12:36:12.979380 +0000 build-r43-templates-community: .[38;5;246m14:36:12 .[96m[qb.fetch.builder-debian.fetch] .[38;5;246m--> Merging....[0m
+2026-09-24 12:36:14.268930 +0000 build-r43-templates-community: .[38;5;246m14:36:14 .[96m[qb.fetch.builder-debian] .[0mLog file: /home/user/builder-templates-community-r4.3/logs/20260924T123558-builder-debian.log.[0m
+2026-09-24 12:36:14.290245 +0000 build-r43-templates-community: .[38;5;246m14:36:14 .[96m[qb] .[38;5;246m> done.[0m
+2026-09-24 12:36:14.290281 +0000 > closing log
