@@ -1,0 +1,21 @@
+2026-10-22 18:11:31.791155 +0000 > starting log
+2026-10-22 18:11:31.791910 +0000 build-rdev-templates-community: .[38;5;246m20:11:31 .[96m[qb] .[38;5;246m> starting build with log.[0m
+2026-10-22 18:11:31.791932 +0000 build-rdev-templates-community: .[38;5;246m20:11:31 .[96m[qb] .[38;5;246m>> args:.[0m
+2026-10-22 18:11:31.791942 +0000 build-rdev-templates-community: .[38;5;246m20:11:31 .[96m[qb] .[38;5;246m>>   ().[0m
+2026-10-22 18:11:31.791949 +0000 build-rdev-templates-community: .[38;5;246m20:11:31 .[96m[qb] .[38;5;246m>> component:.[0m
+2026-10-22 18:11:31.791955 +0000 build-rdev-templates-community: .[38;5;246m20:11:31 .[96m[qb] .[38;5;246m>>   builder-archlinux.[0m
+2026-10-22 18:11:31.791963 +0000 build-rdev-templates-community: .[38;5;246m20:11:31 .[96m[qb] .[38;5;246m>>     commit-hash: 70c648acbbdde72c50d35173c6bf833861dba653.[0m
+2026-10-22 18:11:31.791972 +0000 build-rdev-templates-community: .[38;5;246m20:11:31 .[96m[qb] .[38;5;246m>>     source-hash: ff81c88c89942d9100851ae8c0850b37175d2f6b9aa7053a2d9361b466391bdddc8d0892f70fb18fdf2a811af409108a60ba87f3309057dd043bb21221a1e1b0.[0m
+2026-10-22 18:11:31.791978 +0000 build-rdev-templates-community: .[38;5;246m20:11:31 .[96m[qb] .[38;5;246m>> distributions:.[0m
+2026-10-22 18:11:31.791984 +0000 build-rdev-templates-community: .[38;5;246m20:11:31 .[96m[qb] .[38;5;246m>>   [].[0m
+2026-10-22 18:11:31.792003 +0000 build-rdev-templates-community: .[38;5;246m20:11:31 .[96m[qb] .[0mRunning stages: fetch.[0m
+2026-10-22 18:11:31.792018 +0000 build-rdev-templates-community: .[38;5;246m20:11:31 .[96m[qb.fetch.builder-archlinux] .[0mbuilder-archlinux: source already fetched. Updating..[0m
+2026-10-22 18:11:41.900007 +0000 build-rdev-templates-community: .[38;5;246m20:11:41 .[96m[qb.fetch.builder-archlinux.fetch] .[0mUsing executor qubes:disp2595..[0m
+2026-10-22 18:11:41.900076 +0000 build-rdev-templates-community: .[38;5;246m20:11:41 .[96m[qb.fetch.builder-archlinux.fetch] .[38;5;246m/usr/bin/qvm-run-vm -- disp2595 env -- VERBOSE=1 DEBUG=1 BACKEND_VMM=xen bash -c 'cd /builder && /builder/plugins/fetch/scripts/get-and-verify-source.py https://github.com/QubesOS/qubes-builder-archlinux.git /builder/builder-archlinux /builder/keyring /builder/plugins/fetch/keys --git-branch main --minimum-distinct-maintainers 1 --maintainer 0064428F455451B3EBE78A7F063938BA42CFA724 --maintainer 274E12AB03F2FE293765FC06DA0434BC706E1FCF'.[0m
+2026-10-22 18:11:43.591793 +0000 build-rdev-templates-community: .[38;5;246m20:11:43 .[96m[qb.fetch.builder-archlinux.fetch] .[38;5;246m--> Verifying tags....[0m
+2026-10-22 18:11:43.591845 +0000 build-rdev-templates-community: .[38;5;246m20:11:43 .[96m[qb.fetch.builder-archlinux.fetch] .[38;5;246m---> Good tag 1d626a810d4a72493593836e670c9d31a2da2810..[0m
+2026-10-22 18:11:43.591869 +0000 build-rdev-templates-community: .[38;5;246m20:11:43 .[96m[qb.fetch.builder-archlinux.fetch] .[38;5;246mEnough distinct tag signatures. Found 1, mandatory minimum is 1..[0m
+2026-10-22 18:11:43.591880 +0000 build-rdev-templates-community: .[38;5;246m20:11:43 .[96m[qb.fetch.builder-archlinux.fetch] .[38;5;246m--> Merging....[0m
+2026-10-22 18:11:45.021950 +0000 build-rdev-templates-community: .[38;5;246m20:11:44 .[96m[qb.fetch.builder-archlinux] .[0mLog file: /home/user/builder-templates-community-rdevel/logs/20261022T181131-builder-archlinux.log.[0m
+2026-10-22 18:11:45.031269 +0000 build-rdev-templates-community: .[38;5;246m20:11:44 .[96m[qb] .[38;5;246m> done.[0m
+2026-10-22 18:11:45.031298 +0000 > closing log
