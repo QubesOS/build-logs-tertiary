@@ -1,0 +1,65 @@
+2026-11-06 13:53:44.888992 +0000 > starting log
+2026-11-06 13:53:44.889200 +0000 build-templates-community: + keyring_path=/home/user/.config/qubes-builder-github/trusted-keys-for-commands.gpg
+2026-11-06 13:53:44.889224 +0000 build-templates-community: + scripts_dir=/usr/local/lib/qubes-builder-github
+2026-11-06 13:53:44.889237 +0000 build-templates-community: + '[' /usr/local/lib/qubes-builder-github/keys -nt /home/user/.config/qubes-builder-github/trusted-keys-for-commands.gpg ']'
+2026-11-06 13:53:44.889245 +0000 build-templates-community: + . /usr/local/lib/qubes-builder-github/lib/functions.sh
+2026-11-06 13:53:44.889252 +0000 build-templates-community: ++ config_file=/home/user/.config/qubes-builder-github/builders.list
+2026-11-06 13:53:44.889258 +0000 build-templates-community: ++ '[' -z /home/user/builder-github-logs/1793973224-1523 ']'
+2026-11-06 13:53:44.889262 +0000 build-templates-community: +++ mktemp -d
+2026-11-06 13:53:44.889268 +0000 build-templates-community: ++ tmpdir=/tmp/tmp.QggnHayumJ
+2026-11-06 13:53:44.889273 +0000 build-templates-community: ++ trap 'rm -rf $tmpdir' EXIT
+2026-11-06 13:53:44.889278 +0000 build-templates-community: ++ command -v mkmetalink
+2026-11-06 13:53:44.889712 +0000 build-templates-community: /home/user/.local/bin/mkmetalink
+2026-11-06 13:53:44.889721 +0000 build-templates-community: + command_signer=
+2026-11-06 13:53:44.889733 +0000 build-templates-community: + read_stdin_command_and_verify_signature /usr/local/lib/qubes-builder-github /home/user/.config/qubes-builder-github/trusted-keys-for-commands.gpg /tmp/tmp.QggnHayumJ/command command_signer
+2026-11-06 13:53:44.889740 +0000 build-templates-community: + local fpr python_script_path local_keyring_path local_output_file local_signer
+2026-11-06 13:53:44.889745 +0000 build-templates-community: + '[' 4 -ne 4 ']'
+2026-11-06 13:53:44.889750 +0000 build-templates-community: + python_script_path=/usr/local/lib/qubes-builder-github
+2026-11-06 13:53:44.889756 +0000 build-templates-community: + local_keyring_path=/home/user/.config/qubes-builder-github/trusted-keys-for-commands.gpg
+2026-11-06 13:53:44.889761 +0000 build-templates-community: + local_output_file=/tmp/tmp.QggnHayumJ/command
+2026-11-06 13:53:44.889766 +0000 build-templates-community: + local_signer=command_signer
+2026-11-06 13:53:44.889772 +0000 build-templates-community: + '[' -r /home/user/.config/qubes-builder-github/trusted-keys-for-commands.gpg ']'
+2026-11-06 13:53:44.889776 +0000 build-templates-community: + '[' -d /tmp/tmp.QggnHayumJ ']'
+2026-11-06 13:53:44.889784 +0000 build-templates-community: + /usr/local/lib/qubes-builder-github/utils/parse-command /tmp/tmp.QggnHayumJ/untrusted_command /tmp/tmp.QggnHayumJ/untrusted_command.sig
+2026-11-06 13:53:44.889788 +0000 build-templates-community: + exec
+2026-11-06 13:53:44.889793 +0000 build-templates-community: + '[' '!' -r /tmp/tmp.QggnHayumJ/untrusted_command ']'
+2026-11-06 13:53:44.889798 +0000 build-templates-community: + '[' '!' -r /tmp/tmp.QggnHayumJ/untrusted_command.sig ']'
+2026-11-06 13:53:44.889803 +0000 build-templates-community: ++ date --iso-8601=seconds -d tomorrow
+2026-11-06 13:53:44.889808 +0000 build-templates-community: + future=2026-11-07T14:53:44+01:00
+2026-11-06 13:53:44.889819 +0000 build-templates-community: ++ sqv --not-after 2026-11-07T14:53:44+01:00 --keyring /home/user/.config/qubes-builder-github/trusted-keys-for-commands.gpg -- /tmp/tmp.QggnHayumJ/untrusted_command.sig /tmp/tmp.QggnHayumJ/untrusted_command
+2026-11-06 13:53:44.889825 +0000 build-templates-community: + fpr=916B8D99C38EAF5E8ADC7A2A8D66066A2EEACCDA
+2026-11-06 13:53:44.889831 +0000 build-templates-community: + [[ 916B8D99C38EAF5E8ADC7A2A8D66066A2EEACCDA =~ ^[A-F0-9]{40}$ ]]
+2026-11-06 13:53:44.889835 +0000 build-templates-community: + '[' -n command_signer ']'
+2026-11-06 13:53:44.889840 +0000 build-templates-community: + eval 'command_signer=$fpr'
+2026-11-06 13:53:44.889845 +0000 build-templates-community: ++ command_signer=916B8D99C38EAF5E8ADC7A2A8D66066A2EEACCDA
+2026-11-06 13:53:44.889849 +0000 build-templates-community: + rm -f /tmp/tmp.QggnHayumJ/gpg-status
+2026-11-06 13:53:44.889854 +0000 build-templates-community: + head -n 1 /tmp/tmp.QggnHayumJ/untrusted_command
+2026-11-06 13:53:44.889858 +0000 build-templates-community: + echo ''
+2026-11-06 13:53:44.889863 +0000 build-templates-community: + printf 'Command: '
+2026-11-06 13:53:44.889868 +0000 build-templates-community: Command: + cat /tmp/tmp.QggnHayumJ/command
+2026-11-06 13:53:44.889873 +0000 build-templates-community: Build-template r4.3 kicksecure-18 202611061209
+2026-11-06 13:53:44.889877 +0000 build-templates-community: 
+2026-11-06 13:53:44.889883 +0000 build-templates-community: + trap 'rc=$?; rm -rf "$tmpdir"; [ "$rc" -eq 0 ] || upload_command_log' EXIT
+2026-11-06 13:53:44.889888 +0000 build-templates-community: + read -r action args
+2026-11-06 13:53:44.889892 +0000 build-templates-community: + case "$action" in
+2026-11-06 13:53:44.889902 +0000 build-templates-community: + /usr/local/lib/qubes-builder-github/github-command.py dispatch --command-log /home/user/builder-github-logs/1793973224-1523.log --signer-fpr 916B8D99C38EAF5E8ADC7A2A8D66066A2EEACCDA Build-template /tmp/tmp.QggnHayumJ/command
+2026-11-06 13:53:44.889907 +0000 build-templates-community: Traceback (most recent call last):
+2026-11-06 13:53:44.889913 +0000 build-templates-community:   File "/usr/local/lib/qubes-builder-github/github-command.py", line 706, in <module>
+2026-11-06 13:53:44.889918 +0000 build-templates-community:     main()
+2026-11-06 13:53:44.889924 +0000 build-templates-community:     ~~~~^^
+2026-11-06 13:53:44.889930 +0000 build-templates-community:   File "/usr/local/lib/qubes-builder-github/github-command.py", line 701, in main
+2026-11-06 13:53:44.889934 +0000 build-templates-community:     args.func(args)
+2026-11-06 13:53:44.889938 +0000 build-templates-community:     ~~~~~~~~~^^^^^^
+2026-11-06 13:53:44.889945 +0000 build-templates-community:   File "/usr/local/lib/qubes-builder-github/github-command.py", line 161, in _run_dispatch
+2026-11-06 13:53:44.889949 +0000 build-templates-community:     raise GithubCommandError(
+2026-11-06 13:53:44.889956 +0000 build-templates-community:         f"Timestamp outside of allowed range (min: {timestamp_min}, max: {timestamp_max}, current={timestamp})"
+2026-11-06 13:53:44.889959 +0000 build-templates-community:     )
+2026-11-06 13:53:44.889968 +0000 build-templates-community: GithubCommandError: Timestamp outside of allowed range (min: 2026-11-06 12:53:44.851599+00:00, max: 2026-11-06 13:58:44.851599+00:00, current=2026-11-06 12:09:00+00:00)
+2026-11-06 13:53:44.889977 +0000 build-templates-community: 2026-11-06 14:53:44,852 [github-command] ERROR: Timestamp outside of allowed range (min: 2026-11-06 12:53:44.851599+00:00, max: 2026-11-06 13:58:44.851599+00:00, current=2026-11-06 12:09:00+00:00)
+2026-11-06 13:53:44.889981 +0000 build-templates-community: + rc=1
+2026-11-06 13:53:44.889985 +0000 build-templates-community: + rm -rf /tmp/tmp.QggnHayumJ
+2026-11-06 13:53:44.889989 +0000 build-templates-community: + '[' 1 -eq 0 ']'
+2026-11-06 13:53:44.889994 +0000 build-templates-community: + upload_command_log
+2026-11-06 13:53:44.889999 +0000 build-templates-community: + '[' -s /home/user/builder-github-logs/1793973224-1523.log ']'
+2026-11-06 13:53:44.890004 +0000 build-templates-community: + qrexec-client-vm dom0 qubesbuilder.BuildLog
+2026-11-06 13:53:44.890011 +0000 > closing log
