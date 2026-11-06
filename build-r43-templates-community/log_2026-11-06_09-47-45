@@ -1,0 +1,5 @@
+2026-11-06 09:47:45.597560 +0000 > starting log
+2026-11-06 09:47:45.597764 +0000 build-r43-templates-community: .[38;5;246m10:47:37 .[96m[qb] .[38;5;246m> starting build with log.[0m
+2026-11-06 09:47:45.597786 +0000 build-r43-templates-community: .[38;5;246m10:47:37 .[96m[qb.template.kicksecure-18] .[0mkicksecure-18: Already published to 'templates-community'..[0m
+2026-11-06 09:47:45.984824 +0000 build-r43-templates-community: .[38;5;246m10:47:37 .[96m[qb] .[38;5;246m> done.[0m
+2026-11-06 09:47:45.984876 +0000 > closing log
