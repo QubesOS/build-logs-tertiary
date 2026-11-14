@@ -1,0 +1,21 @@
+2026-11-14 11:02:46.861891 +0000 > starting log
+2026-11-14 11:02:46.862271 +0000 build-rdev-templates-community: .[38;5;246m12:02:46 .[96m[qb] .[38;5;246m> starting build with log.[0m
+2026-11-14 11:02:46.862311 +0000 build-rdev-templates-community: .[38;5;246m12:02:46 .[96m[qb] .[38;5;246m>> args:.[0m
+2026-11-14 11:02:46.862333 +0000 build-rdev-templates-community: .[38;5;246m12:02:46 .[96m[qb] .[38;5;246m>>   ().[0m
+2026-11-14 11:02:46.862353 +0000 build-rdev-templates-community: .[38;5;246m12:02:46 .[96m[qb] .[38;5;246m>> component:.[0m
+2026-11-14 11:02:46.862380 +0000 build-rdev-templates-community: .[38;5;246m12:02:46 .[96m[qb] .[38;5;246m>>   builder-rpm.[0m
+2026-11-14 11:02:46.862401 +0000 build-rdev-templates-community: .[38;5;246m12:02:46 .[96m[qb] .[38;5;246m>>     commit-hash: 7a11cb71bd244f1152a121120b7cbfc48cddaf77.[0m
+2026-11-14 11:02:46.862422 +0000 build-rdev-templates-community: .[38;5;246m12:02:46 .[96m[qb] .[38;5;246m>>     source-hash: 5f9e647399793641ce291c92fb0b71287542d61e87d93528062a4d1c36056757545815b443edd391aa9f51b0377cf1aaea5073c1ed89148da338f299c441a924.[0m
+2026-11-14 11:02:46.862443 +0000 build-rdev-templates-community: .[38;5;246m12:02:46 .[96m[qb] .[38;5;246m>> distributions:.[0m
+2026-11-14 11:02:46.862471 +0000 build-rdev-templates-community: .[38;5;246m12:02:46 .[96m[qb] .[38;5;246m>>   [].[0m
+2026-11-14 11:02:46.862494 +0000 build-rdev-templates-community: .[38;5;246m12:02:46 .[96m[qb] .[0mRunning stages: fetch.[0m
+2026-11-14 11:02:46.862513 +0000 build-rdev-templates-community: .[38;5;246m12:02:46 .[96m[qb.fetch.builder-rpm] .[0mbuilder-rpm: source already fetched. Updating..[0m
+2026-11-14 11:02:57.765008 +0000 build-rdev-templates-community: .[38;5;246m12:02:57 .[96m[qb.fetch.builder-rpm.fetch] .[0mUsing executor qubes:disp9260..[0m
+2026-11-14 11:02:57.765073 +0000 build-rdev-templates-community: .[38;5;246m12:02:57 .[96m[qb.fetch.builder-rpm.fetch] .[38;5;246m/usr/bin/qvm-run-vm -- disp9260 env -- VERBOSE=1 DEBUG=1 BACKEND_VMM=xen bash -c 'cd /builder && /builder/plugins/fetch/scripts/get-and-verify-source.py https://github.com/QubesOS/qubes-builder-rpm.git /builder/builder-rpm /builder/keyring /builder/plugins/fetch/keys --git-branch main --minimum-distinct-maintainers 1 --maintainer 0064428F455451B3EBE78A7F063938BA42CFA724 --maintainer 274E12AB03F2FE293765FC06DA0434BC706E1FCF'.[0m
+2026-11-14 11:03:03.068762 +0000 build-rdev-templates-community: .[38;5;246m12:03:03 .[96m[qb.fetch.builder-rpm.fetch] .[38;5;246m--> Verifying tags....[0m
+2026-11-14 11:03:03.068846 +0000 build-rdev-templates-community: .[38;5;246m12:03:03 .[96m[qb.fetch.builder-rpm.fetch] .[38;5;246m---> Good tag 8afcfc0b0bd14ec8fca1a3f0feda45880412068e..[0m
+2026-11-14 11:03:03.068862 +0000 build-rdev-templates-community: .[38;5;246m12:03:03 .[96m[qb.fetch.builder-rpm.fetch] .[38;5;246mEnough distinct tag signatures. Found 1, mandatory minimum is 1..[0m
+2026-11-14 11:03:03.068880 +0000 build-rdev-templates-community: .[38;5;246m12:03:03 .[96m[qb.fetch.builder-rpm.fetch] .[38;5;246m--> Merging....[0m
+2026-11-14 11:03:04.899864 +0000 build-rdev-templates-community: .[38;5;246m12:03:04 .[96m[qb.fetch.builder-rpm] .[0mLog file: /home/user/builder-templates-community-rdevel/logs/20261114T110246-builder-rpm.log.[0m
+2026-11-14 11:03:04.917560 +0000 build-rdev-templates-community: .[38;5;246m12:03:04 .[96m[qb] .[38;5;246m> done.[0m
+2026-11-14 11:03:04.917649 +0000 > closing log
