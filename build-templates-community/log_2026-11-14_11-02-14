@@ -1,0 +1,24 @@
+2026-11-14 11:02:14.438729 +0000 > starting log
+2026-11-14 11:02:14.439113 +0000 build-templates-community: .[38;5;246m12:02:14 .[96m[qb] .[38;5;246m> starting build with log.[0m
+2026-11-14 11:02:14.439143 +0000 build-templates-community: .[38;5;246m12:02:14 .[96m[qb] .[38;5;246m>> args:.[0m
+2026-11-14 11:02:14.439155 +0000 build-templates-community: .[38;5;246m12:02:14 .[96m[qb] .[38;5;246m>>   ().[0m
+2026-11-14 11:02:14.439162 +0000 build-templates-community: .[38;5;246m12:02:14 .[96m[qb] .[38;5;246m>> component:.[0m
+2026-11-14 11:02:14.439169 +0000 build-templates-community: .[38;5;246m12:02:14 .[96m[qb] .[38;5;246m>>   builder-rpm.[0m
+2026-11-14 11:02:14.439176 +0000 build-templates-community: .[38;5;246m12:02:14 .[96m[qb] .[38;5;246m>>     commit-hash: ba8b28d386bdf124a8ac0c940eec50d098ff07f3.[0m
+2026-11-14 11:02:14.458540 +0000 build-templates-community: .[38;5;246m12:02:14 .[96m[qb] .[38;5;246m>>     source-hash: dc78b547525a3168e4ae7ba78d52977b1e978b7019e4051cb2f0448567a9291d7c69ae5c58aa9768020f50dfc5e8fff1e49236725877b33776e343aeaa94c47e.[0m
+2026-11-14 11:02:14.458598 +0000 build-templates-community: .[38;5;246m12:02:14 .[96m[qb] .[38;5;246m>> distributions:.[0m
+2026-11-14 11:02:14.458607 +0000 build-templates-community: .[38;5;246m12:02:14 .[96m[qb] .[38;5;246m>>   [].[0m
+2026-11-14 11:02:14.458624 +0000 build-templates-community: .[38;5;246m12:02:14 .[96m[qb] .[0mRunning stages: fetch.[0m
+2026-11-14 11:02:14.508102 +0000 build-templates-community: .[38;5;246m12:02:14 .[96m[qb.fetch.builder-rpm] .[0mbuilder-rpm: source already fetched. Updating..[0m
+2026-11-14 11:02:25.537032 +0000 build-templates-community: .[38;5;246m12:02:25 .[96m[qb.fetch.builder-rpm.fetch] .[0mUsing executor qubes:disp5880..[0m
+2026-11-14 11:02:25.537098 +0000 build-templates-community: .[38;5;246m12:02:25 .[96m[qb.fetch.builder-rpm.fetch] .[38;5;246m/usr/bin/qvm-run-vm -- disp5880 env -- VERBOSE=1 DEBUG=1 BACKEND_VMM=xen bash -c 'cd /builder && /builder/plugins/fetch/scripts/get-and-verify-source.py https://github.com/QubesOS/qubes-builder-rpm.git /builder/builder-rpm /builder/keyring /builder/plugins/fetch/keys --git-branch main --minimum-distinct-maintainers 1 --maintainer 0064428F455451B3EBE78A7F063938BA42CFA724 --maintainer 274E12AB03F2FE293765FC06DA0434BC706E1FCF'.[0m
+2026-11-14 11:02:33.351516 +0000 build-templates-community: .[38;5;246m12:02:33 .[96m[qb.fetch.builder-rpm.fetch] .[38;5;246m--> Verifying tags....[0m
+2026-11-14 11:02:33.351572 +0000 build-templates-community: .[38;5;246m12:02:33 .[96m[qb.fetch.builder-rpm.fetch] .[38;5;246m---> Good tag 8afcfc0b0bd14ec8fca1a3f0feda45880412068e..[0m
+2026-11-14 11:02:33.351587 +0000 build-templates-community: .[38;5;246m12:02:33 .[96m[qb.fetch.builder-rpm.fetch] .[38;5;246mEnough distinct tag signatures. Found 1, mandatory minimum is 1..[0m
+2026-11-14 11:02:33.351607 +0000 build-templates-community: .[38;5;246m12:02:33 .[96m[qb.fetch.builder-rpm.fetch] .[38;5;246m--> Merging....[0m
+2026-11-14 11:02:34.968027 +0000 build-templates-community: .[38;5;246m12:02:34 .[96m[qb.fetch.builder-rpm] .[0mLog file: /home/user/builder-templates-community-r4.2/logs/20261114T110213-builder-rpm.log.[0m
+2026-11-14 11:02:34.976275 +0000 build-templates-community: .[38;5;246m12:02:34 .[96m[qb.fetch.builder-rpm] .[38;5;246m['cd -- /builder', "git -C /builder/builder-rpm rev-parse 'HEAD^{}' >> hash", "git -C /builder/builder-rpm tag --points-at HEAD --list 'v*' >> vtags"].[0m
+2026-11-14 11:02:44.555097 +0000 build-templates-community: .[38;5;246m12:02:44 .[96m[qb.fetch.builder-rpm.fetch] .[0mUsing executor qubes:disp2482..[0m
+2026-11-14 11:02:44.555160 +0000 build-templates-community: .[38;5;246m12:02:44 .[96m[qb.fetch.builder-rpm.fetch] .[38;5;246m/usr/bin/qvm-run-vm -- disp2482 env -- VERBOSE=1 DEBUG=1 BACKEND_VMM=xen bash -c 'cd -- /builder && git -C /builder/builder-rpm rev-parse '"'"'HEAD^{}'"'"' >> hash && git -C /builder/builder-rpm tag --points-at HEAD --list '"'"'v*'"'"' >> vtags'.[0m
+2026-11-14 11:02:47.210696 +0000 build-templates-community: .[38;5;246m12:02:47 .[96m[qb] .[38;5;246m> done.[0m
+2026-11-14 11:02:47.210745 +0000 > closing log
