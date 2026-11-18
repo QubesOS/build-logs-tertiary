@@ -1,0 +1,21 @@
+2026-11-18 23:15:29.125013 +0000 > starting log
+2026-11-18 23:15:29.125251 +0000 build-templates-community: .[38;5;246m00:15:29 .[96m[qb] .[38;5;246m> starting build with log.[0m
+2026-11-18 23:15:29.125274 +0000 build-templates-community: .[38;5;246m00:15:29 .[96m[qb] .[38;5;246m>> args:.[0m
+2026-11-18 23:15:29.125284 +0000 build-templates-community: .[38;5;246m00:15:29 .[96m[qb] .[38;5;246m>>   ().[0m
+2026-11-18 23:15:29.125291 +0000 build-templates-community: .[38;5;246m00:15:29 .[96m[qb] .[38;5;246m>> component:.[0m
+2026-11-18 23:15:29.125297 +0000 build-templates-community: .[38;5;246m00:15:29 .[96m[qb] .[38;5;246m>>   builder-archlinux.[0m
+2026-11-18 23:15:29.125304 +0000 build-templates-community: .[38;5;246m00:15:29 .[96m[qb] .[38;5;246m>>     commit-hash: 02f6d3b47785f9bb79a0ccab7f2cb507cc016f39.[0m
+2026-11-18 23:15:29.125313 +0000 build-templates-community: .[38;5;246m00:15:29 .[96m[qb] .[38;5;246m>>     source-hash: b76dd602cf28aab1a69fdf98ac56e2d7cf010d8fd92cc551694364cdd51ed1642fc6dd951466536d45bb2e5417d373f8fc0827c004b2d18c0b422a7da2c3fa5c.[0m
+2026-11-18 23:15:29.125319 +0000 build-templates-community: .[38;5;246m00:15:29 .[96m[qb] .[38;5;246m>> distributions:.[0m
+2026-11-18 23:15:29.125325 +0000 build-templates-community: .[38;5;246m00:15:29 .[96m[qb] .[38;5;246m>>   [].[0m
+2026-11-18 23:15:29.125330 +0000 build-templates-community: .[38;5;246m00:15:29 .[96m[qb] .[0mRunning stages: fetch.[0m
+2026-11-18 23:15:29.125336 +0000 build-templates-community: .[38;5;246m00:15:29 .[96m[qb.fetch.builder-archlinux] .[0mbuilder-archlinux: source already fetched. Updating..[0m
+2026-11-18 23:15:38.404338 +0000 build-templates-community: .[38;5;246m00:15:38 .[96m[qb.fetch.builder-archlinux.fetch] .[0mUsing executor qubes:disp9812..[0m
+2026-11-18 23:15:38.404419 +0000 build-templates-community: .[38;5;246m00:15:38 .[96m[qb.fetch.builder-archlinux.fetch] .[38;5;246m/usr/bin/qvm-run-vm -- disp9812 env -- VERBOSE=1 DEBUG=1 BACKEND_VMM=xen bash -c 'cd /builder && /builder/plugins/fetch/scripts/get-and-verify-source.py https://github.com/QubesOS/qubes-builder-archlinux.git /builder/builder-archlinux /builder/keyring /builder/plugins/fetch/keys --git-branch main --minimum-distinct-maintainers 1 --maintainer 0064428F455451B3EBE78A7F063938BA42CFA724 --maintainer 274E12AB03F2FE293765FC06DA0434BC706E1FCF'.[0m
+2026-11-18 23:15:40.030864 +0000 build-templates-community: .[38;5;246m00:15:40 .[96m[qb.fetch.builder-archlinux.fetch] .[38;5;246m--> Verifying tags....[0m
+2026-11-18 23:15:40.030919 +0000 build-templates-community: .[38;5;246m00:15:40 .[96m[qb.fetch.builder-archlinux.fetch] .[38;5;246m---> Good tag 76a2e89301577c23a98a0f9fcb06ec7662169c59..[0m
+2026-11-18 23:15:40.030943 +0000 build-templates-community: .[38;5;246m00:15:40 .[96m[qb.fetch.builder-archlinux.fetch] .[38;5;246mEnough distinct tag signatures. Found 1, mandatory minimum is 1..[0m
+2026-11-18 23:15:40.030954 +0000 build-templates-community: .[38;5;246m00:15:40 .[96m[qb.fetch.builder-archlinux.fetch] .[38;5;246m--> Merging....[0m
+2026-11-18 23:15:41.680389 +0000 build-templates-community: .[38;5;246m00:15:41 .[96m[qb.fetch.builder-archlinux] .[0mLog file: /home/user/builder-templates-community-r4.2/logs/20261118T231528-builder-archlinux.log.[0m
+2026-11-18 23:15:41.690331 +0000 build-templates-community: .[38;5;246m00:15:41 .[96m[qb] .[38;5;246m> done.[0m
+2026-11-18 23:15:41.690366 +0000 > closing log
