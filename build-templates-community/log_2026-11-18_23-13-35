@@ -1,0 +1,24 @@
+2026-11-18 23:13:35.057685 +0000 > starting log
+2026-11-18 23:13:35.057907 +0000 build-templates-community: .[38;5;246m00:13:34 .[96m[qb] .[38;5;246m> starting build with log.[0m
+2026-11-18 23:13:35.057932 +0000 build-templates-community: .[38;5;246m00:13:34 .[96m[qb] .[38;5;246m>> args:.[0m
+2026-11-18 23:13:35.057943 +0000 build-templates-community: .[38;5;246m00:13:34 .[96m[qb] .[38;5;246m>>   ().[0m
+2026-11-18 23:13:35.057950 +0000 build-templates-community: .[38;5;246m00:13:34 .[96m[qb] .[38;5;246m>> component:.[0m
+2026-11-18 23:13:35.057958 +0000 build-templates-community: .[38;5;246m00:13:34 .[96m[qb] .[38;5;246m>>   builder-archlinux.[0m
+2026-11-18 23:13:35.057967 +0000 build-templates-community: .[38;5;246m00:13:34 .[96m[qb] .[38;5;246m>>     commit-hash: 70c648acbbdde72c50d35173c6bf833861dba653.[0m
+2026-11-18 23:13:35.057978 +0000 build-templates-community: .[38;5;246m00:13:34 .[96m[qb] .[38;5;246m>>     source-hash: ff81c88c89942d9100851ae8c0850b37175d2f6b9aa7053a2d9361b466391bdddc8d0892f70fb18fdf2a811af409108a60ba87f3309057dd043bb21221a1e1b0.[0m
+2026-11-18 23:13:35.057985 +0000 build-templates-community: .[38;5;246m00:13:34 .[96m[qb] .[38;5;246m>> distributions:.[0m
+2026-11-18 23:13:35.057992 +0000 build-templates-community: .[38;5;246m00:13:34 .[96m[qb] .[38;5;246m>>   [].[0m
+2026-11-18 23:13:35.058000 +0000 build-templates-community: .[38;5;246m00:13:34 .[96m[qb] .[0mRunning stages: fetch.[0m
+2026-11-18 23:13:35.058009 +0000 build-templates-community: .[38;5;246m00:13:34 .[96m[qb.fetch.builder-archlinux] .[0mbuilder-archlinux: source already fetched. Updating..[0m
+2026-11-18 23:13:46.697003 +0000 build-templates-community: .[38;5;246m00:13:46 .[96m[qb.fetch.builder-archlinux.fetch] .[0mUsing executor qubes:disp9230..[0m
+2026-11-18 23:13:46.697084 +0000 build-templates-community: .[38;5;246m00:13:46 .[96m[qb.fetch.builder-archlinux.fetch] .[38;5;246m/usr/bin/qvm-run-vm -- disp9230 env -- VERBOSE=1 DEBUG=1 BACKEND_VMM=xen bash -c 'cd /builder && /builder/plugins/fetch/scripts/get-and-verify-source.py https://github.com/QubesOS/qubes-builder-archlinux.git /builder/builder-archlinux /builder/keyring /builder/plugins/fetch/keys --git-branch main --minimum-distinct-maintainers 1 --maintainer 0064428F455451B3EBE78A7F063938BA42CFA724 --maintainer 274E12AB03F2FE293765FC06DA0434BC706E1FCF'.[0m
+2026-11-18 23:13:48.388840 +0000 build-templates-community: .[38;5;246m00:13:48 .[96m[qb.fetch.builder-archlinux.fetch] .[38;5;246m--> Verifying tags....[0m
+2026-11-18 23:13:48.388900 +0000 build-templates-community: .[38;5;246m00:13:48 .[96m[qb.fetch.builder-archlinux.fetch] .[38;5;246m---> Good tag 76a2e89301577c23a98a0f9fcb06ec7662169c59..[0m
+2026-11-18 23:13:48.388913 +0000 build-templates-community: .[38;5;246m00:13:48 .[96m[qb.fetch.builder-archlinux.fetch] .[38;5;246mEnough distinct tag signatures. Found 1, mandatory minimum is 1..[0m
+2026-11-18 23:13:48.388920 +0000 build-templates-community: .[38;5;246m00:13:48 .[96m[qb.fetch.builder-archlinux.fetch] .[38;5;246m--> Merging....[0m
+2026-11-18 23:13:50.876735 +0000 build-templates-community: .[38;5;246m00:13:50 .[96m[qb.fetch.builder-archlinux] .[0mLog file: /home/user/builder-templates-community-r4.2/logs/20261118T231334-builder-archlinux.log.[0m
+2026-11-18 23:13:50.881076 +0000 build-templates-community: .[38;5;246m00:13:50 .[96m[qb.fetch.builder-archlinux] .[38;5;246m['cd -- /builder', "git -C /builder/builder-archlinux rev-parse 'HEAD^{}' >> hash", "git -C /builder/builder-archlinux tag --points-at HEAD --list 'v*' >> vtags"].[0m
+2026-11-18 23:14:03.296923 +0000 build-templates-community: .[38;5;246m00:14:03 .[96m[qb.fetch.builder-archlinux.fetch] .[0mUsing executor qubes:disp3268..[0m
+2026-11-18 23:14:03.297010 +0000 build-templates-community: .[38;5;246m00:14:03 .[96m[qb.fetch.builder-archlinux.fetch] .[38;5;246m/usr/bin/qvm-run-vm -- disp3268 env -- VERBOSE=1 DEBUG=1 BACKEND_VMM=xen bash -c 'cd -- /builder && git -C /builder/builder-archlinux rev-parse '"'"'HEAD^{}'"'"' >> hash && git -C /builder/builder-archlinux tag --points-at HEAD --list '"'"'v*'"'"' >> vtags'.[0m
+2026-11-18 23:14:06.262119 +0000 build-templates-community: .[38;5;246m00:14:06 .[96m[qb] .[38;5;246m> done.[0m
+2026-11-18 23:14:06.262179 +0000 > closing log
